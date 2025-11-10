@@ -2,16 +2,49 @@ import logging
 from typing import Dict, Any, List, Optional
 import re
 
+try:
+    from transformers import AutoTokenizer
+    HAS_TOKENIZER = True
+except ImportError:
+    HAS_TOKENIZER = False
+
 logger = logging.getLogger(__name__)
 
 class TextProcessorService:
-    MAX_LENGTH = 32768  # 32k字符限制
-    CHUNK_SIZE = 16000  # 16k字符块
-    CHUNK_OVERLAP = 500  # 块重叠500字符
+    MAX_LENGTH = 82768  # 32k字符限制
+    MAX_TOKENS = 32000  # 32k token限制
     
-    def process_paper_json(self, paper_json: Dict[str, Any]) -> str:
-        """JSON论文转文本"""
+    def __init__(self, include_authors=False, tokenizer_path=None):
+        """
+        初始化文本处理服务
+        
+        Args:
+            include_authors (bool): 是否包含作者信息，默认False
+                                  对于peer review，建议设为False以避免偏见
+            tokenizer_path (str): tokenizer路径，用于token级别处理
+        """
+        self.include_authors = include_authors
+        self.tokenizer = None
+        
+        # 初始化tokenizer（如果可用）
+        if HAS_TOKENIZER and tokenizer_path:
+            try:
+                self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
+                logger.info(f"成功加载tokenizer: {tokenizer_path}")
+            except Exception as e:
+                logger.warning(f"无法加载tokenizer {tokenizer_path}: {str(e)}")
+                self.tokenizer = None
+    
+    def process_paper_json(self, paper_json: Dict[str, Any], auto_truncate: bool = True) -> str:
+        """
+        JSON论文转文本
+        
+        Args:
+            paper_json: 论文JSON数据
+            auto_truncate: 是否自动截断到最大长度，默认True
+        """
         logger.info("处理JSON格式论文数据")
+        logger.info(f"自动截断设置: {auto_truncate}")
         
         try:
             text_parts = []
@@ -20,11 +53,17 @@ class TextProcessorService:
             title = self._extract_title(paper_json)
             if title:
                 text_parts.append(f"Title: {title}\n")
+                logger.info(f"论文标题: {title}")
             
-            # 处理作者
-            authors_text = self._extract_authors(paper_json)
-            if authors_text:
-                text_parts.append(f"Authors: {authors_text}\n")
+            # 处理作者（可选）
+            if self.include_authors:
+                authors_text = self._extract_authors(paper_json)
+                if authors_text:
+                    text_parts.append(f"Authors: {authors_text}\n")
+                    logger.info(f"包含作者信息: {len(authors_text)} 字符")
+            else:
+                # 对于peer review，跳过作者信息以避免偏见
+                logger.info("跳过作者信息处理（匿名评审模式）")
             
             # 处理发表信息
             publication_text = self._extract_publication(paper_json)
@@ -51,108 +90,76 @@ class TextProcessorService:
             
             # 合并文本
             full_text = "\n".join(text_parts)
-            return self._truncate_to_max_length(full_text)
+            
+            # 根据参数决定是否截断
+            if auto_truncate:
+                truncated_text = self._truncate_to_max_tokens(full_text)
+                if truncated_text != full_text:
+                    logger.warning(f"论文内容已截断: 原始长度 {len(full_text)} 字符 => 截断后 {len(truncated_text)} 字符")
+                    if self.tokenizer:
+                        try:
+                            orig_tokens = len(self.tokenizer.encode(full_text))
+                            trunc_tokens = len(self.tokenizer.encode(truncated_text))
+                            logger.warning(f"Token 数量: 原始 {orig_tokens} => 截断后 {trunc_tokens}")
+                        except Exception as e:
+                            logger.warning(f"计算token数量失败: {str(e)}")
+                return truncated_text
+            else:
+                logger.info(f"未启用自动截断，返回完整论文内容: {len(full_text)} 字符")
+                if self.tokenizer:
+                    try:
+                        tokens = len(self.tokenizer.encode(full_text))
+                        logger.info(f"完整论文的token数量: {tokens}")
+                        if tokens > self.MAX_TOKENS:
+                            logger.warning(f"警告: 论文token数量 ({tokens}) 超过了最大限制 ({self.MAX_TOKENS})，可能会被模型截断")
+                    except Exception as e:
+                        logger.warning(f"计算token数量失败: {str(e)}")
+                return full_text
             
         except Exception as e:
             logger.error(f"处理JSON论文数据失败: {str(e)}")
             raise RuntimeError(f"处理JSON论文数据失败: {str(e)}")
     
-    def process_long_text_with_chunks(self, text: str, query: str, vllm_service) -> str:
-        """分块处理长文本"""
-        logger.info(f"开始分块处理，文本长度: {len(text)} 字符")
-        
-        # 检查是否需要分块
-        if len(text) <= self.MAX_LENGTH:
-            logger.info("文本长度在限制内，直接处理")
-            return text
-        
-        # 分块处理
-        chunks = self._split_text_into_chunks(text)
-        logger.info(f"文本分为 {len(chunks)} 块")
-        
-        # 处理每个块
-        chunk_reviews = []
-        for i, chunk in enumerate(chunks):
-            logger.info(f"处理第 {i+1}/{len(chunks)} 块 (长度: {len(chunk)} 字符)")
-            
-            chunk_query = f"Please provide a preliminary review of the following section (this is part {i+1} of {len(chunks)} parts). Focus on: {query}"
-            try:
-                chunk_review = vllm_service.generate_peer_review(chunk, chunk_query)
-                chunk_reviews.append(f"Section {i+1} Review:\n{chunk_review}")
-            except Exception as e:
-                logger.error(f"处理第{i+1}块时出错: {str(e)}")
-                chunk_reviews.append(f"Section {i+1} processing failed: {str(e)}")
-        
-        # 合并评审
-        combined_reviews = "\n\n".join(chunk_reviews)
-        logger.info(f"合并评审: {len(combined_reviews)} 字符")
-        
-        # 如果合并评审仍然过长，则递归处理
-        if len(combined_reviews) > self.MAX_LENGTH:
-            logger.info("Combined reviews still too long, performing final synthesis")
-            return self.process_long_text_with_chunks(combined_reviews, 
-                                                    f"Please synthesize the following section reviews into a comprehensive peer review focusing on: {query}", 
-                                                    vllm_service)
-        
-        # 最终评审
-        final_query = f"Based on the above section reviews, please provide a comprehensive peer review of the entire paper focusing on: {query}"
-        try:
-            final_review = vllm_service.generate_peer_review(combined_reviews, final_query)
-            logger.info("Chunk-based peer review completed")
-            return final_review
-        except Exception as e:
-            logger.error(f"Error during final review synthesis: {str(e)}")
-            return f"Peer review synthesis completed, but final analysis failed: {str(e)}\n\nSection Reviews:\n{combined_reviews}"
-    
-    def _split_text_into_chunks(self, text: str) -> List[str]:
-        """将文本分割成重叠块"""
-        chunks = []
-        start = 0
-        
-        while start < len(text):
-            end = start + self.CHUNK_SIZE
-            
-            # 最后一块包含所有剩余内容
-            if end >= len(text):
-                chunks.append(text[start:])
-                break
-            
-            # 在句子边界分割
-            chunk_end = self._find_sentence_boundary(text, start, end)
-            chunk = text[start:chunk_end]
-            chunks.append(chunk)
-            
-            # 下一块开始位置
-            start = chunk_end - self.CHUNK_OVERLAP
-            start = max(0, start)
-        
-        return chunks
-    
-    def _find_sentence_boundary(self, text: str, start: int, preferred_end: int) -> int:
-        """在句子边界分割"""
-        search_start = max(start, preferred_end - 200)
-        search_end = min(len(text), preferred_end + 200)
-        
-        sentence_endings = ['.', '。', '!', '！', '?', '？', '\n\n']
-        
-        # 向后搜索句子结束
-        for i in range(preferred_end, search_end):
-            if text[i] in sentence_endings:
-                return i + 1
-        
-        # 向前搜索句子结束
-        for i in range(preferred_end, search_start, -1):
-            if text[i] in sentence_endings:
-                return i + 1
-        
-        return preferred_end
-    
     def _truncate_to_max_length(self, text: str) -> str:
-        """截断到最大长度"""
+        """截断到最大字符长度"""
         if len(text) <= self.MAX_LENGTH:
+            logger.info(f"文本字符长度 ({len(text)}) 在限制范围内，不需要截断")
             return text
         
-        return text[:self.MAX_LENGTH - 100] + "..."
+        logger.warning(f"文本字符长度 ({len(text)}) 超过限制 ({self.MAX_LENGTH})，进行截断")
+        truncated_text = text[:self.MAX_LENGTH - 100] + "..."
+        logger.info(f"截断后字符长度: {len(truncated_text)}")
+        return truncated_text
+    
+    def _truncate_to_max_tokens(self, text: str, max_tokens: int = None) -> str:
+        """按token数量截断（与predict.py对齐）"""
+        if max_tokens is None:
+            max_tokens = self.MAX_TOKENS
+            
+        # 如果没有tokenizer，回退到字符截断
+        if not self.tokenizer:
+            logger.warning("没有可用的tokenizer，使用字符截断")
+            return self._truncate_to_max_length(text)
+        
+        try:
+            # token级别处理
+            tokens = self.tokenizer.encode(text)
+            token_count = len(tokens)
+            
+            if token_count <= max_tokens:
+                logger.info(f"文本token数量 ({token_count}) 在限制范围内，不需要截断")
+                return text
+            
+            # 截断并解码
+            logger.warning(f"文本token数量 ({token_count}) 超过限制 ({max_tokens})，进行截断")
+            truncated_tokens = tokens[:max_tokens - 100]  # 留一些余量给模型生成
+            truncated_text = self.tokenizer.decode(truncated_tokens, skip_special_tokens=True)
+            logger.info(f"截断后token数量: {len(self.tokenizer.encode(truncated_text))}")
+            return truncated_text
+            
+        except Exception as e:
+            logger.warning(f"Token截断失败，使用字符截断: {str(e)}")
+            return self._truncate_to_max_length(text)
 
     def _extract_title(self, paper_json: Dict[str, Any]) -> str:
         """提取标题"""
@@ -241,8 +248,17 @@ class TextProcessorService:
         if not isinstance(section_info, dict):
             return ""
         
-        index = section_info.get('index', '').strip()
-        name = section_info.get('name', '').strip()
+        # 处理index字段，可能是字符串、整数或其他类型
+        index_raw = section_info.get('index', '')
+        index = str(index_raw).strip() if index_raw is not None else ''
+        
+        # 处理name字段
+        name_raw = section_info.get('name', '')
+        name = str(name_raw).strip() if name_raw is not None else ''
+        
+        # 特殊处理：如果index是-1，通常表示没有编号
+        if index == '-1':
+            index = ''
         
         if index and name:
             return f"{index} {name}"

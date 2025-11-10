@@ -1,0 +1,3152 @@
+{
+  "title": "LOFT: Scalable and More Realistic Long-Context Evaluation",
+  "publication": {
+    "publisher": {},
+    "date": ""
+  },
+  "author": [
+    {
+      "forename": "Jinhyuk",
+      "surname": "Lee",
+      "name": "Jinhyuk Lee",
+      "email": ""
+    },
+    {
+      "forename": "Anthony",
+      "surname": "Chen",
+      "name": "Anthony Chen",
+      "email": ""
+    },
+    {
+      "forename": "Zhuyun",
+      "surname": "Dai",
+      "name": "Zhuyun Dai",
+      "email": ""
+    },
+    {
+      "forename": "Dheeru",
+      "surname": "Dua",
+      "name": "Dheeru Dua",
+      "email": ""
+    },
+    {
+      "forename": "Devendra",
+      "surname": "Singh",
+      "name": "Devendra Singh",
+      "email": ""
+    },
+    {
+      "forename": "Sachan Michael ",
+      "surname": "Boratko",
+      "name": "Sachan Michael  Boratko",
+      "email": ""
+    },
+    {
+      "forename": "Yi",
+      "surname": "Luan",
+      "name": "Yi Luan",
+      "email": ""
+    },
+    {
+      "forename": "Sébastien M R ",
+      "surname": "Arnold",
+      "name": "Sébastien M R  Arnold",
+      "email": ""
+    },
+    {
+      "forename": "Vincent",
+      "surname": "Perot",
+      "name": "Vincent Perot",
+      "email": ""
+    },
+    {
+      "forename": "Siddharth",
+      "surname": "Dalmia",
+      "name": "Siddharth Dalmia",
+      "email": ""
+    },
+    {
+      "forename": "Hexiang",
+      "surname": "Hu",
+      "name": "Hexiang Hu",
+      "email": ""
+    },
+    {
+      "forename": "Xudong",
+      "surname": "Lin",
+      "name": "Xudong Lin",
+      "email": ""
+    },
+    {
+      "forename": "Panupong",
+      "surname": "Pasupat",
+      "name": "Panupong Pasupat",
+      "email": ""
+    },
+    {
+      "forename": "Aida",
+      "surname": "Amini",
+      "name": "Aida Amini",
+      "email": ""
+    },
+    {
+      "forename": "Jeremy R.",
+      "surname": "Cole",
+      "name": "Jeremy R. Cole",
+      "email": ""
+    },
+    {
+      "forename": "Sebastian",
+      "surname": "Riedel",
+      "name": "Sebastian Riedel",
+      "email": ""
+    },
+    {
+      "forename": "Iftekhar",
+      "surname": "Naim",
+      "name": "Iftekhar Naim",
+      "email": ""
+    },
+    {
+      "forename": "Ming-Wei",
+      "surname": "Chang",
+      "name": "Ming-Wei Chang",
+      "email": ""
+    },
+    {
+      "forename": "Kelvin",
+      "surname": "Guu",
+      "name": "Kelvin Guu",
+      "email": ""
+    },
+    {
+      "forename": "Patrick S H ",
+      "surname": "Lewis",
+      "name": "Patrick S H  Lewis",
+      "email": ""
+    },
+    {
+      "forename": "Ethan",
+      "surname": "Perez",
+      "name": "Ethan Perez",
+      "email": ""
+    },
+    {
+      "forename": "Aleksandra",
+      "surname": "Pik- Tus",
+      "name": "Aleksandra Pik- Tus",
+      "email": ""
+    },
+    {
+      "forename": "Fabio",
+      "surname": "Petroni",
+      "name": "Fabio Petroni",
+      "email": ""
+    },
+    {
+      "forename": "Vladimir",
+      "surname": "Karpukhin",
+      "name": "Vladimir Karpukhin",
+      "email": ""
+    },
+    {
+      "forename": "Naman",
+      "surname": "Goyal",
+      "name": "Naman Goyal",
+      "email": ""
+    },
+    {
+      "forename": "Heinrich",
+      "surname": "Küttler",
+      "name": "Heinrich Küttler",
+      "email": ""
+    },
+    {
+      "forename": "Mike",
+      "surname": "Lewis",
+      "name": "Mike Lewis",
+      "email": ""
+    },
+    {
+      "forename": "Wen-Tau",
+      "surname": "Yih",
+      "name": "Wen-Tau Yih",
+      "email": ""
+    },
+    {
+      "forename": "Tim",
+      "surname": "Rocktäschel",
+      "name": "Tim Rocktäschel",
+      "email": ""
+    },
+    {
+      "forename": "Douwe 2020 ",
+      "surname": "Kiela",
+      "name": "Douwe 2020  Kiela",
+      "email": ""
+    },
+    {
+      "forename": "Tianle",
+      "surname": "Li",
+      "name": "Tianle Li",
+      "email": ""
+    },
+    {
+      "forename": "Ge",
+      "surname": "Zhang",
+      "name": "Ge Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Duc",
+      "surname": "Do",
+      "name": "Duc Do",
+      "email": ""
+    },
+    {
+      "forename": "Xiang",
+      "surname": "Yue",
+      "name": "Xiang Yue",
+      "email": ""
+    },
+    {
+      "forename": "Tsung-Yi",
+      "surname": "Lin",
+      "name": "Tsung-Yi Lin",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Maire",
+      "name": "Michael Maire",
+      "email": ""
+    },
+    {
+      "forename": "Serge",
+      "surname": "Belongie",
+      "name": "Serge Belongie",
+      "email": ""
+    },
+    {
+      "forename": "James",
+      "surname": "Hays",
+      "name": "James Hays",
+      "email": ""
+    },
+    {
+      "forename": "Pietro",
+      "surname": "Perona",
+      "name": "Pietro Perona",
+      "email": ""
+    },
+    {
+      "forename": "Deva",
+      "surname": "Ramanan",
+      "name": "Deva Ramanan",
+      "email": ""
+    },
+    {
+      "forename": "Piotr",
+      "surname": "Dollár",
+      "name": "Piotr Dollár",
+      "email": ""
+    },
+    {
+      "forename": "Nelson F.",
+      "surname": "Liu",
+      "name": "Nelson F. Liu",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Lin",
+      "name": "Kevin Lin",
+      "email": ""
+    },
+    {
+      "forename": "John",
+      "surname": "Hewitt",
+      "name": "John Hewitt",
+      "email": ""
+    },
+    {
+      "forename": "Ashwin",
+      "surname": "Paran- Jape",
+      "name": "Ashwin Paran- Jape",
+      "email": ""
+    },
+    {
+      "forename": "Michele",
+      "surname": "Bevilacqua",
+      "name": "Michele Bevilacqua",
+      "email": ""
+    },
+    {
+      "forename": "Percy 2023 ",
+      "surname": "Liang",
+      "name": "Percy 2023  Liang",
+      "email": ""
+    },
+    {
+      "forename": "Shayne",
+      "surname": "Longpre",
+      "name": "Shayne Longpre",
+      "email": ""
+    },
+    {
+      "forename": "Kartik",
+      "surname": "Perisetla",
+      "name": "Kartik Perisetla",
+      "email": ""
+    },
+    {
+      "forename": "Nikhil",
+      "surname": "Ramesh",
+      "name": "Nikhil Ramesh",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Dubois",
+      "name": "Chris Dubois",
+      "email": ""
+    },
+    {
+      "forename": "Sameer",
+      "surname": "Singh",
+      "name": "Sameer Singh",
+      "email": ""
+    },
+    {
+      "forename": "Man",
+      "surname": "Luo",
+      "name": "Man Luo",
+      "email": ""
+    },
+    {
+      "forename": "Xin",
+      "surname": "Xu",
+      "name": "Xin Xu",
+      "email": ""
+    },
+    {
+      "forename": "Mehran",
+      "surname": "Kazemi",
+      "name": "Mehran Kazemi",
+      "email": ""
+    },
+    {
+      "forename": "Chitta",
+      "surname": "Baral",
+      "name": "Chitta Baral",
+      "email": ""
+    },
+    {
+      "forename": "Vaiva",
+      "surname": "Imbrasaite",
+      "name": "Vaiva Imbrasaite",
+      "email": ""
+    },
+    {
+      "forename": "Vincent",
+      "surname": "Zhao",
+      "name": "Vincent Zhao",
+      "email": ""
+    },
+    {
+      "forename": "Macedo",
+      "surname": "Maia",
+      "name": "Macedo Maia",
+      "email": ""
+    },
+    {
+      "forename": "Siegfried",
+      "surname": "Handschuh",
+      "name": "Siegfried Handschuh",
+      "email": ""
+    },
+    {
+      "forename": "André",
+      "surname": "Freitas",
+      "name": "André Freitas",
+      "email": ""
+    },
+    {
+      "forename": "Brian",
+      "surname": "Davis",
+      "name": "Brian Davis",
+      "email": ""
+    },
+    {
+      "forename": "Ross",
+      "surname": "Mcdermott",
+      "name": "Ross Mcdermott",
+      "email": ""
+    },
+    {
+      "forename": "Manel",
+      "surname": "Zarrouk",
+      "name": "Manel Zarrouk",
+      "email": ""
+    },
+    {
+      "forename": "Alexandra 2018 ",
+      "surname": "Balahur",
+      "name": "Alexandra 2018  Balahur",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Long-context language models (LCLMs) have the potential to revolutionize our approach to tasks traditionally reliant on external tools like retrieval systems or databases. Leveraging LCLMs' ability to natively ingest and process entire corpora of information offers numerous advantages. It enhances user-friendliness by eliminating the need for specialized knowledge of tools, provides robust end-to-end modeling that minimizes cascading errors in complex pipelines, and allows for the application of sophisticated prompting techniques across the entire system. To assess this paradigm shift, we introduce LOFT, a benchmark of real-world tasks requiring context up to millions of tokens designed to evaluate LCLMs' performance on in-context retrieval and reasoning. We find LCLMs possess the surprising ability to rival state-of-the-art retrieval and RAG systems, despite never having been explicitly trained for these tasks. However, LCLMs still face challenges in areas like compositional reasoning that are required in SQLlike tasks. Notably, prompting strategies significantly influence performance, emphasizing the need for continued research. Overall, LOFT provides a rigorous testing ground for LCLMs, showcasing their capabilities to tackle existing paradigms. 1"
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Long-context language models (LCLMs) (Beltagy et al., 2020; Guo et al., 2022; OpenAI, 2023; Anthropic, 2024; Team, 2024) hold the promise of reshaping artificial intelligence by enabling entirely new tasks and applications while eliminating the reliance on tools and complex pipelines previously necessary due to context length limitations (Guu et al., 2020; Lewis et al., 2020). By consolidating complex pipelines into a unified model, LCLMs * Lead contributors. 1 https://github.com/google-deepmind/loft. ameliorate issues like cascading errors (Barnett et al., 2024) and cumbersome optimization (Lee et al., 2022; Xiong et al., 2021), offering a streamlined end-to-end approach to model development. Moreover, techniques such as adding instructions (Kojima et al., 2022; Wei et al., 2022a; Chung et al., 2024), incorporating few-shot examples (Brown et al., 2020), and leveraging demonstrations via chain-of-thought prompting (Nye et al., 2022; Wei et al., 2022b) can be seamlessly integrated to optimize LCLMs for the task at hand.",
+          "quote": [
+            {
+              "text": "Guo et al., 2022;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 60
+            },
+            {
+              "text": "Anthropic, 2024;",
+              "target": "",
+              "type": "bibr",
+              "context": "AI, 2023; ",
+              "index": 92
+            },
+            {
+              "text": "Team, 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "ic, 2024; ",
+              "index": 109
+            },
+            {
+              "text": "Lewis et al., 2020)",
+              "target": "#b8",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 359
+            },
+            {
+              "text": "(Barnett et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "ng errors ",
+              "index": 547
+            },
+            {
+              "text": "Xiong et al., 2021)",
+              "target": "#b25",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 617
+            },
+            {
+              "text": "Wei et al., 2022a;",
+              "target": "#b23",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 774
+            },
+            {
+              "text": "Chung et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2022a; ",
+              "index": 793
+            },
+            {
+              "text": "(Brown et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": " examples ",
+              "index": 846
+            },
+            {
+              "text": "Wei et al., 2022b)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 948
+            },
+            {
+              "text": "[(Beltagyetal.,2020]",
+              "type": "bibr",
+              "index": 37,
+              "context": "s (LCLMs) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 37,
+              "context": "s (LCLMs) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[OpenAI,2023]",
+              "type": "bibr",
+              "index": 78,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 78,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Guuetal.,2020]",
+              "type": "bibr",
+              "index": 340,
+              "context": "mitations ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 340,
+              "context": "mitations ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Leeetal.,2022]",
+              "type": "bibr",
+              "index": 598,
+              "context": "imization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 598,
+              "context": "imization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Kojimaetal.,2022]",
+              "type": "bibr",
+              "index": 752,
+              "context": "tructions ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 752,
+              "context": "tructions ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Nyeetal.,2022]",
+              "type": "bibr",
+              "index": 929,
+              "context": "prompting ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 929,
+              "context": "prompting ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "However, understanding the full potential of LCLMs requires rigorous evaluation on truly longcontext tasks that approximate real-world applications. Existing benchmarks fall short, relying on synthetic tasks like \"needle-in-a-haystack\" (Kamradt, 2023), or otherwise use fixed-length datasets that fail to keep pace with the evolving definition of \"long-context\" (Bai et al., 2023). Critically, existing evaluations do not adequately test LCLMs on any paradigm-shifting tasks.",
+          "quote": [
+            {
+              "text": "(Kamradt, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "haystack\" ",
+              "index": 236
+            },
+            {
+              "text": "(Bai et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "-context\" ",
+              "index": 362
+            }
+          ]
+        },
+        {
+          "text": "To address this, we introduce the Long-Context Frontiers (LOFT) benchmark, a suite of six tasks consisting of 35 datasets which span text, visual, and audio modalities. LOFT tests LCLMs on more realistic user queries and knowledge sources than previous benchmarks, while allowing automatic scaling to longer context lengths. While the current version extends to one million tokens, it can easily be extended further to billions of tokens, ensuring realistic evaluation as LCLMs continue to scale. LOFT focuses on the following areas where LCLMs have the potential for disruption:",
+          "quote": []
+        },
+        {
+          "text": "• Retrieval: LCLMs can directly ingest and retrieve information from a corpus, eliminating the need for separate dual-encoder models (Karpukhin et al., 2020; Lee et al., 2024; Radford et al., 2021). This addresses long-standing challenges in retrieval systems such as multi-hop reasoning, instruction following, and few-shot Figure : An overview of the LOFT benchmark, made of six tasks which measure LCLMs' ability to do in-context retrieval, reasoning, and many-shot learning on corpora up to millions of tokens. We compare the performance of LCLMs against specialized models (e.g., CLIP for visual retrieval), which often rely on complex task-specific fine-tuning or pipelining. Unlike specialized models, we show how LCLMs can simplify various tasks through Corpus-in-Context Prompting ( §3).",
+          "quote": [
+            {
+              "text": "Lee et al., 2024;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 158
+            },
+            {
+              "text": "Radford et al., 2021)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "l., 2024; ",
+              "index": 176
+            },
+            {
+              "text": "[(Karpukhinetal.,2020]",
+              "type": "bibr",
+              "index": 133,
+              "context": "er models ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 133,
+              "context": "er models ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "task adaptation. We assess retrieval performance across text, visual, and audio modalities.",
+          "quote": []
+        },
+        {
+          "text": "• Retrieval-Augmented Generation (RAG): LCLMs simplify RAG pipelines by directly reasoning over a corpus, overcoming challenges like query decomposition (Perez et al., 2020) and cascading errors from retrievers (Sciavolino et al., 2021; Longpre et al., 2021).",
+          "quote": [
+            {
+              "text": "(Perez et al., 2020)",
+              "target": "#b8",
+              "type": "bibr",
+              "context": "mposition ",
+              "index": 153
+            },
+            {
+              "text": "Longpre et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 237
+            },
+            {
+              "text": "[(Sciavolinoetal.,2021]",
+              "type": "bibr",
+              "index": 211,
+              "context": "etrievers ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 211,
+              "context": "etrievers ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "• SQL: We explore LCLMs' capacity to process entire databases as text. By asking the model to directly generate the answer based on a database and a natural language query, we bypass the need for conversion to formal query languages like SQL (Zhong et al., 2017). While this is not an immediate practical solution, it potentially enables more expressive querying and handling of noisy or mixed-structured data.",
+          "quote": [
+            {
+              "text": "(Zhong et al., 2017)",
+              "target": "",
+              "type": "bibr",
+              "context": " like SQL ",
+              "index": 242
+            }
+          ]
+        },
+        {
+          "text": "• Many-Shot ICL: In the traditional in-context learning setup, LCLMs can scale the number of examples from dozens to thousands (Yu et al., 2020a; bench authors, 2023), removing the need to find the optimal set of few-shot examples to use (Luo et al., 2023).",
+          "quote": [
+            {
+              "text": "bench authors, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2020a; ",
+              "index": 146
+            },
+            {
+              "text": "(Luo et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "es to use ",
+              "index": 238
+            },
+            {
+              "text": "[(Yuetal.,2020a]",
+              "type": "bibr",
+              "index": 127,
+              "context": "thousands ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 127,
+              "context": "thousands ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "The LOFT benchmark opens up a novel line of research on long-context prompting, which we introduce as Corpus-in-Context (CiC) Prompting ( §3). Using this approach, we evaluate Gemini 1.5 Pro (Team, 2024), GPT-4o (OpenAI, 2023), and Claude 3 Opus (Anthropic, 2024) on LOFT. Figure  summarizes the performance of these LCLMs and specialized models that were carefully hand-optimized for each task, showcasing how LCLMs can tackle LOFT tasks without specialized pipelines.",
+          "quote": [
+            {
+              "text": "(Team, 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "i 1.5 Pro ",
+              "index": 191
+            },
+            {
+              "text": "GPT-4o (OpenAI, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "m, 2024), ",
+              "index": 205
+            }
+          ]
+        },
+        {
+          "text": "Our evaluation on LOFT reveals several key insights when comparing state-of-the-art LCLMs with specialized, task-specific models. At the 128k token level, the largest size comparable across all models, LCLMs rival the performance of Gecko (Lee et al., 2024), a leading text retrieval system. Notably, Gemini (Team, 2024) also surpasses strong multi-modal retrieval models such as CLIP (Radford et al., 2021). However, LCLMs lag significantly on complex multi-hop compositional reasoning tasks, indicating substantial room for improvement. Furthermore, rigorous ablations reveal substantial variations in performance depending on the prompting strategy, such as the inclusion of chain-of-thought reasoning, underscoring the need for further research to enhance LCLMs robustness and instructability. Taken together, our results on LOFT demonstrate that LCLMs can match the performance of many specialized models, while also revealing ample headroom for improvement in robust long-context reasoning as context windows continue to scale. ",
+          "quote": [
+            {
+              "text": "(Lee et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": " of Gecko ",
+              "index": 239
+            },
+            {
+              "text": "(Radford et al., 2021)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "h as CLIP ",
+              "index": 385
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "LOFT: 1 Million+ Token Benchmark"
+      },
+      "p": [
+        {
+          "text": "LOFT consists of 35 datasets across three modalities, covering various tasks including retrieval, retrieval-augmented generation (RAG), reasoning over structured databases (SQL), and other tasks measuring in-context learning. The full list of tasks can be found in Table . Unlike existing synthetic datasets, LOFT makes use of carefully chosen academic datasets that are derived from real user queries (see Appendix A on how the datasets are selected). To test how models perform with different context lengths, LOFT supports 32k, 128k, and 1M token contexts and can easily scale to even larger contexts (e.g., 1 billion tokens) in the future.",
+          "quote": []
+        },
+        {
+          "text": "Retrieval & RAG In retrieval and RAG tasks, the LCLM takes an entire corpus as the LCLM's context, and outputs the relevant document IDs for retrieval or the answer to a query for RAG. We include diverse text retrieval and RAG datasets, covering heterogeneous retrieval tasks from BEIR (Thakur et al., 2021), multi-turn conversational QA (Adlakha et al., 2022), multi-hop QA (Yang et al., 2018; Trivedi et al., 2022), as well as multi-target QA that requires set operations such as unions or differences (Amouyal et al., 2022; Malaviya et al., 2023). For retrieval, we also include multimodal datasets, covering image, video, and audio (Young et al., 2014; Xu et al., 2016; Conneau et al., 2022).",
+          "quote": [
+            {
+              "text": "(Thakur et al., 2021)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "from BEIR ",
+              "index": 286
+            },
+            {
+              "text": "(Adlakha et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "tional QA ",
+              "index": 338
+            },
+            {
+              "text": "Trivedi et al., 2022)",
+              "target": "#b19",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 395
+            },
+            {
+              "text": "Malaviya et al., 2023)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 527
+            },
+            {
+              "text": "Xu et al., 2016;",
+              "target": "#b26",
+              "type": "bibr",
+              "context": "l., 2014; ",
+              "index": 657
+            },
+            {
+              "text": "Conneau et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2016; ",
+              "index": 674
+            },
+            {
+              "text": "[(Yangetal.,2018]",
+              "type": "bibr",
+              "index": 375,
+              "context": "ti-hop QA ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 375,
+              "context": "ti-hop QA ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Amouyaletal.,2022]",
+              "type": "bibr",
+              "index": 504,
+              "context": "fferences ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 504,
+              "context": "fferences ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Youngetal.,2014]",
+              "type": "bibr",
+              "index": 636,
+              "context": "and audio ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 636,
+              "context": "and audio ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "All queries in each retrieval and RAG dataset share a single corpus, mimicking real retrieval applications. To create this shared corpus, we first include all gold passages from few-shot, development and the test queries, and then sample passages uniformly until reaching the desired context size. This construction ensures smaller corpora (e.g., 128k) are subsets of larger ones (e.g., 1M). Gold and random passages are shuffled to avoid positional biases. Note that the negatives for this sampling method are all random, so it might be easier than a traditional re-ranking task. However, at the longest context lengths, the model must differentiate between the gold passage and every other passage in-context, which naturally includes hard negatives. We report how well specialized retriever models perform on the same setup for comparison.",
+          "quote": []
+        },
+        {
+          "text": "SQL We evaluate SQL-like reasoning on Spider, a single-turn text-to-SQL dataset (Yu et al., 2018), and SparC, its multi-turn variant (Yu et al., 2019). The model input is a natural language query concatenated with its associated database, consisting of one or more tables. Unlike traditional semantic parsing, where the output is a SQL query, in our long-context setting, we require the model to output chain-of-thought reasoning in natural language followed by the prediction, unassisted by SQL. This setting directly stress-tests the models' ability to do complex compositional reasoning.",
+          "quote": [
+            {
+              "text": "(Yu et al., 2018)",
+              "target": "",
+              "type": "bibr",
+              "context": "L dataset ",
+              "index": 80
+            },
+            {
+              "text": "(Yu et al., 2019)",
+              "target": "",
+              "type": "bibr",
+              "context": "n variant ",
+              "index": 133
+            }
+          ]
+        },
+        {
+          "text": "To construct the corpus for each context length, we select databases such that all of its tables are no larger than that context length. We do this by selecting the largest databases that will fit into that context. This means that the databases for the 1M token setting would not fit into the smaller context lengths. Therefore, unlike other tasks that share a corpus, the queries differ across LOFT sizes.",
+          "quote": []
+        },
+        {
+          "text": "Many-shot ICL We adapt datasets from Big-Bench Hard (BBH) (bench authors, 2023; Suzgun et al., 2023) and LongICLBench (LIB) (Yu et al., 2020a; Li et al., 2024) to evaluate many-shot incontext learning (ICL) capabilities. We construct shared many-shot ICL contexts, ensuring training examples in smaller contexts are included in larger ones. Because our many-shot ICL datasets are classification tasks, we guarantee that each class is represented at least once.",
+          "quote": [
+            {
+              "text": "Suzgun et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "rs, 2023; ",
+              "index": 80
+            },
+            {
+              "text": "Li et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2020a; ",
+              "index": 143
+            },
+            {
+              "text": "[(benchauthors,2023]",
+              "type": "bibr",
+              "index": 58,
+              "context": "ard (BBH) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 58,
+              "context": "ard (BBH) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Yuetal.,2020a]",
+              "type": "bibr",
+              "index": 124,
+              "context": "nch (LIB) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 124,
+              "context": "nch (LIB) ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "For each dataset in LOFT, we sample up to 100 test queries, 5 few-shot queries, and 10 development queries. To allow testing the same set of queries over different context lengths, we process each dataset to have the same evaluation queries across 32k, 128k and 1M context lengths 2 (except for SQL as detailed above). Given a maximum context length of N ∈ {32k, 128k, 1M}, we create a corpus up to a size of 0.9N , to account for differences in tokenizers, as well as to reserve room for instructions and formatting, which will be explained in more detail in §3.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "Corpus-in-Context Prompting"
+      },
+      "p": [
+        {
+          "text": "Traditionally, utilizing large corpora of passages, data tables, or training examples requires specialized recipes or systems. LCLMs now enable direct ingestion and processing of entire corpora within their context window. This unlocks a novel prompting-based approach for solving new and existing tasks, which we call Corpus-in-Context prompting (CiC, pronounced \"seek\").",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "Prompt Design"
+      },
+      "p": [
+        {
+          "text": "CiC prompting effectively combines established prompting strategies, tailoring them to leverage the unique capabilities of LCLMs for learning, retrieving and reasoning over in-context corpora. Figure (Kojima et al., 2022; Wei et al., 2022a; Chung et al., 2024) illustrates our key design choices, which we rigorously evaluate in §5. Appendix C provides examples of instructions for all datasets in LOFT, along with details on the chain-of-thought reasonings. Instructions We first provide task-specific instructions to guide the LCLM's behaviors (Brown et al., 2020). As an example, for the retrieval task shown in Figure (Nye et al., 2022), we ask the model to read the corpus carefully and find relevant documents to answer the question. Corpus Formatting We then insert the entire corpus into the prompt. Each candidate (e.g., passage, image, audio) in a corpus is assigned a unique identifier (ID) that can be referenced as needed for that task. 3 For instance, in retrieval tasks, the LCLMs must output the correct candidate IDs. The structure of the corpus significantly impacts retrieval performance. Careful formatting, such as putting document IDs both before and after the passage in text retrieval, can mitigate the effects of causal attention in decoder-only LCLMs. Few-Shot Examples Providing a limited number of demonstrations helps the LCLM grasp the desired response format and improves task accuracy . We ground all examples to refer the same corpus, aiming to teach the model to also learn more details about the specific corpus it needs to use. 4 To facilitate automated evalua-tion, answers within each few-shot example are formatted as a list (e.g., \"Final Answer: [54, 0]\" in Figure ), thus guiding the model to generate responses in a similar structure that can be readily parsed and compared against ground truth labels. Finally, each few-shot example is accompanied by Chain-of-Thought reasoning .",
+          "quote": [
+            {
+              "text": "Wei et al., 2022a;",
+              "target": "#b23",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 222
+            },
+            {
+              "text": "Chung et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2022a; ",
+              "index": 241
+            },
+            {
+              "text": "(Brown et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "behaviors ",
+              "index": 546
+            },
+            {
+              "text": "(Nye et al., 2022)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "in Figure ",
+              "index": 622
+            },
+            {
+              "text": "[(Kojimaetal.,2022]",
+              "type": "bibr",
+              "index": 200,
+              "context": "a. Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 200,
+              "context": "a. Figure ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Query Formatting The evaluation query is formatted similarly to the few-shot examples. For multi-turn datasets, we prepend previous turns to the current turn, ensuring that the model's generation is conditioned on its prior responses.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Design Consideration"
+      },
+      "p": [
+        {
+          "text": "Given the variation in instructions, format, and tokenizers across different CiC prompting techniques, the resulting context lengths can differ substantially. To accommodate this diversity, we allocate ample space for prompt customization, as detailed in §2. To ensure a fair comparison among LCLMs, each model uses only the corpus and examples present in that version. Similarly, we only evaluate models on the maximum size that can fit into their context length without truncating the corpus or any of the individual examples.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3",
+        "name": "Discussion on Efficiency"
+      },
+      "p": [
+        {
+          "text": "Encoding a one million token context can be computationally expensive. One key advantage of CiC prompting is its compatibility with prefix-caching in autoregressive language models (Google, 2024) as the query appears at the end of the prompt. This means the corpus only needs to be encoded once, similar to the indexing process in traditional information retrieval (see ablation in §5).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "LOFT Tasks and Primary Results"
+      },
+      "p": [
+        {
+          "text": "We evaluate three state-of-the-art LCLMs on LOFT: Google's Gemini 1.5 Pro (Team, 2024), OpenAI's GPT-4o (OpenAI, 2023), and Anthropic's Claude 3 Opus (Anthropic, 2024). In all LOFT tasks, the LCLMs have no task-specific finetuning. For point of comparison, we also present results from specialized models with fine-tuning and system design that is limited to that specific domain. We select each specialized model that exemplifies recent task-specific advancements. We chose these three LCLMs because their APIs support most of the modalities. Their respective maximum context lengths are 2M, 128k, and 200k tokens at the time of the evaluation. We use their official APIs 5,6,7 for the evaluation. Their prompts were chosen based on their performance on the development queries over the 128k token context.",
+          "quote": [
+            {
+              "text": "GPT-4o (OpenAI, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": " OpenAI's ",
+              "index": 97
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Text Retrieval"
+      },
+      "p": [
+        {
+          "text": "We use Gecko (Lee et al., 2024), a state-of-theart dual encoder as the specialized model for the retrieval task. Gecko is fine-tuned on extensive text retrieval and similarity tasks. To ensure fair comparison, we use exactly the same corpus to test both the LCLMs and Gecko.",
+          "quote": [
+            {
+              "text": "(Lee et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "use Gecko ",
+              "index": 13
+            }
+          ]
+        },
+        {
+          "text": "Results Table  demonstrates that Gemini 1.5 Pro performs comparably to Gecko at 128k context length, and all of the LCLMs perform surprisingly well. This is notable, as LCLMs have not undergone specialized contrastive learning for retrieval. While LCLMs's performance does degrade when scaling the corpus to millions of tokens (Figure ), the parity at 128k still suggests the potential of LCLMs to be used for retrieval tasks.",
+          "quote": []
+        },
+        {
+          "text": "Positional Analysis To better understand the performance of LCLMs on longer context lengths, we investigate how the positioning of the gold document affects retrieval performance, examining the effect of the gold document for the test query and for the few shot examples (Liu et al., 2023).",
+          "quote": [
+            {
+              "text": "(Liu et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": " examples ",
+              "index": 271
+            }
+          ]
+        },
+        {
+          "text": "Figure  reveals that performance drops as the gold documents of the test queries are moved towards the end of the corpus, suggesting reduced attention in later sections of the prompt. Conversely, placing the gold documents of few-shot queries at the end improves recall, indicating their ability to mitigate attention weaknesses in this region. Co-locating gold documents of few-shot and test queries consistently boosts performance as it gives the model information about where to look for the answer. This offers a promising approach to overcome performance degradation in large corpora. Per-dataset analysis is provided in Appendix D.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Visual Retrieval"
+      },
+      "p": [
+        {
+          "text": "We employ CLIP-L/14 (Radford et al., 2021), a widely used text-to-image retrieval model, as our specialized model. For Flickr30k and MS-COCO, CLIP performs text-to-image retrieval. For MSR-VTT, it performs text-to-video retrieval by averaging scores across frames. For OVEN, due to the The following documents are needed to answer the query:",
+          "quote": [
+            {
+              "text": "(Radford et al., 2021)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "CLIP-L/14 ",
+              "index": 20
+            }
+          ]
+        },
+        {
+          "text": "You will be given a list of documents. You need to read carefully and understand all of them. Then you will be given a query that may require you to use 1 or more documents to find the answer. Your goal is to find all documents from the list that can help answer the query.   lack of suitable open-source image-to-text models, we approximate image-to-text retrieval by using CLIP's text-to-image retrieval. Evaluation of Claude 3 Opus on this task was not feasible due to the current limitation of 20 images per API request.",
+          "quote": []
+        },
+        {
+          "text": "Results Gemini 1.5 Pro outperforms GPT-4o across all four visual benchmarks (Table ). Notably, as shown in Figure , Gemini 1.5 Pro maintains a performance advantage over CLIP across all visual benchmarks and context lengths.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3",
+        "name": "Audio Retrieval"
+      },
+      "p": [
+        {
+          "text": "We choose PaLM 2 DE (Gomez et al., 2024) as a specialized model, which is a dual-encoder trained to maximize the similarity between audio and their transcription and has achieved previous state-ofthe-art on the FLEURS datasets. Currently, GPT-4o and Claude 3 Opus do not support audio input.",
+          "quote": []
+        },
+        {
+          "text": "Results Gemini 1.5 Pro demonstrates comparable performance to PaLM 2 DE across all 5 languages (Table ). We notice that Gemini 1.5 Pro notably surpasses PaLM 2 DE in Hindi; this advantage likely stems from differences in pre-training data between Gemini and PaLM. Figure  further confirms Gemini 1.5 Pro's robust performance across various context length, highlighting the current capabilities of LCLMs while also indicating the need for more challenging audio datasets.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.4",
+        "name": "RAG"
+      },
+      "p": [
+        {
+          "text": "We set up a retrieve-and-read RAG pipeline as a specialized model, using Gecko (Lee et al., 2024) to retrieve the top-40 documents which are then put into the context of Gemini 1.5 Pro and used to generate the answer conditioned on the question and the retrieved documents.",
+          "quote": [
+            {
+              "text": "(Lee et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "ing Gecko ",
+              "index": 79
+            }
+          ]
+        },
+        {
+          "text": "Results Table (Wei et al., 2022b) demonstrates that Gemini 1.5 Pro, with the entire corpus in context, outperforms the RAG pipeline on multi-hop datasets (HotpotQA and MusiQue). This is because LCLMs can reason over multiple passages in the context window using Chain-of-Thought , a capability that RAG pipelines typically lack unless they have a separate module for planning and reasoning. However, a specialized retriever like Gecko excels at identifying a comprehensive set of passages covering all answers. This proves particularly beneficial for multi-target datasets, such as QUEST.",
+          "quote": [
+            {
+              "text": "(Wei et al., 2022b)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "lts Table ",
+              "index": 14
+            }
+          ]
+        },
+        {
+          "text": "Figure  reveals that while LCLMs match RAG performance at 128k compared to a pipeline, performance drops at 1M corresponding to the drop found in LCLM text retrieval performance.",
+          "quote": []
+        },
+        {
+          "text": "Closed-Book Ablations To further probe LCLMs capabilities, we conduct closed-book ablations on Gemini 1.5 Pro. In this setting, we remove the corpus from the context to assess LCLM performance based solely on parametric We show performances of three LCLMs as well as specialized models that rely on task-specific fine-tuning or pipelining. For the evaluation metrics: text, visual, and audio retrieval use Recall@1; RAG uses subspan exact match; SQL uses accuracy; and many-shot ICL uses classification accuracy. † : For retrieval with multiple gold targets, MRecall@k (k = 2, 5, 5, 3 in order) is employed as described in Appendix A.",
+          "quote": []
+        },
+        {
+          "text": "knowledge (Lewis et al., 2021; Longpre et al., 2021). Table  presents the results, revealing that the closed-book performance significantly lags behind the long-context and specialized models. This underscores the tested models' effectiveness in leveraging the external corpus to enhance its reasoning capabilities.",
+          "quote": [
+            {
+              "text": "Longpre et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 31
+            },
+            {
+              "text": "[(Lewisetal.,2021]",
+              "type": "bibr",
+              "index": 10,
+              "context": "knowledge ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 10,
+              "context": "knowledge ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.5",
+        "name": "SQL-Like Compositional Reasoning"
+      },
+      "p": [
+        {
+          "text": "The traditional SQL pipeline uses a trained semantic parser to translate the natural language input into a SQL query. Then, a separate SQL interpreter is used to execute the SQL query over the database. We Results Table  show that LCLMs achieve reasonable performance, though they are significantly behind semantic parsers. This shows that LCLMs still have substantial headroom in improving their compositional reasoning over structured data, but they may still have applications in mixed-modal settings or over less well-studied formats than SQL. Reasoning Analysis We categorize queries based on the operators in the gold SQL queries and measure Gemini 1.5 Pro's performance for each operator. Figure  shows that averaging is the most difficult operation while counting is relatively easy. Moreover, we find that reasoning over equality is considerably easier than reasoning over inequality.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.6",
+        "name": "Many-Shot ICL"
+      },
+      "p": [
+        {
+          "text": "Results  Removing task-specific instructions (Generic Instruction) or Chain-of-Thought reasoning (Without CoT) both lead to worse performance. We also observe a performance decrease for Corpus in Each Few-Shot. In this setting, instead of using a shared corpus, each few-shot example has its own small corpus consisting of nine random passages and one gold passage. This performance degradation could be because the few-shot examples help the model attend to the test corpus.",
+          "quote": []
+        },
+        {
+          "text": "Placing the query at the beginning of the prompt instead of at the end (Query at Beginning) led to a significant performance drop overall. This result suggests that prefix-caching works better than conditioning the corpus on each query, which is computationally more expensive. Replacing monotonic numerical IDs with random (Alphanumeric IDs) negatively impacts performance in most datasets. This could possibly be due to way in which numbers are tokenized, with fewer tokens for certain numbers. Only placing the IDs at the front instead of at the front and the back (Without ID Echo) resulted in a 5% performance drop, confirming that  repeating text can compensate for missing context in causal language models (Springer et al., 2024).",
+          "quote": [
+            {
+              "text": "(Springer et al., 2024)",
+              "target": "#b11",
+              "type": "bibr",
+              "context": "ge models ",
+              "index": 714
+            }
+          ]
+        },
+        {
+          "text": "To check the train-test contamination issue, we try keeping only the document title and ID in the corpus, removing the content (Title Only). This significantly degraded performance, indicating the model relies on the provided content.",
+          "quote": []
+        },
+        {
+          "text": "We also study how the number of few-shot examples in the prompt affects quality in Figure . Increasing the number of examples improves the quality on the retrieval task, from 0.76 at zero-shot to 0.81 at 5-shots. Finally, qualitative analysis on the model outputs is provided in Appendix G.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6",
+        "name": "Related Work"
+      },
+      "p": [
+        {
+          "text": "Many popular LCLM benchmarks and methods rely on synthetic tasks (Tay et al., 2021) such as the popular \"Needle-in-a-Haystack\" task (Kamradt, 2023) or its extension to multi-hop QA (Levy et al., 2024). While these evaluations are also scalable to arbitrarily long contexts, they do not fully capture the nuances of real-world retrieval or reasoning (Hsieh et al., 2024). Some recent benchmarks leverage existing NLP datasets for tasks such as extreme summarization and multi-document QA (Bai et al., 2023). However, these lack the dynamic scaling capabilities of synthetic benchmarks, which makes them difficult to adapt to very long contexts.",
+          "quote": [
+            {
+              "text": "(Tay et al., 2021)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": "tic tasks ",
+              "index": 65
+            },
+            {
+              "text": "(Kamradt, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "ack\" task ",
+              "index": 132
+            },
+            {
+              "text": "(Levy et al., 2024)",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "ti-hop QA ",
+              "index": 181
+            },
+            {
+              "text": "(Hsieh et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "reasoning ",
+              "index": 349
+            },
+            {
+              "text": "(Bai et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "cument QA ",
+              "index": 487
+            }
+          ]
+        },
+        {
+          "text": "LongAlpaca (Chen et al., 2024) and LongBench-Chat (Bai et al., 2024) evaluate instructionfollowing under long context settings but contain relatively low task diversity and no examples beyond 100k context length. Similar to LOFT, Ada-LEval (Wang et al., 2024) proposes a lengthadaptable benchmark; however, their tasks may not resemble real-world applications. (De Cao et al., 2020; Tay et al., 2022)) apply LCLMs to long-context QA using the top retrieved documents from Natural Questions, similar to using specialized models for RAG in LOFT. However, their analysis is limited to contexts that are under 10k tokens. We extend this type of evaluation of LCLMs to context lengths of up to 1M tokens in addition to using multiple modalities and additional forms of reasoning. Finally, our work connects to the field of generative retrieval , where models are trained to memorize and generate retrieval targets. Our research offers an alternative approach where the retrieval corpus is directly provided as context, eliminating task specific training.",
+          "quote": [
+            {
+              "text": "(Chen et al., 2024)",
+              "target": "#b22",
+              "type": "bibr",
+              "context": "ongAlpaca ",
+              "index": 11
+            },
+            {
+              "text": "(Wang et al., 2024)",
+              "target": "#b22",
+              "type": "bibr",
+              "context": "Ada-LEval ",
+              "index": 240
+            },
+            {
+              "text": "Tay et al., 2022)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 383
+            },
+            {
+              "text": "[(DeCaoetal.,2020]",
+              "type": "bibr",
+              "index": 361,
+              "context": "ications. ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 361,
+              "context": "ications. ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Liu et al. ("
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": "7",
+        "name": "Conclusion"
+      },
+      "p": [
+        {
+          "text": "As language models improve and scale, their ability to retrieve and reason over increasingly long context will unlock unprecedented use-cases. To measure this progress, we introduce LOFT, the Long Context Frontiers benchmark. LOFT is a suite of tasks that rigorously assesses LCLMs on tasks ripe for a paradigm shift: retrieval, retrieval-augmented generation, reasoning over structured data, and incontext learning. LOFT provides dynamic scaling of context lengths, ensuring that evaluations remain relevant as LCLMs continue to evolve. Initial findings demonstrate that despite having never been trained to do retrieval, LCLMs have retrieval capabilities rivaling task-specific hand-crafted SOTA retrieval systems. Nevertheless, there remains considerable room for advancement in reasoning, particularly as models gain access to even longer context windows. We believe that LOFT provides a fertile testing ground for measuring progress in long-context modeling.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations"
+      },
+      "p": [
+        {
+          "text": "Our experiments were constrained by the computational resources and financial costs associated with utilizing LCLMs. The entire LOFT 128k test sets contain around 35 datasets × 100 prompts × 128k tokens = 448M input tokens, which cost $1, 568 for Gemini 1.5 Pro, $2, 240 for GPT-4o, and $6, 720 for Claude 3 Opus at the time of writing. To reduce costs, we also release dev sets, which are 10x smaller and can be evaluated with around $200 using Gemini 1.5 Pro or GPT-4o. We also expect LLM API prices to decrease over time. Another limitation of this work is that we focused on evaluating the quality of LCLMs, and leave efficiency considerations for future work. We could not measure the efficiency improvements from prefix caching (Google, 2024) due to API constraints at the time of writing. Without caching, the Gemini 1.5 Pro API has a median latency of roughly four seconds for 32k input tokens, twelve seconds for 128k input tokens, and 100 seconds for 1 million input tokens. This speed is likely slower than specialized retrievers or SQL databases; the promising quality results on LOFT encourage further investigation into optimizing LCLMs efficiency. Additionally, our retrieval and RAG tasks was limited to 1 million tokens, which still leaves a large gap from real-world applications that may involve several million or even billions of documents. ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "References"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A LOFT Dataset Creation"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.1 Dataset Selection"
+      },
+      "p": [
+        {
+          "text": "We initially performed a manual analysis on most of the datasets based on 20 sampled evaluation instances. Datasets that have poor annotation quality were not considered in LOFT. For instance, we only use a subset of datasets from BEIR (Thakur et al., 2021) due to their annotation quality.",
+          "quote": [
+            {
+              "text": "(Thakur et al., 2021)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "from BEIR ",
+              "index": 236
+            }
+          ]
+        },
+        {
+          "text": "Text Retrieval & RAG We test single-document retrieval on a representative subset of the BEIR benchmark (Thakur et al., 2021), prioritizing datasets with high-quality ground truth labels (Wachsmuth et al., 2018; Thorne et al., 2018; Maia et al., 2018; Bajaj et al., 2016; Kwiatkowski et al., 2019; Wadden et al., 2020). We also include TopiOCQA (Adlakha et al., 2022), which is a multi-turn conversational retrieval dataset. We measure performance on single-document retrieval using Recall@1. Additionally, we test multidocument retrieval on HotPotQA (Yang et al., 2018), MuSiQue (Trivedi et al., 2022), QAM-PARI (Malaviya et al., 2023), where a set of documents must be retrieved to answer the query. The evaluation metric for multi-document retrieval is MRecall@k (Min et al., 2021), which gives a score of 1.0 if all k gold set items are retrieved in top-k and 0.0 otherwise. When creating the LOFT version of the multi-document retrieval datasets, we limit the number of relevant documents per query to k = 2, 5, 5, and 3 for HotPotQA, MuSiQue, QAMPARI, and QUEST, respectively, and the corresponding k's are used for MRecall@k (e.g. Hot-PotQA uses MRecall@2). Our RAG task contains subsets of retrieval datasets, which have phrase-level answer annotations: Natural Questions, TopiOCQA, HotPotQA, MuSiQue, QAMPARI, and QUEST. We use subspan exact match (EM) (Adlakha et al., 2024) for evaluating performance of all the datasets. In case of multi-answer datasets (i.e. QAMPARI, QUEST), we first match predicted answers to gold standard answers based on whether they overlap (Dua et al., 2019) via linear sum assignment algorithm. We then give full credit if every gold answer has a perfect match with aligned predicted answers.",
+          "quote": [
+            {
+              "text": "(Thakur et al., 2021)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "benchmark ",
+              "index": 104
+            },
+            {
+              "text": "Thorne et al., 2018;",
+              "target": "#b18",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 212
+            },
+            {
+              "text": "Bajaj et al., 2016;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 252
+            },
+            {
+              "text": "Wadden et al., 2020)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 298
+            },
+            {
+              "text": "(Adlakha et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": " TopiOCQA ",
+              "index": 345
+            },
+            {
+              "text": "(Yang et al., 2018)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": " HotPotQA ",
+              "index": 551
+            },
+            {
+              "text": "(Trivedi et al., 2022)",
+              "target": "#b19",
+              "type": "bibr",
+              "context": ", MuSiQue ",
+              "index": 580
+            },
+            {
+              "text": "(Malaviya et al., 2023)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": " QAM-PARI ",
+              "index": 613
+            },
+            {
+              "text": "(Min et al., 2021)",
+              "target": "#b5",
+              "type": "bibr",
+              "context": "MRecall@k ",
+              "index": 766
+            },
+            {
+              "text": "(Adlakha et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "atch (EM) ",
+              "index": 1362
+            },
+            {
+              "text": "(Dua et al., 2019)",
+              "target": "",
+              "type": "bibr",
+              "context": "y overlap ",
+              "index": 1577
+            },
+            {
+              "text": "[(Wachsmuthetal.,2018]",
+              "type": "bibr",
+              "index": 187,
+              "context": "th labels ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 187,
+              "context": "th labels ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Maiaetal.,2018]",
+              "type": "bibr",
+              "index": 233,
+              "context": "l., 2018; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 233,
+              "context": "l., 2018; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Kwiatkowskietal.,2019]",
+              "type": "bibr",
+              "index": 272,
+              "context": "l., 2016; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 272,
+              "context": "l., 2016; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Visual Retrieval We employ four diverse visual benchmarks: Flickr30k (Young et al., 2014) and MSCOCO (Lin et al., 2014) for text-to-image retrieval; MSR-VTT (Xu et al., 2016) for text-tovideo retrieval (sampling 3 frames per video); and OVEN (Hu et al., 2023) using the entity split for image-text retrieval where both queries and retrieval targets consist of image-text pairs. All images are resized to 512x512 and performance is assessed using Recall@1 for all datasets.",
+          "quote": [
+            {
+              "text": "(Young et al., 2014)",
+              "target": "#b28",
+              "type": "bibr",
+              "context": "Flickr30k ",
+              "index": 69
+            },
+            {
+              "text": "MSCOCO (Lin et al., 2014)",
+              "target": "",
+              "type": "bibr",
+              "context": "2014) and ",
+              "index": 94
+            },
+            {
+              "text": "(Xu et al., 2016)",
+              "target": "#b26",
+              "type": "bibr",
+              "context": "; MSR-VTT ",
+              "index": 157
+            },
+            {
+              "text": "OVEN (Hu et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "deo); and ",
+              "index": 237
+            }
+          ]
+        },
+        {
+          "text": "Audio Retrieval We utilize a subset of the multilingual FLEURS dataset (Conneau et al., 2022), focusing on the five most spoken languages 8 : English (en), Hindi (hi), Chinese (zh), Spanish (es), and French (fr). Recall@1 is employed as the evaluation metric, given the single gold target.",
+          "quote": [
+            {
+              "text": "(Conneau et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "S dataset ",
+              "index": 71
+            }
+          ]
+        },
+        {
+          "text": "SQL We evaluate SQL-like reasoning on Spider, a single-turn text-to-SQL dataset (Yu et al., 2018), and SparC, its multi-turn variant (Yu et al., 2019). The input contains the database tables serialized as CSV and the natural language question. The model is allowed to perform reasoning in natural language before giving the final answer, which must be formatted in a Markdown code block. The extracted answers are evaluated against the execution results of the gold SQL queries. For SparC, the multi-turn questions are provided one-by-one in a conversational format, and credit is awarded only when the answers of all steps are correct.",
+          "quote": [
+            {
+              "text": "(Yu et al., 2018)",
+              "target": "",
+              "type": "bibr",
+              "context": "L dataset ",
+              "index": 80
+            },
+            {
+              "text": "(Yu et al., 2019)",
+              "target": "",
+              "type": "bibr",
+              "context": "n variant ",
+              "index": 133
+            }
+          ]
+        },
+        {
+          "text": "Many-shot ICL We investigate LCLMs' manyshot ICL capabilities by repurposing datasets from Big Bench Hard (BBH) (bench authors, 2023; Suzgun et al., 2023) and LongICLBench (LIB) (Yu et al., 2020b; Li et al., 2024) to fit a many-shot ICL setting, focusing on multi-class classification tasks. The first set of datasets is drawn from Big-Bench Hard and includes: date understanding (BBHdate), salient error translation detection (BBH-salient), tracking shuffled objects seven objects (BBH-tracking7), and web of lies (BBH-web), each with up to 150 examples for prompting and up to 7 classes. Unlike other LOFT tasks, the full corpus fits within 32k tokens which leads us to also create variants from 2k to 32k context lengths. We use accuracy as our metric for Big Bench Hard. We also evaluate with Dialo-gRE (Yu et al., 2020b), a dialogue-based relation classification dataset with 36 relation labels. We follow the LongICLBench format but use accuracy as our metric.",
+          "quote": [
+            {
+              "text": "Suzgun et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "rs, 2023; ",
+              "index": 134
+            },
+            {
+              "text": "Li et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2020b; ",
+              "index": 197
+            },
+            {
+              "text": "(Yu et al., 2020b)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "Dialo-gRE ",
+              "index": 807
+            },
+            {
+              "text": "[(benchauthors,2023]",
+              "type": "bibr",
+              "index": 112,
+              "context": "ard (BBH) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 112,
+              "context": "ard (BBH) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Yuetal.,2020b]",
+              "type": "bibr",
+              "index": 178,
+              "context": "nch (LIB) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 178,
+              "context": "nch (LIB) ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B Datasets Processing Details"
+      },
+      "p": [
+        {
+          "text": "Content Filtering The language model APIs often block inputs with potentially harmful contents. When creating LOFT, we tried to remove such contents from textual and visual inputs. Our filtering was done using a classifier as well as a keywordbased filtering. Despite our best effort, some API calls still refused to provide answers, which we treated as incorrect in our evaluation.",
+          "quote": []
+        },
+        {
+          "text": "Tokenization To measure the size of a corpus, we count the number of tokens returned by the SentencePiece tokenizer (Kudo and Richardson, 2018).",
+          "quote": [
+            {
+              "text": "(Kudo and Richardson, 2018)",
+              "target": "",
+              "type": "bibr",
+              "context": "tokenizer ",
+              "index": 116
+            }
+          ]
+        },
+        {
+          "text": "Links to Dataset Sources LOFT repurposes existing datasets for evaluating LCLMs. Here are the links to the original datasets used in LOFT.",
+          "quote": []
+        },
+        {
+          "text": "• Text Retrieval -BEIR (Thakur et al., 2021 ) (Ar-guAna (Wachsmuth et al., 2018), FEVER (Thorne et al., 2018 ), FIQA (Maia et al., 2018), MS MARCO (Bajaj et al., 2016), NQ (Kwiatkowski et al., 2019), Quora, SciFact (Wadden et al., 2020), Touché-2020, HotPotQA (Bondarenko et al., 2020)): https://github.com/beir-cellar/beir ",
+          "quote": [
+            {
+              "text": "(Thakur et al., 2021",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "val -BEIR ",
+              "index": 23
+            },
+            {
+              "text": ") (Ar-guAna (Wachsmuth et al., 2018)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 44
+            },
+            {
+              "text": "(Thorne et al., 2018",
+              "target": "#b18",
+              "type": "bibr",
+              "context": "8), FEVER ",
+              "index": 88
+            },
+            {
+              "text": "), FIQA (Maia et al., 2018)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2018 ",
+              "index": 109
+            },
+            {
+              "text": "MARCO (Bajaj et al., 2016)",
+              "target": "",
+              "type": "bibr",
+              "context": "2018), MS ",
+              "index": 141
+            },
+            {
+              "text": "NQ (Kwiatkowski et al., 2019)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2016), ",
+              "index": 169
+            },
+            {
+              "text": "(Wadden et al., 2020)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": ", SciFact ",
+              "index": 215
+            },
+            {
+              "text": "Touché-2020",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2020), ",
+              "index": 238
+            },
+            {
+              "text": "(Bondarenko et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": " HotPotQA ",
+              "index": 260
+            },
+            {
+              "text": "(Yang et al., 2018)",
+              "target": "#b27",
+              "type": "bibr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C.2 Chain-of-Thought Reasoning"
+      },
+      "p": [
+        {
+          "text": "We used two types of chain-of-thought reasoning in the few-shot examples in the prompts:",
+          "quote": []
+        },
+        {
+          "text": "• Handwritten reasoning. For multi-hop retrieval and RAG datasets (HotPotQA and MuSiQue), as well as SQL datasets (Spider and SparC), we manually wrote reasoning chains for the few-shot queries.",
+          "quote": []
+        },
+        {
+          "text": "• Relevant content. For the rest of the retrieval and RAG datasets, we simply let the model generate the title (or the passage if the title is not available) of each gold document before generating the final answers. This helps explain why the final answers (IDs or short phrases) are the correct ones.",
+          "quote": []
+        },
+        {
+          "text": "Many-shot ICL task did not use any chain-ofthought reasoning. We also noticed that GPT-4o performed much better without chain-of-thought reasoning, so the GPT-4o results presented in this paper did not utilize the chain-of-thought.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "D Positional Analysis Detailed Results"
+      },
+      "p": [
+        {
+          "text": "In Figure .1, we show the detailed positional analysis on LOFT.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "E Ablation Study"
+      },
+      "p": [
+        {
+          "text": "In ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "G Qualitative Analysis of Long-Context Wins and Losses"
+      },
+      "p": [
+        {
+          "text": "In Tables H.1 to H.3, we show examples of wins and losses of long-context models on LOFT.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Dataset Instruction"
+      },
+      "p": [
+        {
+          "text": "Text Retrieval ArguAna You will be given a list of statements. You need to read carefully and understand all of them. Then you will be given a claim, and your goal is to find all statements from the list that can counterargue the claim.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "FEVER Scifact"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of passages. You need to read carefully and understand all of them. Then you will be given a claim, and your goal is to find all passages from the list that can help verify the claim as true of false.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "FIQA MS MARCO NQ, TopiOCQA"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of documents. You need to read carefully and understand all of them. Then you will be given a query, and your goal is to find all documents from the list that can help answer the query.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Quora"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of questions. You need to read carefully and understand all of them. Then you will be given a new question, and your goal is to find all questions from the list that are near duplicates of the new question.",
+          "quote": []
+        },
+        {
+          "text": "Touché-2020 You will be given a list of arguments. You need to read carefully and understand all of them. Then you will be given a controversial debating topic, and your goal is to find arguments from the list that's relevant to the topic.",
+          "quote": []
+        },
+        {
+          "text": "HotPotQA MuSiQue QAMPARI, QUEST You will be given a list of documents. You need to read carefully and understand all of them. Then you will be given a query that may require you to use 1 or more documents to find the answer. Your goal is to find all documents from the list that can help answer the query.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Visual Retrieval"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Flickr30k MS COCO"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of images. You need to carefully watch all of them. Then you will be given a new sentence, and your goal is to find most relevant image from the list for the given sentence.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "OVEN"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of Wikipedia entries which contains Wikipedia ID, Title and Description image. You need to carefully watch all of them. Then you will be given a input image and a question related to the image, and your goal is to find most relevant Wikipedia entry from the list that can be used to best answer the question.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "MSR-VTT"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of videos which contains the video ID and video content (present as sequence of images, with timestamp in text). You need to carefully watch all of them. Then you will be given a text query, and your goal is to find most relevant video from the list that can best answer the question.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Audio Retrieval"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "FLEURS-*"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of audio which contains Audio ID and audio. You need to carefully listen all of them. Then you will be given a transcript, and your goal is to find most relevant audio from the list that matches the given transcript. Print out the Audio ID of the audio presented in the list.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "SQL"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Spider SparC"
+      },
+      "p": [
+        {
+          "text": "You will be given a list of tables. You need to read all of the rows of each table. Then you will be given a query, and your goal is to get the answer from the tables. Then format the answer into a list of lists. When formatting the answer into a list of lists, make sure you use the exact fields that are provided in the tables.   query: How many records had the team sold before performing \"aint thinkin bout you\"?",
+          "quote": []
+        },
+        {
+          "text": "The following documents are needed to answer the query:",
+          "quote": []
+        },
+        {
+          "text": "You will be given a list of documents. You need to read carefully and understand all of them. Then you will be given a query that may require you to use 1 or more documents to find the answer. Your goal is to find all documents from the list that can help answer the query.  Table .1: Qualitative examples showcasing the successes and failures of the CiC prompting in the text retrieval task. We use Gemini 1.5 Pro for the analysis. For HotPotQA, we observed that some of the questions are actually answerable from a single document as illustrated in the last example. We use Gemini 1.5 Pro for the analysis. In each example, we underline correct reasoning chains provided by the model.",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 2: Example of Corpus-in-Context Prompting for retrieval. CiC prompting leverages large language models' capacity to follow instructions, leverage few-shot examples, and benefit from reasoning demonstrations to retrieve and reason over large corpora provided in context.",
+    "Figure3: Positional Analysis. We vary gold document positions of queries within the corpus (0% = beginning, 100% = end).",
+    "adapt DAIL-SQL (Gao et al., 2023), a prompted LLM-based semantic parser, by using Gemini 1.5 Pro with a fixed set of few-shot examples. Dataset Dev (32k) Test (128k) NQ 0.60 (-0.10) 0.37 (-0.47) HotPotQA 0.60 (-0.30) 0.33 (-0.42) MuSiQue 0.20 (-0.60) 0.10 (-0.45)Table 3: Gemini's closed-book performance on RAG. Red indicates the performance difference compared to the CiC prompting.",
+    "Figure 6: Effect of the number of few-shot examples. The performance increases with the number of few-shot examples. 5 CiC Prompt Ablations W evaluate Gemini 1.5 Pro on the 128k context length version of LOFT to examine different aspects of CiC prompting. Results for each ablation are in §5, while prompts are in Appendix F.Removing task-specific instructions (Generic Instruction) or Chain-of-Thought reasoning (Without CoT) both lead to worse performance. We also observe a performance decrease for Corpus in Each Few-Shot. In this setting, instead of using a shared corpus, each few-shot example has its own small corpus consisting of nine random passages and one gold passage. This performance degradation could be because the few-shot examples help the model attend to the test corpus.Placing the query at the beginning of the prompt instead of at the end (Query at Beginning) led to a significant performance drop overall. This result suggests that prefix-caching works better than conditioning the corpus on each query, which is computationally more expensive. Replacing monotonic numerical IDs with random (Alphanumeric IDs) negatively impacts performance in most datasets. This could possibly be due to way in which numbers are tokenized, with fewer tokens for certain numbers. Only placing the IDs at the front instead of at the front and the back (Without ID Echo) resulted in a 5% performance drop, confirming that",
+    "Figure E.1: Detailed metrics of the positional analysis, where we vary the position of gold documents of the test and few-shot queries. Top: we vary the gold documents position of test queries within the corpus. Middle: we vary the the gold documents position of few-shot queries within the corpus. Bottom: we group the gold documents of test and few-shot queries together, and vary their position within the corpus. The average is shown in red.",
+    "Figure G.2: Original CiC prompt for HotPotQA, a retrieval dataset in LOFT. The prompt contains an instruction, a corpus, few-shot examples and a query.",
+    "MuSiQue 128k (multi-hop) Input CiC-prompt(query=\"Where do greyhound buses leave from in the city the performer of Born A Lion formed in?\") Output reasoning: Born A Lion is the debut album by Canadian rock band Danko Jones. reasoning: Danko Jones is a Canadian rock trio from Toronto, Ontario. reasoning: The Toronto Coach Terminal is the central bus station for inter-city services in Toronto, Ontario, Canada. ID: 427 | TITLE: Born a Lion ID: 383 | TITLE: Danko Jones ID: 724 | TITLE: Toronto Coach Terminal Final Answer: ['Toronto Coach Terminal'] () Input CiC-prompt(query=\"When did the rx 350 model of the luxury division of the company that built Daihatsu boon change body style?\") Output reasoning: The Daihatsu Boon is also sold as the Toyota Passo. reasoning: The Passo is sold at \"Toyota Corolla Store\" Japanese dealerships. reasoning: Scion is a discontinued marque of Toyota. reasoning: The Lexus RX is a mid-size luxury crossover SUV sold since 1998 by Lexus, a luxury division of Toyota. reasoning: The first generation Lexus RX was introduced in 1998 and was produced until 2003. reasoning: The second generation Lexus RX was introduced in 2003 and was produced until 2009. reasoning: The third generation Lexus RX was introduced in 2008 and was produced until 2015. reasoning: The fourth generation Lexus RX was introduced in 2015. reasoning: The RX 350 model was introduced in the second generation Lexus RX in 2003. Final Answer: ['2003', '2009', '2015'] () // Incorrect (answer = 'Sales began worldwide in April 2012') Dataset = QUEST 128k (multi-answer) Input CiC-prompt(query=\"History books about Malaysia or the Qing dynasty or about South Korea\") Output reasoning: Chronicle of Malaysia gives an account of Malaysia from January 1957 to 31 August 2007. reasoning: Treason by the Book is a historical account of the Zeng Jing case which took place during the reign of the Yongzheng Emperor of Qing China around 1730. reasoning: Korea: A Walk Through the Land of Miracles is a book by Simon Winchester. He recounts his experience walking across South Korea, from Jeju in the south to the DMZ in the north. Final Answer: ['Chronicle of Malaysia', 'Korea: A Walk Through the Land of Miracles', 'Treason by the Book'] () Input CiC-prompt(query=\"Films about sisters shot in Paris\") Output reasoning: Peppermint Soda is a 1977 French comedy-drama film directed by Diane Kurys. The film follows two teenage sisters over the course of the year 1963. The high school where the film takes place is the Lycée Jules-Ferry in Paris, France. Final Answer: ['Peppermint Soda'] () // Partially correct (missing 'Le Divorce' and 'Two English Girls')Table H.2: Qualitative examples showcasing the successes and failures of the CiC prompting in the RAG task.",
+    "Table 1 :undefined",
+    "Table 2 :Main Results on LOFT 128k context test set.",
+    "Table 2undefined",
+    "Table 4 :Ablation results of Gemini 1.5 Pro on different tasks in LOFT at 128k context length. Starting from our best prompt format (used in the rest of the experiments), individual facets of the corpus, query, and instruction are ablated to surface their relative effect on quality. Since ArguAna and FIQA do not have any title for each passage, we report the average and its difference without these two datasets for the Titles Only ablation.",
+    "Table D .1: Instructions used for each LOFT dataset. We omit instructions for the RAG datasets, which are almost identical to text retrieval instructions. The ICL task does not use additional instructions, but only many-shot examples in their context."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "Gecko: Versatile text embeddings distilled from large language models",
+      "author": [
+        {
+          "forename": "Iftekhar",
+          "surname": "Naim",
+          "name": "Iftekhar Naim",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Gecko: Versatile text embeddings distilled from large language models",
+      "date": "2024"
+    },
+    {
+      "index": "b1",
+      "title": "Same task, more tokens: the impact of input length on the reasoning performance of large language models",
+      "author": [
+        {
+          "forename": "Mosh",
+          "surname": "Levy",
+          "name": "Mosh Levy",
+          "email": ""
+        },
+        {
+          "forename": "Alon",
+          "surname": "Jacoby",
+          "name": "Alon Jacoby",
+          "email": ""
+        },
+        {
+          "forename": "Yoav",
+          "surname": "Goldberg",
+          "name": "Yoav Goldberg",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2402.14848",
+      "venue": "Same task, more tokens: the impact of input length on the reasoning performance of large language models",
+      "date": "2024"
+    },
+    {
+      "index": "b2",
+      "title": "Question and answer test-train overlap in open-domain question answering datasets",
+      "author": [
+        {
+          "forename": "Patrick",
+          "surname": "Lewis",
+          "name": "Patrick Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Pontus",
+          "surname": "Stenetorp",
+          "name": "Pontus Stenetorp",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Riedel",
+          "name": "Sebastian Riedel",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.eacl-main.86",
+      "venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+      "date": "2021"
+    },
+    {
+      "index": "b3",
+      "title": "Companion Proceedings of the The Web Conference",
+      "author": [],
+      "doi": "",
+      "venue": "Companion Proceedings of the The Web Conference",
+      "date": "2018"
+    },
+    {
+      "index": "b4",
+      "title": "QUEST: A retrieval dataset of entity-seeking queries with implicit set operations",
+      "author": [
+        {
+          "forename": "Chaitanya",
+          "surname": "Malaviya",
+          "name": "Chaitanya Malaviya",
+          "email": ""
+        },
+        {
+          "forename": "Peter",
+          "surname": "Shaw",
+          "name": "Peter Shaw",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        },
+        {
+          "forename": "Kenton",
+          "surname": "Lee",
+          "name": "Kenton Lee",
+          "email": ""
+        },
+        {
+          "forename": "Kristina",
+          "surname": "Toutanova",
+          "name": "Kristina Toutanova",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.acl-long.784",
+      "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b5",
+      "title": "Joint passage ranking for diverse multi-answer retrieval",
+      "author": [
+        {
+          "forename": "Sewon",
+          "surname": "Min",
+          "name": "Sewon Min",
+          "email": ""
+        },
+        {
+          "forename": "Kenton",
+          "surname": "Lee",
+          "name": "Kenton Lee",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        },
+        {
+          "forename": "Kristina",
+          "surname": "Toutanova",
+          "name": "Kristina Toutanova",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.emnlp-main.560",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b6",
+      "title": "Show your work: Scratchpads for intermediate computation with language models",
+      "author": [
+        {
+          "forename": "Maxwell",
+          "surname": "Nye",
+          "name": "Maxwell Nye",
+          "email": ""
+        },
+        {
+          "forename": "Anders Johan ",
+          "surname": "Andreassen",
+          "name": "Anders Johan  Andreassen",
+          "email": ""
+        },
+        {
+          "forename": "Guy",
+          "surname": "Gur-Ari",
+          "name": "Guy Gur-Ari",
+          "email": ""
+        },
+        {
+          "forename": "Henryk",
+          "surname": "Michalewski",
+          "name": "Henryk Michalewski",
+          "email": ""
+        },
+        {
+          "forename": "Jacob",
+          "surname": "Austin",
+          "name": "Jacob Austin",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Bieber",
+          "name": "David Bieber",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Dohan",
+          "name": "David Dohan",
+          "email": ""
+        },
+        {
+          "forename": "Aitor",
+          "surname": "Lewkowycz",
+          "name": "Aitor Lewkowycz",
+          "email": ""
+        },
+        {
+          "forename": "Maarten",
+          "surname": "Bosma",
+          "name": "Maarten Bosma",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Luan",
+          "name": "David Luan",
+          "email": ""
+        },
+        {
+          "forename": "Charles",
+          "surname": "Sutton",
+          "name": "Charles Sutton",
+          "email": ""
+        },
+        {
+          "forename": "Augustus",
+          "surname": "Odena",
+          "name": "Augustus Odena",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Deep Learning for Code Workshop",
+      "date": "2022"
+    },
+    {
+      "index": "b8",
+      "title": "Unsupervised question decomposition for question answering",
+      "author": [
+        {
+          "forename": "Ethan",
+          "surname": "Perez",
+          "name": "Ethan Perez",
+          "email": ""
+        },
+        {
+          "forename": "Patrick",
+          "surname": "Lewis",
+          "name": "Patrick Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Wen-Tau",
+          "surname": "Yih",
+          "name": "Wen-Tau Yih",
+          "email": ""
+        },
+        {
+          "forename": "Kyunghyun",
+          "surname": "Cho",
+          "name": "Kyunghyun Cho",
+          "email": ""
+        },
+        {
+          "forename": "Douwe",
+          "surname": "Kiela",
+          "name": "Douwe Kiela",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.713",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b9",
+      "title": "Learning transferable visual models from natural language supervision",
+      "author": [
+        {
+          "forename": "Alec",
+          "surname": "Radford",
+          "name": "Alec Radford",
+          "email": ""
+        },
+        {
+          "forename": "Jong Wook ",
+          "surname": "Kim",
+          "name": "Jong Wook  Kim",
+          "email": ""
+        },
+        {
+          "forename": "Chris",
+          "surname": "Hallacy",
+          "name": "Chris Hallacy",
+          "email": ""
+        },
+        {
+          "forename": "Aditya",
+          "surname": "Ramesh",
+          "name": "Aditya Ramesh",
+          "email": ""
+        },
+        {
+          "forename": "Gabriel",
+          "surname": "Goh",
+          "name": "Gabriel Goh",
+          "email": ""
+        },
+        {
+          "forename": "Sandhini",
+          "surname": "Agarwal",
+          "name": "Sandhini Agarwal",
+          "email": ""
+        },
+        {
+          "forename": "Girish",
+          "surname": "Sastry",
+          "name": "Girish Sastry",
+          "email": ""
+        },
+        {
+          "forename": "Amanda",
+          "surname": "Askell",
+          "name": "Amanda Askell",
+          "email": ""
+        },
+        {
+          "forename": "Pamela",
+          "surname": "Mishkin",
+          "name": "Pamela Mishkin",
+          "email": ""
+        },
+        {
+          "forename": "Jack",
+          "surname": "Clark",
+          "name": "Jack Clark",
+          "email": ""
+        },
+        {
+          "forename": "Gretchen",
+          "surname": "Krueger",
+          "name": "Gretchen Krueger",
+          "email": ""
+        },
+        {
+          "forename": "Ilya",
+          "surname": "Sutskever",
+          "name": "Ilya Sutskever",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 38th International Conference on Machine Learning, ICML 2021",
+      "date": "2021-07"
+    },
+    {
+      "index": "b10",
+      "title": "Simple entity-centric questions challenge dense retrievers",
+      "author": [
+        {
+          "forename": "Christopher",
+          "surname": "Sciavolino",
+          "name": "Christopher Sciavolino",
+          "email": ""
+        },
+        {
+          "forename": "Zexuan",
+          "surname": "Zhong",
+          "name": "Zexuan Zhong",
+          "email": ""
+        },
+        {
+          "forename": "Jinhyuk",
+          "surname": "Lee",
+          "name": "Jinhyuk Lee",
+          "email": ""
+        },
+        {
+          "forename": "Danqi",
+          "surname": "Chen",
+          "name": "Danqi Chen",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.emnlp-main.496",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b11",
+      "title": "Repetition improves language model embeddings",
+      "author": [
+        {
+          "forename": "Jacob Mitchell ",
+          "surname": "Springer",
+          "name": "Jacob Mitchell  Springer",
+          "email": ""
+        },
+        {
+          "forename": "Suhas",
+          "surname": "Kotha",
+          "name": "Suhas Kotha",
+          "email": ""
+        },
+        {
+          "forename": "Daniel",
+          "surname": "Fried",
+          "name": "Daniel Fried",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Aditi",
+          "surname": "Raghunathan",
+          "name": "Aditi Raghunathan",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2402.15449",
+      "venue": "Repetition improves language model embeddings",
+      "date": "2024"
+    },
+    {
+      "index": "b12",
+      "title": "Hyung Won Chung, Aakanksha Chowdhery, Quoc Le",
+      "author": [
+        {
+          "forename": "Mirac",
+          "surname": "Suzgun",
+          "name": "Mirac Suzgun",
+          "email": ""
+        },
+        {
+          "forename": "Nathan",
+          "surname": "Scales",
+          "name": "Nathan Scales",
+          "email": ""
+        },
+        {
+          "forename": "Nathanael",
+          "surname": "Schärli",
+          "name": "Nathanael Schärli",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Gehrmann",
+          "name": "Sebastian Gehrmann",
+          "email": ""
+        },
+        {
+          "forename": "Yi",
+          "surname": "Tay",
+          "name": "Yi Tay",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Hyung Won Chung, Aakanksha Chowdhery, Quoc Le",
+      "date": ""
+    },
+    {
+      "index": "b13",
+      "title": "Challenging BIGbench tasks and whether chain-of-thought can solve them",
+      "author": [
+        {
+          "forename": "Jason",
+          "surname": "Zhou",
+          "name": "Jason Zhou",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.findings-acl.824",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2023",
+      "date": "2023"
+    },
+    {
+      "index": "b14",
+      "title": "Long range arena : A benchmark for efficient transformers",
+      "author": [
+        {
+          "forename": "Yi",
+          "surname": "Tay",
+          "name": "Yi Tay",
+          "email": ""
+        },
+        {
+          "forename": "Mostafa",
+          "surname": "Dehghani",
+          "name": "Mostafa Dehghani",
+          "email": ""
+        },
+        {
+          "forename": "Samira",
+          "surname": "Abnar",
+          "name": "Samira Abnar",
+          "email": ""
+        },
+        {
+          "forename": "Yikang",
+          "surname": "Shen",
+          "name": "Yikang Shen",
+          "email": ""
+        },
+        {
+          "forename": "Dara",
+          "surname": "Bahri",
+          "name": "Dara Bahri",
+          "email": ""
+        },
+        {
+          "forename": "Philip",
+          "surname": "Pham",
+          "name": "Philip Pham",
+          "email": ""
+        },
+        {
+          "forename": "Jinfeng",
+          "surname": "Rao",
+          "name": "Jinfeng Rao",
+          "email": ""
+        },
+        {
+          "forename": "Liu",
+          "surname": "Yang",
+          "name": "Liu Yang",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Ruder",
+          "name": "Sebastian Ruder",
+          "email": ""
+        },
+        {
+          "forename": "Donald",
+          "surname": "Metzler",
+          "name": "Donald Metzler",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "9th International Conference on Learning Representations, ICLR 2021, Virtual Event",
+      "date": "2021-05-03"
+    },
+    {
+      "index": "b15",
+      "title": "Transformer memory as a differentiable search index",
+      "author": [
+        {
+          "forename": "Yi",
+          "surname": "Tay",
+          "name": "Yi Tay",
+          "email": ""
+        },
+        {
+          "forename": "Vinh",
+          "surname": "Tran",
+          "name": "Vinh Tran",
+          "email": ""
+        },
+        {
+          "forename": "Mostafa",
+          "surname": "Dehghani",
+          "name": "Mostafa Dehghani",
+          "email": ""
+        },
+        {
+          "forename": "Jianmo",
+          "surname": "Ni",
+          "name": "Jianmo Ni",
+          "email": ""
+        },
+        {
+          "forename": "Dara",
+          "surname": "Bahri",
+          "name": "Dara Bahri",
+          "email": ""
+        },
+        {
+          "forename": "Harsh",
+          "surname": "Mehta",
+          "name": "Harsh Mehta",
+          "email": ""
+        },
+        {
+          "forename": "Zhen",
+          "surname": "Qin",
+          "name": "Zhen Qin",
+          "email": ""
+        },
+        {
+          "forename": "Kai",
+          "surname": "Hui",
+          "name": "Kai Hui",
+          "email": ""
+        },
+        {
+          "forename": "Zhe",
+          "surname": "Zhao",
+          "name": "Zhe Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Jai",
+          "surname": "Gupta",
+          "name": "Jai Gupta",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems",
+      "date": "2022"
+    },
+    {
+      "index": "b16",
+      "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "author": [],
+      "doi": "abs/2403.05530",
+      "venue": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "date": ""
+    },
+    {
+      "index": "b17",
+      "title": "Beir: A heterogeneous benchmark for zero-shot evaluation of information retrieval models",
+      "author": [
+        {
+          "forename": "Nandan",
+          "surname": "Thakur",
+          "name": "Nandan Thakur",
+          "email": ""
+        },
+        {
+          "forename": "Nils",
+          "surname": "Reimers",
+          "name": "Nils Reimers",
+          "email": ""
+        },
+        {
+          "forename": "Andreas",
+          "surname": "Rücklé",
+          "name": "Andreas Rücklé",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+      "date": "2021"
+    },
+    {
+      "index": "b18",
+      "title": "FEVER: a large-scale dataset for fact extraction and VERification",
+      "author": [
+        {
+          "forename": "James",
+          "surname": "Thorne",
+          "name": "James Thorne",
+          "email": ""
+        },
+        {
+          "forename": "Andreas",
+          "surname": "Vlachos",
+          "name": "Andreas Vlachos",
+          "email": ""
+        },
+        {
+          "forename": "Christos",
+          "surname": "Christodoulopoulos",
+          "name": "Christos Christodoulopoulos",
+          "email": ""
+        },
+        {
+          "forename": "Arpit",
+          "surname": "Mittal",
+          "name": "Arpit Mittal",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/N18-1074",
+      "venue": "Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2018"
+    },
+    {
+      "index": "b19",
+      "title": "MuSiQue: Multihop questions via single-hop question composition",
+      "author": [
+        {
+          "forename": "Harsh",
+          "surname": "Trivedi",
+          "name": "Harsh Trivedi",
+          "email": ""
+        },
+        {
+          "forename": "Niranjan",
+          "surname": "Balasubramanian",
+          "name": "Niranjan Balasubramanian",
+          "email": ""
+        },
+        {
+          "forename": "Tushar",
+          "surname": "Khot",
+          "name": "Tushar Khot",
+          "email": ""
+        },
+        {
+          "forename": "Ashish",
+          "surname": "Sabharwal",
+          "name": "Ashish Sabharwal",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00475",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b20",
+      "title": "Retrieval of the best counterargument without prior topic knowledge",
+      "author": [
+        {
+          "forename": "Henning",
+          "surname": "Wachsmuth",
+          "name": "Henning Wachsmuth",
+          "email": ""
+        },
+        {
+          "forename": "Shahbaz",
+          "surname": "Syed",
+          "name": "Shahbaz Syed",
+          "email": ""
+        },
+        {
+          "forename": "Benno",
+          "surname": "Stein",
+          "name": "Benno Stein",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/P18-1023",
+      "venue": "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2018"
+    },
+    {
+      "index": "b21",
+      "title": "Fact or fiction: Verifying scientific claims",
+      "author": [
+        {
+          "forename": "David",
+          "surname": "Wadden",
+          "name": "David Wadden",
+          "email": ""
+        },
+        {
+          "forename": "Shanchuan",
+          "surname": "Lin",
+          "name": "Shanchuan Lin",
+          "email": ""
+        },
+        {
+          "forename": "Kyle",
+          "surname": "Lo",
+          "name": "Kyle Lo",
+          "email": ""
+        },
+        {
+          "forename": "Lucy Lu ",
+          "surname": "Wang",
+          "name": "Lucy Lu  Wang",
+          "email": ""
+        },
+        {
+          "forename": "Madeleine",
+          "surname": "Van Zuylen",
+          "name": "Madeleine Van Zuylen",
+          "email": ""
+        },
+        {
+          "forename": "Arman",
+          "surname": "Cohan",
+          "name": "Arman Cohan",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.609",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b22",
+      "title": "Ada-leval: Evaluating long-context llms with length-adaptable benchmarks",
+      "author": [
+        {
+          "forename": "Chonghua",
+          "surname": "Wang",
+          "name": "Chonghua Wang",
+          "email": ""
+        },
+        {
+          "forename": "Haodong",
+          "surname": "Duan",
+          "name": "Haodong Duan",
+          "email": ""
+        },
+        {
+          "forename": "Songyang",
+          "surname": "Zhang",
+          "name": "Songyang Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Dahua",
+          "surname": "Lin",
+          "name": "Dahua Lin",
+          "email": ""
+        },
+        {
+          "forename": "Kai",
+          "surname": "Chen",
+          "name": "Kai Chen",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2404.06480",
+      "venue": "Ada-leval: Evaluating long-context llms with length-adaptable benchmarks",
+      "date": "2024"
+    },
+    {
+      "index": "b23",
+      "title": "Finetuned language models are zero-shot learners",
+      "author": [
+        {
+          "forename": "Jason",
+          "surname": "Wei",
+          "name": "Jason Wei",
+          "email": ""
+        },
+        {
+          "forename": "Maarten",
+          "surname": "Bosma",
+          "name": "Maarten Bosma",
+          "email": ""
+        },
+        {
+          "forename": "Y.",
+          "surname": "Vincent",
+          "name": "Y. Vincent",
+          "email": ""
+        },
+        {
+          "forename": "Kelvin",
+          "surname": "Zhao",
+          "name": "Kelvin Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Adams Wei ",
+          "surname": "Guu",
+          "name": "Adams Wei  Guu",
+          "email": ""
+        },
+        {
+          "forename": "Brian",
+          "surname": "Yu",
+          "name": "Brian Yu",
+          "email": ""
+        },
+        {
+          "forename": "Nan",
+          "surname": "Lester",
+          "name": "Nan Lester",
+          "email": ""
+        },
+        {
+          "forename": "Andrew M.",
+          "surname": "Du",
+          "name": "Andrew M. Du",
+          "email": ""
+        },
+        {
+          "forename": "Quoc V.",
+          "surname": "Dai",
+          "name": "Quoc V. Dai",
+          "email": ""
+        }
+      ],
+      "doi": "ICLR 2022",
+      "venue": "The Tenth International Conference on Learning Representations",
+      "date": "2022"
+    },
+    {
+      "index": "b24",
+      "title": "Chain of thought prompting elicits reasoning in large language models",
+      "author": [
+        {
+          "forename": "Jason",
+          "surname": "Wei",
+          "name": "Jason Wei",
+          "email": ""
+        },
+        {
+          "forename": "Xuezhi",
+          "surname": "Wang",
+          "name": "Xuezhi Wang",
+          "email": ""
+        },
+        {
+          "forename": "Dale",
+          "surname": "Schuurmans",
+          "name": "Dale Schuurmans",
+          "email": ""
+        },
+        {
+          "forename": "Maarten",
+          "surname": "Bosma",
+          "name": "Maarten Bosma",
+          "email": ""
+        },
+        {
+          "forename": "Ed",
+          "surname": "Huai Hsin Chi",
+          "name": "Ed Huai Hsin Chi",
+          "email": ""
+        },
+        {
+          "forename": "F.",
+          "surname": "Xia",
+          "name": "F. Xia",
+          "email": ""
+        },
+        {
+          "forename": "Quoc",
+          "surname": "Le",
+          "name": "Quoc Le",
+          "email": ""
+        },
+        {
+          "forename": "Denny",
+          "surname": "Zhou",
+          "name": "Denny Zhou",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Chain of thought prompting elicits reasoning in large language models",
+      "date": "2022"
+    },
+    {
+      "index": "b25",
+      "title": "Approximate nearest neighbor negative contrastive learning for dense text retrieval",
+      "author": [
+        {
+          "forename": "Lee",
+          "surname": "Xiong",
+          "name": "Lee Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Chenyan",
+          "surname": "Xiong",
+          "name": "Chenyan Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Ye",
+          "surname": "Li",
+          "name": "Ye Li",
+          "email": ""
+        },
+        {
+          "forename": "Kwok-Fung",
+          "surname": "Tang",
+          "name": "Kwok-Fung Tang",
+          "email": ""
+        },
+        {
+          "forename": "Jialin",
+          "surname": "Liu",
+          "name": "Jialin Liu",
+          "email": ""
+        },
+        {
+          "forename": "Paul N.",
+          "surname": "Bennett",
+          "name": "Paul N. Bennett",
+          "email": ""
+        },
+        {
+          "forename": "Junaid",
+          "surname": "Ahmed",
+          "name": "Junaid Ahmed",
+          "email": ""
+        },
+        {
+          "forename": "Arnold",
+          "surname": "Overwijk",
+          "name": "Arnold Overwijk",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "9th International Conference on Learning Representations, ICLR 2021, Virtual Event",
+      "date": "2021-05-03"
+    },
+    {
+      "index": "b26",
+      "title": "MSR-VTT: A large video description dataset for bridging video and language",
+      "author": [
+        {
+          "forename": "Jun",
+          "surname": "Xu",
+          "name": "Jun Xu",
+          "email": ""
+        },
+        {
+          "forename": "Tao",
+          "surname": "Mei",
+          "name": "Tao Mei",
+          "email": ""
+        },
+        {
+          "forename": "Ting",
+          "surname": "Yao",
+          "name": "Ting Yao",
+          "email": ""
+        },
+        {
+          "forename": "Yong",
+          "surname": "Rui",
+          "name": "Yong Rui",
+          "email": ""
+        }
+      ],
+      "doi": "10.1109/CVPR.2016.571",
+      "venue": "2016 IEEE Conference on Computer Vision and Pattern Recognition",
+      "date": "2016-06-27"
+    },
+    {
+      "index": "b27",
+      "title": "HotpotQA: A dataset for diverse, explainable multi-hop question answering",
+      "author": [
+        {
+          "forename": "Zhilin",
+          "surname": "Yang",
+          "name": "Zhilin Yang",
+          "email": ""
+        },
+        {
+          "forename": "Peng",
+          "surname": "Qi",
+          "name": "Peng Qi",
+          "email": ""
+        },
+        {
+          "forename": "Saizheng",
+          "surname": "Zhang",
+          "name": "Saizheng Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Yoshua",
+          "surname": "Bengio",
+          "name": "Yoshua Bengio",
+          "email": ""
+        },
+        {
+          "forename": "William",
+          "surname": "Cohen",
+          "name": "William Cohen",
+          "email": ""
+        },
+        {
+          "forename": "Ruslan",
+          "surname": "Salakhutdinov",
+          "name": "Ruslan Salakhutdinov",
+          "email": ""
+        },
+        {
+          "forename": "Christopher D.",
+          "surname": "Manning",
+          "name": "Christopher D. Manning",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/D18-1259",
+      "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2018"
+    },
+    {
+      "index": "b28",
+      "title": "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions",
+      "author": [
+        {
+          "forename": "Peter",
+          "surname": "Young",
+          "name": "Peter Young",
+          "email": ""
+        },
+        {
+          "forename": "Alice",
+          "surname": "Lai",
+          "name": "Alice Lai",
+          "email": ""
+        },
+        {
+          "forename": "Micah",
+          "surname": "Hodosh",
+          "name": "Micah Hodosh",
+          "email": ""
+        },
+        {
+          "forename": "Julia",
+          "surname": "Hockenmaier",
+          "name": "Julia Hockenmaier",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00166",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2014"
+    },
+    {
+      "index": "b29",
+      "title": "Dialogue-based relation extraction",
+      "author": [
+        {
+          "forename": "Dian",
+          "surname": "Yu",
+          "name": "Dian Yu",
+          "email": ""
+        },
+        {
+          "forename": "Kai",
+          "surname": "Sun",
+          "name": "Kai Sun",
+          "email": ""
+        },
+        {
+          "forename": "Claire",
+          "surname": "Cardie",
+          "name": "Claire Cardie",
+          "email": ""
+        },
+        {
+          "forename": "Dong",
+          "surname": "Yu",
+          "name": "Dong Yu",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.444",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b30",
+      "title": "Dialogue-based relation extraction",
+      "author": [
+        {
+          "forename": "Dian",
+          "surname": "Yu",
+          "name": "Dian Yu",
+          "email": ""
+        },
+        {
+          "forename": "Kai",
+          "surname": "Sun",
+          "name": "Kai Sun",
+          "email": ""
+        },
+        {
+          "forename": "Claire",
+          "surname": "Cardie",
+          "name": "Claire Cardie",
+          "email": ""
+        },
+        {
+          "forename": "Dong",
+          "surname": "Yu",
+          "name": "Dong Yu",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.444",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    }
+  ]
+}

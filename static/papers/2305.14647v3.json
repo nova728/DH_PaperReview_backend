@@ -1,0 +1,1277 @@
+{
+  "title": "Scientific Opinion Summarization: Paper Meta-review Generation Dataset, Methods, and Evaluation",
+  "publication": {
+    "publisher": {},
+    "date": "2024-06-16"
+  },
+  "author": [
+    {
+      "forename": "Qi",
+      "surname": "Zeng",
+      "name": "Qi Zeng",
+      "email": "qizeng2@illinois.edu"
+    },
+    {
+      "forename": "Mankeerat",
+      "surname": "Sidhu",
+      "name": "Mankeerat Sidhu",
+      "email": "mssidhu2@illinois.edu"
+    },
+    {
+      "forename": "Ansel",
+      "surname": "Blume",
+      "name": "Ansel Blume",
+      "email": "blume5@illinois.edu"
+    },
+    {
+      "forename": "Hou Pong ",
+      "surname": "Chan",
+      "name": "Hou Pong  Chan",
+      "email": "houpong.chan@alibaba-inc.com"
+    },
+    {
+      "forename": "Lu",
+      "surname": "Wang",
+      "name": "Lu Wang",
+      "email": "wangluxy@umich.edu"
+    },
+    {
+      "forename": "Heng",
+      "surname": "Ji",
+      "name": "Heng Ji",
+      "email": "hengji@illinois.edu"
+    }
+  ],
+  "abstract": [
+    [
+      "Opinions in scientific research papers can be divergent, leading to controversies among reviewers. However, most existing datasets for opinion summarization are centered around product reviews and assume that the analyzed opinions are non-controversial, failing to account for the variability seen in other contexts such as academic papers, political debates, or social media discussions. To address this gap, we propose the task of scientific opinion summarization, where research paper reviews are synthesized into meta-reviews. To facilitate this task, we introduce the ORSUM dataset covering 15,062 paper meta-reviews and 57,536 paper reviews from 47 conferences. Furthermore, we propose the Checklist-guided Iterative Introspection (CGI 2 ) approach, which breaks down scientific opinion summarization into several stages, iteratively refining the summary under the guidance of questions from a checklist. Our experiments show that (1) human-written summaries do not always satisfy all necessary criteria such as depth of discussion, and identifying consensus and controversy for the specific domain, and (2) the combination of task decomposition and iterative self-refinement shows strong potential for enhancing the opinions and can be applied to other complex text generation using black-box LLMs. 1"
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Opinion Summarization traditionally targets product reviews, aiming to distill representative opinions on key product aspects such as product quality and price. This assumes a dominant, singular opinion within the texts being summarized [Hu and Liu, 2006; Amplayo et al., 2021b; Angelidis and Lapata, 2018; Suhara et al., 2020]. However, this approach often overlooks the nuanced and multi-faceted nature of discussions in scientific documents, where multiple viewpoints may coexist and no single opinion dominates.",
+          "quote": [
+            {
+              "text": "Amplayo et al., 2021b;",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "iu, 2006; ",
+              "index": 256
+            },
+            {
+              "text": "Suhara et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "ta, 2018; ",
+              "index": 307
+            },
+            {
+              "text": "[HuandLiu,2006]",
+              "type": "bibr",
+              "index": 237,
+              "context": "ummarized ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 237,
+              "context": "ummarized ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[AngelidisandLapata,2018]",
+              "type": "bibr",
+              "index": 279,
+              "context": "., 2021b; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 279,
+              "context": "., 2021b; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "These bars are fantastic and taste great like a Rice Krispy treat. Good for morning, lunch or afternoon snack and a good way to get your protein in-take. They keep you full for a long time especially if you are out and about ... I love these protein bars in the vanilla flavor. They taste like Rice Krispies treats with vanilla frosting ... || Nugo bars are great for breakfast, lunch or a snack ... Eat them with a tall glass of water and they will keep you satisfied for hours. || ... Two of the reviews suggest that the technical aspects of the paper are sound, while one reviewer questions the need for the proposed approach ... While some reviewers raised concerns about ... the majority of reviewers acknowledge the ... In light of these findings, I recommend rejection ... It is unclear why this work is needed. Why not use ... || The paper is well written and the math seems to be sound ... The empirical evaluation of the method is not overwhelming ... || The work appears to be sound ...",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Reviews"
+      },
+      "p": [
+        {
+          "text": "Meta-reviews Domain Product Paper Figure 1: Product meta-reviews and paper meta-reviews have different compositions: A product meta-review presents the most prominent opinion instead of summarizing opinions, while a paper metareview summarizes different opinions and makes recommendations.",
+          "quote": []
+        },
+        {
+          "text": "Furthermore, most opinion summarization datasets in the product domain for abstractive summarization are synthetic, containing redundant cut-and-paste extracts built by combining extracted snippets, or by sampling a review from the collection and pretending that it is a gold-standard metareview [Amplayo et al., 2021b].",
+          "quote": [
+            {
+              "text": "[Amplayo et al., 2021b]",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "etareview ",
+              "index": 296
+            }
+          ]
+        },
+        {
+          "text": "To address this gap, we introduce the new task of Scientific Opinion Summarization, where a set of opinions must be synthesized into a meta-opinion that justifies a decision. Scientific Opinion Summarization aims to provide a succinct synopsis for scientific documents, helping readers to recap salient information and understand the professional discussion. Scientific meta-reviews, in particular, summarize the controversies and consensuses in the reviews, guiding decision making such as the acceptance or rejection of a paper. Taking research paper meta-review generation as a typical scenario, we build the ORSUM dataset by collecting open-sourced paper and meta-reviews from Open-Review 2 , covering 15,062 meta-reviews and 57,536 reviews from 47 conference venues. Compared to synthetic datasets from product review domains, ORSUM is built upon largescale real-world data, enabling applications of supervised abstractive summarization methods and more fine-grained textual analysis. In addition to meta-review generation, OR-SUM's structured content, including ratings on different aspects such as if agreements/disagreements are present alongside strengths/weaknesses and multi-turn discussions, will benefit a wide range of related tasks, such as review generation [Wang et al., 2020], recommendation prediction [Deng et al., 2020; Friedl et al., 2021], review rating prediction [Li et al., 2017; Chan et al., 2020], and argument pair extraction [Cheng et al., 2020].",
+          "quote": [
+            {
+              "text": "[Wang et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "eneration ",
+              "index": 1274
+            },
+            {
+              "text": "Friedl et al., 2021]",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 1341
+            },
+            {
+              "text": "Chan et al., 2020]",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "l., 2017; ",
+              "index": 1406
+            },
+            {
+              "text": "[Cheng et al., 2020]",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "xtraction ",
+              "index": 1455
+            },
+            {
+              "text": "[Dengetal.,2020]",
+              "type": "bibr",
+              "index": 1321,
+              "context": "rediction ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1321,
+              "context": "rediction ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Lietal.,2017]",
+              "type": "bibr",
+              "index": 1388,
+              "context": "rediction ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1388,
+              "context": "rediction ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "The task of Scientific Opinion Summarization presents a distinct set of challenges, including (1) Decision Consistency: Whether the Meta-review aligns with the decision, which guides opinion selection and discussion in the meta-review. Generated scientific meta-reviews should reflect these decisions. (2) Discussion involvement: Unlike product metareviews that rely on majority voting, scientific meta-reviews assess both the pros and cons, as well as opinion agreement and disagreement, to evaluate the paper from the perspective of a more senior reviewer.",
+          "quote": []
+        },
+        {
+          "text": "To tackle these challenges, we propose Checklist-guided Iterative Introspection (CGI 2 ). CGI 2 first breaks the task of scientific opinion summarization into multiple steps, constantly requesting evidence to mitigate both LLMs' inability to follow complicated instructions and their tendency to produce hallucinations. To enhance discussion involvement, CGI 2 iteratively revises the generated meta-review based on a predefined checklist. Finally, we identify key aspects a meta review should satisfy to be of high quality, and propose ways to evaluate these aspects using reference-free LLMbased metrics.",
+          "quote": []
+        },
+        {
+          "text": "Our contributions include the following:",
+          "quote": []
+        },
+        {
+          "text": "• We introduce the task of scientific opinion summarization and construct the ORSUM dataset, which contains 15,062 meta-reviews and 57,536 reviews from 47 conferences on OpenReview. It is currently the largest paper meta-review dataset.",
+          "quote": []
+        },
+        {
+          "text": "• We propose Checklist-guided Iterative Introspection (CGI 2 ), which breaks down the task of scientific opinion summarization into several stages and iteratively refines the summary under the guidance of questions from a checklist.",
+          "quote": []
+        },
+        {
+          "text": "• We construct a comprehensive evaluation framework for meta-review generation and assess the different summarization paradigms on ORSUM.",
+          "quote": []
+        },
+        {
+          "text": "2 Related Work",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.1",
+        "name": "Opinion Summarization"
+      },
+      "p": [
+        {
+          "text": "The task of opinion summarization is typically decomposed into three stages: aspect extraction, which identifies the specific features discussed in reviews; polarity identification, which assesses whether the sentiment towards each aspect is positive, negative, or neutral; and summary generation, which compiles these aspects and sentiments into a cohesive summary of the opinions [Hu and Liu, 2006]. The lack of parallel data in review summaries limits most methodologies into the few-shot abstractive setting [Brazinskas et al., 2020a; Brazinskas et al., 2022], or unsupervised extractive setting [Angelidis and Lapata, 2018; Angelidis et al., 2020; Chowdhury et al., 2022] where the aspects and sentiments from the input reviews are collected, selected, and rearranged into the output meta-reviews. Only a few previous opinion summarization datasets [Wang and Ling, 2016] contain gold-standard summaries and support supervised training of abstractive models [Amplayo and Lapata, 2019]. Pretrained aspectbased sentiment analysis [Suhara et al., 2020], variational autoencoders [Brazinskas et al., 2020b; Chu and Liu, 2019; Iso et al., 2021; Isonuma et al., 2021] and large language models [Bhaskar et al., 2022] enable unsupervised abstractive approaches, where the generated summaries are validated to be more fluent, informative, coherent, and concise compared to traditional extractive summaries.",
+          "quote": [
+            {
+              "text": "[Hu and Liu, 2006]",
+              "target": "#b6",
+              "type": "bibr",
+              "context": " opinions ",
+              "index": 382
+            },
+            {
+              "text": "Brazinskas et al., 2022]",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2020a; ",
+              "index": 539
+            },
+            {
+              "text": "Angelidis et al., 2020;",
+              "target": "",
+              "type": "bibr",
+              "context": "ta, 2018; ",
+              "index": 629
+            },
+            {
+              "text": "Chowdhury et al., 2022]",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 653
+            },
+            {
+              "text": "[Wang and Ling, 2016]",
+              "target": "#b12",
+              "type": "bibr",
+              "context": " datasets ",
+              "index": 854
+            },
+            {
+              "text": "[Amplayo and Lapata, 2019]",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "ve models ",
+              "index": 962
+            },
+            {
+              "text": "[Suhara et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": " analysis ",
+              "index": 1032
+            },
+            {
+              "text": "Chu and Liu, 2019;",
+              "target": "#b3",
+              "type": "bibr",
+              "context": "., 2020b; ",
+              "index": 1107
+            },
+            {
+              "text": "Isonuma et al., 2021]",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 1144
+            },
+            {
+              "text": "[Bhaskar et al., 2022]",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "ge models ",
+              "index": 1192
+            },
+            {
+              "text": "[Brazinskasetal.,2020a]",
+              "type": "bibr",
+              "index": 512,
+              "context": "e setting ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 512,
+              "context": "e setting ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[AngelidisandLapata,2018]",
+              "type": "bibr",
+              "index": 600,
+              "context": "e setting ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 600,
+              "context": "e setting ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Brazinskasetal.,2020b]",
+              "type": "bibr",
+              "index": 1080,
+              "context": "oencoders ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1080,
+              "context": "oencoders ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Isoetal.,2021]",
+              "type": "bibr",
+              "index": 1126,
+              "context": "iu, 2019; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1126,
+              "context": "iu, 2019; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "To support the training and evaluation of supervised methods, recent work constructs synthetic datasets by random sampling [Shen et al., 2023], adding noise to the sampled summary to generate documents [Amplayo and Lapata, 2020], searching for relevant reviews to act as the input document set [Elsahar et al., 2021], or sampling with trained models [Amplayo et al., 2021a; Amplayo et al., 2021b]. However, synthetic pseudo-summaries in the product review domain are known to be detached from real-world distributions, be possibly irrelevant or inconsistent with input documents, and are known to ignore important underlying details.",
+          "quote": [
+            {
+              "text": "[Shen et al., 2023]",
+              "target": "#b10",
+              "type": "bibr",
+              "context": " sampling ",
+              "index": 123
+            },
+            {
+              "text": "[Amplayo and Lapata, 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "documents ",
+              "index": 202
+            },
+            {
+              "text": "[Elsahar et al., 2021]",
+              "target": "",
+              "type": "bibr",
+              "context": "ument set ",
+              "index": 294
+            },
+            {
+              "text": "Amplayo et al., 2021b]",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "., 2021a; ",
+              "index": 374
+            },
+            {
+              "text": "[Amplayoetal.,2021a]",
+              "type": "bibr",
+              "index": 350,
+              "context": "ed models ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 350,
+              "context": "ed models ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.2",
+        "name": "Meta-review Generation"
+      },
+      "p": [
+        {
+          "text": "The first attempt to generate paper meta-reviews is Meta-Gen [Bhatia et al., 2020], which generates an extractive summary draft then uses a fine-tuned model for decision prediction and abstractive review generation. [Kumar et al., 2021] emphasizes decision awareness, proposing a model for decision prediction and subsequent meta-review generation. The most similar work to ours is MReD [Shen et al., 2022], where 7,089 paper meta-reviews from ICLR 2018 -2021 are manually annotated with sentence-level structure labels. These structure labels categorize sentences based on their function in the document, such as summary, evaluation, or recommendation. The difference between their work and ours is that they focus on structure-controlled text generation, while our work 1) enables scientific opinion summarization with a larger corpus, 2) provides a prompting-based solution, and 3) performs broader evaluations. Note that while there are other concurrent efforts to collect paper meta-reviews or reviews [Dycke et al., 2023], we are the first to model metareview generation as scientific opinion summarization and to offer a unified dataset covering a broad range of conference venues.",
+          "quote": [
+            {
+              "text": "[Bhatia et al., 2020]",
+              "target": "#b1",
+              "type": "bibr",
+              "context": " Meta-Gen ",
+              "index": 61
+            },
+            {
+              "text": "[Kumar et al., 2021]",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "neration. ",
+              "index": 216
+            },
+            {
+              "text": "[Shen et al., 2022]",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "s is MReD ",
+              "index": 387
+            },
+            {
+              "text": "[Dycke et al., 2023]",
+              "target": "",
+              "type": "bibr",
+              "context": "r reviews ",
+              "index": 1007
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "Task Formulation"
+      },
+      "p": [
+        {
+          "text": "Given a research paper's title, abstract, and set of reviews, the goal of Scientific Opinion Summarization is to generate a meta-review summarizing the reviews' opinions in order to make a decision recommendation for acceptance or rejection. As noted by ACL's area chair guidance 3 , meta-reviews summarize reviews by aggregating opinions to support the decision. The task entails summarizing the paper's key strengths and weaknesses and explicitly evaluating whether those strengths surpass the weaknesses.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "ORSUM Dataset"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Dataset Collection and Preprocessing"
+      },
+      "p": [
+        {
+          "text": "To facilitate the task of scientific opinion summarization, we collect the ORSUM dataset which consists of human-written meta-reviews from OpenReview. The dataset contains each paper's URL, title, abstract, decision, meta-review from the area chair, and reviews from individual reviewers. We crawl 15,062 paper meta-reviews and 57,536 individual reviews from 47 conference venues. Papers with meta-reviews shorter than 20 tokens and comments made by non-official reviewers are excluded. The data format is unified across venues, and we provide train/validation/test splits with 9,890/549/550 samples for convenient usage by future works.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Dataset Comparison"
+      },
+      "p": [
+        {
+          "text": "We compare ORSUM with existing opinion summarization datasets (or their subsets) with gold-standard summaries, including The Rotten Tomatoes (RT) [Wang and Ling, 2016], Copycat [Brazinskas et al., 2020b], OPOSUM [Angelidis and Lapata, 2018], Yelp [Chu and Liu, 2019], DENOIS-ESUM [Amplayo and Lapata, 2020], PLANSUM [Amplayo et al., 2021b], and SPACE [Angelidis et al., 2021] datasets. To perform a quantitative comparison, we utilize two key metrics:",
+          "quote": [
+            {
+              "text": "[Wang and Ling, 2016]",
+              "target": "#b12",
+              "type": "bibr",
+              "context": "toes (RT) ",
+              "index": 146
+            },
+            {
+              "text": "Copycat [Brazinskas et al., 2020b]",
+              "target": "",
+              "type": "bibr",
+              "context": "g, 2016], ",
+              "index": 169
+            },
+            {
+              "text": "[Angelidis and Lapata, 2018]",
+              "target": "",
+              "type": "bibr",
+              "context": "], OPOSUM ",
+              "index": 212
+            },
+            {
+              "text": "[Chu and Liu, 2019]",
+              "target": "#b3",
+              "type": "bibr",
+              "context": "18], Yelp ",
+              "index": 247
+            },
+            {
+              "text": "[Amplayo and Lapata, 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "NOIS-ESUM ",
+              "index": 280
+            },
+            {
+              "text": "[Amplayo et al., 2021b]",
+              "target": "#b0",
+              "type": "bibr",
+              "context": ", PLANSUM ",
+              "index": 316
+            },
+            {
+              "text": "[Angelidis et al., 2021]",
+              "target": "",
+              "type": "bibr",
+              "context": "and SPACE ",
+              "index": 351
+            }
+          ]
+        },
+        {
+          "text": "Abstractiveness. The percentage of novel n-grams in a meta-review is defined by the ratio of n-grams which do not appear in the source reviews, to the total number of n-grams in the meta review. This metric intuitively measures the abstractiveness of the summaries [Chen et al., 2021]. Table  indicates a greater degree of abstractiveness in ORSUM.",
+          "quote": [
+            {
+              "text": "[Chen et al., 2021]",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "summaries ",
+              "index": 265
+            }
+          ]
+        },
+        {
+          "text": "Redundancy. To examine the presence of insightful information in the input reviews, we assess redundancy using the Normalized Inverse of Diversity (NID) score [Xiao and Carenini, 2020] This score is calculated as the inverse of the diversity metric, which measures the variability of information in the reviews with length normalization: N ID = 3 https://aclrollingreview.org/aetutorial ",
+          "quote": [
+            {
+              "text": "[Xiao and Carenini, 2020]",
+              "target": "#b12",
+              "type": "bibr",
+              "context": "ID) score ",
+              "index": 159
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Agreement/Disagreement"
+      },
+      "p": [
+        {
+          "text": "Figure 2: Meta-review composition. The scores range from 0 to 2: 0 indicates that the meta-review does not address the discussion at all. 1 signifies that the meta-review incorporates the discussion but lacks concrete evidence. 2 denotes that the meta-review involves a detailed discussion. Only 47.7% and 35.0% of meta-reviews meet the fundamental criteria for discussions of advantages and disadvantages, and consensus and controversy, respectively.",
+          "quote": []
+        },
+        {
+          "text": "1 − (entropy (D)  log(|D|) . A higher NID signifies greater redundancy. Table  shows lower redundancy in ORSUM, which can be attributed to the fact that many reviews address distinct aspects of their papers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3",
+        "name": "Composition Analysis"
+      },
+      "p": [
+        {
+          "text": "To investigate whether ORSUM's human-authored metareviews discuss both a paper's pros/cons and the reviews' level of agreement/disagreement, we conduct a human evaluation focused on meta-review composition. Three annotators are asked to assess the meta-reviews in terms of discussion involvement: how effectively a summary engages with the content by discussing the paper's advantages/disadvantages, and by discussing the agreements/disagreements of the reviews. Annotation scores range from 0 (no involvement) to 2 (detailed involvement).",
+          "quote": []
+        },
+        {
+          "text": "Our evaluation results depicted in Figure  reveal that only 20.7% of meta-reviews include an assessment of both advantages/disadvantages and review agreements/disagreements, regardless of their length. For each category, 47.7%, and 35.0% of meta-reviews meet the criteria of containing discussions of advantages and disadvantages and discussions of agreements/disagreements, respectively. Based on these results, we conclude that human-written meta-reviews do not always meet the necessary criteria for an effective meta review, and they may be unsuitable for developing summarization models as supervised training signals. The low percentage of comprehensive reviews highlights a gap in coverage and thoroughness that can affect the performance and reliability of models trained on these summaries.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5",
+        "name": "Checklist-guided Iterative Introspection Method for Meta-review Generation"
+      },
+      "p": [
+        {
+          "text": "Motivated by the unreliability of human-written metareviews, we turn to Large Language Models (LLMs) like ChatGPT [OpenAI, 2021] for meta-review generation. We choose LLMs for their world knowledge, and their potential to generate reviews efficiently and scalably. However, LLMs struggle to follow complicated instructions, and have a tendency to produce hallucinations. To mitigate these deficiencies, we propose to break the task of scientific review generation into multiple steps, consistently requesting evidence for each step. To enhance discussion involvement and evidencebased coherence in the generation process, we further introduce a checklist-guided self-feedback mechanism. Our method is similar to the process of self-refinement [Madaan et al., 2023], which involves the LLM iteratively revising the generated meta-review based on its own feedback. Unlike prior work, however, our checklist-guided self-feedback uses self-feedback derived from questions in a predefined checklist, ensuring that the revision process progresses towards our desired criteria. Figure  illustrates our proposed Checklistguided Iterative Introspection (CGI 2 ) method. Initial Run. Given a paper's title, abstract, and set of reviews, CGI 2 generates a draft of the meta-review in four steps: (1) For each review, we prompt the LLM to extract and rank opinions, while including sentiment, aspect, and evidence. Due to the input length constraint, each review is truncated to 300 tokens. (2) Based on the extracted opinions, we prompt the LLM to list the paper's most important advantages and disadvantages, the evidence for those statements, and those statements' corresponding reviewers. (3) We prompt the LLM to list the consensuses and controversies in the reviews, the evidence for those statements, and their corresponding reviewers. (4) Given the paper's acceptance or rejection decision, we prompt the LLM to write a metareview based on the information extracted in steps (1)-(3).",
+          "quote": [
+            {
+              "text": "[OpenAI, 2021]",
+              "target": "",
+              "type": "bibr",
+              "context": "e ChatGPT ",
+              "index": 114
+            },
+            {
+              "text": "[Madaan et al., 2023]",
+              "target": "#b8",
+              "type": "bibr",
+              "context": "efinement ",
+              "index": 743
+            }
+          ]
+        },
+        {
+          "text": "Iterative Runs. With the meta-review draft from the initial four-step run, CGI 2 iteratively poses questions, obtains selffeedback, and requests further refinement. In each run, we first select an assessment question from a pre-constructed list of questions, as shown in Table . This checklist, customized for meta-review generation, covers the four most crucial aspects of meta-reviews. The checklist can also easily be expanded and adapted to other complex text generation tasks. After prompting the LLM with the assessment questions, we collect the refinement suggestions from the LLM's. These refinement suggestions are used as prompts to generate a revised version of the meta-review. The checklist questions are posed sequentially in one iterative run, with the number of iterations set as a hyper-parameter in CGI 2 .",
+          "quote": []
+        },
+        {
+          "text": "Our proposed approach offers two key benefits. First, it eliminates the need for external scoring functions that demand training data or human annotations. Second, it provides a general solution for employing LLMs as black boxes in complex text generation tasks.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6",
+        "name": "Evaluation"
+      },
+      "p": [
+        {
+          "text": "Meta-review generation requires a system to accurately summarize opinions, highlight reviewer consensuses and controversies, offer judgments, and make recommendations. The task's complexity thus requires an evaluation that is multifaceted and goes beyond n-gram similarity. However, current evaluation metrics for long text generation are inadequate to measure the particular requirements of meta-review generation. To address this gap, we propose a comprehensive evaluation framework that combines standard evaluation metrics with LLM-based evaluation metrics.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6.1",
+        "name": "Standard Metrics"
+      },
+      "p": [
+        {
+          "text": "We apply standard metrics in natural language generation to assess relevance, factual consistency, and semantic coherence. For relevance, ROUGE-L [Lin, 2004] quantifies the similarity between the generated and reference texts by calculating the longest common subsequence, while BERTScore [Zhang et al., 2020] offers a more nuanced relevance evaluation by leveraging contextualized embeddings without relying on n-gram overlaps. For factual consistency, FACTCC [Kryscinski et al., 2019] checks whether a given claim in the generated text is consistent with the facts presented in the source document, while SummaC [Laban et al., 2021] utilizes sentence-level natural language inference models for inconsistency detection. For semantic coherence, Dis-coScore [Zhao et al., 2022] presents six BERT-based model variants to measure discourse coherence. We average the scores from these six models as the coherence indicator. The references used in our reference-free evaluation metrics are sourced from a test subset of our dataset, where the instances are chosen for their relevance and quality. These references provide a practical benchmark that mirrors current standards in meta-review generation at top conferences.",
+          "quote": [
+            {
+              "text": "[Lin, 2004]",
+              "target": "",
+              "type": "bibr",
+              "context": ", ROUGE-L ",
+              "index": 146
+            },
+            {
+              "text": "[Zhang et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "BERTScore ",
+              "index": 289
+            },
+            {
+              "text": "[Kryscinski et al., 2019]",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "y, FACTCC ",
+              "index": 461
+            },
+            {
+              "text": "[Laban et al., 2021]",
+              "target": "",
+              "type": "bibr",
+              "context": "le SummaC ",
+              "index": 614
+            },
+            {
+              "text": "[Zhao et al., 2022]",
+              "target": "",
+              "type": "bibr",
+              "context": "s-coScore ",
+              "index": 758
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6.2",
+        "name": "LLM-based Metrics"
+      },
+      "p": [
+        {
+          "text": "The aforementioned methods do not evaluate discussion involvement or evidence-decision consistency. Some reference summaries may not include discussions or utilize evidence to substantiate decisions. To address this, we propose supplementary measures for this task that can be assessed and quantified using reference-free LLM-based metrics. We aim to assess the following key aspects:",
+          "quote": []
+        },
+        {
+          "text": "• Discussion involvement: whether the meta-review discusses the paper's strengths and weaknesses, and the paper's agreements and disagreements amongst reviewers.",
+          "quote": []
+        },
+        {
+          "text": "• Opinion Faithfulness: whether the meta-review contradicts reviewers' opinions.",
+          "quote": []
+        },
+        {
+          "text": "• Decision Consistency: whether the meta-review accurately reflects the final decision.",
+          "quote": []
+        },
+        {
+          "text": "Despite its prevalence, the GPTScore [Fu et al., 2023] metric requires its criteria to be described as a single word, a requirement incompatible with our detailed criteria. On the other hand, G-EVAL [Liu et al., 2023] assesses the quality of NLG outputs by utilizing chain-of-thought (CoT) and a formfilling paradigm. It has been shown to have a very high correlation with human-based judgments. G-EVAL uses carefully",
+          "quote": [
+            {
+              "text": "[Fu et al., 2023]",
+              "target": "",
+              "type": "bibr",
+              "context": " GPTScore ",
+              "index": 37
+            },
+            {
+              "text": "[Liu et al., 2023]",
+              "target": "#b8",
+              "type": "bibr",
+              "context": "d, G-EVAL ",
+              "index": 199
+            }
+          ]
+        },
+        {
+          "text": "Step 1: Extract Opinions with Evidence",
+          "quote": []
+        },
+        {
+          "text": "Step 2: Summarize Strengths and Weaknesses",
+          "quote": []
+        },
+        {
+          "text": "Step 3: Summarize Consensus and Controversy",
+          "quote": []
+        },
+        {
+          "text": "Step 4: Write an AC/REJ Meta-review For subsequent iterations, we present the black-box LLM with a query from a predefined list, acquire self-feedback, and request additional refinements.",
+          "quote": []
+        },
+        {
+          "text": "1. Are the most important advantages and disadvantages discussed in the above meta-review? If not, how can it be improved? 2. Are the most important consensus and controversy discussed in the above meta-review? If not, how can it be improved? 3. Is the above meta-review contradicting reviewers' comments? If so, how can it be improved? 4. Is the above meta-review supporting the acceptance/rejection decision? If not, how can it be improved?",
+          "quote": []
+        },
+        {
+          "text": "Table : The extensible and easily adaptable checklist for Meta-review Generation accesses the essential aspects of self-consistency, faithfulness, and active engagement in discussions.",
+          "quote": []
+        },
+        {
+          "text": "You will be given one metareview written for reviews by the committee on a paper. Your task is to rate the metareview on one metric. Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed. Evaluation Criteria: Quality of Metareview (1-5) -the collective quality of all sentences. We align this dimension with the DUC quality question of structure and coherence whereby the metareview should be well-structured and well-organized. The metareview should always discuss the disadvantages and advantages of a paper and have a clear scope of the accept/reject decision. The metareview should have concrete evidence from the papers reviews and concrete comments as well. Evaluation Steps: 1. Read the reviews carefully and identify the main topic and key points. 2. Read the metareview and compare it to the reviews. Check if the metareview covers the main topic, discusses advantages and disadvantages, if the most important advantages and disadvantages discussed in the above meta-review, if the most important advantages and disadvantages discussed in the above meta-review, if the most important consensus and controversy discussed in the above meta-review, if the above meta-review contradicting reviewers' comments, if the above meta-review supporting the acceptance/rejection decision, and if it presents them in a clear and logical order.",
+          "quote": []
+        },
+        {
+          "text": "3. Assign a score for the quality of the meta-review on a scale of 1 to 5, where 1 is the lowest and 5 is the highest based on the Evaluation Criteria. Source Text: {Reviews} Metareview: {Meta-review} Evaluation Form (scores ONLY): -Quality of metareview :",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "G-EVAL"
+      },
+      "p": [
+        {
+          "text": "Imagine you are a human annotator now. You will evaluate the quality of metareviews written for a conference by giving a mean value from 1 to 5 and no other explanation. Please follow these steps: 1. Carefully read the reviews, and be aware of the information it contains. 2. Read the proposed metareview.",
+          "quote": []
+        },
+        {
+          "text": "3. Rate the summary on three dimensions: 'Discussion Involvement', 'Opinion Faithfulness' and 'Decision Consistency'. You should rate on a scale from 1 (worst) to 5 (best) and give me an average of these scores over all aspects from 1 to 5 calculated by the mean of all aspects. Definitions are as follows:",
+          "quote": []
+        },
+        {
+          "text": "(1) Discussion Involvement: Whether the meta-review discusses the paper's strengths and weaknesses, as well as agreements and disagreements among reviewers, (2) Opinion Faithfulness: Whether the meta-review contradicts reviewers' comments, (3) Decision Consistency: Whether the meta-review accurately reflects the final decisions.",
+          "quote": []
+        },
+        {
+          "text": "Only generate the mean rating as a number on the likert scale, nothing else.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Likert scale scoring with ChatGPT"
+      },
+      "p": [
+        {
+          "text": "Figure : We customize the prompts in G-EVAL and GPTLikert for evaluating meta-review generation to assess discussion involvement, opinion faithfulness, and decision consistency.",
+          "quote": []
+        },
+        {
+          "text": "constructed instructions for GPT models to follow, yielding a rating on the Likert scale ranging from 1 to 5. Likert scoring with ChatGPT (GPTLikert), a human-like evaluation method introduced by [Gao et al., 2023], follows a similar evaluation protocol, outperforming many standard metrics on text summarization as measured by human correlation. We are the first to adapt these methods to meta-review generation by modifying the prompts as shown in Figure . The combination of standard metrics like ROUGE-L and BERTScore with LLM-based metrics such as G-EVAL and GPTLikert ensures a comprehensive evaluation, capturing nuances that traditional metrics may overlook. This multifaceted approach not only adheres to current evaluation methodologies, but also enhances them by introducing metrics that demonstrate a high correlation with human annotations.",
+          "quote": [
+            {
+              "text": "[Gao et al., 2023]",
+              "target": "",
+              "type": "bibr",
+              "context": "oduced by ",
+              "index": 196
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7",
+        "name": "Experiments"
+      },
+      "p": [
+        {
+          "text": "The paper unanimously receives positive rates thanks to strong motivations and interesting results. As the reviews show satisfaction on the authors' feedback, the final draft needs to respect it accordingly, for example, about the limitations of this research.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Human"
+      },
+      "p": [
+        {
+          "text": "This paper could have benefited from a clearer and more concise presentation of the main findings. It is sometimes difficult to follow the paper's chain of thought, and the authors could have presented their results in a more accessible way. The experiments are limited to a small set of environments, and it would be interesting to see how the results generalize to other tasks. Additionally, it would be useful to have a deeper analysis of why iGPT does not perform well, as this could help inform future research on how to improve image-based pretraining.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Vanilla"
+      },
+      "p": [
+        {
+          "text": "After carefully considering the reviews provided, there is consensus that the paper presents an important and thought-provoking analysis of representation dynamics between pretraining and finetuning in the context of reinforcement learning. Both reviewers agree that the paper addresses an important question and presents insightful experiments. One reviewer highlights the experiments as a strong point in the paper, while the other reviewer raises a concern about the paper's tendency to present hypotheses without exploring them further.",
+          "quote": []
+        },
+        {
+          "text": "Overall, the strengths of the paper outweigh its weaknesses, and it has the potential to make a significant contribution to the field of reinforcement learning. Therefore, I recommend accepting the paper with a minor revision to address the concern raised by the reviewer. Specifically, the paper should explore the hypotheses presented in more depth to provide a more comprehensive analysis. If the authors can address this concern, the paper can make a valuable contribution to the field of reinforcement learning. In summary, I recommend accepting the paper with a minor revision.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "CGI 2"
+      },
+      "p": [
+        {
+          "text": "Based on the reviews, I recommend accepting the paper. The paper addresses an important and under-explored research question and presents a detailed and thought-provoking analysis of the pretrainingfinetuning paradigm for Transformer models in the context of reinforcement learning. The paper also identifies relevant techniques to perform analysis of representation similarity and training dynamics. While there are some weaknesses pointed out, such as the need for further exploration of some hypotheses and occasional difficulty in following the writing and presentation, the strengths of the paper outweigh these concerns. Therefore, I recommend accepting the paper with minor revisions to address the weaknesses pointed out by the reviewers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Initial run"
+      },
+      "p": [
+        {
+          "text": "Figure : We show the meta-reviews from human, vanilla, CGI 2 , and CGI 2 without iterative runs for the same paper. The yellow background indicates hallucinated content. The green background indicates redundant content.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7.1",
+        "name": "Baselines"
+      },
+      "p": [
+        {
+          "text": "We compare our proposed CGI 2 method with methods of different paradigms. Results in Table [Amplayo et al., 2021b  are averaged across three random runs. Abstractive Methods. PlanSum [Suhara et al., 2020]] uses a Condense-Abstract Framework, where reviews are condensed and used as input to an abstractive summarization model. OpinionDigest [Chu and Liu, 2019  extracts opinions from input reviews and trains a seq2seq model that generates a summary from this set of opinions. MeanSum [Beltagy et al., 2020 ] is an unsupervised multi-document abstractive summarizer that minimizes a combination of reconstruction and vector similarity losses. LED [Beltagy et al., 2020]] is a Longformer  variant supporting long document generative sequence-to-sequence tasks.",
+          "quote": [
+            {
+              "text": "[Amplayo et al., 2021b",
+              "target": "#b0",
+              "type": "bibr",
+              "context": " in Table ",
+              "index": 91
+            },
+            {
+              "text": "[Suhara et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021b ",
+              "index": 114
+            },
+            {
+              "text": "[Chu and Liu, 2019",
+              "target": "#b3",
+              "type": "bibr",
+              "context": "ionDigest ",
+              "index": 341
+            },
+            {
+              "text": "[Beltagy et al., 2020",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "Liu, 2019 ",
+              "index": 360
+            },
+            {
+              "text": "[Beltagy et al., 2020]",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "al., 2020 ",
+              "index": 507
+            }
+          ]
+        },
+        {
+          "text": "Extractive Methods. LexRank [Erkan and Radev, 2004] is an unsupervised extractive summarization method that selects sentences based on centrality scores calculated with graphbased sentence similarity. MemSum [Gu et al., 2022] models extractive summarization as a multi-step episodic Markov Decision Process of scoring and selecting sentences.",
+          "quote": [
+            {
+              "text": "LexRank [Erkan and Radev, 2004",
+              "target": "",
+              "type": "bibr",
+              "context": " Methods. ",
+              "index": 20
+            },
+            {
+              "text": "MemSum [Gu et al., 2022]",
+              "target": "",
+              "type": "bibr",
+              "context": "milarity. ",
+              "index": 201
+            }
+          ]
+        },
+        {
+          "text": "Prompting Methods. All prompting methods are initiated with the GPT-3.5-turbo model with a temperature of 0.7. 3Sent [Goyal et al., 2022] applies a simple prompt \"Summary of document in 3 sentences\". TCG [Bhaskar et al., 2022] explores a four-step generation pipeline involving topic classification, sentence grouping by topic, generating chunk-wise summary, and generating the final summary. We also explore In Context Learning (ICL) [Brown et al., 2020], where a highly rated meta-review alongside the reviews is given as part of the model's prompt. This meta-review is manually picked based on adherence to the previously defined checklist, and is chosen for its fulfillment of the criteria that define a high-quality meta-review. Vanilla uses \"Generate a metareview\" as the prompt. InstructPrompt provides more detailed step by step instructions and specifies the criteria for writing a metareview.",
+          "quote": [
+            {
+              "text": "[Goyal et al., 2022]",
+              "target": "#b5",
+              "type": "bibr",
+              "context": ".7. 3Sent ",
+              "index": 117
+            },
+            {
+              "text": "[Bhaskar et al., 2022]",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "ces\". TCG ",
+              "index": 204
+            },
+            {
+              "text": "[Brown et al., 2020]",
+              "target": "",
+              "type": "bibr",
+              "context": "ing (ICL) ",
+              "index": 435
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7.2",
+        "name": "Automatic Evaluation"
+      },
+      "p": [
+        {
+          "text": "Higher standard metric scores indicate better summarization, but not necessarily better opinion summarization. ROUGE-L, BERTScore, SummaC, and DiscoScore do not consider the multifaceted nature of meta-review, which goes beyond summarization. Our method performs near average in BERTScore and SummaC, and the highest in ROUGE-L and DiscoScore amongst the prompting methods. Compared to extractive and abstractive methods, our method achieves lower scores as some metrics measure semantic similarity which a high-quality measure review with its variablility may not score well in. Additionally due to the multifaceted nature of opinion summarization, reference-based metrics such as Rouge-L can be biased towards the reference, thus the elevated scores of the summarization methods.",
+          "quote": []
+        },
+        {
+          "text": "Evaluators like G-Eval and GPTLikert favor specific dimensions given in their prompts. Our method shows promising results in both G-Eval and GPTLikert due to the carefully constructed and revised prompts. Most prompting methods also outperform extractive and abstractive methods.",
+          "quote": []
+        },
+        {
+          "text": "Human meta-reviews in the dataset scored among the lowest in all categories, signifying the unreliability of some human-written meta-reviews and the need for an automatic, or auxiliary, writing process. When compared by semantic similarity, extractive methods outperform both abstractive and prompting methods with the exception of Plansum. This is due to the nature of content planning in Plansum which is central to the task of meta-review generation. ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7.3",
+        "name": "Human Evaluation"
+      },
+      "p": [
+        {
+          "text": "We conduct a human annotation on 50 challenging papers from the test set which have average review scores on the borderline of acceptance. Five anonymized outputs from Human, LED-finetuned, LexRank, CGI 2 , and CGI 2 without iterative runs, are shown to three annotators. Annotators are asked to provide binary labels for informativeness, soundness, selfconsistency, and faithfulness for each meta-review. Informativeness measures whether the meta-review involves a discussion of both strengths and weaknesses. Soundness examines whether the meta-review provides evidence to support the discussed strengths and weaknesses. Decision consistency indicates whether the recommendation decision is clearly written and consistent with the comments in the meta-review. Faithfulness evaluates whether the meta-review contains hallucinations. We assume Human and the extractive LexRank framework have perfectly faithful summaries.",
+          "quote": []
+        },
+        {
+          "text": "Results shown in Table  validate the effectiveness of our proposed method. The extractive method (LexRank) is easily biased toward one reviewer and involves no discussion or decision, but generates no hallucinations by construction. The abstractive method (LED-finetuned) learns to copy the sentences in the input and form a short meta-review with little discussion, sometimes hallucinating or generating repetitive outputs. Our prompting-based method exhibits less hallucination due to the evidence requirements in our prompts. Compared to human-written meta-reviews, all automatic methods are less capable of generating in-depth analyses, a deficiency which calls for knowledge enhancement that happens a LLM enhanced with reviews.",
+          "quote": []
+        },
+        {
+          "text": "We also observe that hallucinations in LLMs are more likely to happen when summarizing consensuses and controversies, which require information from the paper itself. By contrast, the abstractive methods' hallucinations were are more likely to be general comments, whereas extractive methods tend to misrepresent the context by selecting irrelevant or less important sections. Despite our method's improvements in this area, hallucination detection for scientific opinion summarization remains an open problem.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7.4",
+        "name": "Case Study"
+      },
+      "p": [
+        {
+          "text": "Figure  presents the meta-reviews from human, vanilla, CGI 2 , and CGI 2 without iterative runs for a random paper 4 .",
+          "quote": []
+        },
+        {
+          "text": "We make the following general observations: (1) The hallucination problem is alleviated in CGI 2 as the model is constantly asked for evidence. (2) CGI 2 's summary sentences are redundant. (3) The vanilla prompting baseline does not make recommendations and involve discussion, as the model fails to fully understand the complex task requirement. (4) Iterative refinement sometimes improves the concreteness of opinion discussion. However, there are two problems with iterative refinements. First, suggestions provided by the large language model are usually generic and less useful for further refinement. Second, more self-refinement iterations cause the model to forget the initial instructions for opinion extraction and discussion.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "8",
+        "name": "Conclusions and Future Work"
+      },
+      "p": [
+        {
+          "text": "In this paper, we introduced the task of scientific opinion summarization, in which research paper reviews are synthesized into meta-reviews. To facilitate this task, we introduce the ORSUM dataset, an evaluation framework, and an approach that we call Checklist-Guided Iterative Introspection. We conduct an empirical analysis of methods from different paradigms, concluding that human-written summaries do not always satisfy the criteria of an ideal meta-review, and that the combination of task decomposition and iterative selfrefinement shows promise in on this task.",
+          "quote": []
+        },
+        {
+          "text": "Direct extensions of this work include the incorporation of author rebuttals into the input data to enhance the model's ability to generate more balanced meta-reviews, and introducing an effective and efficient hallucination detection tool for scientific opinion summarization.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations"
+      },
+      "p": [
+        {
+          "text": "This work on scientific opinion summarization has limitations in terms of data scope and task configuration. As the dataset is collected from OpenReview, the majority of meta-reviews are in Machine Learning, and many papers have been accepted. Conclusions drawn from this data distribution might not be applicable to datasets in other domains. Furthermore, to simplify the task setting, author rebuttals have not been included as input, which may also constrain the extent of discussion involvement in generating meta-reviews. section*Ethics Statement",
+          "quote": []
+        },
+        {
+          "text": "We acknowledge the following potential ethical concerns that may arise. First, the meta-reviews generated by LLMs may contain hallucinations, which may lead to misunderstandings of the original research paper or reviewers' opinions. Therefore, users should be cautious when using systemgenerated meta-reviews for recommendation decisions. Second, the use of black-box LLMs for meta-review generation may raise concerns about the transparency of the decision process. Though our method improves explainability by prompting an LLM to provide supporting evidence for the recommendation decision, the evidence may not perfectly reflect the decision-making process. Third, the dataset used in this study mainly focuses on machine learning papers, which could introduce biases to the recommendation decisions. Hence, it is critical to consider these biases when applying our method to generate meta-reviews for research papers in other domains.",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Table 3 :ROUGE-L and BERTScore assess semantic similarity with reference text. FactCC and SummaC detect factual consistency. Dis-coScore measures coherence. G-EVAL and GPTLikert are GPT-based comprehensive evaluation measures for discussion involvement, opinion faithfulness, and decision consistency.",
+    "Table 4 :Human annotation results on meta-reviews for 50 challenging papers from the test set."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "Stefanos Angelidis and Mirella Lapata. Summarizing opinions: Aspect extraction meets sentiment prediction and they are both weakly supervised",
+      "author": [
+        {
+          "forename": "Lapata ; Reinald Kim",
+          "surname": "Amplayo",
+          "name": "Lapata ; Reinald Kim Amplayo",
+          "email": ""
+        },
+        {
+          "forename": "Mirella",
+          "surname": "Lapata",
+          "name": "Mirella Lapata",
+          "email": ""
+        },
+        {
+          "forename": ";",
+          "surname": "Corr",
+          "name": "; Corr",
+          "email": ""
+        },
+        {
+          "forename": "Kim",
+          "surname": "Amplayo",
+          "name": "Kim Amplayo",
+          "email": ""
+        },
+        {
+          "forename": "Mirella",
+          "surname": "Lapata",
+          "name": "Mirella Lapata",
+          "email": ""
+        },
+        {
+          "forename": ";",
+          "surname": "Amplayo",
+          "name": "; Amplayo",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021, Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI 2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence, EAAI 2021, Virtual Event",
+      "date": "1909"
+    },
+    {
+      "index": "b1",
+      "title": "Arthur Brazinskas, Ramesh Nallapati, Mohit Bansal, and Markus Dreyer. Efficient few-shot fine-tuning for opinion summarization",
+      "author": [],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020",
+      "date": "2004"
+    },
+    {
+      "index": "b2",
+      "title": "A unified dual-view model for review summarization and sentiment classification with inconsistency loss",
+      "author": [],
+      "doi": "",
+      "venue": "Proceedings of the 43rd International ACM SIGIR conference on research and development in Information Retrieval",
+      "date": "2020-05-22"
+    },
+    {
+      "index": "b3",
+      "title": "Meansum: A neural model for unsupervised multi-document abstractive summarization",
+      "author": [
+        {
+          "forename": "Eric",
+          "surname": "Liu",
+          "name": "Eric Liu",
+          "email": ""
+        },
+        {
+          "forename": "Peter J.",
+          "surname": "Chu",
+          "name": "Peter J. Chu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 36th International Conference on Machine Learning, ICML 2019",
+      "date": "2019-06-15"
+    },
+    {
+      "index": "b4",
+      "title": "Hierarchical bi-directional self-attention networks for paper review rating recommendation",
+      "author": [],
+      "doi": "",
+      "venue": "Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume",
+      "date": "2004-08-01"
+    },
+    {
+      "index": "b5",
+      "title": "MemSum: Extractive summarization of long documents using multi-step episodic Markov decision processes",
+      "author": [],
+      "doi": "",
+      "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b6",
+      "title": "Opinion extraction and summarization on the web",
+      "author": [
+        {
+          "forename": "; Minqing",
+          "surname": "Liu",
+          "name": "; Minqing Liu",
+          "email": ""
+        },
+        {
+          "forename": "Bing",
+          "surname": "Hu",
+          "name": "Bing Hu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings, The Twenty-First National Conference on Artificial Intelligence and the Eighteenth Innovative Applications of Artificial Intelligence Conference",
+      "date": "2006-07-16"
+    },
+    {
+      "index": "b7",
+      "title": "Unsupervised abstractive opinion summarization by generating sentences with tree-structured topic guidance",
+      "author": [],
+      "doi": "JCDL 2021",
+      "venue": "Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "date": "1910"
+    },
+    {
+      "index": "b8",
+      "title": "G-eval: NLG evaluation using GPT-4 with better human alignment. CoRR, abs/2303.16634, 2023",
+      "author": [],
+      "doi": "",
+      "venue": "G-eval: NLG evaluation using GPT-4 with better human alignment. CoRR, abs/2303.16634, 2023",
+      "date": "2023"
+    },
+    {
+      "index": "b9",
+      "title": "Mred: A metareview dataset for structure-controllable text generation",
+      "author": [
+        {
+          "forename": "[",
+          "surname": "Shen",
+          "name": "[ Shen",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2022",
+      "date": "2022-05-22"
+    },
+    {
+      "index": "b10",
+      "title": "Miguel Ballesteros, and Yassine Benajiba. Simple yet effective synthetic dataset construction for unsupervised opinion summarization",
+      "author": [],
+      "doi": "abs/2303.11660",
+      "venue": "Miguel Ballesteros, and Yassine Benajiba. Simple yet effective synthetic dataset construction for unsupervised opinion summarization",
+      "date": "2023"
+    },
+    {
+      "index": "b11",
+      "title": "Opiniondigest: A simple framework for opinion summarization",
+      "author": [
+        {
+          "forename": "[",
+          "surname": "Suhara",
+          "name": "[ Suhara",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, ACL 2020, Online",
+      "date": "2020-07-05"
+    },
+    {
+      "index": "b12",
+      "title": "Reviewrobot: Explainable paper review generation based on knowledge synthesis",
+      "author": [
+        {
+          "forename": "Lu",
+          "surname": "Ling",
+          "name": "Lu Ling",
+          "email": ""
+        },
+        {
+          "forename": "Wang",
+          "surname": "Wang",
+          "name": "Wang Wang",
+          "email": ""
+        },
+        {
+          "forename": ";",
+          "surname": "Ling",
+          "name": "; Ling",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing, AACL/IJCNLP 2020",
+      "date": "2016"
+    },
+    {
+      "index": "b13",
+      "title": "Discoscore: Evaluating text generation with BERT and discourse coherence",
+      "author": [],
+      "doi": "",
+      "venue": "Discoscore: Evaluating text generation with BERT and discourse coherence",
+      "date": "2022"
+    }
+  ]
+}

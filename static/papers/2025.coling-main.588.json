@@ -1,0 +1,3726 @@
+{
+  "title": "Quantifying the Influence of Evaluation Aspects on Long-Form Response Assessment",
+  "publication": {
+    "publisher": {},
+    "date": ""
+  },
+  "author": [
+    {
+      "forename": "Go",
+      "surname": "Kamoda",
+      "name": "Go Kamoda",
+      "email": "go.kamoda@dc.tohoku.ac.jp"
+    },
+    {
+      "forename": "Akari",
+      "surname": "Asai",
+      "name": "Akari Asai",
+      "email": ""
+    },
+    {
+      "forename": "Ana",
+      "surname": "Brassard",
+      "name": "Ana Brassard",
+      "email": ""
+    },
+    {
+      "forename": "Keisuke",
+      "surname": "Sakaguchi",
+      "name": "Keisuke Sakaguchi",
+      "email": ""
+    },
+    {
+      "forename": "Chelsea",
+      "surname": "Carey",
+      "name": "Chelsea Carey",
+      "email": ""
+    },
+    {
+      "forename": "Rory",
+      "surname": "Carlson",
+      "name": "Rory Carlson",
+      "email": ""
+    },
+    {
+      "forename": "Brooke",
+      "surname": "Carmichael",
+      "name": "Brooke Carmichael",
+      "email": ""
+    },
+    {
+      "forename": "Che",
+      "surname": "Chan",
+      "name": "Che Chan",
+      "email": ""
+    },
+    {
+      "forename": "Fotis",
+      "surname": "Chang",
+      "name": "Fotis Chang",
+      "email": ""
+    },
+    {
+      "forename": "Derek",
+      "surname": "Chantzis",
+      "name": "Derek Chantzis",
+      "email": ""
+    },
+    {
+      "forename": "Sully",
+      "surname": "Chen",
+      "name": "Sully Chen",
+      "email": ""
+    },
+    {
+      "forename": "Ruby",
+      "surname": "Chen",
+      "name": "Ruby Chen",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Chen",
+      "name": "Jason Chen",
+      "email": ""
+    },
+    {
+      "forename": "Mark",
+      "surname": "Chen",
+      "name": "Mark Chen",
+      "email": ""
+    },
+    {
+      "forename": "Ben",
+      "surname": "Chen",
+      "name": "Ben Chen",
+      "email": ""
+    },
+    {
+      "forename": "Chester",
+      "surname": "Chess",
+      "name": "Chester Chess",
+      "email": ""
+    },
+    {
+      "forename": "Casey",
+      "surname": "Cho",
+      "name": "Casey Cho",
+      "email": ""
+    },
+    {
+      "forename": "Won",
+      "surname": "Chu",
+      "name": "Won Chu",
+      "email": ""
+    },
+    {
+      "forename": "Dave",
+      "surname": "Chung",
+      "name": "Dave Chung",
+      "email": ""
+    },
+    {
+      "forename": "Jeremiah",
+      "surname": "Cummings",
+      "name": "Jeremiah Cummings",
+      "email": ""
+    },
+    {
+      "forename": "Yunxing",
+      "surname": "Currier",
+      "name": "Yunxing Currier",
+      "email": ""
+    },
+    {
+      "forename": "Sheila",
+      "surname": "Dowling",
+      "name": "Sheila Dowling",
+      "email": ""
+    },
+    {
+      "forename": "Adrien",
+      "surname": "Dunning",
+      "name": "Adrien Dunning",
+      "email": ""
+    },
+    {
+      "forename": "Atty",
+      "surname": "Ecoffet",
+      "name": "Atty Ecoffet",
+      "email": ""
+    },
+    {
+      "forename": "Tyna",
+      "surname": "Eleti",
+      "name": "Tyna Eleti",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Eloundou",
+      "name": "David Eloundou",
+      "email": ""
+    },
+    {
+      "forename": "Liam",
+      "surname": "Farhi",
+      "name": "Liam Farhi",
+      "email": ""
+    },
+    {
+      "forename": "Niko",
+      "surname": "Fedus",
+      "name": "Niko Fedus",
+      "email": ""
+    },
+    {
+      "forename": "Posada",
+      "surname": "Felix",
+      "name": "Posada Felix",
+      "email": ""
+    },
+    {
+      "forename": "Juston",
+      "surname": "Fishman",
+      "name": "Juston Fishman",
+      "email": ""
+    },
+    {
+      "forename": "Isabella",
+      "surname": "Forte",
+      "name": "Isabella Forte",
+      "email": ""
+    },
+    {
+      "forename": "Leo",
+      "surname": "Ful- Ford",
+      "name": "Leo Ful- Ford",
+      "email": ""
+    },
+    {
+      "forename": "Elie",
+      "surname": "Gao",
+      "name": "Elie Gao",
+      "email": ""
+    },
+    {
+      "forename": "Christian",
+      "surname": "Georges",
+      "name": "Christian Georges",
+      "email": ""
+    },
+    {
+      "forename": "Vik",
+      "surname": "Gibson",
+      "name": "Vik Gibson",
+      "email": ""
+    },
+    {
+      "forename": "Tarun",
+      "surname": "Goel",
+      "name": "Tarun Goel",
+      "email": ""
+    },
+    {
+      "forename": "Gabriel",
+      "surname": "Gogineni",
+      "name": "Gabriel Gogineni",
+      "email": ""
+    },
+    {
+      "forename": "Rapha",
+      "surname": "Goh",
+      "name": "Rapha Goh",
+      "email": ""
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Gontijo- Lopes",
+      "name": "Jonathan Gontijo- Lopes",
+      "email": ""
+    },
+    {
+      "forename": "Morgan",
+      "surname": "Gordon",
+      "name": "Morgan Gordon",
+      "email": ""
+    },
+    {
+      "forename": "Scott",
+      "surname": "Grafstein",
+      "name": "Scott Grafstein",
+      "email": ""
+    },
+    {
+      "forename": "Ryan",
+      "surname": "Gray",
+      "name": "Ryan Gray",
+      "email": ""
+    },
+    {
+      "forename": "Joshua",
+      "surname": "Greene",
+      "name": "Joshua Greene",
+      "email": ""
+    },
+    {
+      "forename": "Shane",
+      "surname": "Gross",
+      "name": "Shane Gross",
+      "email": ""
+    },
+    {
+      "forename": "Yufei",
+      "surname": "Gu",
+      "name": "Yufei Gu",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Guo",
+      "name": "Chris Guo",
+      "email": ""
+    },
+    {
+      "forename": "Jesse",
+      "surname": "Hallacy",
+      "name": "Jesse Hallacy",
+      "email": ""
+    },
+    {
+      "forename": "Jeff",
+      "surname": "Han",
+      "name": "Jeff Han",
+      "email": ""
+    },
+    {
+      "forename": "Yuchen",
+      "surname": "Harris",
+      "name": "Yuchen Harris",
+      "email": ""
+    },
+    {
+      "forename": "Mike",
+      "surname": "He",
+      "name": "Mike He",
+      "email": ""
+    },
+    {
+      "forename": "Johannes",
+      "surname": "Heaton",
+      "name": "Johannes Heaton",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Heidecke",
+      "name": "Chris Heidecke",
+      "email": ""
+    },
+    {
+      "forename": "Alan",
+      "surname": "Hesse",
+      "name": "Alan Hesse",
+      "email": ""
+    },
+    {
+      "forename": "Wade",
+      "surname": "Hickey",
+      "name": "Wade Hickey",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Hickey",
+      "name": "Peter Hickey",
+      "email": ""
+    },
+    {
+      "forename": "Brandon",
+      "surname": "Hoeschele",
+      "name": "Brandon Hoeschele",
+      "email": ""
+    },
+    {
+      "forename": "Kenny",
+      "surname": "Houghton",
+      "name": "Kenny Houghton",
+      "email": ""
+    },
+    {
+      "forename": "Shengli",
+      "surname": "Hsu",
+      "name": "Shengli Hsu",
+      "email": ""
+    },
+    {
+      "forename": "Xin",
+      "surname": "Hu",
+      "name": "Xin Hu",
+      "email": ""
+    },
+    {
+      "forename": "Joost",
+      "surname": "Hu",
+      "name": "Joost Hu",
+      "email": ""
+    },
+    {
+      "forename": "Shantanu",
+      "surname": "Huizinga",
+      "name": "Shantanu Huizinga",
+      "email": ""
+    },
+    {
+      "forename": "Shawn",
+      "surname": "Jain",
+      "name": "Shawn Jain",
+      "email": ""
+    },
+    {
+      "forename": "Joanne",
+      "surname": "Jain",
+      "name": "Joanne Jain",
+      "email": ""
+    },
+    {
+      "forename": "Angela",
+      "surname": "Jang",
+      "name": "Angela Jang",
+      "email": ""
+    },
+    {
+      "forename": "Roger",
+      "surname": "Jiang",
+      "name": "Roger Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Haozhun",
+      "surname": "Jiang",
+      "name": "Haozhun Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Denny",
+      "surname": "Jin",
+      "name": "Denny Jin",
+      "email": ""
+    },
+    {
+      "forename": "Shino",
+      "surname": "Jin",
+      "name": "Shino Jin",
+      "email": ""
+    },
+    {
+      "forename": "Billie",
+      "surname": "Jomoto",
+      "name": "Billie Jomoto",
+      "email": ""
+    },
+    {
+      "forename": "Hee- Woo",
+      "surname": "Jonn",
+      "name": "Hee- Woo Jonn",
+      "email": ""
+    },
+    {
+      "forename": "Tomer",
+      "surname": "Jun",
+      "name": "Tomer Jun",
+      "email": ""
+    },
+    {
+      "forename": "Łukasz",
+      "surname": "Kaftan",
+      "name": "Łukasz Kaftan",
+      "email": ""
+    },
+    {
+      "forename": "Ali",
+      "surname": "Kaiser",
+      "name": "Ali Kaiser",
+      "email": ""
+    },
+    {
+      "forename": "Ingmar",
+      "surname": "Ka- Mali",
+      "name": "Ingmar Ka- Mali",
+      "email": ""
+    },
+    {
+      "forename": "Shirish",
+      "surname": "Nitish",
+      "name": "Shirish Nitish",
+      "email": ""
+    },
+    {
+      "forename": "Tabarak",
+      "surname": "Keskar",
+      "name": "Tabarak Keskar",
+      "email": ""
+    },
+    {
+      "forename": "Logan",
+      "surname": "Khan",
+      "name": "Logan Khan",
+      "email": ""
+    },
+    {
+      "forename": "Jong Wook ",
+      "surname": "Kilpatrick",
+      "name": "Jong Wook  Kilpatrick",
+      "email": ""
+    },
+    {
+      "forename": "Christina",
+      "surname": "Kim",
+      "name": "Christina Kim",
+      "email": ""
+    },
+    {
+      "forename": "Yongjik",
+      "surname": "Kim",
+      "name": "Yongjik Kim",
+      "email": ""
+    },
+    {
+      "forename": "Jan Hendrik ",
+      "surname": "Kim",
+      "name": "Jan Hendrik  Kim",
+      "email": ""
+    },
+    {
+      "forename": "Jamie",
+      "surname": "Kirch- Ner",
+      "name": "Jamie Kirch- Ner",
+      "email": ""
+    },
+    {
+      "forename": "Matt",
+      "surname": "Kiros",
+      "name": "Matt Kiros",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Knight",
+      "name": "Daniel Knight",
+      "email": ""
+    },
+    {
+      "forename": "Łukasz",
+      "surname": "Kokotajlo",
+      "name": "Łukasz Kokotajlo",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Kondraciuk",
+      "name": "Andrew Kondraciuk",
+      "email": ""
+    },
+    {
+      "forename": "Aris",
+      "surname": "Kondrich",
+      "name": "Aris Kondrich",
+      "email": ""
+    },
+    {
+      "forename": "Kyle",
+      "surname": "Kon- Stantinidis",
+      "name": "Kyle Kon- Stantinidis",
+      "email": ""
+    },
+    {
+      "forename": "Gretchen",
+      "surname": "Kosic",
+      "name": "Gretchen Kosic",
+      "email": ""
+    },
+    {
+      "forename": "Vishal",
+      "surname": "Krueger",
+      "name": "Vishal Krueger",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Kuo",
+      "name": "Michael Kuo",
+      "email": ""
+    },
+    {
+      "forename": "Ikai",
+      "surname": "Lampe",
+      "name": "Ikai Lampe",
+      "email": ""
+    },
+    {
+      "forename": "Teddy",
+      "surname": "Lan",
+      "name": "Teddy Lan",
+      "email": ""
+    },
+    {
+      "forename": "Jan",
+      "surname": "Lee",
+      "name": "Jan Lee",
+      "email": ""
+    },
+    {
+      "forename": "Jade",
+      "surname": "Leike",
+      "name": "Jade Leike",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Leung",
+      "name": "Daniel Leung",
+      "email": ""
+    },
+    {
+      "forename": "Ming",
+      "surname": "Levy",
+      "name": "Ming Levy",
+      "email": ""
+    },
+    {
+      "forename": "Rachel",
+      "surname": "Li",
+      "name": "Rachel Li",
+      "email": ""
+    },
+    {
+      "forename": "Molly",
+      "surname": "Lim",
+      "name": "Molly Lim",
+      "email": ""
+    },
+    {
+      "forename": "Stephanie",
+      "surname": "Lin",
+      "name": "Stephanie Lin",
+      "email": ""
+    },
+    {
+      "forename": "Mateusz",
+      "surname": "Lin",
+      "name": "Mateusz Lin",
+      "email": ""
+    },
+    {
+      "forename": "Theresa",
+      "surname": "Litwin",
+      "name": "Theresa Litwin",
+      "email": ""
+    },
+    {
+      "forename": "Ryan",
+      "surname": "Lopez",
+      "name": "Ryan Lopez",
+      "email": ""
+    },
+    {
+      "forename": "Patricia",
+      "surname": "Lowe",
+      "name": "Patricia Lowe",
+      "email": ""
+    },
+    {
+      "forename": "Anna",
+      "surname": "Lue",
+      "name": "Anna Lue",
+      "email": ""
+    },
+    {
+      "forename": "Kim",
+      "surname": "Makanju",
+      "name": "Kim Makanju",
+      "email": ""
+    },
+    {
+      "forename": "Sam",
+      "surname": "Malfacini",
+      "name": "Sam Malfacini",
+      "email": ""
+    },
+    {
+      "forename": "Todor",
+      "surname": "Manning",
+      "name": "Todor Manning",
+      "email": ""
+    },
+    {
+      "forename": "Yaniv",
+      "surname": "Markov",
+      "name": "Yaniv Markov",
+      "email": ""
+    },
+    {
+      "forename": "Bianca",
+      "surname": "Markovski",
+      "name": "Bianca Markovski",
+      "email": ""
+    },
+    {
+      "forename": "Katie",
+      "surname": "Martin",
+      "name": "Katie Martin",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Mayer",
+      "name": "Andrew Mayer",
+      "email": ""
+    },
+    {
+      "forename": "Bob",
+      "surname": "Mayne",
+      "name": "Bob Mayne",
+      "email": ""
+    },
+    {
+      "forename": "Scott Mayer ",
+      "surname": "Mcgrew",
+      "name": "Scott Mayer  Mcgrew",
+      "email": ""
+    },
+    {
+      "forename": "Christine",
+      "surname": "Mckinney",
+      "name": "Christine Mckinney",
+      "email": ""
+    },
+    {
+      "forename": "Paul",
+      "surname": "Mcleavey",
+      "name": "Paul Mcleavey",
+      "email": ""
+    },
+    {
+      "forename": "Jake",
+      "surname": "Mcmillan",
+      "name": "Jake Mcmillan",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Mcneil",
+      "name": "David Mcneil",
+      "email": ""
+    },
+    {
+      "forename": "Aalok",
+      "surname": "Medina",
+      "name": "Aalok Medina",
+      "email": ""
+    },
+    {
+      "forename": "Jacob",
+      "surname": "Mehta",
+      "name": "Jacob Mehta",
+      "email": ""
+    },
+    {
+      "forename": "Luke",
+      "surname": "Menick",
+      "name": "Luke Menick",
+      "email": ""
+    },
+    {
+      "forename": "Andrey",
+      "surname": "Metz",
+      "name": "Andrey Metz",
+      "email": ""
+    },
+    {
+      "forename": "Pamela",
+      "surname": "Mishchenko",
+      "name": "Pamela Mishchenko",
+      "email": ""
+    },
+    {
+      "forename": "Vinnie",
+      "surname": "Mishkin",
+      "name": "Vinnie Mishkin",
+      "email": ""
+    },
+    {
+      "forename": "Evan",
+      "surname": "Monaco",
+      "name": "Evan Monaco",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Morikawa",
+      "name": "Daniel Morikawa",
+      "email": ""
+    },
+    {
+      "forename": "Tong",
+      "surname": "Mossing",
+      "name": "Tong Mossing",
+      "email": ""
+    },
+    {
+      "forename": "Mira",
+      "surname": "Mu",
+      "name": "Mira Mu",
+      "email": ""
+    },
+    {
+      "forename": "Oleg",
+      "surname": "Murati",
+      "name": "Oleg Murati",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Murk",
+      "name": "David Murk",
+      "email": ""
+    },
+    {
+      "forename": "Ashvin",
+      "surname": "Mély",
+      "name": "Ashvin Mély",
+      "email": ""
+    },
+    {
+      "forename": "Reiichiro",
+      "surname": "Nair",
+      "name": "Reiichiro Nair",
+      "email": ""
+    },
+    {
+      "forename": "Rajeev",
+      "surname": "Nakano",
+      "name": "Rajeev Nakano",
+      "email": ""
+    },
+    {
+      "forename": "Arvind",
+      "surname": "Nayak",
+      "name": "Arvind Nayak",
+      "email": ""
+    },
+    {
+      "forename": "Richard",
+      "surname": "Neelakantan",
+      "name": "Richard Neelakantan",
+      "email": ""
+    },
+    {
+      "forename": "Hyeonwoo",
+      "surname": "Ngo",
+      "name": "Hyeonwoo Ngo",
+      "email": ""
+    },
+    {
+      "forename": "Long",
+      "surname": "Noh",
+      "name": "Long Noh",
+      "email": ""
+    },
+    {
+      "forename": "Cullen",
+      "surname": "Ouyang",
+      "name": "Cullen Ouyang",
+      "email": ""
+    },
+    {
+      "forename": "Jakub",
+      "surname": "O'keefe",
+      "name": "Jakub O'keefe",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Pachocki",
+      "name": "Alex Pachocki",
+      "email": ""
+    },
+    {
+      "forename": "Joe",
+      "surname": "Paino",
+      "name": "Joe Paino",
+      "email": ""
+    },
+    {
+      "forename": "Ashley",
+      "surname": "Palermo",
+      "name": "Ashley Palermo",
+      "email": ""
+    },
+    {
+      "forename": "Giambat- Tista",
+      "surname": "Pantuliano",
+      "name": "Giambat- Tista Pantuliano",
+      "email": ""
+    },
+    {
+      "forename": "Joel",
+      "surname": "Parascandolo",
+      "name": "Joel Parascandolo",
+      "email": ""
+    },
+    {
+      "forename": "Emy",
+      "surname": "Parish",
+      "name": "Emy Parish",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Parparita",
+      "name": "Alex Parparita",
+      "email": ""
+    },
+    {
+      "forename": "Mikhail",
+      "surname": "Passos",
+      "name": "Mikhail Passos",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Pavlov",
+      "name": "Andrew Pavlov",
+      "email": ""
+    },
+    {
+      "forename": "Adam",
+      "surname": "Peng",
+      "name": "Adam Peng",
+      "email": ""
+    },
+    {
+      "forename": "Filipe",
+      "surname": "Perel- Man",
+      "name": "Filipe Perel- Man",
+      "email": ""
+    },
+    {
+      "forename": "Belbute",
+      "surname": "De Avila",
+      "name": "Belbute De Avila",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Peres",
+      "name": "Michael Peres",
+      "email": ""
+    },
+    {
+      "forename": "Henrique",
+      "surname": "Petrov",
+      "name": "Henrique Petrov",
+      "email": ""
+    },
+    {
+      "forename": "Oliveira",
+      "surname": "Pinto",
+      "name": "Oliveira Pinto",
+      "email": ""
+    },
+    {
+      "forename": "Michelle",
+      "surname": "Pokrass",
+      "name": "Michelle Pokrass",
+      "email": ""
+    },
+    {
+      "forename": "Vitchyr H.",
+      "surname": "Pong",
+      "name": "Vitchyr H. Pong",
+      "email": ""
+    },
+    {
+      "forename": "Tolly",
+      "surname": "Pow- Ell",
+      "name": "Tolly Pow- Ell",
+      "email": ""
+    },
+    {
+      "forename": "Alethea",
+      "surname": "Power",
+      "name": "Alethea Power",
+      "email": ""
+    },
+    {
+      "forename": "Boris",
+      "surname": "Power",
+      "name": "Boris Power",
+      "email": ""
+    },
+    {
+      "forename": "Elizabeth",
+      "surname": "Proehl",
+      "name": "Elizabeth Proehl",
+      "email": ""
+    },
+    {
+      "forename": "Raul",
+      "surname": "Puri",
+      "name": "Raul Puri",
+      "email": ""
+    },
+    {
+      "forename": "Alec",
+      "surname": "Radford",
+      "name": "Alec Radford",
+      "email": ""
+    },
+    {
+      "forename": "Jack",
+      "surname": "Rae",
+      "name": "Jack Rae",
+      "email": ""
+    },
+    {
+      "forename": "Aditya",
+      "surname": "Ramesh",
+      "name": "Aditya Ramesh",
+      "email": ""
+    },
+    {
+      "forename": "Cameron",
+      "surname": "Raymond",
+      "name": "Cameron Raymond",
+      "email": ""
+    },
+    {
+      "forename": "Francis",
+      "surname": "Real",
+      "name": "Francis Real",
+      "email": ""
+    },
+    {
+      "forename": "Kendra",
+      "surname": "Rimbach",
+      "name": "Kendra Rimbach",
+      "email": ""
+    },
+    {
+      "forename": "Carl",
+      "surname": "Ross",
+      "name": "Carl Ross",
+      "email": ""
+    },
+    {
+      "forename": "Bob",
+      "surname": "Rotsted",
+      "name": "Bob Rotsted",
+      "email": ""
+    },
+    {
+      "forename": "Henri",
+      "surname": "Roussez",
+      "name": "Henri Roussez",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Ry- Der",
+      "name": "Nick Ry- Der",
+      "email": ""
+    },
+    {
+      "forename": "Mario",
+      "surname": "Saltarelli",
+      "name": "Mario Saltarelli",
+      "email": ""
+    },
+    {
+      "forename": "Ted",
+      "surname": "Sanders",
+      "name": "Ted Sanders",
+      "email": ""
+    },
+    {
+      "forename": "Shibani",
+      "surname": "Santurkar",
+      "name": "Shibani Santurkar",
+      "email": ""
+    },
+    {
+      "forename": "Girish",
+      "surname": "Sastry",
+      "name": "Girish Sastry",
+      "email": ""
+    },
+    {
+      "forename": "Heather",
+      "surname": "Schmidt",
+      "name": "Heather Schmidt",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Schnurr",
+      "name": "David Schnurr",
+      "email": ""
+    },
+    {
+      "forename": "John",
+      "surname": "Schulman",
+      "name": "John Schulman",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Selsam",
+      "name": "Daniel Selsam",
+      "email": ""
+    },
+    {
+      "forename": "Kyla",
+      "surname": "Sheppard",
+      "name": "Kyla Sheppard",
+      "email": ""
+    },
+    {
+      "forename": "Toki",
+      "surname": "Sherbakov",
+      "name": "Toki Sherbakov",
+      "email": ""
+    },
+    {
+      "forename": "Jessica",
+      "surname": "Shieh",
+      "name": "Jessica Shieh",
+      "email": ""
+    },
+    {
+      "forename": "Sarah",
+      "surname": "Shoker",
+      "name": "Sarah Shoker",
+      "email": ""
+    },
+    {
+      "forename": "Pranav",
+      "surname": "Shyam",
+      "name": "Pranav Shyam",
+      "email": ""
+    },
+    {
+      "forename": "Szymon",
+      "surname": "Sidor",
+      "name": "Szymon Sidor",
+      "email": ""
+    },
+    {
+      "forename": "Eric",
+      "surname": "Sigler",
+      "name": "Eric Sigler",
+      "email": ""
+    },
+    {
+      "forename": "Maddie",
+      "surname": "Simens",
+      "name": "Maddie Simens",
+      "email": ""
+    },
+    {
+      "forename": "Jordan",
+      "surname": "Sitkin",
+      "name": "Jordan Sitkin",
+      "email": ""
+    },
+    {
+      "forename": "Katarina",
+      "surname": "Slama",
+      "name": "Katarina Slama",
+      "email": ""
+    },
+    {
+      "forename": "Ian",
+      "surname": "Sohl",
+      "name": "Ian Sohl",
+      "email": ""
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Sokolowsky",
+      "name": "Benjamin Sokolowsky",
+      "email": ""
+    },
+    {
+      "forename": "Yang",
+      "surname": "Song",
+      "name": "Yang Song",
+      "email": ""
+    },
+    {
+      "forename": "Natalie",
+      "surname": "Staudacher",
+      "name": "Natalie Staudacher",
+      "email": ""
+    },
+    {
+      "forename": "Fe- Lipe Petroski ",
+      "surname": "Such",
+      "name": "Fe- Lipe Petroski  Such",
+      "email": ""
+    },
+    {
+      "forename": "Natalie",
+      "surname": "Summers",
+      "name": "Natalie Summers",
+      "email": ""
+    },
+    {
+      "forename": "Ilya",
+      "surname": "Sutskever",
+      "name": "Ilya Sutskever",
+      "email": ""
+    },
+    {
+      "forename": "Jie",
+      "surname": "Tang",
+      "name": "Jie Tang",
+      "email": ""
+    },
+    {
+      "forename": "Nikolas",
+      "surname": "Tezak",
+      "name": "Nikolas Tezak",
+      "email": ""
+    },
+    {
+      "forename": "Madeleine B.",
+      "surname": "Thompson",
+      "name": "Madeleine B. Thompson",
+      "email": ""
+    },
+    {
+      "forename": "Phil",
+      "surname": "Tillet",
+      "name": "Phil Tillet",
+      "email": ""
+    },
+    {
+      "forename": "Amin",
+      "surname": "Tootoonchian",
+      "name": "Amin Tootoonchian",
+      "email": ""
+    },
+    {
+      "forename": "Elizabeth",
+      "surname": "Tseng",
+      "name": "Elizabeth Tseng",
+      "email": ""
+    },
+    {
+      "forename": "Preston",
+      "surname": "Tuggle",
+      "name": "Preston Tuggle",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Turley",
+      "name": "Nick Turley",
+      "email": ""
+    },
+    {
+      "forename": "Jerry",
+      "surname": "Tworek",
+      "name": "Jerry Tworek",
+      "email": ""
+    },
+    {
+      "forename": "Juan",
+      "surname": "Fe- Lipe",
+      "name": "Juan Fe- Lipe",
+      "email": ""
+    },
+    {
+      "forename": "Cerón",
+      "surname": "Uribe",
+      "name": "Cerón Uribe",
+      "email": ""
+    },
+    {
+      "forename": "Andrea",
+      "surname": "Vallone",
+      "name": "Andrea Vallone",
+      "email": ""
+    },
+    {
+      "forename": "Arun",
+      "surname": "Vijayvergiya",
+      "name": "Arun Vijayvergiya",
+      "email": ""
+    },
+    {
+      "forename": "Chelsea",
+      "surname": "Voss",
+      "name": "Chelsea Voss",
+      "email": ""
+    },
+    {
+      "forename": "Carroll",
+      "surname": "Wainwright",
+      "name": "Carroll Wainwright",
+      "email": ""
+    },
+    {
+      "forename": "Justin Jay ",
+      "surname": "Wang",
+      "name": "Justin Jay  Wang",
+      "email": ""
+    },
+    {
+      "forename": "Alvin",
+      "surname": "Wang",
+      "name": "Alvin Wang",
+      "email": ""
+    },
+    {
+      "forename": "Ben",
+      "surname": "Wang",
+      "name": "Ben Wang",
+      "email": ""
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Ward",
+      "name": "Jonathan Ward",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Wei",
+      "name": "Jason Wei",
+      "email": ""
+    },
+    {
+      "forename": "C.J.",
+      "surname": "Weinmann",
+      "name": "C.J. Weinmann",
+      "email": ""
+    },
+    {
+      "forename": "Akila",
+      "surname": "Welihinda",
+      "name": "Akila Welihinda",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Welinder",
+      "name": "Peter Welinder",
+      "email": ""
+    },
+    {
+      "forename": "Ji- Ayi",
+      "surname": "Weng",
+      "name": "Ji- Ayi Weng",
+      "email": ""
+    },
+    {
+      "forename": "Lilian",
+      "surname": "Weng",
+      "name": "Lilian Weng",
+      "email": ""
+    },
+    {
+      "forename": "Matt",
+      "surname": "Wiethoff",
+      "name": "Matt Wiethoff",
+      "email": ""
+    },
+    {
+      "forename": "Dave",
+      "surname": "Willner",
+      "name": "Dave Willner",
+      "email": ""
+    },
+    {
+      "forename": "Clemens",
+      "surname": "Winter",
+      "name": "Clemens Winter",
+      "email": ""
+    },
+    {
+      "forename": "Samuel",
+      "surname": "Wolrich",
+      "name": "Samuel Wolrich",
+      "email": ""
+    },
+    {
+      "forename": "Hannah",
+      "surname": "Wong",
+      "name": "Hannah Wong",
+      "email": ""
+    },
+    {
+      "forename": "Lauren",
+      "surname": "Workman",
+      "name": "Lauren Workman",
+      "email": ""
+    },
+    {
+      "forename": "Sherwin",
+      "surname": "Wu",
+      "name": "Sherwin Wu",
+      "email": ""
+    },
+    {
+      "forename": "Jeffrey",
+      "surname": "Wu",
+      "name": "Jeffrey Wu",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Wu",
+      "name": "Michael Wu",
+      "email": ""
+    },
+    {
+      "forename": "Kai",
+      "surname": "Xiao",
+      "name": "Kai Xiao",
+      "email": ""
+    },
+    {
+      "forename": "Tao",
+      "surname": "Xu",
+      "name": "Tao Xu",
+      "email": ""
+    },
+    {
+      "forename": "Sarah",
+      "surname": "Yoo",
+      "name": "Sarah Yoo",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Yu",
+      "name": "Kevin Yu",
+      "email": ""
+    },
+    {
+      "forename": "Qim- Ing",
+      "surname": "Yuan",
+      "name": "Qim- Ing Yuan",
+      "email": ""
+    },
+    {
+      "forename": "Wojciech",
+      "surname": "Zaremba",
+      "name": "Wojciech Zaremba",
+      "email": ""
+    },
+    {
+      "forename": "Rowan",
+      "surname": "Zellers",
+      "name": "Rowan Zellers",
+      "email": ""
+    },
+    {
+      "forename": "Chong",
+      "surname": "Zhang",
+      "name": "Chong Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Marvin",
+      "surname": "Zhang",
+      "name": "Marvin Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Shengjia",
+      "surname": "Zhao",
+      "name": "Shengjia Zhao",
+      "email": ""
+    },
+    {
+      "forename": "Rewon",
+      "surname": "Child",
+      "name": "Rewon Child",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Luan",
+      "name": "David Luan",
+      "email": ""
+    },
+    {
+      "forename": "Dario",
+      "surname": "Amodei",
+      "name": "Dario Amodei",
+      "email": ""
+    },
+    {
+      "forename": "Abigail",
+      "surname": "See",
+      "name": "Abigail See",
+      "email": ""
+    },
+    {
+      "forename": "Peter J.",
+      "surname": "Liu",
+      "name": "Peter J. Liu",
+      "email": ""
+    },
+    {
+      "forename": "Haochen",
+      "surname": "Tan",
+      "name": "Haochen Tan",
+      "email": ""
+    },
+    {
+      "forename": "Zhijiang",
+      "surname": "Guo",
+      "name": "Zhijiang Guo",
+      "email": ""
+    },
+    {
+      "forename": "Zhan",
+      "surname": "Shi",
+      "name": "Zhan Shi",
+      "email": ""
+    },
+    {
+      "forename": "Lu",
+      "surname": "Xu",
+      "name": "Lu Xu",
+      "email": ""
+    },
+    {
+      "forename": "Zhili",
+      "surname": "Liu",
+      "name": "Zhili Liu",
+      "email": ""
+    },
+    {
+      "forename": "Xiaoguang",
+      "surname": "Li",
+      "name": "Xiaoguang Li",
+      "email": ""
+    },
+    {
+      "forename": "Yasheng",
+      "surname": "Wang",
+      "name": "Yasheng Wang",
+      "email": ""
+    },
+    {
+      "forename": "Lifeng",
+      "surname": "Shang",
+      "name": "Lifeng Shang",
+      "email": ""
+    },
+    {
+      "forename": "Qun",
+      "surname": "Liu",
+      "name": "Qun Liu",
+      "email": ""
+    },
+    {
+      "forename": "Linqi 2024 ",
+      "surname": "Song",
+      "name": "Linqi 2024  Song",
+      "email": ""
+    },
+    {
+      "forename": "Hugo",
+      "surname": "Touvron",
+      "name": "Hugo Touvron",
+      "email": ""
+    },
+    {
+      "forename": "Louis",
+      "surname": "Martin",
+      "name": "Louis Martin",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Stone",
+      "name": "Kevin Stone",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Al- Bert",
+      "name": "Peter Al- Bert",
+      "email": ""
+    },
+    {
+      "forename": "Amjad",
+      "surname": "Almahairi",
+      "name": "Amjad Almahairi",
+      "email": ""
+    },
+    {
+      "forename": "Yasmine",
+      "surname": "Babaei",
+      "name": "Yasmine Babaei",
+      "email": ""
+    },
+    {
+      "forename": "Nikolay",
+      "surname": "Bashlykov",
+      "name": "Nikolay Bashlykov",
+      "email": ""
+    },
+    {
+      "forename": "Soumya",
+      "surname": "Batra",
+      "name": "Soumya Batra",
+      "email": ""
+    },
+    {
+      "forename": "Prajjwal",
+      "surname": "Bhargava",
+      "name": "Prajjwal Bhargava",
+      "email": ""
+    },
+    {
+      "forename": "Jiaan",
+      "surname": "Wang",
+      "name": "Jiaan Wang",
+      "email": ""
+    },
+    {
+      "forename": "Yunlong",
+      "surname": "Liang",
+      "name": "Yunlong Liang",
+      "email": ""
+    },
+    {
+      "forename": "Fandong",
+      "surname": "Meng",
+      "name": "Fandong Meng",
+      "email": ""
+    },
+    {
+      "forename": "Zengkui",
+      "surname": "Sun",
+      "name": "Zengkui Sun",
+      "email": ""
+    },
+    {
+      "forename": "Haoxiang",
+      "surname": "Shi",
+      "name": "Haoxiang Shi",
+      "email": ""
+    },
+    {
+      "forename": "Zhixu",
+      "surname": "Li",
+      "name": "Zhixu Li",
+      "email": ""
+    },
+    {
+      "forename": "Jinan",
+      "surname": "Xu",
+      "name": "Jinan Xu",
+      "email": ""
+    },
+    {
+      "forename": "Jianfeng",
+      "surname": "Qu",
+      "name": "Jianfeng Qu",
+      "email": ""
+    },
+    {
+      "forename": "Jie",
+      "surname": "Zhou",
+      "name": "Jie Zhou",
+      "email": ""
+    },
+    {
+      "forename": "Yizhong",
+      "surname": "Wang",
+      "name": "Yizhong Wang",
+      "email": ""
+    },
+    {
+      "forename": "Hamish",
+      "surname": "Ivison",
+      "name": "Hamish Ivison",
+      "email": ""
+    },
+    {
+      "forename": "Pradeep",
+      "surname": "Dasigi",
+      "name": "Pradeep Dasigi",
+      "email": ""
+    },
+    {
+      "forename": "Jack",
+      "surname": "Hessel",
+      "name": "Jack Hessel",
+      "email": ""
+    },
+    {
+      "forename": "Tushar",
+      "surname": "Khot",
+      "name": "Tushar Khot",
+      "email": ""
+    },
+    {
+      "forename": "Khyathi",
+      "surname": "Chandu",
+      "name": "Khyathi Chandu",
+      "email": ""
+    },
+    {
+      "forename": "Kelsey",
+      "surname": "Macmillan",
+      "name": "Kelsey Macmillan",
+      "email": ""
+    },
+    {
+      "forename": "Noah A.",
+      "surname": "Smith",
+      "name": "Noah A. Smith",
+      "email": ""
+    },
+    {
+      "forename": "Iz",
+      "surname": "Beltagy",
+      "name": "Iz Beltagy",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Evaluating the outputs of large language models (LLMs) on long-form generative tasks remains challenging. While fine-grained, aspectwise evaluations provide valuable diagnostic information, they are difficult to design exhaustively, and each aspect's contribution to the overall acceptability of an answer is unclear. In this study, we propose a method to compute an overall quality score as a weighted average of three key aspects: factuality, informativeness, and formality. This approach achieves stronger correlations with human judgments compared to previous metrics. Our analysis identifies factuality as the most predictive aspect of overall quality. Additionally, we release a dataset of 1.2k long-form QA answers annotated with both absolute judgments and relative preferences in overall and aspect-wise schemes, to aid future research in evaluation practices. github.com/gokamoda/lfqa-weighted-eval"
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Despite the widespread adoption of large language models (LLMs) for various open-ended generative tasks, such as long-form question answering (QA; Fan et al. 2019) or summarization (See et al., 2017), evaluating their outputs remains challenging (Wang et al., 2023b; Tan et al., 2024). Human annotations are costly and difficult to scale, so there has long been an interest in automating the process. Previously, a common approach was to use referencebased metrics, where the outputs are compared to one or several gold examples (Lin, 2004; Papineni et al., 2002), however, it was found to correlate poorly with human quality assessments (Krishna et al., 2021). In contrast, human assessments directly provide either a relative preference or an absolute judgment of quality. These can be further divided into asking for a single overall rating or fine-grained aspect-wise ones, explicitly covering a range of properties such as factuality or coherence (representative works are listed in Figure ). Of these, fine-grained absolute scores offer the highest amount of diagnostic information, creating a clear picture of an output's quality. However, it is challenging to design an exhaustive list of all the important factors for a human. An overall assessment is thus desirable to cover any potential other aspects, but it is also still unclear how much each aspect contributes to the overall assessment.",
+          "quote": [
+            {
+              "text": "Fan et al. 2019)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "ring (QA; ",
+              "index": 147
+            },
+            {
+              "text": "(See et al., 2017)",
+              "target": "",
+              "type": "bibr",
+              "context": "arization ",
+              "index": 181
+            },
+            {
+              "text": "Tan et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2023b; ",
+              "index": 267
+            },
+            {
+              "text": "Papineni et al., 2002)",
+              "target": "",
+              "type": "bibr",
+              "context": "in, 2004; ",
+              "index": 541
+            },
+            {
+              "text": "(Krishna et al., 2021)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "sessments ",
+              "index": 638
+            },
+            {
+              "text": "[(Wangetal.,2023b]",
+              "type": "bibr",
+              "index": 246,
+              "context": "allenging ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 246,
+              "context": "allenging ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Lin,2004]",
+              "type": "bibr",
+              "index": 529,
+              "context": " examples ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 529,
+              "context": " examples ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "In this study, we propose producing an overall rating as a weighted average of aspect-wise ratings. Specifically, we defined FACTUALITY, AMOUNTINFO, and FORMALITY as a representative set of commonly used aspects. We measured their contribution to ACCEPTABILITY (an overall assessment), used this to calculate a weighted average, and then compared the average rating's correlation with human ACCEPTABILITY ratings. This measure demonstrated better alignment with the human ratings compared to previous methods. Figure  shows an overview of the annotation scheme and example ratings.",
+          "quote": []
+        },
+        {
+          "text": "The paper is organized as follows. Section 2 provides background on previous evaluation practices. Section 3 describes the process of building a dataset of human-written and generated answers for long-form QA with human annotations covering all four rating formats: absolute and relative, overall and fine-grained evaluation, respectively. In Section 4, we then analyze the annotations and define our weighted measure, finding that FACTU-ALITY was most predictive of ACCEPTABILITY scores. Finally, in Section 5, we compare the correlation between human ACCEPTABILITY ratings and several automatic measures, demonstrating that the proposed method yields the highest correlation. We release the new dataset, containing four-way human annotations for 1.2k answers of long-form QA, for future explorations of best practices for annotation.",
+          "quote": []
+        },
+        {
+          "text": "Question: Why do we hate our own voice when we hear it recorded?",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Ratings References"
+      },
+      "p": [
+        {
+          "text": "Acceptability Factuality Amount Info Formality … Bhatt explained that the dislike of the sound of our own voices is physiological and psychological First off, audio recordings translate ... (link) Reference 1: … Basically, the reasoning is that because our recorded voice does not sound how we expect it to, we don't like it. Dr Silke Paulmann, a ... (link) Reference 2: ︙ ︙ Answers 2.3 2.0 0.3 -0.3",
+          "quote": []
+        },
+        {
+          "text": "[ HT] When you hear your voice normally, you hear a sound transmitted through the air just like everyone else hears... but you also hear some of the sound transmitted through your jaw and skull. Since bone transits sound very differently to air, the way you hear your own voice is … 1.0 1.7 -1.0 -0.7",
+          "quote": []
+        },
+        {
+          "text": "[ HR] When you hear yourself as you speak, you're also hearing the vibrations echoing around in your skull. That changes the way your voice sounds, compared to recording it. You're just not used to hearing yourself sound so different.",
+          "quote": []
+        },
+        {
+          "text": "3.0 2.7 0.0 0.3",
+          "quote": []
+        },
+        {
+          "text": "[ MF] We perceive our voice differently when we hear it on a recording because we are not used to hearing it from that perspective. When we speak, we hear our voice through the bones in our skull as well as through the air, which creates a richer, deeper tone. However, … 3.0 2.7 0.3 0.0",
+          "quote": []
+        },
+        {
+          "text": "[ MC] Have you ever listened to a recording of your own voice and cringed at the sound of it? Well, you're not alone. The reason why we hate the sound of our own voice is because when we talk, the soundwaves from our voice travel through our skull and jawbone, creating vibrations …",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Formality"
+      },
+      "p": [
+        {
+          "text": "The answer's formal appropriateness including its vocabulary, grammar, and spelling.",
+          "quote": []
+        },
+        {
+          "text": "-1 Too casual 0 1 Too Formal Amount Info",
+          "quote": []
+        },
+        {
+          "text": "Whether or not sufficient amount of information was addressed to fully answer the question.",
+          "quote": []
+        },
+        {
+          "text": "-1 Not enough 0 Sufficient 1 Too much",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Factuality"
+      },
+      "p": [
+        {
+          "text": "Whether or not the information provided in the candidate answer is factually correct.  HT, HR, MF, and MC denote Human Top, Human Random, Model Formal, and Model Casual, respectively. The scores displayed in the table are the average scores of three annotators. We also collect preferences along with free-form justification.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "Background"
+      },
+      "p": [
+        {
+          "text": "Human evaluations of long-form generations. We provide a taxonomy of human evaluations studied in prior long-form evaluations. Figure (Krishna et al., 2021; Zheng et al., 2023; Xu et al., 2023) summarizes four different categories of evaluations with references to previous work. Relative overall evaluation is one of the common approaches (Wu et al., 2023). Human evaluators are shown two candidate generations and asked which one is better. However, such relative evaluations do not provide absolute performance scores of subject systems, as is done in Absolute Overall evaluation. Moreover, the overall evaluation lacks insights into the factors and their degree of influence on final preferences (Nakano et al., 2021; Liu et al., 2023d). Relative Multi-aspect evaluation conducts relative evaluations in multiple axes (Wiegreffe et al., 2022). Specifically, they define fine-grained aspects and collect human evaluations in a pairwise relative manner. In Absolute Multi-aspect evaluation, on the other hand, outputs are evaluated for each aspect on an absolute scale . While multi-aspect evaluation provides a more fine-grained assessment of outputs, it often requires careful customization and designs of fine-grained aspects for each task. They employ a multi-aspect evaluation scheme using LLMs and aggregate at the end to get a single overall score. Computing a single score for the overall score allows easy comparison of the performance of multiple systems. However, they aggregate the scores simply by taking the average, which may not be the most appropriate method when aiming for an evaluation protocol with a strong correlation against human preferences.",
+          "quote": [
+            {
+              "text": "Zheng et al., 2023;",
+              "target": "#b18",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 157
+            },
+            {
+              "text": "Xu et al., 2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 177
+            },
+            {
+              "text": "(Wu et al., 2023)",
+              "target": "#b18",
+              "type": "bibr",
+              "context": "pproaches ",
+              "index": 340
+            },
+            {
+              "text": "Liu et al., 2023d)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 722
+            },
+            {
+              "text": "(Wiegreffe et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "iple axes ",
+              "index": 822
+            },
+            {
+              "text": "[(Krishnaetal.,2021]",
+              "type": "bibr",
+              "index": 134,
+              "context": "s. Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 134,
+              "context": "s. Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Nakanoetal.,2021]",
+              "type": "bibr",
+              "index": 700,
+              "context": "eferences ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 700,
+              "context": "eferences ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "Collecting Fine-grained Human Annotations"
+      },
+      "p": [
+        {
+          "text": "This work investigates what aspects affect the overall rating of long-form responses with a focus on information-seeking queries requiring long-form responses by conducting annotations on both human and model-generated answers (Section 3.1).",
+          "quote": []
+        },
+        {
+          "text": "Our human annotation scheme consists of finegrained aspects and overall ratings, both done in an absolute scoring scale. To get deeper insights into other affecting factors, we also collect freeform justification comments along with overall preference (Section 3.2).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "Focus and Query-Response Data"
+      },
+      "p": [
+        {
+          "text": "Among various long-form generation tasks, we focus on the long-form QA task in this work. ELI5 is a dataset widely used in this task constructed by Fan et al. (2019), comprised of questions and answers collected from a Reddit forum, \"Explain Like I'm 5.\" The dataset is widely used in recent stud- ies as an assembly of diverse information-seeking queries (Liu et al., 2023a; Chen et al., 2023a). Thus, we use this dataset as a starting seed data for our evaluation. We evaluate two human-written responses and two model-generated responses for each of the 300 questions sampled from the ELI5 test set.",
+          "quote": [
+            {
+              "text": "Fan et al. (2019)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "ructed by ",
+              "index": 148
+            },
+            {
+              "text": "Chen et al., 2023a)",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "., 2023a; ",
+              "index": 376
+            },
+            {
+              "text": "[(Liuetal.,2023a]",
+              "type": "bibr",
+              "index": 356,
+              "context": "g queries ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 356,
+              "context": "g queries ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "The 300 questions are sampled using the following procedure: From the first 800 instances (each with a question and multiple human written answers) in the ELI5 dataset, we dropped answers containing URLs to external sources to remove non-self-contained answers. After dropping instances with less than two answers, we collected model-generated responses from ChatGPT. 1 Because ChatGPT refused to answer some queries (e.g., for ethical reasons), we also dropped queries where ChatGPT generated answers starting with \"As an AI.\" Finally, we randomly sampled 300 unique queries from the remaining queries.",
+          "quote": []
+        },
+        {
+          "text": "Regarding the two human-written responses, one is the top-rated answer (HT; Human-Top), and another is randomly sampled from non-top-rated answers (HR; Human-Random). For modelgenerated responses, one is generated by a simple prompt (MF; Model-Formal), and another is prompted so that it generates answers in a more casual and engaging format (MC; Model-Casual). We included one more casual and engaging answer generated by the same model to investigate the effects of such stylistic features, as we noticed that human annotators in our preliminary experiment 1 The responses were generated in May 2023. sometimes chose a human-written answer over a model-generated answer with the same amount of information due to their more engaging fashion.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Human Evaluation Scheme"
+      },
+      "p": [
+        {
+          "text": "The evaluation framework is shown in Overall rating: We consider ACCEPTABILITY as a higher-level aspect measuring overall rating. We use a 4-point scale for this aspect, with the ideal score of 3, to avoid the middle option.",
+          "quote": []
+        },
+        {
+          "text": "Fine-grained aspect: For the first fine-grained aspect, we set FACTUALITY. FACTUALITY is intuitively important in long-form QA tasks, as it is required for QA responses to provide accurate information. Because responses contain multiple factual statements (Min et al., 2023; Mishra et al., 2024), binary evaluation of whether the addressed statements are accurate is intuitively insufficient for this task. Thus, we use a 4-point scale for this aspect, with the ideal score of 3, to avoid the middle option. While FACTUALITY measures the quality of information, AMOUNTINFO measures the quantity of information. Responses need to have sufficient information, but at the same time, they should not overwhelm the reader with too much information. Thus, we set a scale from -1 (Not enough information) to 1 (Too much information), with 0 being the ideal score. The last aspect is FORMAL-ITY, which measures the surface-level quality of the responses, including choice of vocabulary, use of slang, and correctness of grammar. This aspect serves as an umbrella for measures previously used to evaluate natural language generation (Howcroft et al., 2020). From the intuition that too casual or too formal responses are not favored, we set a scale from -1 (too casual) to 1 (too formal), with 0 being the ideal score.",
+          "quote": [
+            {
+              "text": "Mishra et al., 2024)",
+              "target": "#b13",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 275
+            },
+            {
+              "text": "(Howcroft et al., 2020)",
+              "target": "#b5",
+              "type": "bibr",
+              "context": "eneration ",
+              "index": 1124
+            },
+            {
+              "text": "[(Minetal.,2023]",
+              "type": "bibr",
+              "index": 256,
+              "context": "tatements ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 256,
+              "context": "tatements ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Justification: Following Xu et al. (2023), we collect free-form justification comments to capture important aspects other than the three aspects we set.",
+          "quote": [
+            {
+              "text": "Xu et al. (2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "Following ",
+              "index": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3",
+        "name": "Annotation Details"
+      },
+      "p": [
+        {
+          "text": "We recruited crowdworkers on Amazon Mechanical Turk (AMT) who met our qualification criterion regarding English text quality assessment. Finding crowd workers who can provide high-quality annotation on responses to information-seeking queries is often challenging (Xu et al., 2023). We recruit a set of crowd workers from the crowd worker pool after multiple qualification processes for a relevant annotation task.",
+          "quote": [
+            {
+              "text": "(Xu et al., 2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "allenging ",
+              "index": 264
+            }
+          ]
+        },
+        {
+          "text": "The qualification process is explained in Appendix A. Annotators spend about 13-14 minutes on average 2 to complete the task, and we paid $4 for each annotation, resulting in a total cost of $5,064, including preliminary experiments.",
+          "quote": []
+        },
+        {
+          "text": "The annotation interface can be seen in Appendix D. Other than the instructions and annotation targets, we provide ten websites retrieved by Google Search API 3 in an easy-to-verify format (e.g., snippets + iframe) to enable a friendly and accurate factuality check. Note that we do not restrict the use of other external sources.",
+          "quote": []
+        },
+        {
+          "text": "We collect three annotations per instance, and the overall inter-annotator agreement measured with Krippendorff's α was 0.74. A more detailed analysis of annotators' agreement is in Appendix B.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "What Affects Overall Preferences?"
+      },
+      "p": [
+        {
+          "text": "In this section, we analyze the collected human evaluation by assessing factors affecting overall rating from fine-grained ratings and human justifications (Section 4.1). Our human annotations also enable us to understand how model-generated an-swers are different from human-written answers (Section 4.2).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Dissecting Acceptability Factors"
+      },
+      "p": [
+        {
+          "text": "Quantitative analysis on affecting factors. To determine the impact of FACTUALITY, AMOUNTINFO, and FORMALITY on ACCEPTABIL-ITY, we train a simple linear regressor to predict overall ACCEPTABILITY given scores for each of the three other aspects. We first normalize (to range [0, 1]) and re-scale the annotated scores to train the model in the deductive method by converting ratings to \"distance from the ideal score\"(Equation , 2). We train the model to learn weights w ∈ R 3 in Equation .",
+          "quote": []
+        },
+        {
+          "text": "The model was trained on 80% of the annotated data and yielded a Pearson's correlation coefficient ρ of 0.853 on the remaining 20% of the data. After training, w FORM , w INFO , and w FACT were determined as 0.335, 0.739, and 2.048, respectively. The weights indicate that FACTUALITY is the most important evaluation criterion, with approximately three times the weight of AMOUNTINFO. We confirmed that answers with low ACCEPTABILITY also receive low FACTUALITY (Appendix Figure ). FORMALITY is the least valued aspect, indicating that surface-level quality has less effect on a human's overall acceptability. The findings align with the result of training a decision tree, which is depicted in Appendix Figure .",
+          "quote": []
+        },
+        {
+          "text": "Qualitative analysis on explanations. To further understand how annotators make such judgments, we conduct a manual analysis of the 50 longest justifications of crowd workers' relative preferences. We follow the work of Xu et al. (2023) on the aspects to annotate. We also include \"Formality\" and \"Amount Info.\" Figure  shows the frequency of each aspect mentioned in the justifications for judgments. We show the complete list of the definitions of each aspect with examples in Appendix Table . Possibly due to the annotation task we define, the most mentioned aspects are \"Amount Info,\" \"Factuality,\" and \"Formality.\" \"Easiness to understand\" was mentioned frequently, especially when domain knowledge is necessary to answer the question. This further confirms that the aspects covered in our protocols cover key factors affecting human preferences.",
+          "quote": [
+            {
+              "text": "Xu et al. (2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "e work of ",
+              "index": 220
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Comparative Analysis of Responses from LLMs and Humans"
+      },
+      "p": [
+        {
+          "text": "Relative preference. In Figure Xu et al. (2023), we show how frequently each answer type is preferred over the other three answer candidates. It shows that modelgenerated answers are preferred 83.0% of the time, which aligns with the tendency reported by . The figure also shows that formalstyle answers are often chosen over more casual model-generated answers.",
+          "quote": [
+            {
+              "text": "Xu et al. (2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "In Figure ",
+              "index": 31
+            }
+          ]
+        },
+        {
+          "text": "Absolute acceptability. While Figure (Liu et al., 2023c) demonstrates that model answers are relatively preferred, it was unclear how acceptable they are. Figure  shows the distribution of the rated aspects on the model-generated and human-written answers from ELI5, conforming to the superiority of modelgenerated answers. While human-written top-voted and randomly sampled answers yield 1.38 and 1.15 ACCEPTABILITY scores on average, respectively, model-generated formal and casual answers yield 2.46 and 2.36. This result implies that even the annotated ratings in ELI5 may not necessarily align with users' preferences, which has also been discovered in other tasks, such as summarization . Furthermore, although the average ACCEPTABILITY score of model-generated answers is higher, we found that only 54.5% of the best model-generated answers (MF) get the highest ACCEPTABILITY rating (= 3). This suggests that even state-of-the-art models' generations are not fully acceptable, and there is significant room for future improvements.",
+          "quote": [
+            {
+              "text": "(Liu et al., 2023c)",
+              "target": "#b10",
+              "type": "bibr",
+              "context": "le Figure ",
+              "index": 37
+            }
+          ]
+        },
+        {
+          "text": "Aspect-wise analysis. ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.1",
+        "name": "Classical Metrics"
+      },
+      "p": [
+        {
+          "text": "ROUGE (Lin, 2004) is the metric used in the original ELI5 evaluation (Fan et al., 2019). As this metric is a reference-based metric, we use top-rated human-written answers (HT) as a reference and compute the ROUGE-1and ROUGE-L for humanwritten randomly-sampled answers (HR), formal model-generated answers (MF), and casual modelgenerated answers (MC).",
+          "quote": [
+            {
+              "text": "(Lin, 2004)",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "UGE ",
+              "index": 6
+            },
+            {
+              "text": "(Fan et al., 2019)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "valuation ",
+              "index": 69
+            }
+          ]
+        },
+        {
+          "text": "For reference-free metric, we use GPT2-PPL, which computes the perplexity of sequences using GPT2 in Huggingface (Radford et al., 2019 ). In the \"QA\" setting, we feed answers concatenated after corresponding questions, and in the \"RQA\" setting, we feed answers concatenated after random questions.",
+          "quote": [
+            {
+              "text": "(Radford et al., 2019",
+              "target": "",
+              "type": "bibr",
+              "context": "ggingface ",
+              "index": 113
+            }
+          ]
+        },
+        {
+          "text": "We also report the Length (Len) of the answers as one of the most superficial metrics, which is also a target for comparison in work by Xu et al. (2023) and Fabbri et al. (2021).",
+          "quote": [
+            {
+              "text": "Xu et al. (2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "n work by ",
+              "index": 136
+            },
+            {
+              "text": "Fabbri et al. (2021)",
+              "target": "#b3",
+              "type": "bibr",
+              "context": "2023) and ",
+              "index": 157
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.2",
+        "name": "LLM-based metric"
+      },
+      "p": [
+        {
+          "text": "We conduct evaluations using instruction-tuned LLMs, namely GPT-4 (OpenAI et al., 2024) and Llama2-7B (Touvron et al., 2023), inspired by the recent success of LLM-based evaluations (Liu et al., 2023b). In the first setting, we simply prompt LLMs to predict ACCEPTABILITY (hereafter denoted as LLM). In the second setting, we conduct Formality Amount Info Factuality Acceptability  multi-aspect evaluation and then take the weighted sum to predict ACCEPTABILITY (hereafter denoted as W-LLM).",
+          "quote": [
+            {
+              "text": "GPT-4 (OpenAI et al., 2024)",
+              "target": "",
+              "type": "bibr",
+              "context": "s, namely ",
+              "index": 60
+            },
+            {
+              "text": "(Touvron et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "Llama2-7B ",
+              "index": 102
+            },
+            {
+              "text": "(Liu et al., 2023b)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "aluations ",
+              "index": 182
+            }
+          ]
+        },
+        {
+          "text": "In W-LLM, we first have LLMs predict scores in FACTUALITY, AMOUNTINFO, and FORMALITY independently, with different prompts. Predicted ratings rescaled with Equation 1 are then fed to the linear regression model trained in Section 4.2. We finally add the ideal ACCEPTABILITY score of 3 to inverse Equation 2 and get the ACCEPTABILITY prediction.",
+          "quote": []
+        },
+        {
+          "text": "For GPT-4-based evaluation, we feed a one-shot prompt using the instructions and an example held out from the evaluation target. The prompts are available in Appendix Table 5-10. For Llama2based evaluation, we fine-tuned Llama2-7B using the instruction and annotation data for 192 out of 300 queries (or 768 out of 1,200 answers). Using the fine-tuned model, we evaluate the remaining data for 108 queries or 432 answers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.3",
+        "name": "Results"
+      },
+      "p": [
+        {
+          "text": "We show the results in Table  and the distribution by human-annotated acceptability on Figure . Despite the significant performance gap between human and model-generated answers in Section 4.2, the performance gap of reference-based metrics (ROUGE) between HR, MC, and MF answers is largely limited. Together with the high deviation observed from Figure , we reconfirm the difficulties of comparing overall quality with those metrics. All reference-based metrics show correlations lower than 0.2, even lower than the simplest \"Length\" metric. GPT2-PPL displays stronger correlations with the overall acceptance. However, the marginal decrease in the correlations of the \"RQA\" setting from the gold \"QA\" setting poses a question about their reliability, and it may just overly prefer model-based outputs.",
+          "quote": []
+        },
+        {
+          "text": "Regarding the LLM-based metrics, the correlations are higher overall than those of the classical metrics. In the LLM setting, where we only focus on the overall ACCEPTABILITY predicted by LLMs, the high correlation (0.70 and 0.72 for GPT-4 and Llama2-7B, accordingly) against humanannotated data indicates the effectiveness of LLMs as evaluators. Furthermore, evaluation using a weighted sum shows a stronger correlation, revealing the validity of evaluating long-form answers in a fine-grained manner.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.4",
+        "name": "Analysis"
+      },
+      "p": [
+        {
+          "text": "Testing robustness of GPT-4 evaluation. Since GPT-4 is a non-deterministic model even with tem-   perature zero, we conduct further experiments regarding the robustness of the evaluation results. Specifically, we ran two additional iterations of evaluations by GPT-4 against 20% of the dataset, just like we collected annotations from three workers. The correlation of averaged scores from three iterations of evaluation with human annotation was 0.73 on the LLM setting and 0.74 on the W-LLM setting. On both the single-iteration and multipleiteration settings, the correlation on the W-LLM setting exceeded the LLM setting, indicating reproducibility of the conclusion that weighted sum better correlates with human evaluation than just having the model evaluate the overall acceptability.",
+          "quote": []
+        },
+        {
+          "text": "LLM-based metric on previously collected datasets. For robust conclusion, we inspect if the W-LLM setting also yields better alignment than the vanilla LLM setting on previously collected human evaluation data by Nakano et al. (2021) and Krishna et al. (2021). Because their data is collected in a pair-wise manner, we use the accuracy of preference to evaluate the metrics. The accuracy of LLM and W-LLM using GPT4 was 0. Per-aspect errors. For fine-grained multi-aspect evaluation, the key is to have an accurate, finegrained scoring system for each aspect. The mean error of GPT-4 was +0.24, +0.04, and -0.05 for FACTUALITY, AMOUNT INFO, and FORMAL-ITY, respectively, and +0.43, -0.02, and -0.02 for Llama2-7B. Both models show larger errors in factuality, suggesting that there is still room for improvements in evaluating factuality.",
+          "quote": [
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "n data by ",
+              "index": 213
+            },
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "2021) and ",
+              "index": 238
+            }
+          ]
+        },
+        {
+          "text": "Equally weighted evaluation. When equally weighted, GPT-4 showed a 1-point increase in correlation compared to W-LLM, while fine-tuned Llama2 showed a 1-point decrease compared to W-LLM. The accuracy on the Preference-Based datasets of Krishna et al. and Nakano et al. de-creased by 3 to 5 points when compared to W-LLM. While W-LLM aligns better with human judgments overall, we attribute the small difference between simple averaging and W-LLM to errors in per-aspect evaluation.",
+          "quote": [
+            {
+              "text": "Krishna et al. and Nakano et al. de-",
+              "target": "",
+              "type": "bibr",
+              "context": "tasets of ",
+              "index": 236
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6",
+        "name": "Conclusion"
+      },
+      "p": [
+        {
+          "text": "This work revisits multi-aspect evaluations of longform generations and investigates which factors affect the overall ratings. Our quantitative analyses reveal that the effect of FACTUALITY is 2.5 times greater than that of AMOUNTINFO. We also show that surface-level quality measured by FORMALITY has less than half the influence of AMOUNTINFO on ACCEPTABILITY.",
+          "quote": []
+        },
+        {
+          "text": "In the process, we collect human absolute evaluations on 1.2k responses to information-seeking queries in FACTUALITY, AMOUNTINFO, FOR-MALITY, and ACCEPTABILITY. Along with relative preference and free-text justification comments collected for deeper analyses, we publish the human evaluation data for future development in evaluation systems for long-form generations.",
+          "quote": []
+        },
+        {
+          "text": "As a first step in using our newly collected data for a reliable automatic evaluation, we reassess existing automatic evaluation methods and LLM-based evaluation. We show that while classical methods yield a weak correlation with human assessment scores, LLM-based methods have a strong correlation. Informed by the degree of importance of fine-grained aspects on overall rating our analyses on human evaluations revealed, we show that taking a weighted sum of LLM evaluations along multiple fine-grained aspects yields a stronger correlation with human evaluations.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations"
+      },
+      "p": [
+        {
+          "text": "Our evaluation protocol uses three aspects: FACTU-ALITY, AMOUNT INFO (amount of information), FORMALITY, and ACCEPTABILITY. Although we acknowledge there are many more aspects to evaluate long-form generation, we found adding a large number of fine-grained aspects often confuses human evaluators and increases the costs of automatic evaluations. Our qualitative analysis of explanations reveals that the key aspects included in our evaluations play key roles when annotators choose the best long-form responses to informationseeking queries. Future work can further explore diverse aspects of long-form generations. While we carefully design and conduct human evalua-tions, assessing FACTUALITY is challenging even for experienced annotators, and there may be more disagreements on this aspect.",
+          "quote": []
+        },
+        {
+          "text": "W-LLM, our new automatic evaluation scheme, displayed a high correlation with the annotation data we collected. However, as mentioned at the end of Section 5, their score predictions show relatively weaker correlations in FACTUALITY, suggesting further improvement can enhance the reliability of this metric.",
+          "quote": []
+        },
+        {
+          "text": "Using GPT-4 as an evaluator in a nondeterministic method can result in the sensitivity to prompt variation and also a lack of the reproducibility of results (Chen et al., 2023b; Asai et al., 2023). To overcome this issue, we fine-tune Llama2-7B on the collected dataset. W-LLM using this in-house model has demonstrated even higher correlations with human evaluations. Feeding GPT-4 the three snippets of the websites that we showed to the annotators resulted in the decline of correlation against human annotated FACTUALITY, presumably due to excessive focus on the snippets with only a small amount of information.",
+          "quote": [
+            {
+              "text": "Asai et al., 2023)",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "., 2023b; ",
+              "index": 178
+            },
+            {
+              "text": "[(Chenetal.,2023b]",
+              "type": "bibr",
+              "index": 157,
+              "context": "f results ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 157,
+              "context": "f results ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "While the correlations on both LLMs in W-LLM settings are high, over-estimations are seen, especially for answers generated by ChatGPT. Considering the distribution of human annotation displayed in Figure  and the weights of the linear regressor mentioned in Section 4.1, it is assumed that more effort to evaluate factuality accurately needs to be put into automatic evaluations. In addition, since the finetuning of Llama2 was done in a simple manner, it may also be influential to control the bias in the fine-tuning data.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Ethics"
+      },
+      "p": [
+        {
+          "text": "Our data curation process involves crowdsourcing and anonymization of personal information reported by Amazon Mechanical Turk, including Crowdworker IDs. We did not collect any private information. In making our data publicly available, it's essential to acknowledge the potential ethical aspects of this release. We discuss how our method can be applied to long-form QA evaluations, as well as wider applications. As our main focus is on evaluating models, we believe this work does not directly cause harm. However, relying on models to evaluate other models could introduce biases and should be considered as a broader issue for the llm-as-judge approach.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A Annotation Setup"
+      },
+      "p": [
+        {
+          "text": "Qualification Human evaluations on Amazon Mechanical Turk were conducted by workers who passed our qualification task and are native to English. We conducted qualification rounds where we curated a set of six explanations, although with different (but similar) criteria as it was for a different project. We manually tagged answers we deemed acceptable and filtered the workers based on their level of alignment (match %). We also manually filtered workers after the preliminary experiment of the task for this paper based on their ratings and justifications. The initial number of participants was 700 workers (all with ≥99% HIT approval rate and ≥5,000 HITs completed), which was reduced to 201 workers after filtering.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B More analysis on annotated results"
+      },
+      "p": [
+        {
+          "text": "Agreement on preference. Figure (Xu et al., 2023) shows the distribution of preference of crowd workers. In 69 out of 300 instances, all three workers agreed on the same candidate's answer in terms of preference. The three workers all preferred model-generated formal answers in 45 instances and model-generated casual answers in 19 instances.  Aspect-wise Agreement. The reported Krippendorff's alpha on our paper is computed over all aspects at once using the Python library Krippendorff. Table  reports aspect-wise alpha values. The values are anticipated to be small due to the small number of rating options (only -1, 0, 1 for Amount Info and Formality and 0, 1, 2, 3 for Factuality and Acceptability) and the annotation method where more than 3 workers are involved in the human evaluation instead of three fixed annotators. To provide more information, we also report the aspect-wise agreement rate in Table   Preference rate of model-generated answers. When compared to Human vs. Machine comparison in the work of (61.8%), our study demonstrates an even higher preference for modelgenerated answers. We attribute this difference to the use of different backbone models (i.e., ChatGPT vs. davinci-002) and our four-way choice setup, whereas their evaluations rely on pairwise comparisons.  Relationship against Acceptability Figure  reports the relationship against ACCEPTABILITY. Figure  is a decision tree with a max depth of 3. In the figure, we present the \"Feature Importance\" indicating the effect of each aspect on the prediction, which was computed during the training phase. The tree is fitted to 80% of the annotation data and yields a Pearson correlation coefficient ρ of 0.830 on the remaining 20% of the data, proving the method to be reasonable.",
+          "quote": [
+            {
+              "text": "(Xu et al., 2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "e. Figure ",
+              "index": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Model-formal"
+      },
+      "p": [
+        {
+          "text": "Model-casual Human-top Human-random C Definitions of aspects mentioned in free-form justification.",
+          "quote": []
+        },
+        {
+          "text": "4 shows the rough description and keywords we used to annotate free-form justification in Figure 4b",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "D Annotation Interface"
+      },
+      "p": [
+        {
+          "text": "We show the screenshot of the annotation interface in Figures 9-11. We also show a screenshot of the browser window in Figure  to display some functions devised for productive annotation.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "E Prompts"
+      },
+      "p": [
+        {
+          "text": "Prompts to generate long-form answers by ChatGPT are on Table  and Table . Prompts to evaluate long-form answers in the four aspects are on Tables .  ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Aspect"
+      },
+      "p": [
+        {
+          "text": "Description Keywords",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Amount Info"
+      },
+      "p": [
+        {
+          "text": "Corresponds with the definition we show to crowd workers.",
+          "quote": []
+        },
+        {
+          "text": "\"right amount of information\", \"too much information\", \"lack information\" Formality",
+          "quote": []
+        },
+        {
+          "text": "Corresponds with the definition we show to crowd workers.",
+          "quote": []
+        },
+        {
+          "text": "\"foamality\", \"formal\", \"casual\"",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Factuality"
+      },
+      "p": [
+        {
+          "text": "Corresponds with the definition we show to crowd workers.",
+          "quote": []
+        },
+        {
+          "text": "\"accurate\", \"factual\"",
+          "quote": []
+        },
+        {
+          "text": "Easy to Understand Following the instruction in the Reddit forum \"Explain Like I'm Five\", we notified the annotators that answers should be \"appropriate for people who are not professionals\" in the area.",
+          "quote": []
+        },
+        {
+          "text": "\"easily understandable\", \"nonprofessionals\"",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Relevance"
+      },
+      "p": [
+        {
+          "text": "Mentions relevance/irrelevance of information addressed in the answer to the question.",
+          "quote": []
+        },
+        {
+          "text": "\"actually answer the question\", \"related information\"",
+          "quote": []
+        },
+        {
+          "text": "Well-structured Mentioned of the quality in answer structure.",
+          "quote": []
+        },
+        {
+          "text": "\"well structured\", \"logical progression\"",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Completeness"
+      },
+      "p": [
+        {
+          "text": "Mentions that the answer contains necessary information or lacks information.",
+          "quote": []
+        },
+        {
+          "text": "\"completeness\" Grammar Mentions grammatical correctness/incorrectness.",
+          "quote": []
+        },
+        {
+          "text": "\"grammar\", \"spelling\"",
+          "quote": []
+        },
+        {
+          "text": "Use of Examples Mentions the use of example or demand for the use of example.",
+          "quote": []
+        },
+        {
+          "text": "\"incorporate examples\" Specificity Mention of how specific or detailed the answer is.",
+          "quote": []
+        },
+        {
+          "text": "\"specific\", \"detail\"",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Conciseness"
+      },
+      "p": [
+        {
+          "text": "Compactness while addressing a sufficient amount of information.",
+          "quote": []
+        },
+        {
+          "text": "\"verbose\", \"not overly technical\" Table : Description of aspects we used to annotate free-form justification.",
+          "quote": []
+        },
+        {
+          "text": "Figure : The first portion of the interface. Here, we provide instructions for annotation, a question, and one reference. We provide 9 more references at the bottom of the page. For each reference, we provide the URL, title, and a snippet of relevant text. We use iframe for annotators to view websites, but some websites do not allow this function. The blue \"View\" button allows crowd workers to open the website in a new tab. After system You are a helpful assistant who answers questions on a forum. user Answer the following question in 75-100 words: {question} Figure : Here, we show a total of four answers. We ask annotators to evaluate each answer in four aspects. Then, we ask them to select one most preferred answer candidate. The option \"No candidates are appropriate, but if I have to choose one...\" is also provided. Finally, we ask the crowd workers to justify their preference in free-text format.",
+          "quote": []
+        },
+        {
+          "text": "All fields here are required fields. Figure : On the browser, the question is fixed to the top of the page to reduce burden of scrolling. The definition of each aspect pops up when the cursor is on the \"i\" icon. The meaning of the scores is given in the select options.",
+          "quote": []
+        },
+        {
+          "text": "system You are a helpful assistant who answers questions on a forum. user Instruction: Answer the following question in 75-100 words.",
+          "quote": []
+        },
+        {
+          "text": "Requirements:",
+          "quote": []
+        },
+        {
+          "text": "The answer should not use difficult vocabularies.",
+          "quote": []
+        },
+        {
+          "text": "The answer should be understandable to people outside the field.",
+          "quote": []
+        },
+        {
+          "text": "The answer should be in a little bit casual.",
+          "quote": []
+        },
+        {
+          "text": "Question: {question}   Your WiFi has a certain Wavelength. For this wave length it can interact with matter a completely different way. So for your WiFi-Waves a wall just appears as \"nothing\" as glass does for us. It still interacts and blocks some of the waves but your WiFi is bright enough to still be visible through it.",
+          "quote": []
+        },
+        {
+          "text": "Factuality: 3 Explanation: The facts and common sense addressed in the answer are accurate.",
+          "quote": []
+        },
+        {
+          "text": "### Instruction: Rate the factuality of the following answer to the following question.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Question: {question}"
+      },
+      "p": [
+        {
+          "text": "Answer: {answer} Factuality: Your WiFi has a certain Wavelength. For this wave length it can interact with matter a completely different way. So for your WiFi-Waves a wall just appears as \"nothing\" as glass does for us. It still interacts and blocks some of the waves but your WiFi is bright enough to still be visible through it. Score: 2",
+          "quote": []
+        },
+        {
+          "text": "Explanation:",
+          "quote": []
+        },
+        {
+          "text": "The answer provides an easy-to-understand explanation with examples that did not feel too technical. It was easy to read, and left me knowing how it works.",
+          "quote": []
+        },
+        {
+          "text": "### Instruction: Rate the acceptability of the following answer to the following question.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Question: {question}"
+      },
+      "p": [
+        {
+          "text": "Answer: {answer} Score: ",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 1: Four aspects rated within a discrete range (shown on the left), and example ratings (averaged across three annotators) for a long-form QA instance (on the right). The blue-colored cells indicate ideal scores and the pink-colored cells indicate worse scores.HT, HR, MF, and MC denote Human Top, Human Random, Model Formal, and Model Casual, respectively. The scores displayed in the table are the average scores of three annotators. We also collect preferences along with free-form justification.",
+    "Figure 2: Previous works organized into four types of long-form generation evaluation and overview of annotation data we collected in this work.",
+    "Figure 3: The distribution of the annotated scores. The ideal values are 3 for FACTUALITY and ACCEPTABILITY, and 0 for AMOUNTINFO and FORMALITY.",
+    "Figure 4: Analysis on relative human evaluation on two human-written responses and model-generated responses.",
+    "Figure 5: The distribution of automatic evaluation metrics based on annotated human acceptability. The Acceptability axis shows the average ACCEPTABILITY score of three annotators. The arrow in each sub-graph's titles shows the graph's ideal trend.",
+    "Figure 6: The agreement of preference. \"Total Agreement\" means all 3 annotators agreed on the preference, and \"Disagreement\" means 3 workers preferred different answers. The inner pie chart represents the type of answer preferred by the majority of the workers.",
+    "Figure 7: Average scores of each aspect by Acceptability.",
+    "Figure 8: Decision tree trained to predict Acceptability from FACTUALITY, AMOUNT INFO, and FORMALITY scores. Column \"N\" in each node displays the number of training instances with Acceptability in the \"Acce\" column.",
+    "Figure 11: Here, we collect comments (not required) from the workers to catch bugs or any unexpected behaviors of the page. At the end of the page are ten references, each with their URL, title, and snippet. Each reference can be expanded or collapsed. The Wikipedia page is expanded in the figure as an example.",
+    "Table 1 :Average scores of MF (Model-generated",
+    "Table 2 :following Figure8. In over 80% of the instances, a majority vote was taken. Aspect-wise Krippendorff's α",
+    "Table 3 :Aspect-wise agreement    ",
+    "Table 5 :Prompts for generating \"model-formal\" answers.",
+    "Chat-GPT prompts for generating \"model-formal\" answers. user You will receive an instruction, a question, and an answer.Your task is to evaluate the answer in Formality (the answer's formal appropriateness including its vocabulary, grammar, and spelling.). The answer strikes a balance between formality and informality, using appropriate language and tone for the given context. It maintains a neutral or professional tone without being overly formal or casual.1: Too Formal -The answer is excessively formal or rigid in tone, language, or style.It may use overly complex or technical language, unnecessary jargon, or a very formal writing style that may not be suitable for the context. Quantum physics teaches us that electromagnetic waves interact with matter. Visible light is an electromagnetic wave. Light interacts with matter in a \"certain\" way. If there is nothing to interact with is passes through. an examples is glass. You can see through glass. but for example if you have hold a piece of Paper in front of your eyes, you can't see through it. But if somebody is pointing a bright flashlight to your face, you can see the light through the paper. Your WiFi has a certain Wavelength. For this wave length it can interact with matter a completely different way. So for your WiFi-Waves a wall just appears as \"nothing\" as glass does for us. It still interacts and blocks some of the waves but your WiFi is bright enough to still be visible through it.",
+    "Table 7 : prompts for evaluating FORMALITY. user You will receive an instruction, a question, and an answer.Your task is to evaluate the answer in Amount of Information (whether or not sufficient amount of information was addressed to fully answer the question.). Quantum physics teaches us that electromagnetic waves interact with matter. Visible light is an electromagnetic wave. Light interacts with matter in a \"certain\" way. If there is nothing to interact with is passes through. an examples is glass. You can see through glass. but for example if you have hold a piece of Paper in front of your eyes, you can't see through it. But if somebody is pointing a bright flashlight to your face, you can see the light through the paper. Your WiFi has a certain Wavelength. For this wave length it can interact with matter a completely different way. So for your WiFi-Waves a wall just appears as \"nothing\" as glass does for us. It still interacts and blocks some of the waves but your WiFi is bright enough to still be visible through it.",
+    "Table 8 : prompts for evaluating AMOUNTINFO.   user You will receive an instruction, a question, and an answer.Your task is to evaluate the answer in Factuality (whether or not the information provided in the answer is factually correct). Use the following scale to generate a score: 0: Completely Inaccurate -The answer is entirely false or contains significant factual errors. It contradicts well-established information or provides misleading information. 1: Partially Accurate -The answer has some correct information but also contains significant inaccuracies or lacks important details. It requires additional verification or correction. 2: Mostly Accurate -The answer is predominantly correct and provides relevant information. However, it may still have minor inaccuracies or omissions that do not significantly impact the overall accuracy. 3: Entirely Accurate -The answer is entirely accurate and factually correct. It aligns with well-established information, provides clear and precise details, and can be relied upon as a trusted source of information. ### Instruction: Rate the factuality of the following answer to the following question. Question: How do WIFI waves travel through walls? Answer: Quantum physics teaches us that electromagnetic waves interact with matter. Visible light is an electromagnetic wave. Light interacts with matter in a \"certain\" way. If there is nothing to interact with is passes through. an examples is glass. You can see through glass. but for example if you have hold a piece of Paper in front of your eyes, you can't see through it. But if somebody is pointing a bright flashlight to your face, you can see the light through the paper.",
+    " prompts for evaluating FACTUALITY. user You will receive an instruction, a question, and an answer.Your task is to evaluate if the answer is overall acceptable.Use the following scale to generate a score: 0: Completely Unacceptable -The answer is incorrect, irrelevant, or nonsensical. It provides no useful information or is entirely false. 1: Partially Acceptable -The answer contains some relevant information but is incomplete, unclear, or contains errors. It may require further clarification or refinement. 2: Mostly Acceptable -The answer is largely correct and provides relevant information. It may have minor inaccuracies or could be improved, but it is generally satisfactory. 3: Fully Acceptable -The answer is accurate, comprehensive, and well-explained. It provides all the necessary information and addresses the question thoroughly. ### Instruction: Rate the acceptability of the following answer to the following question. Question: How do WIFI waves travel through walls? Answer: Quantum physics teaches us that electromagnetic waves interact with matter. Visible light is an electromagnetic wave. Light interacts with matter in a \"certain\" way. If there is nothing to interact with is passes through. an examples is glass. You can see through glass. but for example if you have hold a piece of Paper in front of your eyes, you can't see through it. But if somebody is pointing a bright flashlight to your face, you can see the light through the paper.",
+    "Table 10 : prompts for evaluating overall ACCEPTABILITY."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "Retrieval-based language models and applications",
+      "author": [
+        {
+          "forename": "Akari",
+          "surname": "Asai",
+          "name": "Akari Asai",
+          "email": ""
+        },
+        {
+          "forename": "Sewon",
+          "surname": "Min",
+          "name": "Sewon Min",
+          "email": ""
+        },
+        {
+          "forename": "Zexuan",
+          "surname": "Zhong",
+          "name": "Zexuan Zhong",
+          "email": ""
+        },
+        {
+          "forename": "Danqi",
+          "surname": "Chen",
+          "name": "Danqi Chen",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.acl-tutorials.6",
+      "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b1",
+      "title": "Understanding retrieval augmentation for long-form question answering",
+      "author": [
+        {
+          "forename": "Hung-Ting",
+          "surname": "Chen",
+          "name": "Hung-Ting Chen",
+          "email": ""
+        },
+        {
+          "forename": "Fangyuan",
+          "surname": "Xu",
+          "name": "Fangyuan Xu",
+          "email": ""
+        },
+        {
+          "forename": "Shane",
+          "surname": "Arora",
+          "name": "Shane Arora",
+          "email": ""
+        },
+        {
+          "forename": "Eunsol",
+          "surname": "Choi",
+          "name": "Eunsol Choi",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2310.12150",
+      "venue": "Understanding retrieval augmentation for long-form question answering",
+      "date": "2023"
+    },
+    {
+      "index": "b2",
+      "title": "How is chatgpt's behavior changing over time?",
+      "author": [
+        {
+          "forename": "Lingjiao",
+          "surname": "Chen",
+          "name": "Lingjiao Chen",
+          "email": ""
+        },
+        {
+          "forename": "Matei",
+          "surname": "Zaharia",
+          "name": "Matei Zaharia",
+          "email": ""
+        },
+        {
+          "forename": "James",
+          "surname": "Zou",
+          "name": "James Zou",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2307.09009",
+      "venue": "How is chatgpt's behavior changing over time?",
+      "date": "2023"
+    },
+    {
+      "index": "b3",
+      "title": "SummEval: Re-evaluating summarization evaluation",
+      "author": [
+        {
+          "forename": "Alexander R.",
+          "surname": "Fabbri",
+          "name": "Alexander R. Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Wojciech",
+          "surname": "Kryściński",
+          "name": "Wojciech Kryściński",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Mc-Cann",
+          "name": "Bryan Mc-Cann",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Socher",
+          "name": "Richard Socher",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir",
+          "surname": "Radev",
+          "name": "Dragomir Radev",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00373",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2021"
+    },
+    {
+      "index": "b4",
+      "title": "ELI5: Long form question answering",
+      "author": [
+        {
+          "forename": "Angela",
+          "surname": "Fan",
+          "name": "Angela Fan",
+          "email": ""
+        },
+        {
+          "forename": "Yacine",
+          "surname": "Jernite",
+          "name": "Yacine Jernite",
+          "email": ""
+        },
+        {
+          "forename": "Ethan",
+          "surname": "Perez",
+          "name": "Ethan Perez",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Grangier",
+          "name": "David Grangier",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Auli",
+          "name": "Michael Auli",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2019"
+    },
+    {
+      "index": "b5",
+      "title": "Twenty years of confusion in human evaluation: NLG needs evaluation sheets and standardised definitions",
+      "author": [
+        {
+          "forename": "David M.",
+          "surname": "Howcroft",
+          "name": "David M. Howcroft",
+          "email": ""
+        },
+        {
+          "forename": "Anya",
+          "surname": "Belz",
+          "name": "Anya Belz",
+          "email": ""
+        },
+        {
+          "forename": "Miruna-Adriana",
+          "surname": "Clinciu",
+          "name": "Miruna-Adriana Clinciu",
+          "email": ""
+        },
+        {
+          "forename": "Dimitra",
+          "surname": "Gkatzia",
+          "name": "Dimitra Gkatzia",
+          "email": ""
+        },
+        {
+          "forename": "A.",
+          "surname": "Sadid",
+          "name": "A. Sadid",
+          "email": ""
+        },
+        {
+          "forename": "Saad",
+          "surname": "Hasan",
+          "name": "Saad Hasan",
+          "email": ""
+        },
+        {
+          "forename": "Simon",
+          "surname": "Mahamood",
+          "name": "Simon Mahamood",
+          "email": ""
+        },
+        {
+          "forename": "Sashank",
+          "surname": "Emiel Van Miltenburg",
+          "name": "Sashank Emiel Van Miltenburg",
+          "email": ""
+        },
+        {
+          "forename": "Verena",
+          "surname": "Santhanam",
+          "name": "Verena Santhanam",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.inlg-1.23",
+      "venue": "Proceedings of the 13th International Conference on Natural Language Generation",
+      "date": "2020"
+    },
+    {
+      "index": "b6",
+      "title": "Hurdles to progress in long-form question answering",
+      "author": [
+        {
+          "forename": "Kalpesh",
+          "surname": "Krishna",
+          "name": "Kalpesh Krishna",
+          "email": ""
+        },
+        {
+          "forename": "Aurko",
+          "surname": "Roy",
+          "name": "Aurko Roy",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2021"
+    },
+    {
+      "index": "b7",
+      "title": "ROUGE: A package for automatic evaluation of summaries",
+      "author": [
+        {
+          "forename": "Chin-Yew",
+          "surname": "Lin",
+          "name": "Chin-Yew Lin",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Text Summarization Branches Out",
+      "date": "2004"
+    },
+    {
+      "index": "b8",
+      "title": "Evaluating verifiability in generative search engines",
+      "author": [
+        {
+          "forename": "Nelson",
+          "surname": "Liu",
+          "name": "Nelson Liu",
+          "email": ""
+        },
+        {
+          "forename": "Tianyi",
+          "surname": "Zhang",
+          "name": "Tianyi Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Percy",
+          "surname": "Liang",
+          "name": "Percy Liang",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.findings-emnlp.467",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2023",
+      "date": "2023"
+    },
+    {
+      "index": "b9",
+      "title": "G-eval: NLG evaluation using gpt-4 with better human alignment",
+      "author": [
+        {
+          "forename": "Yang",
+          "surname": "Liu",
+          "name": "Yang Liu",
+          "email": ""
+        },
+        {
+          "forename": "Dan",
+          "surname": "Iter",
+          "name": "Dan Iter",
+          "email": ""
+        },
+        {
+          "forename": "Yichong",
+          "surname": "Xu",
+          "name": "Yichong Xu",
+          "email": ""
+        },
+        {
+          "forename": "Shuohang",
+          "surname": "Wang",
+          "name": "Shuohang Wang",
+          "email": ""
+        },
+        {
+          "forename": "Ruochen",
+          "surname": "Xu",
+          "name": "Ruochen Xu",
+          "email": ""
+        },
+        {
+          "forename": "Chenguang",
+          "surname": "Zhu",
+          "name": "Chenguang Zhu",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.emnlp-main.153",
+      "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2023"
+    },
+    {
+      "index": "b10",
+      "title": "Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Liu",
+          "name": "Yixin Liu",
+          "email": ""
+        },
+        {
+          "forename": "Alex",
+          "surname": "Fabbri",
+          "name": "Alex Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Yilun",
+          "surname": "Zhao",
+          "name": "Yilun Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Linyong",
+          "surname": "Nan",
+          "name": "Linyong Nan",
+          "email": ""
+        },
+        {
+          "forename": "Ruilin",
+          "surname": "Han",
+          "name": "Ruilin Han",
+          "email": ""
+        },
+        {
+          "forename": "Simeng",
+          "surname": "Han",
+          "name": "Simeng Han",
+          "email": ""
+        },
+        {
+          "forename": "Shafiq",
+          "surname": "Joty",
+          "name": "Shafiq Joty",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Wu",
+          "name": "Chien-Sheng Wu",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir",
+          "surname": "Radev",
+          "name": "Dragomir Radev",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.acl-long.228",
+      "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b11",
+      "title": "Dragomir Radev, and Arman Cohan. 2023d. On learning to summarize with large language models as references",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Liu",
+          "name": "Yixin Liu",
+          "email": ""
+        },
+        {
+          "forename": "Kejian",
+          "surname": "Shi",
+          "name": "Kejian Shi",
+          "email": ""
+        },
+        {
+          "forename": "Katherine S.",
+          "surname": "He",
+          "name": "Katherine S. He",
+          "email": ""
+        },
+        {
+          "forename": "Longtian",
+          "surname": "Ye",
+          "name": "Longtian Ye",
+          "email": ""
+        },
+        {
+          "forename": "Alexander R.",
+          "surname": "Fabbri",
+          "name": "Alexander R. Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2305.14239",
+      "venue": "Dragomir Radev, and Arman Cohan. 2023d. On learning to summarize with large language models as references",
+      "date": ""
+    },
+    {
+      "index": "b12",
+      "title": "FActScore: Fine-grained atomic evaluation of factual precision in long form text generation",
+      "author": [
+        {
+          "forename": "Sewon",
+          "surname": "Min",
+          "name": "Sewon Min",
+          "email": ""
+        },
+        {
+          "forename": "Kalpesh",
+          "surname": "Krishna",
+          "name": "Kalpesh Krishna",
+          "email": ""
+        },
+        {
+          "forename": "Xinxi",
+          "surname": "Lyu",
+          "name": "Xinxi Lyu",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Wen-Tau",
+          "surname": "Yih",
+          "name": "Wen-Tau Yih",
+          "email": ""
+        },
+        {
+          "forename": "Pang",
+          "surname": "Koh",
+          "name": "Pang Koh",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.emnlp-main.741",
+      "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2023"
+    },
+    {
+      "index": "b13",
+      "title": "Fine-grained hallucination detection and editing for language models",
+      "author": [
+        {
+          "forename": "Abhika",
+          "surname": "Mishra",
+          "name": "Abhika Mishra",
+          "email": ""
+        },
+        {
+          "forename": "Akari",
+          "surname": "Asai",
+          "name": "Akari Asai",
+          "email": ""
+        },
+        {
+          "forename": "Vidhisha",
+          "surname": "Balachandran",
+          "name": "Vidhisha Balachandran",
+          "email": ""
+        },
+        {
+          "forename": "Yizhong",
+          "surname": "Wang",
+          "name": "Yizhong Wang",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Yulia",
+          "surname": "Tsvetkov",
+          "name": "Yulia Tsvetkov",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2401.06855",
+      "venue": "Fine-grained hallucination detection and editing for language models",
+      "date": "2024"
+    },
+    {
+      "index": "b14",
+      "title": "Webgpt: Browserassisted question-answering with human feedback",
+      "author": [
+        {
+          "forename": "Reiichiro",
+          "surname": "Nakano",
+          "name": "Reiichiro Nakano",
+          "email": ""
+        },
+        {
+          "forename": "Jacob",
+          "surname": "Hilton",
+          "name": "Jacob Hilton",
+          "email": ""
+        },
+        {
+          "forename": "Suchir",
+          "surname": "Balaji",
+          "name": "Suchir Balaji",
+          "email": ""
+        },
+        {
+          "forename": "Jeff",
+          "surname": "Wu",
+          "name": "Jeff Wu",
+          "email": ""
+        },
+        {
+          "forename": "Long",
+          "surname": "Ouyang",
+          "name": "Long Ouyang",
+          "email": ""
+        },
+        {
+          "forename": "Christina",
+          "surname": "Kim",
+          "name": "Christina Kim",
+          "email": ""
+        },
+        {
+          "forename": "Christopher",
+          "surname": "Hesse",
+          "name": "Christopher Hesse",
+          "email": ""
+        },
+        {
+          "forename": "Shantanu",
+          "surname": "Jain",
+          "name": "Shantanu Jain",
+          "email": ""
+        },
+        {
+          "forename": "Vineet",
+          "surname": "Kosaraju",
+          "name": "Vineet Kosaraju",
+          "email": ""
+        },
+        {
+          "forename": "William",
+          "surname": "Saunders",
+          "name": "William Saunders",
+          "email": ""
+        },
+        {
+          "forename": "Xu",
+          "surname": "Jiang",
+          "name": "Xu Jiang",
+          "email": ""
+        },
+        {
+          "forename": "Karl",
+          "surname": "Cobbe",
+          "name": "Karl Cobbe",
+          "email": ""
+        },
+        {
+          "forename": "Tyna",
+          "surname": "Eloundou",
+          "name": "Tyna Eloundou",
+          "email": ""
+        },
+        {
+          "forename": "Gretchen",
+          "surname": "Krueger",
+          "name": "Gretchen Krueger",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2112.09332",
+      "venue": "Webgpt: Browserassisted question-answering with human feedback",
+      "date": ""
+    },
+    {
+      "index": "b15",
+      "title": "of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "author": [
+        {
+          "forename": "Josh",
+          "surname": "Openai",
+          "name": "Josh Openai",
+          "email": ""
+        },
+        {
+          "forename": "Steven",
+          "surname": "Achiam",
+          "name": "Steven Achiam",
+          "email": ""
+        },
+        {
+          "forename": "Sandhini",
+          "surname": "Adler",
+          "name": "Sandhini Adler",
+          "email": ""
+        },
+        {
+          "forename": "Lama",
+          "surname": "Agarwal",
+          "name": "Lama Agarwal",
+          "email": ""
+        },
+        {
+          "forename": "Ilge",
+          "surname": "Ahmad",
+          "name": "Ilge Ahmad",
+          "email": ""
+        },
+        {
+          "forename": "Florencia Leoni ",
+          "surname": "Akkaya",
+          "name": "Florencia Leoni  Akkaya",
+          "email": ""
+        },
+        {
+          "forename": "Diogo",
+          "surname": "Aleman",
+          "name": "Diogo Aleman",
+          "email": ""
+        },
+        {
+          "forename": "Janko",
+          "surname": "Almeida",
+          "name": "Janko Almeida",
+          "email": ""
+        },
+        {
+          "forename": "Sam",
+          "surname": "Altenschmidt",
+          "name": "Sam Altenschmidt",
+          "email": ""
+        },
+        {
+          "forename": "Shyamal",
+          "surname": "Altman",
+          "name": "Shyamal Altman",
+          "email": ""
+        },
+        {
+          "forename": "Red",
+          "surname": "Anadkat",
+          "name": "Red Anadkat",
+          "email": ""
+        },
+        {
+          "forename": "Igor",
+          "surname": "Avila",
+          "name": "Igor Avila",
+          "email": ""
+        },
+        {
+          "forename": "Suchir",
+          "surname": "Babuschkin",
+          "name": "Suchir Babuschkin",
+          "email": ""
+        },
+        {
+          "forename": "Valerie",
+          "surname": "Balaji",
+          "name": "Valerie Balaji",
+          "email": ""
+        },
+        {
+          "forename": "Paul",
+          "surname": "Balcom",
+          "name": "Paul Balcom",
+          "email": ""
+        },
+        {
+          "forename": "Haiming",
+          "surname": "Baltescu",
+          "name": "Haiming Baltescu",
+          "email": ""
+        },
+        {
+          "forename": "Mohammad",
+          "surname": "Bao",
+          "name": "Mohammad Bao",
+          "email": ""
+        },
+        {
+          "forename": "Jeff",
+          "surname": "Bavarian",
+          "name": "Jeff Bavarian",
+          "email": ""
+        },
+        {
+          "forename": "Irwan",
+          "surname": "Belgum",
+          "name": "Irwan Belgum",
+          "email": ""
+        },
+        {
+          "forename": "Jake",
+          "surname": "Bello",
+          "name": "Jake Bello",
+          "email": ""
+        },
+        {
+          "forename": "Gabriel",
+          "surname": "Berdine",
+          "name": "Gabriel Berdine",
+          "email": ""
+        },
+        {
+          "forename": "Christopher",
+          "surname": "Bernadett-Shapiro",
+          "name": "Christopher Bernadett-Shapiro",
+          "email": ""
+        },
+        {
+          "forename": "Lenny",
+          "surname": "Berner",
+          "name": "Lenny Berner",
+          "email": ""
+        },
+        {
+          "forename": "Oleg",
+          "surname": "Bogdonoff",
+          "name": "Oleg Bogdonoff",
+          "email": ""
+        },
+        {
+          "forename": "Madelaine",
+          "surname": "Boiko",
+          "name": "Madelaine Boiko",
+          "email": ""
+        },
+        {
+          "forename": "Anna-Luisa",
+          "surname": "Boyd",
+          "name": "Anna-Luisa Boyd",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": ""
+    },
+    {
+      "index": "b16",
+      "title": "2023. Finegrained human feedback gives better rewards for language model training",
+      "author": [
+        {
+          "forename": "Zeqiu",
+          "surname": "Wu",
+          "name": "Zeqiu Wu",
+          "email": ""
+        },
+        {
+          "forename": "Yushi",
+          "surname": "Hu",
+          "name": "Yushi Hu",
+          "email": ""
+        },
+        {
+          "forename": "Weijia",
+          "surname": "Shi",
+          "name": "Weijia Shi",
+          "email": ""
+        },
+        {
+          "forename": "Nouha",
+          "surname": "Dziri",
+          "name": "Nouha Dziri",
+          "email": ""
+        },
+        {
+          "forename": "Alane",
+          "surname": "Suhr",
+          "name": "Alane Suhr",
+          "email": ""
+        },
+        {
+          "forename": "Prithviraj",
+          "surname": "Ammanabrolu",
+          "name": "Prithviraj Ammanabrolu",
+          "email": ""
+        },
+        {
+          "forename": "Noah A.",
+          "surname": "Smith",
+          "name": "Noah A. Smith",
+          "email": ""
+        },
+        {
+          "forename": "Mari",
+          "surname": "Ostendorf",
+          "name": "Mari Ostendorf",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "10.48550/ARXIV.2306.01693",
+      "venue": "2023. Finegrained human feedback gives better rewards for language model training",
+      "date": ""
+    },
+    {
+      "index": "b17",
+      "title": "A critical evaluation of evaluations for long-form question answering",
+      "author": [
+        {
+          "forename": "Fangyuan",
+          "surname": "Xu",
+          "name": "Fangyuan Xu",
+          "email": ""
+        },
+        {
+          "forename": "Yixiao",
+          "surname": "Song",
+          "name": "Yixiao Song",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        },
+        {
+          "forename": "Eunsol",
+          "surname": "Choi",
+          "name": "Eunsol Choi",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2023.acl-long.181",
+      "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b18",
+      "title": "Judging llm-as-a-judge with mt-bench and chatbot arena",
+      "author": [
+        {
+          "forename": "Lianmin",
+          "surname": "Zheng",
+          "name": "Lianmin Zheng",
+          "email": ""
+        },
+        {
+          "forename": "Wei-Lin",
+          "surname": "Chiang",
+          "name": "Wei-Lin Chiang",
+          "email": ""
+        },
+        {
+          "forename": "Ying",
+          "surname": "Sheng",
+          "name": "Ying Sheng",
+          "email": ""
+        },
+        {
+          "forename": "Siyuan",
+          "surname": "Zhuang",
+          "name": "Siyuan Zhuang",
+          "email": ""
+        },
+        {
+          "forename": "Zhanghao",
+          "surname": "Wu",
+          "name": "Zhanghao Wu",
+          "email": ""
+        },
+        {
+          "forename": "Yonghao",
+          "surname": "Zhuang",
+          "name": "Yonghao Zhuang",
+          "email": ""
+        },
+        {
+          "forename": "Zi",
+          "surname": "Lin",
+          "name": "Zi Lin",
+          "email": ""
+        },
+        {
+          "forename": "Zhuohan",
+          "surname": "Li",
+          "name": "Zhuohan Li",
+          "email": ""
+        },
+        {
+          "forename": "Dacheng",
+          "surname": "Li",
+          "name": "Dacheng Li",
+          "email": ""
+        },
+        {
+          "forename": "Eric",
+          "surname": "Xing",
+          "name": "Eric Xing",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2306.05685",
+      "venue": "Judging llm-as-a-judge with mt-bench and chatbot arena",
+      "date": "2023"
+    }
+  ]
+}

@@ -1,0 +1,4653 @@
+{
+  "title": "FACTSCORE: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+  "publication": {
+    "publisher": {},
+    "date": ""
+  },
+  "author": [
+    {
+      "forename": "Sewon",
+      "surname": "Min",
+      "name": "Sewon Min",
+      "email": ""
+    },
+    {
+      "forename": "Kalpesh",
+      "surname": "Krishna",
+      "name": "Kalpesh Krishna",
+      "email": "kalpesh@cs.umass.edu"
+    },
+    {
+      "forename": "Xinxi",
+      "surname": "Lyu",
+      "name": "Xinxi Lyu",
+      "email": ""
+    },
+    {
+      "forename": "Mike",
+      "surname": "Lewis",
+      "name": "Mike Lewis",
+      "email": "mikelewis@meta.com"
+    },
+    {
+      "forename": "Wen-Tau",
+      "surname": "Yih",
+      "name": "Wen-Tau Yih",
+      "email": ""
+    },
+    {
+      "forename": "Wei",
+      "surname": "Pang",
+      "name": "Wei Pang",
+      "email": "pangwei@cs.washington.edu"
+    },
+    {
+      "forename": "Mohit",
+      "surname": "Iyyer",
+      "name": "Mohit Iyyer",
+      "email": "miyyer@cs.umass.edu"
+    },
+    {
+      "forename": "Luke",
+      "surname": "Zettlemoyer",
+      "name": "Luke Zettlemoyer",
+      "email": ""
+    },
+    {
+      "forename": "Hannaneh",
+      "surname": "Hajishirzi",
+      "name": "Hannaneh Hajishirzi",
+      "email": "hannaneh@cs.washington.edu"
+    },
+    {
+      "forename": "Bernd",
+      "surname": "Bohnet",
+      "name": "Bernd Bohnet",
+      "email": ""
+    },
+    {
+      "forename": "Vinh",
+      "surname": "Tran",
+      "name": "Vinh Tran",
+      "email": ""
+    },
+    {
+      "forename": "Pat",
+      "surname": "Verga",
+      "name": "Pat Verga",
+      "email": ""
+    },
+    {
+      "forename": "Roee",
+      "surname": "Aha- Roni",
+      "name": "Roee Aha- Roni",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Andor",
+      "name": "Daniel Andor",
+      "email": ""
+    },
+    {
+      "forename": "Baldini",
+      "surname": "Livio",
+      "name": "Baldini Livio",
+      "email": ""
+    },
+    {
+      "forename": "Massimil- Iano",
+      "surname": "Soares",
+      "name": "Massimil- Iano Soares",
+      "email": ""
+    },
+    {
+      "forename": "Jacob",
+      "surname": "Ciaramita",
+      "name": "Jacob Ciaramita",
+      "email": ""
+    },
+    {
+      "forename": "Kuzman",
+      "surname": "Eisenstein",
+      "name": "Kuzman Eisenstein",
+      "email": ""
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Ganchev",
+      "name": "Jonathan Ganchev",
+      "email": ""
+    },
+    {
+      "forename": "Kai",
+      "surname": "Herzig",
+      "name": "Kai Herzig",
+      "email": ""
+    },
+    {
+      "forename": "Tom",
+      "surname": "Hui",
+      "name": "Tom Hui",
+      "email": ""
+    },
+    {
+      "forename": "Ji",
+      "surname": "Kwiatkowski",
+      "name": "Ji Kwiatkowski",
+      "email": ""
+    },
+    {
+      "forename": "Jianmo",
+      "surname": "Ma",
+      "name": "Jianmo Ma",
+      "email": ""
+    },
+    {
+      "forename": "Tal",
+      "surname": "Ni",
+      "name": "Tal Ni",
+      "email": ""
+    },
+    {
+      "forename": "Sestorain",
+      "surname": "Lierni",
+      "name": "Sestorain Lierni",
+      "email": ""
+    },
+    {
+      "forename": "William Weston ",
+      "surname": "Saralegui",
+      "name": "William Weston  Saralegui",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Cohen",
+      "name": "Michael Cohen",
+      "email": ""
+    },
+    {
+      "forename": "Dipanjan",
+      "surname": "Collins",
+      "name": "Dipanjan Collins",
+      "email": ""
+    },
+    {
+      "forename": "Don",
+      "surname": "Das",
+      "name": "Don Das",
+      "email": ""
+    },
+    {
+      "forename": "Slav",
+      "surname": "Metzler",
+      "name": "Slav Metzler",
+      "email": ""
+    },
+    {
+      "forename": "Kellie",
+      "surname": "Petrov",
+      "name": "Kellie Petrov",
+      "email": ""
+    },
+    {
+      "forename": "Tom B.",
+      "surname": "Brown",
+      "name": "Tom B. Brown",
+      "email": ""
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Mann",
+      "name": "Benjamin Mann",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Ryder",
+      "name": "Nick Ryder",
+      "email": ""
+    },
+    {
+      "forename": "Melanie",
+      "surname": "Subbiah",
+      "name": "Melanie Subbiah",
+      "email": ""
+    },
+    {
+      "forename": "Jared",
+      "surname": "Kaplan",
+      "name": "Jared Kaplan",
+      "email": ""
+    },
+    {
+      "forename": "Prafulla",
+      "surname": "Dhariwal",
+      "name": "Prafulla Dhariwal",
+      "email": ""
+    },
+    {
+      "forename": "Arvind",
+      "surname": "Neelakantan",
+      "name": "Arvind Neelakantan",
+      "email": ""
+    },
+    {
+      "forename": "Pranav",
+      "surname": "Shyam",
+      "name": "Pranav Shyam",
+      "email": ""
+    },
+    {
+      "forename": "Girish",
+      "surname": "Sastry",
+      "name": "Girish Sastry",
+      "email": ""
+    },
+    {
+      "forename": "Amanda",
+      "surname": "Askell",
+      "name": "Amanda Askell",
+      "email": ""
+    },
+    {
+      "forename": "Sandhini",
+      "surname": "Agarwal",
+      "name": "Sandhini Agarwal",
+      "email": ""
+    },
+    {
+      "forename": "Ariel",
+      "surname": "Herbert-Voss",
+      "name": "Ariel Herbert-Voss",
+      "email": ""
+    },
+    {
+      "forename": "Gretchen",
+      "surname": "Krueger",
+      "name": "Gretchen Krueger",
+      "email": ""
+    },
+    {
+      "forename": "Tom",
+      "surname": "Henighan",
+      "name": "Tom Henighan",
+      "email": ""
+    },
+    {
+      "forename": "Rewon",
+      "surname": "Child",
+      "name": "Rewon Child",
+      "email": ""
+    },
+    {
+      "forename": "Aditya",
+      "surname": "Ramesh",
+      "name": "Aditya Ramesh",
+      "email": ""
+    },
+    {
+      "forename": "Daniel M.",
+      "surname": "Ziegler",
+      "name": "Daniel M. Ziegler",
+      "email": ""
+    },
+    {
+      "forename": "Jeffrey",
+      "surname": "Wu",
+      "name": "Jeffrey Wu",
+      "email": ""
+    },
+    {
+      "forename": "Clemens",
+      "surname": "Winter",
+      "name": "Clemens Winter",
+      "email": ""
+    },
+    {
+      "forename": "Christopher",
+      "surname": "Hesse",
+      "name": "Christopher Hesse",
+      "email": ""
+    },
+    {
+      "forename": "Mark",
+      "surname": "Chen",
+      "name": "Mark Chen",
+      "email": ""
+    },
+    {
+      "forename": "Eric",
+      "surname": "Sigler",
+      "name": "Eric Sigler",
+      "email": ""
+    },
+    {
+      "forename": "Mateusz",
+      "surname": "Litwin",
+      "name": "Mateusz Litwin",
+      "email": ""
+    },
+    {
+      "forename": "Scott",
+      "surname": "Gray",
+      "name": "Scott Gray",
+      "email": "scottyih@meta.com"
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Chess",
+      "name": "Benjamin Chess",
+      "email": ""
+    },
+    {
+      "forename": "Jack",
+      "surname": "Clark",
+      "name": "Jack Clark",
+      "email": ""
+    },
+    {
+      "forename": "Christopher",
+      "surname": "Berner",
+      "name": "Christopher Berner",
+      "email": ""
+    },
+    {
+      "forename": "Sam",
+      "surname": "Mccandlish",
+      "name": "Sam Mccandlish",
+      "email": ""
+    },
+    {
+      "forename": "Alec",
+      "surname": "Radford",
+      "name": "Alec Radford",
+      "email": ""
+    },
+    {
+      "forename": "Ilya",
+      "surname": "Sutskever",
+      "name": "Ilya Sutskever",
+      "email": ""
+    },
+    {
+      "forename": "Dario",
+      "surname": "Amodei",
+      "name": "Dario Amodei",
+      "email": ""
+    },
+    {
+      "forename": "Danqi",
+      "surname": "Chen",
+      "name": "Danqi Chen",
+      "email": ""
+    },
+    {
+      "forename": "Adam",
+      "surname": "Fisch",
+      "name": "Adam Fisch",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Weston",
+      "name": "Jason Weston",
+      "email": ""
+    },
+    {
+      "forename": "Antoine 2017 ",
+      "surname": "Bordes",
+      "name": "Antoine 2017  Bordes",
+      "email": ""
+    },
+    {
+      "forename": "Jifan",
+      "surname": "Chen",
+      "name": "Jifan Chen",
+      "email": ""
+    },
+    {
+      "forename": "Aniruddh",
+      "surname": "Sriram",
+      "name": "Aniruddh Sriram",
+      "email": ""
+    },
+    {
+      "forename": "Eunsol",
+      "surname": "Choi",
+      "name": "Eunsol Choi",
+      "email": ""
+    },
+    {
+      "forename": "Greg 2022 ",
+      "surname": "Durrett",
+      "name": "Greg 2022  Durrett",
+      "email": ""
+    },
+    {
+      "forename": "Sihao",
+      "surname": "Chen",
+      "name": "Sihao Chen",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Khashabi",
+      "name": "Daniel Khashabi",
+      "email": ""
+    },
+    {
+      "forename": "Wenpeng",
+      "surname": "Yin",
+      "name": "Wenpeng Yin",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Callison-Burch",
+      "name": "Chris Callison-Burch",
+      "email": ""
+    },
+    {
+      "forename": "Dan",
+      "surname": "Roth",
+      "name": "Dan Roth",
+      "email": ""
+    },
+    {
+      "forename": "Wei-Lin",
+      "surname": "Chiang",
+      "name": "Wei-Lin Chiang",
+      "email": ""
+    },
+    {
+      "forename": "Zhuohan",
+      "surname": "Li",
+      "name": "Zhuohan Li",
+      "email": ""
+    },
+    {
+      "forename": "Zi",
+      "surname": "Lin",
+      "name": "Zi Lin",
+      "email": ""
+    },
+    {
+      "forename": "Ying",
+      "surname": "Sheng",
+      "name": "Ying Sheng",
+      "email": ""
+    },
+    {
+      "forename": "Zhanghao",
+      "surname": "Wu",
+      "name": "Zhanghao Wu",
+      "email": ""
+    },
+    {
+      "forename": "Hao",
+      "surname": "Zhang",
+      "name": "Hao Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Lianmin",
+      "surname": "Zheng",
+      "name": "Lianmin Zheng",
+      "email": ""
+    },
+    {
+      "forename": "Siyuan",
+      "surname": "Zhuang",
+      "name": "Siyuan Zhuang",
+      "email": ""
+    },
+    {
+      "forename": "Yonghao",
+      "surname": "Zhuang",
+      "name": "Yonghao Zhuang",
+      "email": ""
+    },
+    {
+      "forename": "Joseph E.",
+      "surname": "Gonzalez",
+      "name": "Joseph E. Gonzalez",
+      "email": ""
+    },
+    {
+      "forename": "Ion",
+      "surname": "Stoica",
+      "name": "Ion Stoica",
+      "email": ""
+    },
+    {
+      "forename": "Eric P 2023 ",
+      "surname": "Xing",
+      "name": "Eric P 2023  Xing",
+      "email": ""
+    },
+    {
+      "forename": "Alexander",
+      "surname": "Fabbri",
+      "name": "Alexander Fabbri",
+      "email": ""
+    },
+    {
+      "forename": "Chien-Sheng",
+      "surname": "Wu",
+      "name": "Chien-Sheng Wu",
+      "email": ""
+    },
+    {
+      "forename": "Wenhao",
+      "surname": "Liu",
+      "name": "Wenhao Liu",
+      "email": ""
+    },
+    {
+      "forename": "Caiming",
+      "surname": "Xiong",
+      "name": "Caiming Xiong",
+      "email": ""
+    },
+    {
+      "forename": "Angela",
+      "surname": "Fan",
+      "name": "Angela Fan",
+      "email": ""
+    },
+    {
+      "forename": "Aleksandra",
+      "surname": "Piktus",
+      "name": "Aleksandra Piktus",
+      "email": ""
+    },
+    {
+      "forename": "Fabio",
+      "surname": "Petroni",
+      "name": "Fabio Petroni",
+      "email": ""
+    },
+    {
+      "forename": "Guil- Laume",
+      "surname": "Wenzek",
+      "name": "Guil- Laume Wenzek",
+      "email": ""
+    },
+    {
+      "forename": "Marzieh",
+      "surname": "Saeidi",
+      "name": "Marzieh Saeidi",
+      "email": ""
+    },
+    {
+      "forename": "Andreas",
+      "surname": "Vlachos",
+      "name": "Andreas Vlachos",
+      "email": ""
+    },
+    {
+      "forename": "Sebastian 2021 ",
+      "surname": "Riedel",
+      "name": "Sebastian 2021  Riedel",
+      "email": ""
+    },
+    {
+      "forename": "Luyu",
+      "surname": "Gao",
+      "name": "Luyu Gao",
+      "email": ""
+    },
+    {
+      "forename": "Zhuyun",
+      "surname": "Dai",
+      "name": "Zhuyun Dai",
+      "email": ""
+    },
+    {
+      "forename": "Panupong",
+      "surname": "Pasupat",
+      "name": "Panupong Pasupat",
+      "email": ""
+    },
+    {
+      "forename": "Anthony",
+      "surname": "Chen",
+      "name": "Anthony Chen",
+      "email": ""
+    },
+    {
+      "forename": "Arun Tejasvi ",
+      "surname": "Chaganty",
+      "name": "Arun Tejasvi  Chaganty",
+      "email": ""
+    },
+    {
+      "forename": "Yicheng",
+      "surname": "Fan",
+      "name": "Yicheng Fan",
+      "email": ""
+    },
+    {
+      "forename": "Vin- Cent Y.",
+      "surname": "Zhao",
+      "name": "Vin- Cent Y. Zhao",
+      "email": ""
+    },
+    {
+      "forename": "Ni",
+      "surname": "Lao",
+      "name": "Ni Lao",
+      "email": ""
+    },
+    {
+      "forename": "Hongrae",
+      "surname": "Lee",
+      "name": "Hongrae Lee",
+      "email": ""
+    },
+    {
+      "forename": "Biyang",
+      "surname": "Guo",
+      "name": "Biyang Guo",
+      "email": ""
+    },
+    {
+      "forename": "Xin",
+      "surname": "Zhang",
+      "name": "Xin Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Ziyuan",
+      "surname": "Wang",
+      "name": "Ziyuan Wang",
+      "email": ""
+    },
+    {
+      "forename": "Minqi",
+      "surname": "Jiang",
+      "name": "Minqi Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Jinran",
+      "surname": "Nie",
+      "name": "Jinran Nie",
+      "email": ""
+    },
+    {
+      "forename": "Yuxuan",
+      "surname": "Ding",
+      "name": "Yuxuan Ding",
+      "email": ""
+    },
+    {
+      "forename": "Jianwei",
+      "surname": "Yue",
+      "name": "Jianwei Yue",
+      "email": ""
+    },
+    {
+      "forename": "Yupeng 2023 ",
+      "surname": "Wu",
+      "name": "Yupeng 2023  Wu",
+      "email": ""
+    },
+    {
+      "forename": "Kelvin",
+      "surname": "Guu",
+      "name": "Kelvin Guu",
+      "email": ""
+    },
+    {
+      "forename": "Tatsunori B.",
+      "surname": "Hashimoto",
+      "name": "Tatsunori B. Hashimoto",
+      "email": ""
+    },
+    {
+      "forename": "Yonatan",
+      "surname": "Oren",
+      "name": "Yonatan Oren",
+      "email": ""
+    },
+    {
+      "forename": "Percy 2018 ",
+      "surname": "Liang",
+      "name": "Percy 2018  Liang",
+      "email": ""
+    },
+    {
+      "forename": "Jordan",
+      "surname": "Hoffmann",
+      "name": "Jordan Hoffmann",
+      "email": ""
+    },
+    {
+      "forename": "Sebastian",
+      "surname": "Borgeaud",
+      "name": "Sebastian Borgeaud",
+      "email": ""
+    },
+    {
+      "forename": "Arthur",
+      "surname": "Mensch",
+      "name": "Arthur Mensch",
+      "email": ""
+    },
+    {
+      "forename": "Elena",
+      "surname": "Buchatskaya",
+      "name": "Elena Buchatskaya",
+      "email": ""
+    },
+    {
+      "forename": "Trevor",
+      "surname": "Cai",
+      "name": "Trevor Cai",
+      "email": ""
+    },
+    {
+      "forename": "Eliza",
+      "surname": "Rutherford",
+      "name": "Eliza Rutherford",
+      "email": ""
+    },
+    {
+      "forename": "Diego",
+      "surname": "De Las Casas",
+      "name": "Diego De Las Casas",
+      "email": ""
+    },
+    {
+      "forename": "Lisa Anne ",
+      "surname": "Hendricks",
+      "name": "Lisa Anne  Hendricks",
+      "email": ""
+    },
+    {
+      "forename": "Johannes",
+      "surname": "Welbl",
+      "name": "Johannes Welbl",
+      "email": ""
+    },
+    {
+      "forename": "Aidan",
+      "surname": "Clark",
+      "name": "Aidan Clark",
+      "email": ""
+    },
+    {
+      "forename": "Tom",
+      "surname": "Hennigan",
+      "name": "Tom Hennigan",
+      "email": ""
+    },
+    {
+      "forename": "Eric",
+      "surname": "Noland",
+      "name": "Eric Noland",
+      "email": ""
+    },
+    {
+      "forename": "Katherine",
+      "surname": "Millican",
+      "name": "Katherine Millican",
+      "email": ""
+    },
+    {
+      "forename": "George",
+      "surname": "Van Den Driessche",
+      "name": "George Van Den Driessche",
+      "email": ""
+    },
+    {
+      "forename": "Bog- Dan",
+      "surname": "Damoc",
+      "name": "Bog- Dan Damoc",
+      "email": ""
+    },
+    {
+      "forename": "Aurelia",
+      "surname": "Guy",
+      "name": "Aurelia Guy",
+      "email": ""
+    },
+    {
+      "forename": "Simon",
+      "surname": "Osindero",
+      "name": "Simon Osindero",
+      "email": ""
+    },
+    {
+      "forename": "Karen",
+      "surname": "Simonyan",
+      "name": "Karen Simonyan",
+      "email": ""
+    },
+    {
+      "forename": "Erich",
+      "surname": "Elsen",
+      "name": "Erich Elsen",
+      "email": ""
+    },
+    {
+      "forename": "Oriol",
+      "surname": "Vinyals",
+      "name": "Oriol Vinyals",
+      "email": ""
+    },
+    {
+      "forename": "Jack William ",
+      "surname": "Rae",
+      "name": "Jack William  Rae",
+      "email": ""
+    },
+    {
+      "forename": "Laurent 2022 ",
+      "surname": "Sifre",
+      "name": "Laurent 2022  Sifre",
+      "email": ""
+    },
+    {
+      "forename": "Saurav",
+      "surname": "Kadavath",
+      "name": "Saurav Kadavath",
+      "email": ""
+    },
+    {
+      "forename": "Tom",
+      "surname": "Conerly",
+      "name": "Tom Conerly",
+      "email": ""
+    },
+    {
+      "forename": "Dawn",
+      "surname": "Drain",
+      "name": "Dawn Drain",
+      "email": ""
+    },
+    {
+      "forename": "Ethan",
+      "surname": "Perez",
+      "name": "Ethan Perez",
+      "email": ""
+    },
+    {
+      "forename": "Nicholas",
+      "surname": "Schiefer",
+      "name": "Nicholas Schiefer",
+      "email": ""
+    },
+    {
+      "forename": "Hatfield",
+      "surname": "Dodds",
+      "name": "Hatfield Dodds",
+      "email": ""
+    },
+    {
+      "forename": "Nova",
+      "surname": "Dassarma",
+      "name": "Nova Dassarma",
+      "email": ""
+    },
+    {
+      "forename": "Ryo",
+      "surname": "Kamoi",
+      "name": "Ryo Kamoi",
+      "email": ""
+    },
+    {
+      "forename": "Tanya",
+      "surname": "Goyal",
+      "name": "Tanya Goyal",
+      "email": ""
+    },
+    {
+      "forename": "Juan Diego ",
+      "surname": "Rodriguez",
+      "name": "Juan Diego  Rodriguez",
+      "email": ""
+    },
+    {
+      "forename": "Nikhil",
+      "surname": "Kandpal",
+      "name": "Nikhil Kandpal",
+      "email": ""
+    },
+    {
+      "forename": "Haikang",
+      "surname": "Deng",
+      "name": "Haikang Deng",
+      "email": ""
+    },
+    {
+      "forename": "Adam",
+      "surname": "Roberts",
+      "name": "Adam Roberts",
+      "email": ""
+    },
+    {
+      "forename": "Erin",
+      "surname": "Bransom",
+      "name": "Erin Bransom",
+      "email": ""
+    },
+    {
+      "forename": "Bailey",
+      "surname": "Kuehl",
+      "name": "Bailey Kuehl",
+      "email": ""
+    },
+    {
+      "forename": "Pradeep",
+      "surname": "Dasigi",
+      "name": "Pradeep Dasigi",
+      "email": ""
+    },
+    {
+      "forename": "Arman",
+      "surname": "Cohan",
+      "name": "Arman Cohan",
+      "email": ""
+    },
+    {
+      "forename": "Long",
+      "surname": "Ouyang",
+      "name": "Long Ouyang",
+      "email": ""
+    },
+    {
+      "forename": "Xu",
+      "surname": "Jiang",
+      "name": "Xu Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Diogo",
+      "surname": "Almeida",
+      "name": "Diogo Almeida",
+      "email": ""
+    },
+    {
+      "forename": "Carroll",
+      "surname": "Wainwright",
+      "name": "Carroll Wainwright",
+      "email": ""
+    },
+    {
+      "forename": "Pamela",
+      "surname": "Mishkin",
+      "name": "Pamela Mishkin",
+      "email": ""
+    },
+    {
+      "forename": "Chong",
+      "surname": "Zhang",
+      "name": "Chong Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Katarina",
+      "surname": "Slama",
+      "name": "Katarina Slama",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Gray",
+      "name": "Alex Gray",
+      "email": ""
+    },
+    {
+      "forename": "John",
+      "surname": "Schulman",
+      "name": "John Schulman",
+      "email": ""
+    },
+    {
+      "forename": "Jacob",
+      "surname": "Hilton",
+      "name": "Jacob Hilton",
+      "email": ""
+    },
+    {
+      "forename": "Fraser",
+      "surname": "Kelton",
+      "name": "Fraser Kelton",
+      "email": ""
+    },
+    {
+      "forename": "Luke",
+      "surname": "Miller",
+      "name": "Luke Miller",
+      "email": ""
+    },
+    {
+      "forename": "Maddie",
+      "surname": "Simens",
+      "name": "Maddie Simens",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Welinder",
+      "name": "Peter Welinder",
+      "email": ""
+    },
+    {
+      "forename": "Paul",
+      "surname": "Christiano",
+      "name": "Paul Christiano",
+      "email": ""
+    },
+    {
+      "forename": "Jan",
+      "surname": "Leike",
+      "name": "Jan Leike",
+      "email": ""
+    },
+    {
+      "forename": "Ryan 2022 ",
+      "surname": "Lowe",
+      "name": "Ryan 2022  Lowe",
+      "email": ""
+    },
+    {
+      "forename": "Patrick",
+      "surname": "Lewis",
+      "name": "Patrick Lewis",
+      "email": ""
+    },
+    {
+      "forename": "Majid",
+      "surname": "Yazdani",
+      "name": "Majid Yazdani",
+      "email": ""
+    },
+    {
+      "forename": "Nicola",
+      "surname": "De Cao",
+      "name": "Nicola De Cao",
+      "email": ""
+    },
+    {
+      "forename": "James",
+      "surname": "Thorne",
+      "name": "James Thorne",
+      "email": ""
+    },
+    {
+      "forename": "Yacine",
+      "surname": "Jernite",
+      "name": "Yacine Jernite",
+      "email": ""
+    },
+    {
+      "forename": "Vladimir",
+      "surname": "Karpukhin",
+      "name": "Vladimir Karpukhin",
+      "email": ""
+    },
+    {
+      "forename": "Jean",
+      "surname": "Maillard",
+      "name": "Jean Maillard",
+      "email": ""
+    },
+    {
+      "forename": "Vassilis",
+      "surname": "Plachouras",
+      "name": "Vassilis Plachouras",
+      "email": ""
+    },
+    {
+      "forename": "Tim",
+      "surname": "Rocktäschel",
+      "name": "Tim Rocktäschel",
+      "email": ""
+    },
+    {
+      "forename": "Pranav",
+      "surname": "Rajpurkar",
+      "name": "Pranav Rajpurkar",
+      "email": ""
+    },
+    {
+      "forename": "Jian",
+      "surname": "Zhang",
+      "name": "Jian Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Konstantin",
+      "surname": "Lopyrev",
+      "name": "Konstantin Lopyrev",
+      "email": ""
+    },
+    {
+      "forename": "Percy 2016 ",
+      "surname": "Liang",
+      "name": "Percy 2016  Liang",
+      "email": ""
+    },
+    {
+      "forename": "Hannah",
+      "surname": "Rashkin",
+      "name": "Hannah Rashkin",
+      "email": ""
+    },
+    {
+      "forename": "Vitaly",
+      "surname": "Nikolaev",
+      "name": "Vitaly Nikolaev",
+      "email": ""
+    },
+    {
+      "forename": "Matthew",
+      "surname": "Lamm",
+      "name": "Matthew Lamm",
+      "email": ""
+    },
+    {
+      "forename": "Lora",
+      "surname": "Aroyo",
+      "name": "Lora Aroyo",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Collins",
+      "name": "Michael Collins",
+      "email": ""
+    },
+    {
+      "forename": "Dipanjan",
+      "surname": "Das",
+      "name": "Dipanjan Das",
+      "email": ""
+    },
+    {
+      "forename": "Slav",
+      "surname": "Petrov",
+      "name": "Slav Petrov",
+      "email": ""
+    },
+    {
+      "forename": "Singh",
+      "surname": "Gaurav",
+      "name": "Singh Gaurav",
+      "email": ""
+    },
+    {
+      "forename": "Iulia",
+      "surname": "Tomar",
+      "name": "Iulia Tomar",
+      "email": ""
+    },
+    {
+      "forename": "David Reitter 2021 ",
+      "surname": "Turc",
+      "name": "David Reitter 2021  Turc",
+      "email": ""
+    },
+    {
+      "forename": "Shaden",
+      "surname": "Shaar",
+      "name": "Shaden Shaar",
+      "email": ""
+    },
+    {
+      "forename": "Firoj",
+      "surname": "Alam",
+      "name": "Firoj Alam",
+      "email": ""
+    },
+    {
+      "forename": "Giovanni",
+      "surname": "Da",
+      "name": "Giovanni Da",
+      "email": ""
+    },
+    {
+      "forename": "San",
+      "surname": "Martino",
+      "name": "San Martino",
+      "email": ""
+    },
+    {
+      "forename": "Preslav 2022 ",
+      "surname": "Nakov",
+      "name": "Preslav 2022  Nakov",
+      "email": ""
+    },
+    {
+      "forename": "Ori",
+      "surname": "Shapira",
+      "name": "Ori Shapira",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Gabay",
+      "name": "David Gabay",
+      "email": ""
+    },
+    {
+      "forename": "Yang",
+      "surname": "Gao",
+      "name": "Yang Gao",
+      "email": ""
+    },
+    {
+      "forename": "Hadar",
+      "surname": "Ronen",
+      "name": "Hadar Ronen",
+      "email": ""
+    },
+    {
+      "forename": "Ra- Makanth",
+      "surname": "Pasunuru",
+      "name": "Ra- Makanth Pasunuru",
+      "email": ""
+    },
+    {
+      "forename": "Mohit",
+      "surname": "Bansal",
+      "name": "Mohit Bansal",
+      "email": ""
+    },
+    {
+      "forename": "Yael",
+      "surname": "Amsterdamer",
+      "name": "Yael Amsterdamer",
+      "email": ""
+    },
+    {
+      "forename": "Ido 2019 ",
+      "surname": "Dagan",
+      "name": "Ido 2019  Dagan",
+      "email": ""
+    },
+    {
+      "forename": "Kurt",
+      "surname": "Shuster",
+      "name": "Kurt Shuster",
+      "email": ""
+    },
+    {
+      "forename": "Spencer",
+      "surname": "Poff",
+      "name": "Spencer Poff",
+      "email": ""
+    },
+    {
+      "forename": "Moya",
+      "surname": "Chen",
+      "name": "Moya Chen",
+      "email": ""
+    },
+    {
+      "forename": "Douwe",
+      "surname": "Kiela",
+      "name": "Douwe Kiela",
+      "email": ""
+    },
+    {
+      "forename": "Rohan",
+      "surname": "Taori",
+      "name": "Rohan Taori",
+      "email": ""
+    },
+    {
+      "forename": "Ishaan",
+      "surname": "Gulrajani",
+      "name": "Ishaan Gulrajani",
+      "email": ""
+    },
+    {
+      "forename": "Tianyi",
+      "surname": "Zhang",
+      "name": "Tianyi Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Yann",
+      "surname": "Dubois",
+      "name": "Yann Dubois",
+      "email": ""
+    },
+    {
+      "forename": "Xuechen",
+      "surname": "Li",
+      "name": "Xuechen Li",
+      "email": ""
+    },
+    {
+      "forename": "Carlos",
+      "surname": "Guestrin",
+      "name": "Carlos Guestrin",
+      "email": ""
+    },
+    {
+      "forename": "Percy",
+      "surname": "Liang",
+      "name": "Percy Liang",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Evaluating the factuality of long-form text generated by large language models (LMs) is nontrivial because (1) generations often contain a mixture of supported and unsupported pieces of information, making binary judgments of quality inadequate, and (2) human evaluation is time-consuming and costly. In this paper, we introduce FACTSCORE, a new evaluation that breaks a generation into a series of atomic facts and computes the percentage of atomic facts supported by a reliable knowledge source. We conduct an extensive human evaluation to obtain FACTSCOREs of people biographies generated by several state-of-the-art commercial LMs-InstructGPT, ChatGPT, and the retrievalaugmented PerplexityAI-and report new analysis demonstrating the need for such a finegrained score (e.g., ChatGPT only achieves 58%). Since human evaluation is costly, we also introduce an automated model that estimates FACTSCORE using retrieval and a strong language model, with less than a 2% error rate. Finally, we use this automated metric to evaluate 6,500 generations from a new set of 13 recent LMs that would have cost $26K if evaluated by humans, with various findings: GPT-4 and ChatGPT are more factual than public models, and Vicuna and Alpaca are some of the best public models. FACTSCORE is available for public use via pip install factscore. 1"
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Long-form text generated by large language models (LMs) has widely been used (Brown et al., 2020; Ouyang et al., 2022); nonetheless, evaluating their factual precision-whether each piece of information conveyed in a generation is factually accurateremains challenging for two reasons. First, a generation consists of a large number of pieces of infor- † Core contributors.",
+          "quote": [
+            {
+              "text": "Ouyang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 98
+            },
+            {
+              "text": "[(Brownetal.,2020]",
+              "type": "bibr",
+              "index": 77,
+              "context": "been used ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 77,
+              "context": "been used ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "1 Source code and guidelines are available at https:// github.com/shmsw25/FActScore.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is American.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is an actress.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is a model.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is a producer.",
+          "quote": []
+        },
+        {
+          "text": "-She is best known for her roles in Grey's Anatomy.",
+          "quote": []
+        },
+        {
+          "text": "-She is best known for her roles in I, Robot.",
+          "quote": []
+        },
+        {
+          "text": "-She is best known for her roles in Blue Bloods.",
+          "quote": []
+        },
+        {
+          "text": "-She studied acting.",
+          "quote": []
+        },
+        {
+          "text": "-She studied at the American Academy of Dramatic Arts.",
+          "quote": []
+        },
+        {
+          "text": "-… Tell me a bio of Bridget Moynahan.",
+          "quote": []
+        },
+        {
+          "text": "Bridget Moynahan is an American actress, model and producer. She is best known for her roles in Grey's Anatomy, I, Robot and Blue Bloods. She studied acting at the American Academy of Dramatic Arts, and …",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "66.7%"
+      },
+      "p": [
+        {
+          "text": "Bridget Moynahan is an American filmmaker and writer. She is best known for her work on the soap opera General Hospital, which she co-created with husband Charles Kelly. Moynahan was raised in a middle-class family in Los Angeles, … -Bridget Moynahan is American.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is a filmmaker.",
+          "quote": []
+        },
+        {
+          "text": "-Bridget Moynahan is a writer.",
+          "quote": []
+        },
+        {
+          "text": "-She is best known for her work on General Hospital.",
+          "quote": []
+        },
+        {
+          "text": "-General Hospital is the soap opera.",
+          "quote": []
+        },
+        {
+          "text": "-She co-created General Hospital.",
+          "quote": []
+        },
+        {
+          "text": "-She co-created General Hospital with her husband.",
+          "quote": []
+        },
+        {
+          "text": "-Her husband is Charles Kelly.",
+          "quote": []
+        },
+        {
+          "text": "-Moynahan was raised in a middle-class family.",
+          "quote": []
+        },
+        {
+          "text": "-Moynahan was raised in Los Angeles.",
+          "quote": []
+        },
+        {
+          "text": "-…",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "10.0%"
+      },
+      "p": [
+        {
+          "text": "Stable LM Chat GPT mation that are a mixture of true or false, 2 making a binary judgment inadequate (Pagnoni et al., 2021). Second, validating every piece of information is time-consuming and costly.",
+          "quote": [
+            {
+              "text": "(Pagnoni et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "nadequate ",
+              "index": 101
+            }
+          ]
+        },
+        {
+          "text": "In this paper, we introduce FACTSCORE (Factual precision in Atomicity Score), a new evaluation of an LM that represents the percentage of atomic facts (pieces of information) supported by a given knowledge source. Computing FACTSCORE involves (1) breaking a generation into a series of atomic facts-short statements that each contain one piece of information (Nenkova and Passonneau, 2004; Shapira et al., 2019; Zhang and Bansal, 2021; Liu et al., 2022), and (2) assigning a binary label to each atomic fact, allowing a fine-grained evaluation of factual precision. We evaluate FACTSCORE on the task of generating people biographies because generations consist of verifiable statements rather than debatable or subjective ones, and the scope is broad (i.e., covering diverse nationalities, professions, and levels of rarity).",
+          "quote": [
+            {
+              "text": "Shapira et al., 2019;",
+              "target": "",
+              "type": "bibr",
+              "context": "au, 2004; ",
+              "index": 390
+            },
+            {
+              "text": "Liu et al., 2022)",
+              "target": "#b11",
+              "type": "bibr",
+              "context": "al, 2021; ",
+              "index": 436
+            },
+            {
+              "text": "[(NenkovaandPassonneau,2004]",
+              "type": "bibr",
+              "index": 359,
+              "context": "formation ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 359,
+              "context": "formation ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[ZhangandBansal,2021]",
+              "type": "bibr",
+              "index": 412,
+              "context": "l., 2019; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 412,
+              "context": "l., 2019; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "We perform extensive human annotations to obtain FACTSCOREs of three state-of-the-art, commercially available LMs: InstructGPT (Ouyang et al., 2022), ChatGPT (OpenAI, 2022), and searchaugmented PerplexityAI. 3 Our results indicate that commercially available LMs are riddled with errors, having FACTSCOREs of 42%, 58% and 71%, respectively. Their FACTSCOREs significantly drop as the rarity of the entities increases, e.g., 80% → 16% for ChatGPT.",
+          "quote": [
+            {
+              "text": "InstructGPT (Ouyang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "able LMs: ",
+              "index": 115
+            },
+            {
+              "text": "ChatGPT (OpenAI, 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "., 2022), ",
+              "index": 150
+            }
+          ]
+        },
+        {
+          "text": "Since human evaluation is costly, we next introduce an automatic evaluation of FACTSCORE through a model that estimates a FACTSCORE for a given LM. Our estimator decomposes generations into atomic facts and validates each based on a given knowledge source, leveraging retrieval from the given knowledge source and strong language models. Our estimator closely approximates FACTSCORE with an error rate of < 2% and can be applied to a range of new LMs at scale with no human effort. Our case study evaluates 6,500 generations from 13 LMs that could have cost $26K, with various findings: GPT-4 (OpenAI, 2023) and ChatGPT are far less factual than humans but are much better than public models, and there is a large variance between public models, with Vicuna (Chiang et al., 2023) and Alpaca (Taori et al., 2023) being some of the best.",
+          "quote": [
+            {
+              "text": "GPT-4 (OpenAI, 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "findings: ",
+              "index": 587
+            },
+            {
+              "text": "(Chiang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "th Vicuna ",
+              "index": 758
+            },
+            {
+              "text": "Alpaca (Taori et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "2023) and ",
+              "index": 784
+            }
+          ]
+        },
+        {
+          "text": "In summary, our contributions are as follows.",
+          "quote": []
+        },
+        {
+          "text": "1. We introduce FACTSCORE, a new evaluation of factual precision of LMs by breaking their generations into atomic facts and validating each against a given knowledge source. Human evaluation reveals that the state-of-the-art LMs with and without search have low FACTSCOREs.",
+          "quote": []
+        },
+        {
+          "text": "2. We introduce a model that approximates FACTSCORE with an error rate of < 2%, allowing evaluation of a large set of new LMs without manual human efforts.",
+          "quote": []
+        },
+        {
+          "text": "to extend FACTSCORE for a broader set of generations (e.g., open-ended generation) and to further improve the estimator.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "Related Work"
+      },
+      "p": [
+        {
+          "text": "Factual precision in text generation. Factual precision in text generation has been an active area of research in NLP. Most prior work studies factual precision of models supervised for a specific problem such as dialogue (Shuster et al., 2021), or focuses on question answering with short answers (Kadavath et al., 2022; Kandpal et al., 2022; Mallen et al., 2023; Nori et al., 2023).",
+          "quote": [
+            {
+              "text": "(Shuster et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": " dialogue ",
+              "index": 222
+            },
+            {
+              "text": "Kandpal et al., 2022;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 322
+            },
+            {
+              "text": "Nori et al., 2023)",
+              "target": "#b22",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 365
+            },
+            {
+              "text": "[(Kadavathetal.,2022]",
+              "type": "bibr",
+              "index": 298,
+              "context": "t answers ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 298,
+              "context": "t answers ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Mallenetal.,2023]",
+              "type": "bibr",
+              "index": 344,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 344,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "More recent work has studied factual precision of text generation beyond short answers. Lee et al. (2022) evaluates the factual precision with proxy metrics, e.g., whether named entities in a generation appear in an article of the topic. A series of concurrent work verifies the precision of the citations (attributions) provided by the model (Gao et al., 2022; Liu et al., 2023a; Yue et al., 2023; Gao et al., 2023). A concurrent work by Manakul et al. (2023) automates the identification of factual errors in LM generations without using any knowledge source; we use their method as a baseline estimator in Section 4. In contrast, our work (1) considers much longer text generation 4 from a variety of state-of-the-art LMs with and without search, (2) provides their fine-grained evaluation both by human experts and through an automated evaluator that closely approaches humans, and (3) applies it to a large set of LMs at scale. Fact Verification. Our work is closely related to prior work on fact verification (Thorne et al., 2018; Wadden et al., 2020) where claim sentences are automatically checked against a large knowledge source like Wikipedia or scientific literature. Most literature assumes a single, atomic claim, sometimes modeled with surrounding context (Nakov et al., 2018; Mihaylova et al., 2019; Shaar et al., 2022). There also has been work that verifies a longer sentence or text through decomposition to atomic facts (Fan et al., 2020; Wright et al., 2022; Chen et al., 2022; Kamoi et al., 2023) from which we take inspiration. The primary difference between fact verification literature and our work is that we focus on long-form model-generated text rather than sentence-level human-written claims.",
+          "quote": [
+            {
+              "text": "Lee et al. (2022)",
+              "target": "",
+              "type": "bibr",
+              "context": " answers. ",
+              "index": 88
+            },
+            {
+              "text": "Liu et al., 2023a;",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 362
+            },
+            {
+              "text": "Gao et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 399
+            },
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "t work by ",
+              "index": 439
+            },
+            {
+              "text": "Wadden et al., 2020)",
+              "target": "#b26",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 1037
+            },
+            {
+              "text": "Mihaylova et al., 2019;",
+              "target": "#b16",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 1292
+            },
+            {
+              "text": "Shaar et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 1316
+            },
+            {
+              "text": "Wright et al., 2022;",
+              "target": "#b31",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 1459
+            },
+            {
+              "text": "Kamoi et al., 2023",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 1499
+            },
+            {
+              "text": "[(Gaoetal.,2022]",
+              "type": "bibr",
+              "index": 343,
+              "context": "the model ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 343,
+              "context": "the model ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Yueetal.,2023]",
+              "type": "bibr",
+              "index": 381,
+              "context": "., 2023a; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 381,
+              "context": "., 2023a; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Thorneetal.,2018]",
+              "type": "bibr",
+              "index": 1015,
+              "context": "ification ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1015,
+              "context": "ification ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Nakovetal.,2018]",
+              "type": "bibr",
+              "index": 1271,
+              "context": "g context ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1271,
+              "context": "g context ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Fanetal.,2020]",
+              "type": "bibr",
+              "index": 1440,
+              "context": "mic facts ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1440,
+              "context": "mic facts ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Chenetal.,2022]",
+              "type": "bibr",
+              "index": 1480,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1480,
+              "context": "l., 2022; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Model-based Evaluation. Prior work has used learned models to define automated evaluation scores (Zhang et al., 2020; Liu et al., 2023b). This includes model-based evaluation in summarization that considers the consistency between a summary and a source document using QA or NLI (Kryscinski et al., 2020; Wang et al., 2020; Fabbri et al., 2022; Deutsch et al., 2021; Laban et al., 2022). We take inspiration from this work, and evaluate factual precision of LM generations by considering whether pieces of information are supported by a large text corpus.",
+          "quote": [
+            {
+              "text": "Liu et al., 2023b)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 118
+            },
+            {
+              "text": "Wang et al., 2020;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 305
+            },
+            {
+              "text": "Deutsch et al., 2021;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 345
+            },
+            {
+              "text": "Laban et al., 2022)",
+              "target": "#b5",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 367
+            },
+            {
+              "text": "[(Zhangetal.,2020]",
+              "type": "bibr",
+              "index": 97,
+              "context": "on scores ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 97,
+              "context": "on scores ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Kryscinskietal.,2020]",
+              "type": "bibr",
+              "index": 279,
+              "context": "QA or NLI ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 279,
+              "context": "QA or NLI ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Fabbrietal.,2022]",
+              "type": "bibr",
+              "index": 324,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 324,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "FACTSCORE: Evaluating Factual Precision of Long-form Text Generation"
+      },
+      "p": [
+        {
+          "text": "We introduce FACTSCORE, a new evaluation of an LM that considers the factual precision of atomic facts generated by the LM. We perform human evaluations to calculate FACTSCOREs of the stateof-the-art LMs (Section 3.3) and discuss results (Section 3.4). FACTSCORE allows rigorous and fine-grained evaluation of factual precision, but is time-consuming and costly, motivating automatic evaluation in Section 4.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "Definition"
+      },
+      "p": [
+        {
+          "text": "FACTSCORE is based on two key ideas.",
+          "quote": []
+        },
+        {
+          "text": "Key idea 1: Atomic fact as a unit. Long-form text consists of many pieces of information that can each be either true or false. Prior work has explored using a sentence as a unit; however, even a single sentence is a mix of supported and unsupported facts, e.g., in 40% of the cases with ChatGPT. Previous and concurrent work either (1) defines an additional label of partial support (Manakul et al., 2023; Liu et al., 2023a) whose definition may be subjective and can lead to low agreement, or (2) takes the strictest definition of support that requires every piece of information to be supported (Rashkin et al., 2021; Gao et al., 2022), which ignores the partial support cases, e.g., assigning 0.0 to both generations in Figure  even though the first generation is considerably more accurate than the second.",
+          "quote": [
+            {
+              "text": "Liu et al., 2023a)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 407
+            },
+            {
+              "text": "Gao et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 621
+            },
+            {
+              "text": "[(Manakuletal.,2023]",
+              "type": "bibr",
+              "index": 384,
+              "context": "l support ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 384,
+              "context": "l support ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Rashkinetal.,2021]",
+              "type": "bibr",
+              "index": 598,
+              "context": "supported ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 598,
+              "context": "supported ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "In this paper, we define an atomic fact as a short sentence conveying one piece of information (examples in Figure (Nenkova and Passonneau, 2004 ), similar to summarization content units ). An atomic fact is a more fundamental unit than a sentence for a piece of information and provides a more fine-grained evaluation, e.g., in Figure , rat-ing the first generation higher than the second.",
+          "quote": [
+            {
+              "text": "(Nenkova and Passonneau, 2004",
+              "target": "#b20",
+              "type": "bibr",
+              "context": "in Figure ",
+              "index": 115
+            }
+          ]
+        },
+        {
+          "text": "Key Idea 2: Factual precision as a function of a given knowledge source. Prior work often considers factual precision as a single global truth (Manakul et al., 2023). In contrast, we adopt a perspective that the truthfulness of a statement should depend on a particular knowledge source that end users consider to be trustworthy and reliable. Therefore, instead of whether an atomic fact is globally true or false, we consider whether it is supported by a given source of knowledge. This has been used in the fact verification literature (Wadden et al., 2022) where conflict of information between different sources is relatively common.",
+          "quote": [
+            {
+              "text": "(Manakul et al., 2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "bal truth ",
+              "index": 143
+            },
+            {
+              "text": "(Wadden et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "iterature ",
+              "index": 538
+            }
+          ]
+        },
+        {
+          "text": "Definition. Let M be a language model to be evaluated, X be a set of prompts, and C be a knowledge source. Consider a response y = M x for x ∈ X and A y , a list of atomic facts in y. A FACTSCORE of M is defined as follows.",
+          "quote": []
+        },
+        {
+          "text": "M x responds means M did not abstain from responding to the prompt x. This definition assumes the following: 1. Whether or not an atomic fact is supported by C is undebatable. 2. Every atomic fact in A y has an equal weight of importance, following Krishna et al. (2023). 3. Pieces of information in C do not conflict or overlap with each other.",
+          "quote": [
+            {
+              "text": "Krishna et al. (2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "following ",
+              "index": 249
+            }
+          ]
+        },
+        {
+          "text": "In the rest of the paper, we propose to use people biographies as X and Wikipedia as C because they satisfy these assumptions to a reasonable degree (Section 3.3). We discuss in which cases these assumptions hold or may not hold in more detail in the Limitation section. FACTSCORE considers precision but not recall, e.g., a model that abstains from answering too often or generates text with fewer facts may have a higher FACTSCORE, even if these are not desired. We leave the evaluation of factual recall for future work (more discussion in the Limitation section).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Studied LMs"
+      },
+      "p": [
+        {
+          "text": "We evaluate three LMs (referred to as LM SUBJ , an LM as a subject):",
+          "quote": []
+        },
+        {
+          "text": "(1) InstructGPT (text-davinci-003, updated from Ouyang et al.",
+          "quote": []
+        },
+        {
+          "text": "(2022)), (2) ChatGPT (OpenAI, 2022), and (3) PerplexityAI, 3 which incorporates a search engine with a language model.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3",
+        "name": "Data"
+      },
+      "p": [
+        {
+          "text": "We perform human evaluation of factual precision based on our definition. We prompt the LM SUBJ to generate people biographies and evaluate them against Wikipedia for the following reasons.",
+          "quote": []
+        },
+        {
+          "text": "• Biographies are objective (not subjective or debatable) and contain specific (not vague) information, satisfying Assumption 1 in Section 3.1.",
+          "quote": []
+        },
+        {
+          "text": "• Biographies allow evaluation across diverse nationalities, professions, and levels of rarities.",
+          "quote": []
+        },
+        {
+          "text": "• Wikipedia offers reasonable coverage of information about people and is reasonably selfconsistent, 5 satisfying Assumption 3.",
+          "quote": []
+        },
+        {
+          "text": "Data collection. We carefully design an annotation pipeline to assign a factual precision to a long-form generation through the following steps.",
+          "quote": []
+        },
+        {
+          "text": "Step 0: Sampling people entities. We sample 183 people entities from Wikidata who have corresponding Wikipedia pages. We sample entities to annotate from a uniform distribution over categories defined in Appendix A.1.",
+          "quote": []
+        },
+        {
+          "text": "Step 1: Obtaining generations. We feed a prompt \"Tell me a bio of <entity>\" to the LM SUBJ and take a generation as it is. We implement rules to identify generations that abstain from answering and filter them out.",
+          "quote": []
+        },
+        {
+          "text": "Step 2: Atomic facts generation. Human annotators break a generation into a series of atomic facts.",
+          "quote": []
+        },
+        {
+          "text": "To save annotation time, we provide atomic facts broken down by InstructGPT which human annotators can take and revise. Details in Appendix A.2.",
+          "quote": []
+        },
+        {
+          "text": "Step 3: Labeling factual precision & editing. We ask another set of human annotators to assign each atomic fact one of three labels. If the atomic fact is clearly not related to the prompt, and thus should be removed from the bio without a validation step, they assign Irrelevant. If the fact is relevant, they validate the fact based on the English Wikipedia, and label either Supported or Not-supported.",
+          "quote": []
+        },
+        {
+          "text": "We recruit freelancers through Upwork and pay 15-25 USD per hour. Annotation requires extensive effort and time, leading to the cost of $4 per generation. We assign two freelancers for the 10% of the data and calculate the agreement rate: 96%, 90% and 88% for InstructGPT, ChatGPT and Per-plexityAI, respectively. More details are provided in Appendix A.3.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.4",
+        "name": "Results"
+      },
+      "p": [
+        {
+          "text": "Statistics of the data and results are reported in Table .",
+          "quote": []
+        },
+        {
+          "text": "All LM SUBJ s struggle with factual precision errors. InstructGPT and ChatGPT achieve FACTSCOREs of 42.5% and 58.3%, respectively. PerplexityAI, which uses a commercial search engine and thus should have a perfect FACTSCORE if directly copying the text from the correct Wikipedia page, attains a FACTSCORE of 71.5%. We provide a qualitative analysis of its error cases in the last paragraph of this section.",
+          "quote": []
+        },
+        {
+          "text": "ChatGPT and PerplexityAI often abstain from answering which presumably improves their factual precision. InstructGPT rarely abstains from answering, likely because it is not trained to do so.",
+          "quote": []
+        },
+        {
+          "text": "Irrelevant facts either (a) have dependencies on previous facts in a generation that turn out to be unsupported, or (b) are irrelevant to the prompt independent from other facts in a generation (examples in Appendix A.4). We find that (b) rarely happens with InstructGPT and ChatGPT but happens considerably with PerplexityAI, because PerplexityAI often directly copies search results even if they are largely irrelevant to the input prompt. This is in agreement with a concurrent work from Liu et al. (2023a)    Error rates are higher for rarer entities. There is a notable decrease in FACTSCORE as the rarity of entities increases, consistently across all LM SUBJ s. This is in agreement with Kandpal et al. ( Mallen et al. (2023)) and Kandpal et al. (2022) which show that short question answering (QA) accuracy is highly correlated with the entity frequencies in the pretraining data. However, in contrast to Mallen et al. (2023) and  who report QA accuracy of models with retrieval is robust to the rarity of entities, FACTSCORE of PerplexityAI still significantly drops as entities are rarer: a relative drop of 50% and 64% observed at the atomic-level and sentence-level, respectively.",
+          "quote": [
+            {
+              "text": "Liu et al. (2023a)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "work from ",
+              "index": 491
+            },
+            {
+              "text": "Mallen et al. (2023)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": " et al. ( ",
+              "index": 712
+            },
+            {
+              "text": "Kandpal et al. (2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "023)) and ",
+              "index": 738
+            },
+            {
+              "text": "Mallen et al. (2023)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": "ntrast to ",
+              "index": 913
+            }
+          ]
+        },
+        {
+          "text": "Error rates are higher for facts mentioned later in the generation. Figure  (bottom) reports factual precision over relative positions in a generation. Across all LMs, the later part of the generation has significantly worse precision. This is likely because (a) information mentioned earlier is more frequently mentioned in the pretraining data (e.g., nationality, profession), and (b) error propagation affects the later part of the generation. This also implies that evaluating LMs solely based on short answers may not provide an adequate assessment of their factual precision, as it fails to account for errors that arise in the later stages of generation.",
+          "quote": []
+        },
+        {
+          "text": "Qualitative analysis of Not-supported. One of the surprising findings in our empricial analysis is that a FACTSCORE of PerplexityAI (71.5%) is lower than expected despite having access to the search engine. To better understand its errors, we categorize 30 random samples whose label is Not-supported (Table ).",
+          "quote": []
+        },
+        {
+          "text": "• Single-sentence contradiction: A single sentence from Wikipedia provides direct contradic-tion to the generation, either at a word level (numbers, dates, or entities) or beyond.",
+          "quote": []
+        },
+        {
+          "text": "• Page-level contradiction: Errors found after reading the entire page, often because a fact that should have been mentioned in Wikipedia if true is missing, e.g., whether the subject appears in a particular film.",
+          "quote": []
+        },
+        {
+          "text": "• Subjective: Generation is subjective, often because PerplexityAI copies subjective text from Wikipedia, e.g., directly copying a quote from a journalist without realizing it.",
+          "quote": []
+        },
+        {
+          "text": "• Fact is irrelevant: Generation is irrelevant to the subject due to a search error.",
+          "quote": []
+        },
+        {
+          "text": "• Wiki is inconsistent & wrong: In the example, Wikipedia indicates that the subject won one award from the film Kick, but also includes text that they won multiple awards from Kick, which is inaccurate and cited a news article that does not support the claim.",
+          "quote": []
+        },
+        {
+          "text": "• Annotation error: Annotators assign incorrect labels, typically because the information is not mentioned in the subject's Wikipedia page (likely because it is insignificant).",
+          "quote": []
+        },
+        {
+          "text": "We also find that, although PerplexityAI provides citations to the references, citations have little correlation with factual precision. 36.0% and 37.6% of supported and unsupported sentences have citations, respectively. Together with independent findings from Liu et al. (2023a), this indicates that commercial LMs that incorporate search and provide citations may not be as reliable as expected. More analysis is provided in Appendix A.5.",
+          "quote": [
+            {
+              "text": "Liu et al. (2023a)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "ings from ",
+              "index": 262
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "Estimating FACTSCORE for Automatic Evaluation"
+      },
+      "p": [
+        {
+          "text": "Human evaluation of factual precision is costly ($4 per generation) (Bohnet et al., 2022; Krishna et al., 2023) because validating every atomic fact against a large knowledge source is time-consuming, and one generation contains many (26-41) atomic facts. This prevents LM developers and practitioners from evaluating the factual precision in long-form generation of a new LM SUBJ at scale. In this context, we introduce a model that estimates FACTSCORE. This estimator takes a set of generations and automatically computes a FACTSCORE, and can be applied to any LM SUBJ . We describe our model (Section 4.1) and demonstrate its accuracy against human evaluation (Sec-tion 4.2). FACTSCORE estimated by our model is then used to evaluate twelve LMs (Section 4.3).",
+          "quote": [
+            {
+              "text": "Krishna et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 90
+            },
+            {
+              "text": "[(Bohnetetal.,2022]",
+              "type": "bibr",
+              "index": 68,
+              "context": "neration) ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 68,
+              "context": "neration) ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Model"
+      },
+      "p": [
+        {
+          "text": "Our estimator of FACTSCORE first breaks a generation into a series of atomic facts and then validates each against the given knowledge source. We find taking atomic facts generated by InstructGPT (used in data collection in Section 3.3) effective and close to human, consistent with findings from prior work (Chen et al., 2022). This section thus focuses on how to validate each atomic fact against a given knowledge source.",
+          "quote": [
+            {
+              "text": "(Chen et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "rior work ",
+              "index": 308
+            }
+          ]
+        },
+        {
+          "text": "The validation is based on zero-shot prompting of an LM referred to as an LM EVAL to distinguish from an LM SUBJ . Specifically, a prompt-whose construction methods differ across four variantsis fed into an LM EVAL . The prediction is then made by comparing the conditional probability of True and False from the LM EVAL . If the logit values are unavailable (e.g., commercial LMs like Chat-GPT), the prediction is made based on whether the generated text contains True or False. 6  The four variants we consider are as follows.",
+          "quote": []
+        },
+        {
+          "text": "No-context LM uses <atomic-fact> True or False? as a prompt, closely resembling Kadavath et al. (2022). 7   Retrieve→LM retrieves passages from the given knowledge source and then prompts the LM EVAL . It first retrieves k passages, constructs the prompt by concatenating retrieved passages, the given atomic fact, and \"True or False?\", and feeds it to the LM EVAL to get the prediction.",
+          "quote": []
+        },
+        {
+          "text": "Nonparametric Probability (NP) makes a judgment based on a nonparametric likelihood. It masks out each token in the atomic fact, computes its likelihood using a nonparametric masked LM (Min et al., 2023), averages probabilities over all tokens, and makes a prediction based on thresholding.",
+          "quote": [
+            {
+              "text": "(Min et al., 2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "masked LM ",
+              "index": 185
+            }
+          ]
+        },
+        {
+          "text": "Retrieve→LM + NP is an ensemble of Retrieve→LM and NP which assigns Supported only if both methods assign Supported. We use LLAMA 7B trained on Super Natural Instructions (Inst-LLAMA, Touvron et al., 2023; Wang et al., 2022) and ChatGPT as an LM EVAL , and Generalizable T5-based Retrievers (GTR, Ni et al. (2022)) for passage retrieval. See Appendix B.1 for more implementation details.",
+          "quote": [
+            {
+              "text": "Wang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 206
+            },
+            {
+              "text": "Ni et al. (2022)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": "ers (GTR, ",
+              "index": 297
+            },
+            {
+              "text": "[Touvronetal.,2023]",
+              "type": "bibr",
+              "index": 184,
+              "context": "st-LLAMA, ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 184,
+              "context": "st-LLAMA, ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Evaluation of Estimators"
+      },
+      "p": [
+        {
+          "text": "Metrics. We report Error Rate (ER)-the difference between the ground truth and the estimated FACTSCORE-as well as whether the estimated FACTSCOREs preserve the ranking between three LM SUBJ s. Appendix B.2 discusses results with other metrics that consider individual judgments instead of aggregated judgments. We use the data in Section 3.3 as evaluation data.",
+          "quote": []
+        },
+        {
+          "text": "Results are reported in Table .",
+          "quote": []
+        },
+        {
+          "text": "Retrieval significantly helps. Models that use retrieval are consistently better than No-context LM which either has a significantly high ER or does not preserve ranking between three LM SUBJ s. This is likely because the LM EVAL has not memorized every factual information about the topic entity, thus benefiting from retrieval providing factual context. Nonetheless, just using Retrieve→LM may overestimate FACTSCORE, e.g., by up to 17% with Inst-LLAMA, when a LM SUBJ is InstructGPT or ChatGPT. In this case, ensembling Retrieve→LM and NP reduces an error rate by a significant margin. When a LM SUBJ is PerplexityAI, single methods (either Retrieve→LM or NP) give a low ER, and ensemble methods have a higher ER due to an underestimation of FACTSCORE.",
+          "quote": []
+        },
+        {
+          "text": "ChatGPT is not always the best. Our results show that ChatGPT is not necessarily better than Inst-LLAMA. We investigate this further in Appendix B.3. In summary, ChatGPT is better at validating each individual atomic fact. However, most errors from ChatGPT are incorrectly assigning Supported to unsupported facts, overestimating FACTSCORE. In contrast, LLAMA+NP is not biased toward overestimation or underestimation of the factual precision, resulting in an aggregated factual precision to be closer to the ground truth. This is similar to the trade-off between systemlevel and segment-level correlations in summarization evaluation, which often produce different rankings (Bhandari et al., 2020; Deutsch et al., 2021).",
+          "quote": [
+            {
+              "text": "Deutsch et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 699
+            },
+            {
+              "text": "[(Bhandarietal.,2020]",
+              "type": "bibr",
+              "index": 675,
+              "context": " rankings ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 675,
+              "context": " rankings ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "The best estimator depends on the LM SUBJ . While using retrieval is consistently better than No-context LM, the best variant of estimator depends on a LM SUBJ : LLAMA+NP for InstructGPT and ChatGPT, and ChatGPT for PerplexityAI. Nevertheless, both evaluators give consistently correct ranking between three LM SUBJ s, and Section 4.3 show scores from two estimators are largely correlated across 10+ LM SUBJ s (0.99 Pearson's r). We recommend users try both variants of our estimator when evaluating a new LM SUBJ and report their correlation.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3",
+        "name": "Evaluation of New LMs"
+      },
+      "p": [
+        {
+          "text": "Our estimator allows evaluating factual precision of a large set of new LMs at scale with no human  efforts. As a case study, we evaluate ten new LMs that came out within two months at the time of conducting experiments (Table ). These LMs were evaluated on many benchmarks but not in factual precision of long-form generation since such evaluation is costly. We aim to provide new insights on these LMs by estimating FACTSCORE of their long-form generations.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3.1",
+        "name": "Setup"
+      },
+      "p": [
+        {
+          "text": "We evaluate 10 recently-released LMs as shown in Oasst-pythia 11 is Pythia 12B fine-tined on humanwritten data collected through Open Assistant. 12 StableLM-tuned-alpha 13 is based on StableLMbase-alpha 14 fine-tuned on the data used in the Alpaca data, DataBricks Dolly, the ShareGPT data, the GPT4All data (Anand et al., 2023) and Anthropic HH (Bai et al., 2022). MPT Chat is based on MPT 7B 15 fine-tuned on the ShareGPT data, the Alpaca data, Anthropic HH, HC3 (Guo et al., 2023), and Evol-Instruct. 16   We prompt each LM SUBJ to generate biographies of 500 human entities as done in Section 3.3 but with no overlap in entities. We additionally include InstructGPT, ChatGPT, and human-written biographies obtained through DBPedia. Human-written biographies were unavailable for 11% of entities which we consider as abstaining from responding.",
+          "quote": [
+            {
+              "text": "(Anand et al., 2023)",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "4All data ",
+              "index": 308
+            },
+            {
+              "text": "(Bai et al., 2022)",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "hropic HH ",
+              "index": 346
+            },
+            {
+              "text": "(Guo et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "c HH, HC3 ",
+              "index": 465
+            }
+          ]
+        },
+        {
+          "text": "See Table  for their statistics. In total, we evaluate 6,500 generations from 13 subjects, which would have cost $26K if they were evaluated by humans.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3.2",
+        "name": "Results"
+      },
+      "p": [
+        {
+          "text": "Figure  shows the ranking between 13 subjects provided by the two best variants of our estimator whose scores are largely correlated, e.g., having a Pearson's r of 0.99. This evaluation allows a better understanding of these models, including:",
+          "quote": []
+        },
+        {
+          "text": "• All LMs are substantially less factual than humans. This is in contrast to prior work that claims LMs approach human performance, even for complex tasks (Ding et al., 2022; Nori et al., 2023; Lee et al., 2023) even though the task of writing biographies is fairly easy. • GPT-4 and ChatGPT are comparable in factual precision. However, as reported in Table , GPT-4 abstains from responding less (12% vs. 16%) and generates significantly more facts (61 vs. 37 per response). • GPT-4 and ChatGPT are significantly more factual than public models. • Within the same family of models that differ in sizes, there is a clear correlation between the model size and factual precision, e.g., Alpaca 65B > 13B > 7B, and Vicuna 13B > 7B. • Alpaca and Vicuna achieve performance that is very close to each other within the same size of models, possibly because they share the same base model and similar training data. Nonetheless, as shown in Table , Vicuna generates significantly more atomic facts than Alpaca does (51 vs. 17 per response). Also, Alpaca never abstains from answering while Vicuna does.",
+          "quote": [
+            {
+              "text": "Nori et al., 2023;",
+              "target": "#b22",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 175
+            },
+            {
+              "text": "Lee et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 194
+            },
+            {
+              "text": "[(Dingetal.,2022]",
+              "type": "bibr",
+              "index": 155,
+              "context": "lex tasks ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 155,
+              "context": "lex tasks ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "• Within public models, there are large gaps in factual precision even when the model size is similar, e.g., within the 7B models, Alpaca and Vicuna (∼ 40%) are more factual than MPT-Chat (30%) and StableLM (17%). Possible factors include the choice of the base LM, the data, and the training recipe (Hoffmann et al., 2022).",
+          "quote": [
+            {
+              "text": "(Hoffmann et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "ng recipe ",
+              "index": 300
+            }
+          ]
+        },
+        {
+          "text": "We highlight that this evaluation only considers factual precision, specifically in people biographies.",
+          "quote": []
+        },
+        {
+          "text": "A holistic evaluation of LMs should include other aspects of generations such as fluency, coherence, relevance, consistency and creativity, which is out of scope of this paper.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5",
+        "name": "Conclusion and Future Work"
+      },
+      "p": [
+        {
+          "text": "We introduced FACTSCORE, a new evaluation of the factual precision of long-form generation from LMs that breaks a generation down into a series of atomic facts and computes a fraction of facts supported by a given knowledge source.",
+          "quote": []
+        },
+        {
+          "text": "We first performed extensive human evaluation, finding that commercial, state-the-art-art LMs-InstructGPT, ChatGPT, and search engine augmented, PerplexityAI-make a substantial amount of errors, e.g., having a FACTSCORE of 58% in the case of ChatGPT. Since human evaluation is time-consuming and costly, we proposed a model that estimates FACTSCORE, allowing an automatic evaluation of FACTSCORE. We found our estimator based on retrieval over a knowledge source and competitive language models estimates FACTSCORE close to the ground truth, and showcased its application by evaluating 12 recentlyreleased LMs that could have cost $65K if evaluated by humans and providing insights about them. Within four months since its initial release, FACTSCORE has actively been used in subsequent work, evaluating factual precision of recentlyproposed models (Ye et al., 2023; Sun et al., 2023; Malaviya et al., 2023; Dhuliawala et al., 2023). As future work, we suggest: (1) considering other aspects of factuality such as recall (coverage of factual information); (2) further improving the estimator for a better approximation of factual precision; and (3) leveraging FACTSCORE to correct model generations (briefly explored in Appendix C).",
+          "quote": [
+            {
+              "text": "Sun et al., 2023;",
+              "target": "#b34",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 867
+            },
+            {
+              "text": "Dhuliawala et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 908
+            },
+            {
+              "text": "[(Yeetal.,2023]",
+              "type": "bibr",
+              "index": 849,
+              "context": "ed models ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 849,
+              "context": "ed models ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Malaviyaetal.,2023]",
+              "type": "bibr",
+              "index": 885,
+              "context": "l., 2023; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 885,
+              "context": "l., 2023; ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations"
+      },
+      "p": [
+        {
+          "text": "Scope of FACTSCORE. All of our experiments focus on people biographies and Wikipedia, because many LMs can generate biographies with objective and specific facts (rather than subjective and vague ones) and Wikipedia has a high coverage for them. FACTSCORE can be applied to a broader domain, e.g., text about recent events whose knowledge source can be a collection of news articles, or text about scientific findings whose knowledge source can be a collection of scientific literature. We present a proof of concept in Appendix B.5 and leave further study for future work.",
+          "quote": []
+        },
+        {
+          "text": "Due to the assumptions made in Section 3.1, FACTSCORE is not applicable when the facts are more nuanced, open-ended, and debatable (Chen et al., 2019; Xu et al., 2023) or with a knowledge source whose text frequently conflicts with each other (Wadden et al., 2022). Moreover, FACTSCORE may not be suitable for the humanwritten text that is nuanced and includes intentional or implicit deception.",
+          "quote": [
+            {
+              "text": "Xu et al., 2023)",
+              "target": "#b32",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 151
+            },
+            {
+              "text": "(Wadden et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "ach other ",
+              "index": 243
+            },
+            {
+              "text": "[(Chenetal.,2019]",
+              "type": "bibr",
+              "index": 131,
+              "context": "debatable ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 131,
+              "context": "debatable ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Limitation in our estimator. While our estimator closely approximates humans and provides consistent ranking over a large set of LMs, it is not perfect in individual judgments, and the best variant depends on the degree of how close a generation is to human-written text and its linguistic complexity. Future work can investigate how the distribution of model generation affects the performance of the estimator and further improve the estimator.",
+          "quote": []
+        },
+        {
+          "text": "Beyond factual precision. FACTSCORE focuses on factual precision-whether each piece of information in a generation is factually supported by a reliable source of knowledge-which is only one aspect of the broader factuality problem. For instance, FACTSCORE does not consider factual recall: the coverage of information in a generation. FACTSCORE does not penalize a model that abstains from responding too frequently or generates fewer facts, which can be unfair since there is an inherent trade-off between precision and recall. Moreover, the boundary between precision and recall is often blurry, e.g., it is possible that, even if every piece of information in a generation is supported, it misses a significant piece of information that should have been mentioned in order to be considered as correctly responding to the input prompt (example in Table ). We leave a more holistic evaluation of factuality for future work, and recommend reporting FACTSCORE together with the % of abstention and the average number of atomic facts (as we did in Section 4.3). ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A Details in Data Collection"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.1 Sampling human entities"
+      },
+      "p": [
+        {
+          "text": "We sample 183 human entities to be annotated as follows. We first choose entities from Wikidata whose instance of is human and have corresponding Wikipedia pages. We then categorize entities based on two dimensions: frequency and nationality, resulting in 20 categories. We then sample entities uniformly at random over all categories.",
+          "quote": []
+        },
+        {
+          "text": "Frequency. We compute freqValue as a maximum of the entity occurrence in Wikipedia provided by Kandpal et al. (2022) and the pageview count of the Wikipedia page following Mallen et al. (2023). We found using one of them could lead to an underestimate of frequency levels due to failure in entity linking or mismatch in the Wikipedia page title, and taking a maximum of them provides a reasonable solution. We then assign one of five categories: 'Very rare' if freqValue∈ [0, 10 2 ), 'Rare' if freqValue∈ [10 2 , 10 3 ), 'Medium' if freqValue∈ [10 3 , 10 4 ), 'Frequent' if freqValue∈ [10 4 , 10 5 ), and 'Very frequent' if freqValue∈ [10 5 , ).",
+          "quote": [
+            {
+              "text": "Kandpal et al. (2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "ovided by ",
+              "index": 95
+            },
+            {
+              "text": "Mallen et al. (2023)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": "following ",
+              "index": 172
+            }
+          ]
+        },
+        {
+          "text": "Nationality. We take country of citizenship from Wikidata and assign them one of four categories: 'North America', 'Europe & Middle East', 'Asia & Pacific' and 'Latin/South America & Africa'.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.2 Details in generating atomic facts"
+      },
+      "p": [
+        {
+          "text": "We break out a generation automatically by splitting a generation into sentences, and feeding each sentence to InstructGPT (text-davinci-003) with a series of instructions to further break it down to a series of atomic facts. The prompt to Instruct-GPT is provided in Table . Outputs from In-structGPT are used (1) to human experts for revision (Section 3.3) and (2) for model-based evaluators (Section 4). We find human experts split and merged atomic facts from InstructGPT for 18% and 34% of the cases, respectively.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3 More details on annotator recruitment"
+      },
+      "p": [
+        {
+          "text": "We recruit freelancers through Upwork and pay 15-25 USD per hour. We recruit fact-checking experts-freelancers who mentioned fact-checking as their expertise-for Step 3. Every worker went through a qualification test of 2 hours and was tested to be highly qualified. We design one HIT to consist of three generations, one from each LM SUBJ , for one prompt, because we find it saves annotation time in total. 10% of the HITs have two workers assigned to calculate the agreement rate; the rest have one worker assigned. The agreement rates are 96%, 90% and 88% for InstructGPT, ChatGPT and PerplexityAI, respectively. Appendix A.5 discusses disagreement cases in more detail. The full instructions and the interface are provided in Figure  and Figure , respectively.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.4 Examples in annotated data"
+      },
+      "p": [
+        {
+          "text": "Table Liu et al. (2023a) provides examples of the human-annotated data, each atomic fact with an assigned label. Supported and Not-supported respectively indicate Wikipedia supports the fact and does not support the fact (either contradicts or does not contain any evidence). Irrelevant indicates the fact is irrelevant to the input prompt, which can further be divided into two cases: (1) the fact depends on other facts because it expands previous facts in a generation, and such other facts are Not-supported, e.g., in the first example in Table 7, and (2) the entire sentence is irrelevant to the prompt, independent from other facts in a generation, e.g., the second example in  1.3% in InstructGPT and ChatGPT, respectively. This is because PerplexityAI often directly copies search results even if they are largely irrelevant to the input prompt. This is in agreement with a concurrent work from  that shows generative search engines like PerplexityAI copy incorrect search results and generate text that is irrelevant to the input query.",
+          "quote": [
+            {
+              "text": "Liu et al. (2023a)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "ble ",
+              "index": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.5 Qualitative Analysis"
+      },
+      "p": [
+        {
+          "text": "Analysis of disagreement cases. We analyze the cases where two annotators assigned to a same generation disagree on a precision label for the same atomic fact. Categorization is provided in Table . The 70% is due to an inherent debatability on whether or not the fact is supported by a given source of knowledge, not satisfying Assumption 2 in Section 3.1. This is because there can be multiple interpretations of a fact, it is debatable whether or not an information can be inferred from a piece of text, or the atomic fact is subjective. For instance:",
+          "quote": []
+        },
+        {
+          "text": "• Gerhard Fischer is an inventor: Gerhard Fischer is widely known as an inventor of a metal detector, and even the title of the Wikipedia article is \"Gerhard Fischer (inventor)\". However, it later turns out that he did not invent a metal detector; rather, he commercialized it.",
+          "quote": []
+        },
+        {
+          "text": "• Chadwick Boseman was a producer: Chadwick Boseman is widely known as another profession (singer) and there is no text that mentions him as a producer. However, he produced one music video.",
+          "quote": []
+        },
+        {
+          "text": "Nonetheless, since our agreement rate is fairly high (91%), we think such cases are rare in our particular domain of people biographies. We include more discussion on other domains that such cases may be more frequent in the Limitation section.",
+          "quote": []
+        },
+        {
+          "text": "Coverage of English Wikipedia. While factual prediction is inherently a function of a knowledge source given as part of the input, a potential concern is how representative using English Wikipedia as a knowledge source for evaluating people biographies with respect to its coverage. For instance, it is possible that, especially for rare entities, the coverage of information in Wikipedia is not high enough, and LMs may be penalized by generating information that is true even if not supported by Wikipedia (i.e., supported by other sources on the web).",
+          "quote": []
+        },
+        {
+          "text": "To quantify the effect, we randomly sample 30 unsupported facts from ChatGPT on people whose categories are either 'rare' or 'very rare', and then validate them against the entire web. We found 10% (3 out of 30 facts) are in fact supported, even though they are not supported in Wikipedia. An example is [Hibo] Wardere published her memoir titled \"Cut: One Woman's Fight Against FGM in Britain Today\" which is not mentioned in Wikipedia but is found from Google Books.",
+          "quote": []
+        },
+        {
+          "text": "Nonetheless, we found that Wikipedia has a high coverage and mentions most of the important information that we were able to find from any other sources on the web. This is in agreement with prior work that treated Wikipedia as a general knowledge source under the same reason (Chen et al., 2017; Petroni et al., 2021).",
+          "quote": [
+            {
+              "text": "Petroni et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2017; ",
+              "index": 297
+            },
+            {
+              "text": "[(Chenetal.,2017]",
+              "type": "bibr",
+              "index": 277,
+              "context": "me reason ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 277,
+              "context": "me reason ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B Details in Estimators B.1 Implementation details"
+      },
+      "p": [
+        {
+          "text": "As an LM EVAL , we use the best open LM and the best commercial LM at the time of conducting experiments: LLAMA 65B (Touvron et al., 2023) and LLAMA 7B trained on Super Natural Instructions (Inst-LLAMA, Wang et al., 2022) as the former, and ChatGPT (OpenAI, 2022) as the latter. For computing nonparametric probabilities, we use a single-mask variant of NPM with BM25 as in the original paper (Min et al., 2023), and use 0.3 as a thresholding hyperparameter.",
+          "quote": [
+            {
+              "text": "(Touvron et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "LLAMA 65B ",
+              "index": 116
+            },
+            {
+              "text": "Wang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "st-LLAMA, ",
+              "index": 203
+            },
+            {
+              "text": "(Min et al., 2023)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "nal paper ",
+              "index": 393
+            }
+          ]
+        },
+        {
+          "text": "For passage retrieval, we use Generalizable T5based Retrievers (GTR, a large variant), an unsupervised dense passage retrieval system (Ni et al., 2022). We restrict retrieved passages to be from the topic entity's page, and use k = 5. We find our estimator is not sensitive to the choice of a retrieval system (ablations provided in Appendix B.3). As a retrieval corpus, we use the English Wikipedia from 04/01/2023 which is around the time the data annotation was completed, and split each page into passages with up to 256 tokens.",
+          "quote": [
+            {
+              "text": "(Ni et al., 2022)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": "al system ",
+              "index": 134
+            }
+          ]
+        },
+        {
+          "text": "Additional baselines. We also compare with Self-check LM, a method from a concurrent work by Manakul et al. (2023). Self-check LM needs multiple samples generated from the LM SUBJ . It validates the given atomic fact by prompting LM EVAL conditioning on each generated sample, 17 making judgment (Supported or not) from each, and aggregates the results through a majority vote. This method assumes (1) the LM SUBJ is available at the time of evaluation and (2) the outputs from the LM SUBJ are nondeterministic, which makes it not applicable to PerplexityAI. ",
+          "quote": [
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "t work by ",
+              "index": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B.2 Segment-level vs. system-level evaluation"
+      },
+      "p": [
+        {
+          "text": "Besides how close the estimated FACTSCORE is to the ground truth FACTSCORE (Error Rate, as reported in Section 4), we also report F1 MICRO . F1 MICRO evaluates how well the model validates each individual atomic fact, assuming oracle atomic facts (atomic facts by human experts) are given, and evaluates how good the estimator is in identifying facts that are not Supported (NS). Formally, let G and P be sets of atomic facts in a set of generations that have Not-supported as a ground truth label and as a predicted label, respectively. We define F1 MICRO as follows.",
+          "quote": []
+        },
+        {
+          "text": "We call them MICRO because they consider individual decisions rather than aggregated estimation.",
+          "quote": []
+        },
+        {
+          "text": "ER vs. F1 MICRO . F1 MICRO cares about the individual decision, while ER cares about the aggregated estimation. An evaluator that has a high (better) F1 MICRO but always overestimates or underestimates factual precision may have a higher (worse) ER, e.g., Evaluator A in Figure (Zhang et al., 2020; Rashkin et al., 2021; Gao et al., 2022). Conversely, an evaluator that has a lower (worse) F1 MICRO but is not biased toward overestimation nor underestimation may have a lower (better) ER, e.g., Evaluator B in Figure (Ma et al., 2019; Thompson and Post, 2020). Prior work in model-based evaluation mainly reports aggregated scores since the goal is a comparison between different systems being evaluated (Bhandari et al., 2020; Deutsch et al., 2021)  developing evaluation metrics in machine translation  and summarization .",
+          "quote": [
+            {
+              "text": "Rashkin et al., 2021;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 299
+            },
+            {
+              "text": "Gao et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 321
+            },
+            {
+              "text": "Thompson and Post, 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 535
+            },
+            {
+              "text": "Deutsch et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 728
+            },
+            {
+              "text": "[(Zhangetal.,2020]",
+              "type": "bibr",
+              "index": 278,
+              "context": "in Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 278,
+              "context": "in Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Maetal.,2019]",
+              "type": "bibr",
+              "index": 517,
+              "context": "in Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 517,
+              "context": "in Figure ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Bhandarietal.,2020]",
+              "type": "bibr",
+              "index": 704,
+              "context": "evaluated ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 704,
+              "context": "evaluated ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Results. Results on F1 MICRO are reported in Table 9. Self-check LM outperforms no-context LM by 4-11%, which confirms findings from Manakul et al. (2023). However, both significantly underperform methods that use retrieval. This is in contrast to Manakul et al. (2023) that reports that Self-check without retrieval achieves performance that is close to that with retrieval, likely because the data in Manakul et al. (2023) contains more frequent entities. The fact that retrieval significantly helps is consistent with findings in Section 4.2 with an ER as a metric.",
+          "quote": [
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "ings from ",
+              "index": 133
+            },
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "ntrast to ",
+              "index": 248
+            },
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "e data in ",
+              "index": 403
+            }
+          ]
+        },
+        {
+          "text": "Adding NP improves Retrieve→LM by 2-9%, again consistent with findings in Section 4.2. This is likely because Retrieve→LM often makes incorrect predictions when there is a strong bias from an LM or there are distracting passages, and considering nonparametric probabilities makes the model more robust to these factors. For instance, given an unsupported fact Samuel Oboh is Nigerian, Nocontext LM, Self-check LM and Retrieve→LM predict Supported due to a strong name-nationality bias. NPM correctly predicts Not-supported based on a passage Samuel Oboh ... is a Canadian architect, manager, .... It is also worth noting that this is different from findings in Section 4.2 that ChatGPT is not necessarily better than LLAMA+NP based on ER.",
+          "quote": []
+        },
+        {
+          "text": "Using a stronger LM EVAL significantly improves F1 MICRO . It is worth noting that these results are somewhat different from findings in Section 4.2 that ChatGPT is not necessarily better than LLAMA+NP. This is becauase, although ChatGPT is better in validating each individual atomic fact, most errors from ChatGPT are incorrectly assigning Supported to Not-supported facts, resulting in an overestimation of FACTSCORE. In contrast, LLAMA+NP is not biased toward overestimation or underestimation of the factual precision, resulting in an aggregated factual precision to be closer to the ground truth. This is similar to the trade-off between system-level and segment-level correlations in summarization evaluation (Bhandari et al., 2020; Deutsch et al., 2021).",
+          "quote": [
+            {
+              "text": "Deutsch et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 740
+            },
+            {
+              "text": "[(Bhandarietal.,2020]",
+              "type": "bibr",
+              "index": 716,
+              "context": "valuation ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 716,
+              "context": "valuation ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B.3 Ablations"
+      },
+      "p": [
+        {
+          "text": "QA Prompting vs. TF Prompting As described in Section 4.1, we use True or False as part of the prompt, so-called TF Prompting. An alternative is QA Prompting, which generates a question and the expected answer, obtains the answer for the generated question independent from the expected answer, and compares the expected answer and the predicted answer. This approach has been widely studied in the summarization literature and recent work in factual precision (Kryscinski et al., 2020; Wang et al., 2020; Gao et al., 2022; Manakul et al., 2023). Table  provides a comparison between two types of prompting. The TF approach significantly outperforms the QA approach, consistently over all methods. Our further analysis finds that this is due to generated questions often being overly vague or ambiguous. For instance, given a supported fact Samuel Oboh is an architect, the LM generates What is Samuel Oboh's job? as a question and Architect as an expected answer, and the obtained answer is Vice President.",
+          "quote": [
+            {
+              "text": "Wang et al., 2020;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 487
+            },
+            {
+              "text": "Manakul et al., 2023)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 524
+            },
+            {
+              "text": "[(Kryscinskietal.,2020]",
+              "type": "bibr",
+              "index": 461,
+              "context": "precision ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 461,
+              "context": "precision ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Gaoetal.,2022]",
+              "type": "bibr",
+              "index": 506,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 506,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Although both Architect and Vice President are correct, they are not the same, thus the model incorrectly predicts Not-supported. Such cases make the model overpredict Not-supported, leading to many incorrect predictions.",
+          "quote": []
+        },
+        {
+          "text": "Impact of the choice of retrieval. cate that all retrieval systems are equally good and Retrieve→LM is not sensitive to the choice of the retrieval system.",
+          "quote": []
+        },
+        {
+          "text": "Qualitative analysis.  studies in the NLP domain. We first manually write 10 prompts asking about NLP papers: Tell me a summary of <paper-title>, and then obtain responses from ChatGPT. Next, we run FACTSCORE against an ACL anthology as a knowledge source. Finally, we compute an error rate (ER)-a difference between humans' validation (labeled by authors) and the model's validation-as we do in Section 4. The ER is 7.41 (FACTSCORE from humans being 66.20, and FACTSCORE from the model being 73.61), which is comparable to ER values in people bios shown in Table .",
+          "quote": []
+        },
+        {
+          "text": "This suggests that FACTSCORE can generalize beyond people biographies. However, since this is a very small-scale experiment, we strongly encourage future research to explore the generalizability of FACTSCORE to more domains at scale.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C Editing Experiments"
+      },
+      "p": [
+        {
+          "text": "Our experiments in Section 4 focuses on automatically identifying factual precision errors in longform generations by language models. Can these labels be used to actually correct errors in the longform generations? In this section, we perform a preliminary exploration of methods to edit longform LM generations to reflect factually correct information. We assume we have access to the human-annotated set of FACTSCORE labels, and measure how good models are at editing incorrect sentences. In other words, we evaluate our editor models independent of the errors arising from the estimator.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C.1 Methods"
+      },
+      "p": [
+        {
+          "text": "We adopt a similar set of methods as Section 4.1 for our editing models. All methods below use four exemplar examples for in-context learning which were sampled from our dataset and removed for subsequent analysis. For all methods, we use Ope-nAI's ChatGPT (OpenAI, 2022) as the base language model due to its generative capabilities.",
+          "quote": []
+        },
+        {
+          "text": "No-context LM. We feed language models the prompt Input: <sentence> Edit: and ask it to edit the text, without any retrieved context.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Retrv→LM."
+      },
+      "p": [
+        {
+          "text": "To assist an editor model, we use a passage retrieval system to find supporting evidence from an external knowledge source (Wikipedia in our case). Our retrieval pipeline is identical to Appendix B.1, but uses 3 retrieved passages instead of 5 due to context length restrictions. + Atomic Facts. Additionally, we explore whether adding atomic facts and their labels assist a model with fine-grained editing. Specifically, after the input sentence we add information to the prompt of the form Fact 1 (True/False): <atomic fact 1> Fact 2 (True/False): <atomic fact 2> ... This data is also provided in the exemplars. Non-edit baselines. Finally, we add some trivial baselines to lower-bound our editing metrics. Specifically, we measure the performance of input copying (no edits), as well as an editor with random token dropping / replacement on a random 25% subset of tokens.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C.2 Evaluation"
+      },
+      "p": [
+        {
+          "text": "In our data collection process (Section 3.3), along with our verification data we also collected goldstandard human written edits. Let X = x 1 , ...x N X be the input sentence and G = g 1 , ...g N G be the gold edited sentence. We evaluate the quality of the model-generated edit (E = e 1 , ..., e N E ) using three automatic metrics,",
+          "quote": []
+        },
+        {
+          "text": "(1) Error Localization (ErrLoc): Our first metric measures how well the editor identifies errors within the input sentence. Specifically, we first create a \"token preservation string\", marking token x i in the input sentence X as \"Preserved\" or \"Not Preserved\". We then compute the macro-averaged F1 score between the token preservation strings derived from the gold edit and the model-generated edit. We remove stopwords, punctuation and lowercase all words before performing this calculation. To equally weigh every sentence, F1 scores are independently computed for each sentence before a final averaging.",
+          "quote": []
+        },
+        {
+          "text": "(2) Edit Correctness (EditCorr): Our second metric assesses the quality of the additional tokens added by the model-generated edit. Specifically, we check the token-level F1 score (Rajpurkar et al., 2016)  where || • || is the set cardinality and HM denotes a harmonic mean. For this metric, we discard data points where the gold edit did not add new tokens. Similar to ErrLoc, we also remove stopwords, remove punctuation and lowercase strings before calculating EditCorr scores.",
+          "quote": [
+            {
+              "text": "(Rajpurkar et al., 2016)",
+              "target": "",
+              "type": "bibr",
+              "context": " F1 score ",
+              "index": 180
+            }
+          ]
+        },
+        {
+          "text": "(3) SIM alignment (SimAl): Finally, due to the large output space of possible edits, we also adopt a metric which rewards paraphrases of the gold edits. We use semantic similarity embeddings from Wieting et al. (2022) which map paraphrases to a similar part of a vector space. We check the similarity between the model edit E and the gold edit G, normalizing it by the similarity between G and the original input X. 18 Specifically, Sim = max 0, s(G, E) − s(G, X) 1 − s(G, X)",
+          "quote": [
+            {
+              "text": "Wieting et al. (2022)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "ings from ",
+              "index": 196
+            }
+          ]
+        },
+        {
+          "text": "where s(A, B) is the semantic similarity score (normalized to [0, 1]) from the model in Wieting et al. (2022). Intuitively, this metric measures how much closer G and E are compared to G and X.",
+          "quote": [
+            {
+              "text": "Wieting et al. (2022)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": " model in ",
+              "index": 88
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C.3 Results"
+      },
+      "p": [
+        {
+          "text": "We present our editing results in Table . Overall, we find that:",
+          "quote": []
+        },
+        {
+          "text": "All editing models perform better than trivial lower bounds. Overall, we find that all editor models outperform lower-bound baselines like random noise. This even happens in the no-context LM setting, where ChatGPT is editing its own output (or search engine augmented Perplexity AI's outputs), but can still perform non-trivial corrections (6.8 ErrCorr for ChatGPT correcting its own outputs vs 0.1 for a random noise editor baseline).",
+          "quote": []
+        },
+        {
+          "text": "Retrieval significantly helps with editing performance. Across all base language models and metrics, augmenting the editor with retrieved paragraphs boosts performance (6.8 → 16.8 ErrCorr, 4.0 → 9.5 SimAl for ChatGPT correcting its own outputs). We hypothesize that the internal parametric knowledge in ChatGPT has insufficient information about the topic (as we also observed in Section 3.4) to perform fine-grained editing, and using external knowledge from Wikipedia greatly simplifies error localization and correction. This also corroborates with our findings in Section 4.2.",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 1: An overview of FACTSCORE, a fraction of atomic facts (pieces of information) supported by a given knowledge source. FACTSCORE allows a more fine-grained evaluation of factual precision, e.g., in the figure, the top model gets a score of 66.7% and the bottom model gets 10.0%, whereas prior work would assign 0.0 to both. FACTSCORE can either be based on human evaluation, or be automated, which allows evaluation of a large set of LMs with no human efforts.",
+    "Figure 2: FACTSCORE across varying frequency levels of human entities (top) and relative positions in a generation (bottom). FACTSCOREs are lower as the rarity of the entities increases and the position of the fact is later.",
+    "Figure3: Ranking between 13 subjects (human and 12 LMs), rated by the two best variants of our estimator: ChatGPT (left) and LLAMA+NP (right), both with retrieval. Scores from two metrics have a Pearson's r of 0.99. See Table5for % of responding and # of atomic facts per response of each LM. The variance in estimation based on different subsets of prompts is reported in Figure5of Appendix B.4.",
+    "Figure5: Impact of different subsets of random samples in prompts. The FACTSCOREs to 13 subjects (human and 12 LMs) are rated by the two best variants of our estimator: ChatGPT (Top) and LLAMA+NP (Bottom), both with retrieval. The variance is overall low, and is lower as the sample size gets larger and with LLAMA+NP (bottom) than with ChatGPT (top).",
+    "that shows generative search engines like PerplexityAI copy incorrect search results and generate text that is irrelevant to the input query.Gen Kick (2014) that brought [Sajid Nadiadwala] various debutant director awards. Wiki 2015, IIFA Award for Debut Director, Kick. (...) Kick brought him various debutant director awards. Comment The first text is from a table that indicates he won one award (accurate). The second is inaccurate, incorrectly citing a news article.",
+    "Table 2 :undefined",
+    "Table 3 :Results on Error Rate (ER) along with FACTSCOREs estimated by each model (FS). 'retrv' indicates whether or not retrieval is being used, and 'ranking' ✓ indicates whether the ranking between three LM SUBJ s rated by the model is consistent to the ground truth ranking. + and − respectively indicate the estimation is an overestimation and an underestimation by more than 5% in absolute. Red Bold indicates the best (lowest) ER. See Appendix B.2 for the results in other metrics that consider individual judgments instead of aggregated ones.",
+    "Table 4 :A set of twelve LMs evaluated in Section 4.3. All models are tuned for instruction following or chat. Use other LMs indicates whether the model is trained on any data that includes outputs of another model. Open indicates model weights are publicly available.",
+    "Table 4undefined",
+    "Table 5 :Statistics of 500 model-generated bios in our unlabeled data from 12 LMs as well as human-written bios. % responding indicates % of generations that do not abstain from responding. #facts / res indicates # of atomic facts per response. LMs are sorted based on # of facts per response. See Figure3for their FACTSCOREs.",
+    "Table 6 :An example whose factual precision is high but recall is low. The generation does not mention how Mary I of England got back to the line of succession and eventually became a queen. The views, opinions and/or findings expressed are those of the author and should not be interpreted as representing the official views or policies of the Department of Defense or the U.S. Government. Sewon Min is supported by a J.P. Morgan fellowship, and Kalpesh Krishna was supported by the Google PhD Fellowship.",
+    "Table 7 :Tell me a bio of Ylona Garcia. Sentence: [Ylona Garcia] has since appeared in various TV shows such as ASAP (All-Star Sunday Afternoon Party), Wansapanataym Presents: Annika PINTAsera and Maalaala Mo Kaya. • Ylona Garcia has appeared in various TV shows. Supported • She has appeared in ASAP. Supported • ASAP stands for All-Star Sunday Afternoon Party. Supported • ASAP is a TV show. Supported • She has appeared in Wansapanataym Presents: Annika PINTAsera. Not-supported • Wansapanataym Presents: Annika PINTAsera is a TV show. Irrelevant • She has appeared in Maalaala Mo Kaya. Not-supported • Maalaala Mo Kaya is a TV show. Irrelevant Prompt: Tell me a bio of John Estes. Sentence: William Estes is an American actor known for his role on CBS police drama Blue Bloods as Jameson Jamie Reagan. • William Estes is an American. Irrelevant • William Estes is an actor. Irrelevant • William Estes is known for his role on CBS police drama Blue Bloods. Irrelevant • William Estes' role on Blue Bloods is Jameson \"Jamie\" Reagan. Irrelevant Examples that contain Supported, Not-supported and Irrelevant.",
+    "The second case rarely happens with InstructGPT and ChatGPT, but happens considerably with Perplex-ityAI, i.e., 24.7% of generations of PerplexityAI have ≥ sentences marked as irrelevant without dependencies to other facts, compared to 0.5% and Gen Gerhard Fischer is an inventor. Wiki Gerhard Fischer (inventor). ... was first patented by Dr. Gerhard Fischer in 1931. A metal detector had been invented some forty years earlier (1881) by Alexander Graham Bell ... Gen Chadwick Boseman was a producer. Comment Chadwick Boseman is not known as a producer, but produced one music video. Gen Leach has since become a member of the England Test team. Comment Leach is a member of the England Test team, but since when is less clear.Gen He made his Test debut for England in March 2018. Wiki On 16 March 2018, he was called up to England's Test squad (...) He made his debut in the second Test in Christchurch. Gen The building was the first LEED-certificated building in Edmonton. Wiki (..) became the first project in the City of Edmonton to achieve a LEED Gold status. Subjective 21 Gen Chadwick Boseman became an African American pioneer. Wiki Culture writer Steve Rose, in The Guardian, said that Boseman's career was revolutionary and he \"leaves behind a gamechanging legacy\" (...) Rose wrote: \"Chadwick Boseman began his career playing African American icons and pioneers; he ends it as one himself.\" Gen [Tim Fischer] was an Ambassador to the Holy See from 2009 to 2012. Wiki ... was later Ambassador to the Holy See from 2009 to 2012. (...) Australian Ambassador to the Holy See 2008-2012 Comment The plain text and the table of the Tim Fischer page as well as the Australian Ambassador to the Holy See page are inconsistent in his start year. Gen Jack Leach is a left-handed batsman. Comment mentioned in the England cricket team page, Table Current Squad.",
+    "Table 8 :Categorization of disagreement cases. Gen indicates the generation from PerplexityAI, and Wiki indicates evidence text from Wikipedia. Comment indicates our comments.",
+    "Table 9 :while we report both to see the relationship between two types of metrics. F1 MICRO and ER are also closely related to segment-level and system-level correlations to human judgments respectively, which have been extensively used in Results in F1 MICRO using Inst-LLAMA 7B as an LM EVAL . 'retrv' indicates whether or not retrieval is used. Self-check is not applicable to PerplexityAI whose outputs are semi-deterministic. Bold indicates the best performance.",
+    "Table 10 reports a comparison across Ablation in F1 MICRO on the choices of LM EVAL . 'retrv' indicates whether or not retrieval is used. Bold and Red bold indicate the best F1 within open-access LMs and commercial LMs, respectively.",
+    "Table 11 :Results on F1 MICRO , comparing between the QA prompting and TF Prompting. We use Inst-LLAMA 7B as an LM EVAL . Self-check is not applicable to Perplex-ityAI since PerplexityAI outputs are semi-deterministic. Bold indicates the best F1 MICRO .",
+    "Table 12 :Results on F1 MICRO , comparing different retrieval systems: BM25, GTR Large and GTR xLarge, all with Retrieve→LM based on Inst-LLAMA 7B. Bold indicates the best F1 MICRO .",
+    "Table 13 :Categorization of 30 samples incorrectly predicted by Retrieve→LM based on ChatGPT.",
+    "Table13categories errors made by Retrieve→LM based on ChatGPT, the evaluator with the best F1 MICRO . 70% of the errors are due to retrieved passages not providing direct evidence (either support or contradiction). These are difficult even for state-of-the-art retrieval systems and language models because validating facts often requires reading the entire page rather than a single passage, e.g., an actor not appearing in a particular film. 17% of errors are made because ChatGPT is being distracted by other passages, although it assigns a correct label if only a particular, correct passage is given."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "Gpt4all: Training an assistant-style chatbot with large scale data distillation from gpt-3.5-turbo",
+      "author": [
+        {
+          "forename": "Yuvanesh",
+          "surname": "Anand",
+          "name": "Yuvanesh Anand",
+          "email": ""
+        },
+        {
+          "forename": "Zach",
+          "surname": "Nussbaum",
+          "name": "Zach Nussbaum",
+          "email": ""
+        },
+        {
+          "forename": "Brandon",
+          "surname": "Duderstadt",
+          "name": "Brandon Duderstadt",
+          "email": ""
+        },
+        {
+          "forename": "Benjamin",
+          "surname": "Schmidt",
+          "name": "Benjamin Schmidt",
+          "email": ""
+        },
+        {
+          "forename": "Andriy",
+          "surname": "Mulyar",
+          "name": "Andriy Mulyar",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Gpt4all: Training an assistant-style chatbot with large scale data distillation from gpt-3.5-turbo",
+      "date": "2023"
+    },
+    {
+      "index": "b1",
+      "title": "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+      "author": [
+        {
+          "forename": "Yuntao",
+          "surname": "Bai",
+          "name": "Yuntao Bai",
+          "email": ""
+        },
+        {
+          "forename": "Andy",
+          "surname": "Jones",
+          "name": "Andy Jones",
+          "email": ""
+        },
+        {
+          "forename": "Kamal",
+          "surname": "Ndousse",
+          "name": "Kamal Ndousse",
+          "email": ""
+        },
+        {
+          "forename": "Amanda",
+          "surname": "Askell",
+          "name": "Amanda Askell",
+          "email": ""
+        },
+        {
+          "forename": "Anna",
+          "surname": "Chen",
+          "name": "Anna Chen",
+          "email": ""
+        },
+        {
+          "forename": "Nova",
+          "surname": "Dassarma",
+          "name": "Nova Dassarma",
+          "email": ""
+        },
+        {
+          "forename": "Dawn",
+          "surname": "Drain",
+          "name": "Dawn Drain",
+          "email": ""
+        },
+        {
+          "forename": "Stanislav",
+          "surname": "Fort",
+          "name": "Stanislav Fort",
+          "email": ""
+        },
+        {
+          "forename": "Deep",
+          "surname": "Ganguli",
+          "name": "Deep Ganguli",
+          "email": ""
+        },
+        {
+          "forename": "Tom",
+          "surname": "Henighan",
+          "name": "Tom Henighan",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2204.05862",
+      "venue": "Training a helpful and harmless assistant with reinforcement learning from human feedback",
+      "date": "2022"
+    },
+    {
+      "index": "b2",
+      "title": "Reevaluating evaluation in text summarization",
+      "author": [
+        {
+          "forename": "Manik",
+          "surname": "Bhandari",
+          "name": "Manik Bhandari",
+          "email": ""
+        },
+        {
+          "forename": "Pranav",
+          "surname": "Narayan Gour",
+          "name": "Pranav Narayan Gour",
+          "email": ""
+        },
+        {
+          "forename": "Atabak",
+          "surname": "Ashfaq",
+          "name": "Atabak Ashfaq",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": "2020"
+    },
+    {
+      "index": "b3",
+      "title": "Pythia: A suite for analyzing large language models across training and scaling",
+      "author": [
+        {
+          "forename": "Stella",
+          "surname": "Biderman",
+          "name": "Stella Biderman",
+          "email": ""
+        },
+        {
+          "forename": "Hailey",
+          "surname": "Schoelkopf",
+          "name": "Hailey Schoelkopf",
+          "email": ""
+        },
+        {
+          "forename": "Quentin",
+          "surname": "Anthony",
+          "name": "Quentin Anthony",
+          "email": ""
+        },
+        {
+          "forename": "Herbie",
+          "surname": "Bradley",
+          "name": "Herbie Bradley",
+          "email": ""
+        },
+        {
+          "forename": "O'",
+          "surname": "Kyle",
+          "name": "O' Kyle",
+          "email": ""
+        },
+        {
+          "forename": "Eric",
+          "surname": "Brien",
+          "name": "Eric Brien",
+          "email": ""
+        },
+        {
+          "forename": "Mohammad Aflah ",
+          "surname": "Hallahan",
+          "name": "Mohammad Aflah  Hallahan",
+          "email": ""
+        },
+        {
+          "forename": "Shivanshu",
+          "surname": "Khan",
+          "name": "Shivanshu Khan",
+          "email": ""
+        },
+        {
+          "forename": "Edward",
+          "surname": "Usvsn Sai Prashanth",
+          "name": "Edward Usvsn Sai Prashanth",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2304.01373",
+      "venue": "Proceedings of the European Chapter",
+      "date": "2023"
+    },
+    {
+      "index": "b4",
+      "title": "Evaluating the factual consistency of abstractive text summarization",
+      "author": [
+        {
+          "forename": "Wojciech",
+          "surname": "Kryscinski",
+          "name": "Wojciech Kryscinski",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Mccann",
+          "name": "Bryan Mccann",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Socher",
+          "name": "Richard Socher",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.750",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": "2020"
+    },
+    {
+      "index": "b5",
+      "title": "SummaC: Re-visiting NLIbased models for inconsistency detection in summarization",
+      "author": [
+        {
+          "forename": "Philippe",
+          "surname": "Laban",
+          "name": "Philippe Laban",
+          "email": ""
+        },
+        {
+          "forename": "Tobias",
+          "surname": "Schnabel",
+          "name": "Tobias Schnabel",
+          "email": ""
+        },
+        {
+          "forename": "Paul N.",
+          "surname": "Bennett",
+          "name": "Paul N. Bennett",
+          "email": ""
+        },
+        {
+          "forename": "Marti A.",
+          "surname": "Hearst",
+          "name": "Marti A. Hearst",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b6",
+      "title": "Pascale Fung, Mohammad Shoeybi, and Bryan Catanzaro. 2022. Factuality enhanced language models for open-ended text generation",
+      "author": [
+        {
+          "forename": "Nayeon",
+          "surname": "Lee",
+          "name": "Nayeon Lee",
+          "email": ""
+        },
+        {
+          "forename": "Wei",
+          "surname": "Ping",
+          "name": "Wei Ping",
+          "email": ""
+        },
+        {
+          "forename": "Peng",
+          "surname": "Xu",
+          "name": "Peng Xu",
+          "email": ""
+        },
+        {
+          "forename": "Mostofa",
+          "surname": "Patwary",
+          "name": "Mostofa Patwary",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems",
+      "date": ""
+    },
+    {
+      "index": "b7",
+      "title": "Benefits, limits, and risks of gpt-4 as an ai chatbot for medicine",
+      "author": [
+        {
+          "forename": "Peter",
+          "surname": "Lee",
+          "name": "Peter Lee",
+          "email": ""
+        },
+        {
+          "forename": "Sebastien",
+          "surname": "Bubeck",
+          "name": "Sebastien Bubeck",
+          "email": ""
+        },
+        {
+          "forename": "Joseph",
+          "surname": "Petro",
+          "name": "Joseph Petro",
+          "email": ""
+        }
+      ],
+      "doi": "10.1056/NEJMsr2214184",
+      "venue": "New England Journal of Medicine",
+      "date": "2023"
+    },
+    {
+      "index": "b8",
+      "title": "Pyserini: A Python toolkit for reproducible information retrieval research with sparse and dense representations",
+      "author": [
+        {
+          "forename": "Jimmy",
+          "surname": "Lin",
+          "name": "Jimmy Lin",
+          "email": ""
+        },
+        {
+          "forename": "Xueguang",
+          "surname": "Ma",
+          "name": "Xueguang Ma",
+          "email": ""
+        },
+        {
+          "forename": "Sheng-Chieh",
+          "surname": "Lin",
+          "name": "Sheng-Chieh Lin",
+          "email": ""
+        },
+        {
+          "forename": "Jheng-Hong",
+          "surname": "Yang",
+          "name": "Jheng-Hong Yang",
+          "email": ""
+        },
+        {
+          "forename": "Ronak",
+          "surname": "Pradeep",
+          "name": "Ronak Pradeep",
+          "email": ""
+        },
+        {
+          "forename": "Rodrigo",
+          "surname": "Nogueira",
+          "name": "Rodrigo Nogueira",
+          "email": ""
+        }
+      ],
+      "doi": "10.1145/3404835.3463238",
+      "venue": "Proceedings of the ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "date": "2021"
+    },
+    {
+      "index": "b9",
+      "title": "Evaluating verifiability in generative search engines",
+      "author": [
+        {
+          "forename": "F.",
+          "surname": "Nelson",
+          "name": "F. Nelson",
+          "email": ""
+        },
+        {
+          "forename": "Tianyi",
+          "surname": "Liu",
+          "name": "Tianyi Liu",
+          "email": ""
+        },
+        {
+          "forename": "Percy",
+          "surname": "Zhang",
+          "name": "Percy Zhang",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2304.09848",
+      "venue": "Evaluating verifiability in generative search engines",
+      "date": "2023"
+    },
+    {
+      "index": "b10",
+      "title": "Ruochen Xu, and Chenguang Zhu. 2023b. Gpteval: Nlg evaluation using gpt-4 with better human alignment",
+      "author": [
+        {
+          "forename": "Yang",
+          "surname": "Liu",
+          "name": "Yang Liu",
+          "email": ""
+        },
+        {
+          "forename": "Dan",
+          "surname": "Iter",
+          "name": "Dan Iter",
+          "email": ""
+        },
+        {
+          "forename": "Yichong",
+          "surname": "Xu",
+          "name": "Yichong Xu",
+          "email": ""
+        },
+        {
+          "forename": "Shuohang",
+          "surname": "Wang",
+          "name": "Shuohang Wang",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2303.16634",
+      "venue": "Ruochen Xu, and Chenguang Zhu. 2023b. Gpteval: Nlg evaluation using gpt-4 with better human alignment",
+      "date": ""
+    },
+    {
+      "index": "b11",
+      "title": "Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Liu",
+          "name": "Yixin Liu",
+          "email": ""
+        },
+        {
+          "forename": "Alexander R.",
+          "surname": "Fabbri",
+          "name": "Alexander R. Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Yilun",
+          "surname": "Zhao",
+          "name": "Yilun Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Linyong",
+          "surname": "Nan",
+          "name": "Linyong Nan",
+          "email": ""
+        },
+        {
+          "forename": "Ruilin",
+          "surname": "Han",
+          "name": "Ruilin Han",
+          "email": ""
+        },
+        {
+          "forename": "Simeng",
+          "surname": "Han",
+          "name": "Simeng Han",
+          "email": ""
+        },
+        {
+          "forename": "Shafiq",
+          "surname": "Joty",
+          "name": "Shafiq Joty",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Wu",
+          "name": "Chien-Sheng Wu",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2212.07981",
+      "venue": "Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation",
+      "date": "2022"
+    },
+    {
+      "index": "b12",
+      "title": "Results of the WMT19 metrics shared task: Segment-level and strong MT systems pose big challenges",
+      "author": [
+        {
+          "forename": "Qingsong",
+          "surname": "Ma",
+          "name": "Qingsong Ma",
+          "email": ""
+        },
+        {
+          "forename": "Johnny",
+          "surname": "Wei",
+          "name": "Johnny Wei",
+          "email": ""
+        },
+        {
+          "forename": "Ondřej",
+          "surname": "Bojar",
+          "name": "Ondřej Bojar",
+          "email": ""
+        },
+        {
+          "forename": "Yvette",
+          "surname": "Graham",
+          "name": "Yvette Graham",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Fourth Conference on Machine Translation",
+      "date": "2019"
+    },
+    {
+      "index": "b13",
+      "title": "Expertqa: Expert-curated questions and attributed answers",
+      "author": [
+        {
+          "forename": "Chaitanya",
+          "surname": "Malaviya",
+          "name": "Chaitanya Malaviya",
+          "email": ""
+        },
+        {
+          "forename": "Subin",
+          "surname": "Lee",
+          "name": "Subin Lee",
+          "email": ""
+        },
+        {
+          "forename": "Sihao",
+          "surname": "Chen",
+          "name": "Sihao Chen",
+          "email": ""
+        },
+        {
+          "forename": "Elizabeth",
+          "surname": "Sieber",
+          "name": "Elizabeth Sieber",
+          "email": ""
+        },
+        {
+          "forename": "Mark",
+          "surname": "Yatskar",
+          "name": "Mark Yatskar",
+          "email": ""
+        },
+        {
+          "forename": "Dan",
+          "surname": "Roth",
+          "name": "Dan Roth",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2309.07852",
+      "venue": "Expertqa: Expert-curated questions and attributed answers",
+      "date": "2023"
+    },
+    {
+      "index": "b14",
+      "title": "When not to trust language models: Investigating effectiveness of parametric and non-parametric memories",
+      "author": [
+        {
+          "forename": "Alex",
+          "surname": "Mallen",
+          "name": "Alex Mallen",
+          "email": ""
+        },
+        {
+          "forename": "Akari",
+          "surname": "Asai",
+          "name": "Akari Asai",
+          "email": ""
+        },
+        {
+          "forename": "Victor",
+          "surname": "Zhong",
+          "name": "Victor Zhong",
+          "email": ""
+        },
+        {
+          "forename": "Rajarshi",
+          "surname": "Das",
+          "name": "Rajarshi Das",
+          "email": ""
+        },
+        {
+          "forename": "Daniel",
+          "surname": "Khashabi",
+          "name": "Daniel Khashabi",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b15",
+      "title": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+      "author": [
+        {
+          "forename": "Potsawee",
+          "surname": "Manakul",
+          "name": "Potsawee Manakul",
+          "email": ""
+        },
+        {
+          "forename": "Adian",
+          "surname": "Liusie",
+          "name": "Adian Liusie",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2303.08896",
+      "venue": "Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models",
+      "date": "2023"
+    },
+    {
+      "index": "b16",
+      "title": "SemEval-2019 task 8: Fact checking in community question answering forums",
+      "author": [
+        {
+          "forename": "Tsvetomila",
+          "surname": "Mihaylova",
+          "name": "Tsvetomila Mihaylova",
+          "email": ""
+        },
+        {
+          "forename": "Georgi",
+          "surname": "Karadzhov",
+          "name": "Georgi Karadzhov",
+          "email": ""
+        },
+        {
+          "forename": "Pepa",
+          "surname": "Atanasova",
+          "name": "Pepa Atanasova",
+          "email": ""
+        },
+        {
+          "forename": "Ramy",
+          "surname": "Baly",
+          "name": "Ramy Baly",
+          "email": ""
+        },
+        {
+          "forename": "Mitra",
+          "surname": "Mohtarami",
+          "name": "Mitra Mohtarami",
+          "email": ""
+        },
+        {
+          "forename": "Preslav",
+          "surname": "Nakov",
+          "name": "Preslav Nakov",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 13th International Workshop on Semantic Evaluation",
+      "date": "2019"
+    },
+    {
+      "index": "b17",
+      "title": "Nonparametric masked language modeling",
+      "author": [
+        {
+          "forename": "Sewon",
+          "surname": "Min",
+          "name": "Sewon Min",
+          "email": ""
+        },
+        {
+          "forename": "Weijia",
+          "surname": "Shi",
+          "name": "Weijia Shi",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Xilun",
+          "surname": "Chen",
+          "name": "Xilun Chen",
+          "email": ""
+        },
+        {
+          "forename": "Wentau",
+          "surname": "Yih",
+          "name": "Wentau Yih",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Findings of the Association for Computational Linguistics: ACL",
+      "date": "2023"
+    },
+    {
+      "index": "b18",
+      "title": "Overview of the clef",
+      "author": [
+        {
+          "forename": "Preslav",
+          "surname": "Nakov",
+          "name": "Preslav Nakov",
+          "email": ""
+        },
+        {
+          "forename": "Alberto",
+          "surname": "Barrón-Cedeno",
+          "name": "Alberto Barrón-Cedeno",
+          "email": ""
+        },
+        {
+          "forename": "Tamer",
+          "surname": "Elsayed",
+          "name": "Tamer Elsayed",
+          "email": ""
+        },
+        {
+          "forename": "Reem",
+          "surname": "Suwaileh",
+          "name": "Reem Suwaileh",
+          "email": ""
+        },
+        {
+          "forename": "Lluís",
+          "surname": "Màrquez",
+          "name": "Lluís Màrquez",
+          "email": ""
+        },
+        {
+          "forename": "Wajdi",
+          "surname": "Zaghouani",
+          "name": "Wajdi Zaghouani",
+          "email": ""
+        },
+        {
+          "forename": "Pepa",
+          "surname": "Atanasova",
+          "name": "Pepa Atanasova",
+          "email": ""
+        },
+        {
+          "forename": "Spas",
+          "surname": "Kyuchukov",
+          "name": "Spas Kyuchukov",
+          "email": ""
+        },
+        {
+          "forename": "Giovanni Da San",
+          "surname": "Martino",
+          "name": "Giovanni Da San Martino",
+          "email": ""
+        }
+      ],
+      "doi": "10.1007/978-3-319-98932-7_32",
+      "venue": "Overview of the clef",
+      "date": "2018"
+    },
+    {
+      "index": "b19",
+      "title": "checkthat! lab on automatic identification and verification of political claims",
+      "author": [],
+      "doi": "10.1007/978-3-319-98932-7_32",
+      "venue": "Experimental IR Meets Multilinguality, Multimodality, and Interaction",
+      "date": ""
+    },
+    {
+      "index": "b20",
+      "title": "Evaluating content selection in summarization: The pyramid method",
+      "author": [
+        {
+          "forename": "Ani",
+          "surname": "Nenkova",
+          "name": "Ani Nenkova",
+          "email": ""
+        },
+        {
+          "forename": "Rebecca",
+          "surname": "Passonneau",
+          "name": "Rebecca Passonneau",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Conference of the North American Chapter of the Association for Computational Linguistics",
+      "date": "2004"
+    },
+    {
+      "index": "b21",
+      "title": "Large dual encoders are generalizable retrievers",
+      "author": [
+        {
+          "forename": "Jianmo",
+          "surname": "Ni",
+          "name": "Jianmo Ni",
+          "email": ""
+        },
+        {
+          "forename": "Chen",
+          "surname": "Qu",
+          "name": "Chen Qu",
+          "email": ""
+        },
+        {
+          "forename": "Jing",
+          "surname": "Lu",
+          "name": "Jing Lu",
+          "email": ""
+        },
+        {
+          "forename": "Zhuyun",
+          "surname": "Dai",
+          "name": "Zhuyun Dai",
+          "email": ""
+        },
+        {
+          "forename": "Gustavo",
+          "surname": "Hernandez Abrego",
+          "name": "Gustavo Hernandez Abrego",
+          "email": ""
+        },
+        {
+          "forename": "Ji",
+          "surname": "Ma",
+          "name": "Ji Ma",
+          "email": ""
+        },
+        {
+          "forename": "Vincent",
+          "surname": "Zhao",
+          "name": "Vincent Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Yi",
+          "surname": "Luan",
+          "name": "Yi Luan",
+          "email": ""
+        },
+        {
+          "forename": "Keith",
+          "surname": "Hall",
+          "name": "Keith Hall",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        },
+        {
+          "forename": "Yinfei",
+          "surname": "Yang",
+          "name": "Yinfei Yang",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": "2022"
+    },
+    {
+      "index": "b22",
+      "title": "Capabilities of gpt-4 on medical challenge problems",
+      "author": [
+        {
+          "forename": "Harsha",
+          "surname": "Nori",
+          "name": "Harsha Nori",
+          "email": ""
+        },
+        {
+          "forename": "Nicholas",
+          "surname": "King",
+          "name": "Nicholas King",
+          "email": ""
+        },
+        {
+          "forename": "Scott Mayer ",
+          "surname": "Mckinney",
+          "name": "Scott Mayer  Mckinney",
+          "email": ""
+        },
+        {
+          "forename": "Dean",
+          "surname": "Carignan",
+          "name": "Dean Carignan",
+          "email": ""
+        },
+        {
+          "forename": "Eric",
+          "surname": "Horvitz",
+          "name": "Eric Horvitz",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2303.13375",
+      "venue": "Capabilities of gpt-4 on medical challenge problems",
+      "date": "2023"
+    },
+    {
+      "index": "b23",
+      "title": "FEVER: a large-scale dataset for fact extraction and VERification",
+      "author": [
+        {
+          "forename": "James",
+          "surname": "Thorne",
+          "name": "James Thorne",
+          "email": ""
+        },
+        {
+          "forename": "Andreas",
+          "surname": "Vlachos",
+          "name": "Andreas Vlachos",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Conference of the North American Chapter",
+      "date": "2018"
+    },
+    {
+      "index": "b25",
+      "title": "Llama: Open and efficient foundation language models",
+      "author": [
+        {
+          "forename": "Faisal",
+          "surname": "Azhar",
+          "name": "Faisal Azhar",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2302.13971",
+      "venue": "Llama: Open and efficient foundation language models",
+      "date": "2023"
+    },
+    {
+      "index": "b26",
+      "title": "Fact or fiction: Verifying scientific claims",
+      "author": [
+        {
+          "forename": "David",
+          "surname": "Wadden",
+          "name": "David Wadden",
+          "email": ""
+        },
+        {
+          "forename": "Shanchuan",
+          "surname": "Lin",
+          "name": "Shanchuan Lin",
+          "email": ""
+        },
+        {
+          "forename": "Kyle",
+          "surname": "Lo",
+          "name": "Kyle Lo",
+          "email": ""
+        },
+        {
+          "forename": "Lucy Lu ",
+          "surname": "Wang",
+          "name": "Lucy Lu  Wang",
+          "email": ""
+        },
+        {
+          "forename": "Madeleine",
+          "surname": "Van Zuylen",
+          "name": "Madeleine Van Zuylen",
+          "email": ""
+        },
+        {
+          "forename": "Arman",
+          "surname": "Cohan",
+          "name": "Arman Cohan",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": "2020"
+    },
+    {
+      "index": "b27",
+      "title": "SciFact-open: Towards open-domain scientific claim verification",
+      "author": [
+        {
+          "forename": "David",
+          "surname": "Wadden",
+          "name": "David Wadden",
+          "email": ""
+        },
+        {
+          "forename": "Kyle",
+          "surname": "Lo",
+          "name": "Kyle Lo",
+          "email": ""
+        },
+        {
+          "forename": "Bailey",
+          "surname": "Kuehl",
+          "name": "Bailey Kuehl",
+          "email": ""
+        },
+        {
+          "forename": "Arman",
+          "surname": "Cohan",
+          "name": "Arman Cohan",
+          "email": ""
+        },
+        {
+          "forename": "Iz",
+          "surname": "Beltagy",
+          "name": "Iz Beltagy",
+          "email": ""
+        },
+        {
+          "forename": "Lucy Lu ",
+          "surname": "Wang",
+          "name": "Lucy Lu  Wang",
+          "email": ""
+        },
+        {
+          "forename": "Hannaneh",
+          "surname": "Hajishirzi",
+          "name": "Hannaneh Hajishirzi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP",
+      "date": "2022"
+    },
+    {
+      "index": "b28",
+      "title": "Asking and answering questions to evaluate the factual consistency of summaries",
+      "author": [
+        {
+          "forename": "Alex",
+          "surname": "Wang",
+          "name": "Alex Wang",
+          "email": ""
+        },
+        {
+          "forename": "Kyunghyun",
+          "surname": "Cho",
+          "name": "Kyunghyun Cho",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b29",
+      "title": "Super-NaturalInstructions: Generalization via declarative instructions on 1600+ NLP tasks",
+      "author": [
+        {
+          "forename": "Yizhong",
+          "surname": "Wang",
+          "name": "Yizhong Wang",
+          "email": ""
+        },
+        {
+          "forename": "Swaroop",
+          "surname": "Mishra",
+          "name": "Swaroop Mishra",
+          "email": ""
+        },
+        {
+          "forename": "Pegah",
+          "surname": "Alipoormolabashi",
+          "name": "Pegah Alipoormolabashi",
+          "email": ""
+        },
+        {
+          "forename": "Yeganeh",
+          "surname": "Kordi",
+          "name": "Yeganeh Kordi",
+          "email": ""
+        },
+        {
+          "forename": "Amirreza",
+          "surname": "Mirzaei",
+          "name": "Amirreza Mirzaei",
+          "email": ""
+        },
+        {
+          "forename": "Atharva",
+          "surname": "Naik",
+          "name": "Atharva Naik",
+          "email": ""
+        },
+        {
+          "forename": "Arjun",
+          "surname": "Ashok",
+          "name": "Arjun Ashok",
+          "email": ""
+        },
+        {
+          "forename": "Arut",
+          "surname": "Selvan Dhanasekaran",
+          "name": "Arut Selvan Dhanasekaran",
+          "email": ""
+        },
+        {
+          "forename": "Anjana",
+          "surname": "Arunkumar",
+          "name": "Anjana Arunkumar",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Stap",
+          "name": "David Stap",
+          "email": ""
+        },
+        {
+          "forename": "Eshaan",
+          "surname": "Pathak",
+          "name": "Eshaan Pathak",
+          "email": ""
+        },
+        {
+          "forename": "Giannis",
+          "surname": "Karamanolakis",
+          "name": "Giannis Karamanolakis",
+          "email": ""
+        },
+        {
+          "forename": "Haizhi",
+          "surname": "Lai",
+          "name": "Haizhi Lai",
+          "email": ""
+        },
+        {
+          "forename": "Ishan",
+          "surname": "Purohit",
+          "name": "Ishan Purohit",
+          "email": ""
+        },
+        {
+          "forename": "Ishani",
+          "surname": "Mondal",
+          "name": "Ishani Mondal",
+          "email": ""
+        },
+        {
+          "forename": "Jacob",
+          "surname": "Anderson",
+          "name": "Jacob Anderson",
+          "email": ""
+        },
+        {
+          "forename": "Kirby",
+          "surname": "Kuznia",
+          "name": "Kirby Kuznia",
+          "email": ""
+        },
+        {
+          "forename": "Krima",
+          "surname": "Doshi",
+          "name": "Krima Doshi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": ""
+    },
+    {
+      "index": "b30",
+      "title": "Paraphrastic representations at scale",
+      "author": [
+        {
+          "forename": "John",
+          "surname": "Wieting",
+          "name": "John Wieting",
+          "email": ""
+        },
+        {
+          "forename": "Kevin",
+          "surname": "Gimpel",
+          "name": "Kevin Gimpel",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Taylor",
+          "surname": "Berg-Kirkpatrick",
+          "name": "Taylor Berg-Kirkpatrick",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+      "date": "2022"
+    },
+    {
+      "index": "b31",
+      "title": "Generating scientific claims for zeroshot scientific fact checking",
+      "author": [
+        {
+          "forename": "Dustin",
+          "surname": "Wright",
+          "name": "Dustin Wright",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Wadden",
+          "name": "David Wadden",
+          "email": ""
+        },
+        {
+          "forename": "Kyle",
+          "surname": "Lo",
+          "name": "Kyle Lo",
+          "email": ""
+        },
+        {
+          "forename": "Bailey",
+          "surname": "Kuehl",
+          "name": "Bailey Kuehl",
+          "email": ""
+        },
+        {
+          "forename": "Arman",
+          "surname": "Cohan",
+          "name": "Arman Cohan",
+          "email": ""
+        },
+        {
+          "forename": "Isabelle",
+          "surname": "Augenstein",
+          "name": "Isabelle Augenstein",
+          "email": ""
+        },
+        {
+          "forename": "Lucy Lu ",
+          "surname": "Wang",
+          "name": "Lucy Lu  Wang",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b32",
+      "title": "A critical evaluation of evaluations for long-form question answering",
+      "author": [
+        {
+          "forename": "Fangyuan",
+          "surname": "Xu",
+          "name": "Fangyuan Xu",
+          "email": ""
+        },
+        {
+          "forename": "Yixiao",
+          "surname": "Song",
+          "name": "Yixiao Song",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        },
+        {
+          "forename": "Eunsol",
+          "surname": "Choi",
+          "name": "Eunsol Choi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Association for Computational Linguistics",
+      "date": "2023"
+    },
+    {
+      "index": "b33",
+      "title": "Flask: Fine-grained language model evaluation based on alignment skill sets",
+      "author": [
+        {
+          "forename": "Seonghyeon",
+          "surname": "Ye",
+          "name": "Seonghyeon Ye",
+          "email": ""
+        },
+        {
+          "forename": "Doyoung",
+          "surname": "Kim",
+          "name": "Doyoung Kim",
+          "email": ""
+        },
+        {
+          "forename": "Sungdong",
+          "surname": "Kim",
+          "name": "Sungdong Kim",
+          "email": ""
+        },
+        {
+          "forename": "Hyeonbin",
+          "surname": "Hwang",
+          "name": "Hyeonbin Hwang",
+          "email": ""
+        },
+        {
+          "forename": "Seungone",
+          "surname": "Kim",
+          "name": "Seungone Kim",
+          "email": ""
+        },
+        {
+          "forename": "Yongrae",
+          "surname": "Jo",
+          "name": "Yongrae Jo",
+          "email": ""
+        },
+        {
+          "forename": "James",
+          "surname": "Thorne",
+          "name": "James Thorne",
+          "email": ""
+        },
+        {
+          "forename": "Juho",
+          "surname": "Kim",
+          "name": "Juho Kim",
+          "email": ""
+        },
+        {
+          "forename": "Minjoon",
+          "surname": "Seo",
+          "name": "Minjoon Seo",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2307.10928",
+      "venue": "Flask: Fine-grained language model evaluation based on alignment skill sets",
+      "date": "2023"
+    },
+    {
+      "index": "b34",
+      "title": "Automatic evaluation of attribution by large language models",
+      "author": [
+        {
+          "forename": "Xiang",
+          "surname": "Yue",
+          "name": "Xiang Yue",
+          "email": ""
+        },
+        {
+          "forename": "Boshi",
+          "surname": "Wang",
+          "name": "Boshi Wang",
+          "email": ""
+        },
+        {
+          "forename": "Kai",
+          "surname": "Zhang",
+          "name": "Kai Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Ziru",
+          "surname": "Chen",
+          "name": "Ziru Chen",
+          "email": ""
+        },
+        {
+          "forename": "Yu",
+          "surname": "Su",
+          "name": "Yu Su",
+          "email": ""
+        },
+        {
+          "forename": "Huan",
+          "surname": "Sun",
+          "name": "Huan Sun",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2305.06311",
+      "venue": "Automatic evaluation of attribution by large language models",
+      "date": "2023"
+    },
+    {
+      "index": "b35",
+      "title": "Finding a balanced degree of automation for summary evaluation",
+      "author": [
+        {
+          "forename": "Shiyue",
+          "surname": "Zhang",
+          "name": "Shiyue Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Bansal",
+          "name": "Mohit Bansal",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b36",
+      "title": "Bertscore: Evaluating text generation with bert",
+      "author": [
+        {
+          "forename": "Tianyi",
+          "surname": "Zhang",
+          "name": "Tianyi Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Varsha",
+          "surname": "Kishore",
+          "name": "Varsha Kishore",
+          "email": ""
+        },
+        {
+          "forename": "Felix",
+          "surname": "Wu",
+          "name": "Felix Wu",
+          "email": ""
+        },
+        {
+          "forename": "Kilian Q.",
+          "surname": "Weinberger",
+          "name": "Kilian Q. Weinberger",
+          "email": ""
+        },
+        {
+          "forename": "Yoav",
+          "surname": "Artzi",
+          "name": "Yoav Artzi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the International Conference on Learning Representations",
+      "date": "2020"
+    }
+  ]
+}

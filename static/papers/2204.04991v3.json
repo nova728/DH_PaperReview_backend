@@ -1,0 +1,3984 @@
+{
+  "title": "TRUE: Re-evaluating Factual Consistency Evaluation",
+  "publication": {
+    "publisher": {},
+    "date": "2022-05-03"
+  },
+  "author": [
+    {
+      "forename": "Or",
+      "surname": "Honovich",
+      "name": "Or Honovich",
+      "email": "or.honovich@gmail.com"
+    },
+    {
+      "forename": "Roee",
+      "surname": "Aharoni",
+      "name": "Roee Aharoni",
+      "email": "roeeaharoni@google.com"
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Herzig",
+      "name": "Jonathan Herzig",
+      "email": ""
+    },
+    {
+      "forename": "G.",
+      "surname": "Hagai Taitelbaum",
+      "name": "G. Hagai Taitelbaum",
+      "email": ""
+    },
+    {
+      "forename": "G.",
+      "surname": "Vered Cohen",
+      "name": "G. Vered Cohen",
+      "email": ""
+    },
+    {
+      "forename": "G.",
+      "surname": "Doron Kukliansky",
+      "name": "G. Doron Kukliansky",
+      "email": ""
+    },
+    {
+      "forename": "G.",
+      "surname": "Thomas Scialom",
+      "name": "G. Thomas Scialom",
+      "email": ""
+    },
+    {
+      "forename": "Idan",
+      "surname": "Szpektor",
+      "name": "Idan Szpektor",
+      "email": "szpektor@google.com"
+    },
+    {
+      "forename": "G.",
+      "surname": "Avinatan",
+      "name": "G. Avinatan",
+      "email": ""
+    },
+    {
+      "forename": "Hassidim G.",
+      "surname": "Yossi Matias",
+      "name": "Hassidim G. Yossi Matias",
+      "email": ""
+    },
+    {
+      "forename": "G.T.",
+      "surname": "Tel",
+      "name": "G.T. Tel",
+      "email": ""
+    },
+    {
+      "forename": "Aviv",
+      "surname": "University",
+      "name": "Aviv University",
+      "email": ""
+    },
+    {
+      "forename": "G.",
+      "surname": "Google Research",
+      "name": "G. Google Research",
+      "email": ""
+    },
+    {
+      "forename": "Meta",
+      "surname": "Ai",
+      "name": "Meta Ai",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Grounded text generation systems often generate text that contains factual inconsistencies, hindering their real-world applicability. Automatic factual consistency evaluation may help alleviate this limitation by accelerating evaluation cycles, filtering inconsistent outputs and augmenting training data. While attracting increasing attention, such evaluation metrics are usually developed and evaluated in silo for a single task or dataset, slowing their adoption. Moreover, previous meta-evaluation protocols focused on system-level correlations with human annotations, which leave the examplelevel accuracy of such metrics unclear. In this work, we introduce TRUE: a comprehensive survey and assessment of factual consistency metrics on a standardized collection of existing texts from diverse tasks, manually annotated for factual consistency. Our standardization enables an example-level metaevaluation protocol that is more actionable and interpretable than previously reported correlations, yielding clearer quality measures. Across diverse state-of-the-art metrics and 11 datasets we find that large-scale NLI and question generation-and-answering-based approaches achieve strong and complementary results. We recommend those methods as a starting point for model and metric developers, and hope TRUE will foster progress towards even better evaluation methods. 1 * Work done during an internship at Google Research."
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "A core issue in deploying text generation models for real-world applications is that they often generate factually inconsistent text with respect to the input they are conditioned on, or even completely \"hallucinate\" (Lee et al., 2018; Rohrbach et al., 2018; Maynez et al., 2020; Zhao et al., 2020) as exemplified in Table .",
+          "quote": [
+            {
+              "text": "Rohrbach et al., 2018;",
+              "target": "#b52",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 236
+            },
+            {
+              "text": "Zhao et al., 2020)",
+              "target": "#b69",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 280
+            },
+            {
+              "text": "[(Leeetal.,2018]",
+              "type": "bibr",
+              "index": 217,
+              "context": "lucinate\" ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 217,
+              "context": "lucinate\" ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Maynezetal.,2020]",
+              "type": "bibr",
+              "index": 259,
+              "context": "l., 2018; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 259,
+              "context": "l., 2018; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Table : Factual inconsistencies (in red) from various tasks which are part of the TRUE study. The corresponding parts in the input/grounding are in blue.",
+          "quote": []
+        },
+        {
+          "text": "To tackle such inconsistencies, one would like to detect them automatically by predicting whether a generated text is factually consistent with respect to a grounding text (frequently referred to as the \"input\", or the \"knowledge\"). Such automatic methods attract increasing attention (Zhou et al., 2021; Deng et al., 2021) as they enable both better evaluation and better generation models by automatically filtering training data (Gehrmann et al., 2021) or by augmenting training data for controlled generation (Rashkin et al., 2021b).",
+          "quote": [
+            {
+              "text": "Deng et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 305
+            },
+            {
+              "text": "(Gehrmann et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "ning data ",
+              "index": 432
+            },
+            {
+              "text": "(Rashkin et al., 2021b)",
+              "target": "#b50",
+              "type": "bibr",
+              "context": "eneration ",
+              "index": 513
+            },
+            {
+              "text": "[(Zhouetal.,2021]",
+              "type": "bibr",
+              "index": 285,
+              "context": "attention ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 285,
+              "context": "attention ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "While automatically evaluating factual consistency is an active line of work, there is no single agreed-upon meta-evaluation protocol for measuring the quality of such methods, and labeling schemes vary in their granularity. Works are usu-ally done in silo, introducing new datasets and methods that target a specific task or domain, such as summarization (Falke et al., 2019; Kryscinski et al., 2020; Wang et al., 2020; Scialom et al., 2021; Deutsch et al., 2021; Xie et al., 2021) or dialogue (Dziri et al., 2021; Honovich et al., 2021; Nie et al., 2021; Qin et al., 2021). Comparing the robustness of such methods across tasks and datasets is therefore difficult, impeding progress on this subject.",
+          "quote": [
+            {
+              "text": "Kryscinski et al., 2020;",
+              "target": "#b28",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 377
+            },
+            {
+              "text": "Scialom et al., 2021;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 421
+            },
+            {
+              "text": "Xie et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 465
+            },
+            {
+              "text": "Honovich et al., 2021;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 516
+            },
+            {
+              "text": "Qin et al., 2021)",
+              "target": "#b47",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 557
+            },
+            {
+              "text": "[(Falkeetal.,2019]",
+              "type": "bibr",
+              "index": 356,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 356,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Wangetal.,2020]",
+              "type": "bibr",
+              "index": 402,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 402,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Deutschetal.,2021]",
+              "type": "bibr",
+              "index": 443,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 443,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Dzirietal.,2021]",
+              "type": "bibr",
+              "index": 495,
+              "context": " dialogue ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 495,
+              "context": " dialogue ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Nieetal.,2021]",
+              "type": "bibr",
+              "index": 539,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 539,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "In this work, we present TRUE: a comprehensive survey and assessment of factual consistency evaluation methods, covering various metrics, tasks and datasets. We consolidate 11 existing datasets annotated for factual consistency into a unified format, including pairs of a target text and a grounding source text, with a binary annotation of whether the target text is factually consistent w.r.t its source. TRUE 2 covers summarization, knowledge-grounded dialogue, paraphrasing and fact verification. 3 The proposed standardization enables us to properly compare consistency evaluation methods in a robust manner across these various tasks and domains.",
+          "quote": []
+        },
+        {
+          "text": "Previous works on automatic factual consistency evaluation have mainly focused on measuring system-level correlations of the proposed metrics with human judgements (Pagnoni et al., 2021 Deutsch et al. (2022)). Yet, these correlations are not useful for estimating the performance of a measured metric when making example-level, binary decisions, decoupled from specific system implementations (see recent discussion by  on the limitations of reporting correlations). Instead, we aim to measure how well a method detects inconsistent texts (recall) and how often it falsely disregards consistent texts (precision), which can be easily computed using the aforementioned binary labeling scheme. Therefore, as a meta-evaluation protocol we report the Area Under the ROC Curve (ROC AUC) with respect to inconsistent example detection for each evaluation metric and dataset.",
+          "quote": [
+            {
+              "text": "(Pagnoni et al., 2021",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "udgements ",
+              "index": 164
+            },
+            {
+              "text": "Deutsch et al. (2022)",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 186
+            }
+          ]
+        },
+        {
+          "text": "Our thorough survey and assessment of 12 metrics draws a clearer picture on the state of evaluating factual consistency. We show that Natural Language Inference (NLI) approaches, as well as Question Generation and Answering (QG-QA) ap-proaches achieve significantly better 4 results on a wide variety of tasks and datasets. We also show that NLI and QG-QA are complementary: combining the two yields even better results and hints at room for further improvement. Finally, we perform both quantitative and qualitative analysis of our results, finding that all approaches struggle with long inputs, labeling issues and personal statementspaving interesting avenues for future work.",
+          "quote": []
+        },
+        {
+          "text": "To summarize, our contributions are as follows: (1) We argue that work on factual consistency evaluation should be unified and generalized across tasks, and standardize 11 published datasets into a single labeling scheme to corroborate this. (2) We propose a meta-evaluation protocol that allows more actionable and interpretable quality measures than previously reported correlations. (3) We survey and evaluate 12 diverse metrics in this unified perspective, showing that large-scale NLI and QG-QA-based approaches achieve strong and complementary results across tasks. ( ) We analyze our results both qualitatively and quantitatively, pointing at challenges like long inputs and personal statements to be addressed in future work.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "Standardizing Factual Consistency"
+      },
+      "p": [
+        {
+          "text": "In this section we elaborate on our re-evaluation setup. We first formally define what factual consistency refers to in this work. We then detail the datasets we consider and how we standardize them. Finally, we discuss the meta-evaluation protocol we propose for measuring the performance of evaluation methods on the standardized datasets.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.1",
+        "name": "Definitions and Terminology"
+      },
+      "p": [
+        {
+          "text": "We define a text to be factually consistent w.r.t its grounding text if all the factual information it conveys is consistent with the factual information conveyed by the grounding text. 5 While some previous works distinguished between inconsistent erroneous text to inconsistent correct text (Maynez et al., 2020), we take a strict approach, requiring the text to be faithful to its grounding text, regardless of the \"correctness\" w.r.t the \"real world\". In other words, we consider only the information present in the input text, not external knowledge, to assess faithfulness. This enables a more well-defined task, since determining the truthfulness of a fact w.r.t a Task # Examples Open Test Cons. Summarization -FRANK (Pagnoni et al., 2021) 671 + 33.2% -SummEval (Fabbri et al., 2021a) 1,600 -81.6% -MNBM (Maynez et al., 2020) 2,500 -10.2% -QAGS-CNNDM (Wang et al., 2020) 235 -48.1% -QAGS-XSum (Wang et al., 2020) 239 -48.5% Dialogue -BEGIN (Dziri et al., 2021) 836 + 33.7% -Q 2 (Honovich et al., 2021) 1,088 -57.7% -DialFact (Gupta et al., 2021) 8,689 + 38.5% Fact Verification -FEVER (Thorne et al., 2018) 18,209 -35.1% -VitaminC (Schuster et al., 2021) 63,054 + 49.9% Paraphrasing -PAWS (Zhang et al., 2019) 8,000 + 44.2% general \"real world\" is subjective and depends on the knowledge, values and beliefs of the subject (Heidegger, 2001). This definition follows similar strictness in Textual Entailment, Question Answering, Summarization and other tasks where comprehension is based on a given grounding text, irrespective of contradiction with other world knowledge. This is also in line with recent work on evaluating attribution in text generation (Rashkin et al., 2021a), where humans are required to judge whether a generated text is attributable to a grounding text. We use the terms consistent, grounded, faithful and factual interchangeably.",
+          "quote": [
+            {
+              "text": "(Maynez et al., 2020)",
+              "target": "#b35",
+              "type": "bibr",
+              "context": "rect text ",
+              "index": 293
+            },
+            {
+              "text": "(Pagnoni et al., 2021)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "on -FRANK ",
+              "index": 725
+            },
+            {
+              "text": "(Fabbri et al., 2021a)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": "-SummEval ",
+              "index": 770
+            },
+            {
+              "text": "(Maynez et al., 2020)",
+              "target": "#b35",
+              "type": "bibr",
+              "context": ".6% -MNBM ",
+              "index": 812
+            },
+            {
+              "text": "(Wang et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "AGS-CNNDM ",
+              "index": 859
+            },
+            {
+              "text": "(Wang et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "QAGS-XSum ",
+              "index": 901
+            },
+            {
+              "text": "(Dziri et al., 2021)",
+              "target": "#b11",
+              "type": "bibr",
+              "context": "ue -BEGIN ",
+              "index": 948
+            },
+            {
+              "text": "(Honovich et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "3.7% -Q 2 ",
+              "index": 986
+            },
+            {
+              "text": "(Gupta et al., 2021)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": "-DialFact ",
+              "index": 1033
+            },
+            {
+              "text": "(Thorne et al., 2018)",
+              "target": "#b59",
+              "type": "bibr",
+              "context": "on -FEVER ",
+              "index": 1093
+            },
+            {
+              "text": "(Schuster et al., 2021)",
+              "target": "#b53",
+              "type": "bibr",
+              "context": "-VitaminC ",
+              "index": 1139
+            },
+            {
+              "text": "(Zhang et al., 2019)",
+              "target": "#b68",
+              "type": "bibr",
+              "context": "ing -PAWS ",
+              "index": 1197
+            },
+            {
+              "text": "(Heidegger, 2001)",
+              "target": "#b23",
+              "type": "bibr",
+              "context": "e subject ",
+              "index": 1331
+            },
+            {
+              "text": "(Rashkin et al., 2021a)",
+              "target": "",
+              "type": "bibr",
+              "context": "eneration ",
+              "index": 1663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.2",
+        "name": "Standardization Process"
+      },
+      "p": [
+        {
+          "text": "We include 11 datasets that contain human annotations w.r.t factual consistency in diverse tasks (Table (Denton et al., 2021)). Other than the importance of covering a wide variety of error types, this also alleviates issues of rating quality which may vary across datasets .",
+          "quote": [
+            {
+              "text": "(Denton et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "ks (Table ",
+              "index": 104
+            }
+          ]
+        },
+        {
+          "text": "To allow a unified evaluation framework we convert all annotations to binary labels that correspond to whether the entire target text is factually consistent w.r.t the given grounding text or not. We note that a fine-grained annotation scheme, i.e., a typology of errors, was proposed for factual consistency (Pagnoni et al., 2021). While useful, most existing datasets do not include such labels. Moreover, while Machine Translation (MT) evaluation also showed value in fine-grained annotations (Freitag et al., 2021), it was proposed after years of improving MT to the level where coarse-grained annotation is insufficient. We argue that current grounded generation models are still at early stages w.r.t factual consistency, making binary labeling more beneficial now as it enables easier standardization across tasks and domains, with the goal of bringing researchers to collaborate on a shared methodology. Binary annotation also corresponds to practical applications where filtering out unfaithful predictions is desired, and is in-line with the recommendations for human evaluation of attribution in text generation by Rashkin et al. (2021a).",
+          "quote": [
+            {
+              "text": "(Pagnoni et al., 2021)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "nsistency ",
+              "index": 309
+            },
+            {
+              "text": "(Freitag et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "notations ",
+              "index": 496
+            },
+            {
+              "text": "Rashkin et al. (2021a)",
+              "target": "",
+              "type": "bibr",
+              "context": "ration by ",
+              "index": 1126
+            }
+          ]
+        },
+        {
+          "text": "We next detail the 11 datasets included in TRUE.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.2.1",
+        "name": "Abstractive Summarization"
+      },
+      "p": [
+        {
+          "text": "FRANK Pagnoni et al. (2021) proposed a typology of factual errors, grounded in frame semantics (Fillmore, 1976; Palmer et al., 2005) and linguistic discourse theory (Brown and Yule, 1983). Based on this typology, they collected annotations for model-generated summaries on the CNN/DailyMail (CNN/DM; Hermann et al., 2015) and XSum (Narayan et al., 2018) datasets, resulting in 2250 annotated system outputs. Each summary sentence was annotated by three annotators. We take the majority vote for each sentence to get a sentence-level label and consider a summary as consistent if all sentences are consistent.",
+          "quote": [
+            {
+              "text": "Pagnoni et al. (2021)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "ANK ",
+              "index": 6
+            },
+            {
+              "text": "Palmer et al., 2005)",
+              "target": "#b42",
+              "type": "bibr",
+              "context": "re, 1976; ",
+              "index": 112
+            },
+            {
+              "text": "(Brown and Yule, 1983)",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "se theory ",
+              "index": 165
+            },
+            {
+              "text": "Hermann et al., 2015)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": " (CNN/DM; ",
+              "index": 300
+            },
+            {
+              "text": "(Narayan et al., 2018)",
+              "target": "#b37",
+              "type": "bibr",
+              "context": " and XSum ",
+              "index": 331
+            },
+            {
+              "text": "[(Fillmore,1976]",
+              "type": "bibr",
+              "index": 95,
+              "context": "semantics ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 95,
+              "context": "semantics ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "SummEval SummEval (Fabbri et al., 2020 ) is a comprehensive study of evaluation metrics for text summarization. The authors collected human judgments for 16 model outputs on 100 articles taken from the CNN/DM dataset, using both extractive and abstractive models. Annotators were asked to rate summaries on a Likert scale from 1 to 5, over 4 dimensions: consistency, coherence, fluency and relevance. Each summary was scored by 5 crowd-workers and 3 expert annotators. We label summaries as consistent only if all the expert annotators gave a consistency score of 5.",
+          "quote": [
+            {
+              "text": "(Fabbri et al., 2020",
+              "target": "#b13",
+              "type": "bibr",
+              "context": " SummEval ",
+              "index": 18
+            }
+          ]
+        },
+        {
+          "text": "MNBM Maynez et al. (2020) annotated system outputs for the XSum dataset (Narayan et al., 2018). They sampled 500 articles and annotated summaries generated by four different systems, as well as the gold summaries. Annotators were asked to assess whether the summary includes hallucinations. Judgments from three different annotators were collected for each document-summary pair.",
+          "quote": [
+            {
+              "text": "Maynez et al. (2020)",
+              "target": "#b35",
+              "type": "bibr",
+              "context": "MNBM ",
+              "index": 5
+            },
+            {
+              "text": "(Narayan et al., 2018)",
+              "target": "#b37",
+              "type": "bibr",
+              "context": "m dataset ",
+              "index": 72
+            }
+          ]
+        },
+        {
+          "text": "To convert to a binary-label format, we use the binary consistency decision of whether a summary contains no hallucinations, and assign a label by taking the majority vote of the three annotators.",
+          "quote": []
+        },
+        {
+          "text": "QAGS Wang et al. (2020) collected judgments of factual consistency on generated summaries for CNN/DM and XSum. Annotators were presented with the summaries one sentence at a time, along with the article, and determined whether each sentence is factually consistent w.r.t the article. Each sentence was annotated by 3 annotators, using the majority vote as the final score. To convert to binary-label format, we consider a summary consistent only if all its sentences are consistent.",
+          "quote": [
+            {
+              "text": "Wang et al. (2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "QAGS ",
+              "index": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.2.2",
+        "name": "Dialogue Generation"
+      },
+      "p": [
+        {
+          "text": "BEGIN (Dziri et al., 2021) is a dataset for evaluating groundedness in knowledge-grounded dialogue systems, in which system outputs should be consistent with a grounding knowledge provided to the dialogue agent. BEGIN frames the task as textual entailment (Dagan et al., 2006; Bowman et al., 2015), adopting the entailment and contradiction labels, and splitting the neutral label into three subcategories: hallucination, off-topic responses and generic responses. Dialogue responses were generated by fine-tuning two systems on the Wizard of Wikipedia (WOW) dataset (Dinan et al., 2019), in which responses should be grounded in a span of text from Wikipedia. The generated responses were split into sentences, and each sentence was annotated separately. To convert to a binary-label format, we treat entailed sentences as consistent and all others as inconsistent.",
+          "quote": [
+            {
+              "text": "(Dziri et al., 2021)",
+              "target": "#b11",
+              "type": "bibr",
+              "context": "GIN ",
+              "index": 6
+            },
+            {
+              "text": "Bowman et al., 2015)",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "l., 2006; ",
+              "index": 277
+            },
+            {
+              "text": "(Dinan et al., 2019)",
+              "target": "#b9",
+              "type": "bibr",
+              "context": ") dataset ",
+              "index": 567
+            },
+            {
+              "text": "[(Daganetal.,2006]",
+              "type": "bibr",
+              "index": 256,
+              "context": "ntailment ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 256,
+              "context": "ntailment ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Q 2 Honovich et al. ( ) annotated 1,088 generated dialogue responses for binary factual consistency w.r.t the knowledge paragraph provided to the dialogue model, for two dialogue models trained on WOW. Responses were annotated using binary labels by 3 of the paper authors, one annotator per response. We use Q 2 's labels without changes.",
+          "quote": []
+        },
+        {
+          "text": "DialFact Gupta et al. (2021) introduced the task of fact-verification in dialogue and constructed a dataset of conversational claims paired with pieces of evidence from Wikipedia. They define three tasks: (1) detecting whether a response contains verifiable content (2) retrieving relevant evidence and (3) predicting whether a response is supported by the evidence, refuted by the evidence or if there is not enough information to determine. We use the verifiable (i.e., factual, rather than personal) responses annotated for the third task, treating supported annotations as consistent and the rest as inconsistent. In cases where several evidence were marked as required for verification, we concatenate all evidence sentences to be the grounding text.",
+          "quote": [
+            {
+              "text": "Gupta et al. (2021)",
+              "target": "#b21",
+              "type": "bibr",
+              "context": " ",
+              "index": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.2.3",
+        "name": "Fact Verification"
+      },
+      "p": [
+        {
+          "text": "FEVER Thorne et al. (2018) introduced FEVER (Fact Extraction and VERification), a dataset for fact verification against textual sources. FEVER was constructed by extracting information from Wikipedia, generating claims using annotators, then labeling whether each claim is supported or refuted by Wikipedia. Claims can also be labeled with NotEnoughInfo, meaning that there is not enough information in Wikipedia to either verify or refute the claim. Given a claim, the task defined by FEVER is to first extract evidence, then to determine whether it supports or refutes the claim.",
+          "quote": [
+            {
+              "text": "Thorne et al. (2018)",
+              "target": "#b59",
+              "type": "bibr",
+              "context": "VER ",
+              "index": 6
+            }
+          ]
+        },
+        {
+          "text": "In a slightly different framing, the latter stage in FEVER is to determine whether the claim is factually consistent or not w.r. We note that the definition of paraphrase is not equivalent to the definition of factual consistency, as a subset of a source text is not a paraphrase but may still be factually consistent with the source. However, PAWS was constructed such that non-paraphrases usually have contradicting meanings and is therefore relevant.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2.3",
+        "name": "Meta-Evaluation"
+      },
+      "p": [
+        {
+          "text": "Previous work on evaluating factual consistency focused on measuring correlation with human judgements (Pagnoni et al., 2021) to compare different metrics. However, such system-level numbers are not very informative when one is interested in evaluating the absolute performance of inconsistency detection methods that perform a binary decision w.r.t each input. Deutsch et al. (2022) also recently discuss various issues in measuring system-level correlations to assess the validity of automatic evaluation metrics for summarization.",
+          "quote": [
+            {
+              "text": "(Pagnoni et al., 2021)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "udgements ",
+              "index": 103
+            },
+            {
+              "text": "Deutsch et al. (2022)",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "ch input. ",
+              "index": 362
+            }
+          ]
+        },
+        {
+          "text": "To conduct a more fine-grained evaluation at the single example level, we report the Receiver Operating Characteristic Area Under the Curve (ROC AUC) w.r.t binary detection of inconsistent examples. 6 The ROC curve is created by plotting the true positive rate (TPR, a.k.a. the recall) against the false positive rate (FPR, a.k.a. the fallout) at different possible thresholds for each tested metric. Measuring ROC AUC evaluates the different metrics without setting a specific decision threshold.",
+          "quote": []
+        },
+        {
+          "text": "For datasets with existing development/test split, we also tune a threshold for the binary consistency/inconsistency decision on the development set and report the test set accuracy using this threshold. We tune the thresholds by optimizing the geometric mean of the TPR and 1-FPR:",
+          "quote": []
+        },
+        {
+          "text": "TPR * (1 − FPR).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "Evaluation Metrics"
+      },
+      "p": [
+        {
+          "text": "We compare various standard as well as state-ofthe-art approaches to measure factual consistency. This comparison should draw a clear picture of current research on this subject and raise directions for future work. For example, we expect that robust metrics should perform well across various tasks and datasets. We next describe the different metrics we assess as part of this study. We note that for all reference-based metrics, we use the grounding text as the reference. For metrics where the scores are not in the [0,1] range, we normalize the scores to be in that range.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "N-Gram Based Metrics"
+      },
+      "p": [
+        {
+          "text": "Standard N-Gram matching metrics such as BLEU (Papineni et al., 2002), ROUGE (Lin, 2004 ) and token-level F1 were shown to have weak correlation with factual consistency (Maynez et al., 2020; Honovich et al., 2021). We add them as baselines to this study mainly to corroborate this claim on a wide set of datasets and tasks.",
+          "quote": [
+            {
+              "text": "(Papineni et al., 2002)",
+              "target": "#b44",
+              "type": "bibr",
+              "context": "h as BLEU ",
+              "index": 46
+            },
+            {
+              "text": "(Lin, 2004",
+              "target": "#b33",
+              "type": "bibr",
+              "context": "2), ROUGE ",
+              "index": 77
+            },
+            {
+              "text": "Honovich et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 192
+            },
+            {
+              "text": "[(Maynezetal.,2020]",
+              "type": "bibr",
+              "index": 88,
+              "context": "Lin, 2004 ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 88,
+              "context": "Lin, 2004 ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Model-Based Metrics"
+      },
+      "p": [
+        {
+          "text": "BERTScore (Zhang et al., 2020) aggregates similarity scores between the BERT contextual embedding of tokens in candidate and reference sentences.",
+          "quote": [
+            {
+              "text": "(Zhang et al., 2020)",
+              "target": "#b67",
+              "type": "bibr",
+              "context": "BERTScore ",
+              "index": 10
+            }
+          ]
+        },
+        {
+          "text": "We report results for the BERTScore-precision variant as it showed better results in preliminary experiments. We use BERTScore version 0.3.11 with the DeBERTa-xl-MNLI model (He et al., 2021; Nangia et al., 2017), which is the recommended model as of the time of writing this paper. 7",
+          "quote": [
+            {
+              "text": "Nangia et al., 2017)",
+              "target": "#b36",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 191
+            },
+            {
+              "text": "[(Heetal.,2021]",
+              "type": "bibr",
+              "index": 173,
+              "context": "NLI model ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 173,
+              "context": "NLI model ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "BLEURT (Sellam et al., 2020a,b ) is a learned metric based on BERT (Devlin et al., 2019) for evaluating text generation. BLEURT includes additional pretraining on synthetic data followed by fine-tuning on human judgements to train a model that scores system outputs. We use the recommended BLEURT-20 checkpoint (Pu et al., 2021 ). 8",
+          "quote": [
+            {
+              "text": "(Sellam et al., 2020a,b",
+              "target": "",
+              "type": "bibr",
+              "context": "RT ",
+              "index": 7
+            },
+            {
+              "text": "(Devlin et al., 2019)",
+              "target": "#b8",
+              "type": "bibr",
+              "context": ", 2020a,b ",
+              "index": 31
+            },
+            {
+              "text": "(Pu et al., 2021",
+              "target": "#b46",
+              "type": "bibr",
+              "context": "heckpoint ",
+              "index": 311
+            }
+          ]
+        },
+        {
+          "text": "FactCC (Kryscinski et al., 2020 ) is a BERTbased metric for verifying the factual consistency of summaries. It is trained on synthetically generated data obtained by applying rule-based transformations to generate consistent and inconsistent summaries.",
+          "quote": [
+            {
+              "text": "(Kryscinski et al., 2020",
+              "target": "#b28",
+              "type": "bibr",
+              "context": "CC ",
+              "index": 7
+            }
+          ]
+        },
+        {
+          "text": "BARTScore (Yuan et al., 2021 ) evaluates text using probabilities from force-decoding with a BART model (Lewis et al., 2020). We use the version finetuned on the ParaBank2 dataset (Hu et al., 2019).",
+          "quote": [
+            {
+              "text": "(Yuan et al., 2021",
+              "target": "#b66",
+              "type": "bibr",
+              "context": "BARTScore ",
+              "index": 10
+            },
+            {
+              "text": "(Lewis et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 29
+            },
+            {
+              "text": "(Hu et al., 2019)",
+              "target": "#b26",
+              "type": "bibr",
+              "context": "2 dataset ",
+              "index": 180
+            }
+          ]
+        },
+        {
+          "text": "CTC (Deng et al., 2021)  The steps of the QG-QA approach are as follows: (1) Questions are automatically generated for spans in the generated text, such that the answer to a question is its respective input span. (2) The generated questions are answered using a QA model on the grounding text, resulting in an answer span or a \"no-answer\" output. (3) For each question, the two answer spans from the grounding and the generated text are compared to get a score. (4) The scores for all questions are aggregated into a final score.",
+          "quote": [
+            {
+              "text": "(Deng et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "CTC ",
+              "index": 4
+            }
+          ]
+        },
+        {
+          "text": "Q 2 (Honovich et al., 2021 ) is a QG-QA method that employs an NLI model to compare the two answers for each question, where the grounding text answer is the premise and the generated text answer is the hypothesis. We report results for a re-implementation of Q 2 using T5-11B as the backbone for the QG, QA and NLI models. While Honovich et al. ( (Scialom et al., 2021 ) validate each generated question by answering it using a QA model and comparing to the original extracted answer candidate using exact match, we relax this and instead use F1 token-overlap with a predefined threshold. 13   QuestEval (Fabbri et al., 2021a)) is a QG-QA method that measures both factual consistency and relevance (by reversing the roles of the generated and grounding texts). The authors trained a model that weights each generated question according to the relevance of its answer to appear in the generated text. Their results showed high correlation with human judgments in comparison to prior work on the SummEval benchmark . We use the publicly available version. 14",
+          "quote": [
+            {
+              "text": "(Honovich et al., 2021",
+              "target": "",
+              "type": "bibr",
+              "context": "Q 2 ",
+              "index": 4
+            },
+            {
+              "text": "(Scialom et al., 2021",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 27
+            },
+            {
+              "text": "(Fabbri et al., 2021a)",
+              "target": "#b14",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 370
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "Results"
+      },
+      "p": [
+        {
+          "text": "We report the ROC AUC 15 of various metrics on the standardized datasets in Table . The ROC curves can be found in Figure  in the appendix. SC ZS was trained on VitaminC which includes examples from FEVER, so we exclude those datasets from the average AUC calculation for a more fair comparison. As all metrics operate in a \"zero-shot\" manner on all datasets (except for SC ZS on Vita-minC and FEVER) and no threshold tuning is required, we report results on the development sets. 16  The results show that the NLI-based models (ANLI, SC ZS 17 ) outperformed the other approaches on 6 datasets, with average AUC of 81.5 and 81.4 for ANLI and SC ZS , respectively. Q 2 outperformed the other approaches on 4 datasets, with an average AUC of 80.7. The next best method, BARTScore, 13 More implementation details are available in Section B in the appendix.",
+          "quote": []
+        },
+        {
+          "text": "14 https://github.com/ThomasScialom/ QuestEval 15 Multiplied by 100 for better readability. 16 AUC for the test sets and accuracy for the dev and test sets are provided in Tables 10, 11 and 12 in the appendix. 17 We report results for SCZS as it performed better in our experiments. Results for SCConv are available in had lower average AUC of 72.2. All other approaches scored 72 or lower on average across all datasets (excluding FEVER and VitaminC). As expected, the simple token-matching based metrics did not perform well, and for completeness, we report their performance in Table  in the appendix.",
+          "quote": []
+        },
+        {
+          "text": "We keep the F1 score in Table  for convenient comparison to the other metrics. One outlier is BEGIN, which is the only dataset where simple metrics like F1 token overlap achieved scores higher than 80. We measured the average overlap between the grounding and target texts per dataset, and found that BEGIN exhibits a high difference between grounded and ungrounded texts in comparison to other datasets (Table 8 in appendix A), which explains this.",
+          "quote": []
+        },
+        {
+          "text": "We follow Laban et al. (2021) and perform significance testing through bootstrap resampling (Efron, 1982), comparing the best method to the second-best method on each dataset. We perform interval comparison at p = 0.05 and p = 0.01 and find significantly best results on 6 datasets, 3 achieved by Q 2 and 3 by the ANLI-based model.",
+          "quote": [
+            {
+              "text": "Laban et al. (2021)",
+              "target": "#b29",
+              "type": "bibr",
+              "context": "We follow ",
+              "index": 10
+            },
+            {
+              "text": "(Efron, 1982)",
+              "target": "#b12",
+              "type": "bibr",
+              "context": "esampling ",
+              "index": 92
+            }
+          ]
+        },
+        {
+          "text": "Given that no single method outperformed the rest on all datasets, we hypothesize that the NLI and QG-QA based metrics are complementary. We test this by averaging the Q 2 , ANLI and SC ZS scores per example 18 (Ensemble in Table ). Indeed, averaging the three methods yields better results on most datasets and on average, with an increase of 4.5 in ROC AUC from the best single-metric result.",
+          "quote": []
+        },
+        {
+          "text": "Our results show that a single metric can do well across all tasks and datasets, with all 3 best metrics scoring higher than 80 on average on the 11 datasets. This corroborates our hypothesis that 18 Pairwise ensembles are reported in the appendix, Table .",
+          "quote": []
+        },
+        {
+          "text": "evaluating factual consistency can be unified, and we hope such unified perspective will be adopted in future work to accelerate progress on the subject.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5",
+        "name": "Analysis"
+      },
+      "p": [
+        {
+          "text": "Input Length. As QA and NLI models may struggle with long inputs (Kočiský et al., 2018; Pang et al., 2021; Yin et al., 2021; Shaham et al., 2022), metrics based on them may fail when handling long text. To study the effect of input length on the metrics performance, we unify all datasets 19  and split examples into 6 bins according to the grounding length. 20 We focus on the grounding as the target texts are usually short (see Table  in Appendix A). We measure AUC of the best 3 metrics according to their overall score for each length bin, sampling 1,000 examples per bin.",
+          "quote": [
+            {
+              "text": "Pang et al., 2021;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2018; ",
+              "index": 88
+            },
+            {
+              "text": "Shaham et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 125
+            },
+            {
+              "text": "[(Kočiskýetal.,2018]",
+              "type": "bibr",
+              "index": 65,
+              "context": "ng inputs ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 65,
+              "context": "ng inputs ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Yinetal.,2021]",
+              "type": "bibr",
+              "index": 107,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 107,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "The results are shown in Figure . We find that there is a consistent degradation for texts longer than 200 tokens for all metrics, including SC ZS which is designed to better handle long text. We find it surprising that the ANLI-based model and Q 2 still do relatively well on the longest bin (with AUC > 0.825) as they perform end-to-end QA and NLI on text with more than 500 tokens.",
+          "quote": []
+        },
+        {
+          "text": "Model Size. Model-based metrics are expected to benefit from increasing the model size. To quantify this we study the effect of using smaller models for the ANLI, BLEURT and BERTScore metrics. We compare the average ROC AUC of larger and smaller model variants for each metric. The ablation results are in Table . We find an advantage of 4.7, 3.7 and 1.3 average ROC AUC for the larger ANLI, BLEURT and BERTScore variants respectively, showing that larger models indeed allow for better factual consistency evaluation metrics, and hinting at potential improvements from using even larger models.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Model"
+      },
+      "p": [
+        {
+          "text": "Avg. ROC AUC ANLI-T5-11B 81.5 (+4.7) ANLI-T5-Large 76.8 BLEURT-20 71.4 (+3.7) BLEURT-20-D6 67.7 BERTScore P -deberta-xl-mnli 71.4 (+1.3) BERTScore P -roberta-large 70.1",
+          "quote": []
+        },
+        {
+          "text": "Table : Ablation study comparing the average ROC AUC results for models with different sizes. \"BERTScore P\" stands for BERTScore Precision.",
+          "quote": []
+        },
+        {
+          "text": "Qualitative Analysis. We conduct manual error analysis to point at weaknesses of the different metrics and present challenges posed by the task. We analyze 80 examples that were misclassified by all three best metrics, as well as 100 examples that were correctly classified by one or two of the three. Out of the analyzed examples, many seem to have a wrong label. This is especially true for cases in which all best metrics failed, with annotation errors in 35/80 cases. For the cases where one or two metrics failed, we found annotation errors in 27/100 cases. To verify that the high annotation error rate is indeed a result of inspecting the \"hardest\" examples and not a general issue in the datasets we used, we uniformly sample 100 additional examples, finding that only 10 had annotation errors. We therefore stress that the high misannotation rate indeed characterizes \"hard\" examples only, and is not a general property of the datasets we used. This is inline with the findings of Freitag et al. (2021), who showed that in some cases, metrics may be \"better\" than non-expert annotators. These findings demonstrate the potential of automatic methods in \"cleaning\" training data by filtering factually inconsistent examples.",
+          "quote": [
+            {
+              "text": "Freitag et al. (2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "ndings of ",
+              "index": 990
+            }
+          ]
+        },
+        {
+          "text": "Despite showing impressive results, the bestperforming metrics fail to detect subtle inconsistencies, as presented in Table . This was the case for 21/180 analyzed examples. Metrics that aggregate scores across parts of a target text, such as Q 2 or SC ZS , might assign a high score for texts in which all but a small part is consistent. End-to-end NLI should predict \"contradiction\" even when only a small part of the text contradicts the grounding, but it may fail to do so. Applying a strict approach in the aggregation step, like taking the minimum instead of the average, could potentially remedy this -with the price of having more false-negatives. Other errors are caused by domain-specific challenges, such as handling personal statements in dialogues. As shown in Table , such statements may be falsely classified as ungrounded. This was the case for 10/62 analyzed dialogue responses. A possible way to alleviate this would be to automatically exclude non-factual parts from the evaluation.",
+          "quote": []
+        },
+        {
+          "text": "Ensemble Analysis. As shown in §4, a simple averaging ensemble using the three best metrics achieves strong results, outperforming individual metrics on most datasets. To understand this further, we analyze cases in which at least one of the best three metrics failed, while the ensemble succeeded. Overall, there were 25,761 such cases, where in 85.2% of these cases, two out of the three metrics succeeded, and only one failed. In 14.6% of these cases, one metric succeeded while the other two failed, and only in 0.2% of the cases, the ensemble succeeded while all metrics failed. These cases are a result of the different threshold used for the ensemble model vs. the thresholds for the individual metrics. We sample 100 of these examples and manually analyze them. Out of the sampled examples, 47% were misclassified by one metric only, where this metric assigned a borderline score -i.e., close to the decision threshold. 36% of these examples were misclassified by one metric only, and also with a non-borderline score -i.e., the metric was far from a correct prediction. Other cases include two, or even three, erroneous metrics.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6",
+        "name": "Related Work"
+      },
+      "p": [
+        {
+          "text": "Adding to the related work mentioned throughout the paper, works on unified evaluation of text Grounding Generated Text Explanation The word \"philately\" is the English version of the French word \"philatélie\", coined by Georges Herpin in 1864.",
+          "quote": []
+        },
+        {
+          "text": "The word philately is actually a french word coined by george herpin.",
+          "quote": []
+        },
+        {
+          "text": "The word philately is an English word based on a French word, but not French. All best metrics misclassified this. French police have interviewed presidential candidate francois fillon and his wife penelope over claims she was paid for fake work. They provided information that would help find the \"truth\", mr fillon said. . . French presidential candidate francois fillon has said he and his wife penelope have been questioned by police over claims she worked illegally.",
+          "quote": []
+        },
+        {
+          "text": "Most details are correct and the hallucination is subtle. In the case of Q 2 , most of the generated questions have the same answer based on the grounding and the generated text, therefore the overall score was high. Stamp collecting is generally accepted as one of the areas that make up the wider subject of philately, which is the study of stamps. I've never heard of stamps, but I do know that the word \"philately\" refers to the study of stamps.",
+          "quote": []
+        },
+        {
+          "text": "The personal statement \"I've never heard of stamps\" is not factual and should not be evaluated. Evidence suggests that cognitive behavioral therapy and a gradual increase in activity suited to individual capacity can be beneficial in some cases.",
+          "quote": []
+        },
+        {
+          "text": "It has been suggested that cognitive behavioral therapy and gradual increase in exercise could help in some cases so I'm going to try that for now.",
+          "quote": []
+        },
+        {
+          "text": "Similar to the previous examples -SummaC and ANLI falsely marked the text as inconsistent, probably due to the personal statement. generation across tasks include GEM (Gehrmann et al., 2021), where the focus is on evaluating system outputs and not the factual consistency evaluation methods as in TRUE. BEAMetrics (Scialom and Hill, 2021) proposes meta-evaluation protocols across tasks, but does not focus on factual consistency. When discussing consistency (\"correctness\") they measure correlations, which are not sufficient as mentioned in Section 2.3. Chen et al. (2021) present an adversarial meta-evaluation for factual consistency evaluators, focused on summarization. Other works on meta-evaluation of factual consistency across datasets include GO-FIGURE (Gabriel et al., 2021) FRANK (Pagnoni et al., 2021) SummaC (Laban et al., 2021) and QAFactEval (Fabbri et al., 2021b), however they all focus solely on summarization. Yeh et al. (2021) conduct a thorough assessment of dialog metrics, however not specifically around factual consistency. To the best of our knowledge, our work is the first to generalize the discussion on evaluating factual consistency across tasks and datasets, and the first to show that large-scale QG-QA and NLI are strong and highly complementary -setting better baselines and metaevaluation methodology for future work.",
+          "quote": [
+            {
+              "text": "(Gehrmann et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "clude GEM ",
+              "index": 167
+            },
+            {
+              "text": "(Scialom and Hill, 2021)",
+              "target": "#b55",
+              "type": "bibr",
+              "context": "EAMetrics ",
+              "index": 314
+            },
+            {
+              "text": "Chen et al. (2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "tion 2.3. ",
+              "index": 556
+            },
+            {
+              "text": "(Gabriel et al., 2021)",
+              "target": "#b19",
+              "type": "bibr",
+              "context": "GO-FIGURE ",
+              "index": 764
+            },
+            {
+              "text": "(Pagnoni et al., 2021)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "21) FRANK ",
+              "index": 793
+            },
+            {
+              "text": "(Laban et al., 2021)",
+              "target": "#b29",
+              "type": "bibr",
+              "context": "1) SummaC ",
+              "index": 823
+            },
+            {
+              "text": "(Fabbri et al., 2021b)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "AFactEval ",
+              "index": 859
+            },
+            {
+              "text": "Yeh et al. (2021)",
+              "target": "#b64",
+              "type": "bibr",
+              "context": "rization. ",
+              "index": 931
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7",
+        "name": "Discussion and Future Work"
+      },
+      "p": [
+        {
+          "text": "We discuss the main takeaways of the TRUE study, pointing at actionable insights for future work. First, as QG-QA and NLI-based methods show better performance than other approaches, especially when combined together, we recommend model developers to use those methods for evaluation when factual consistency is a priority. As for metric developers, we recommend using those methods and the datasets in TRUE when evaluating new metrics.",
+          "quote": []
+        },
+        {
+          "text": "We also suggest reporting ROC AUC rather than correlations, as it is more interpretable and actionable. Our proposed binary annotation scheme allows to easily test new metrics across tasks and datasets, which would be useful for future work.",
+          "quote": []
+        },
+        {
+          "text": "Finally, we encourage data curators to use the binary annotation scheme, which is inline with the recommendations of Rashkin et al. (2021a). Having said that, we do not rule out more detailed labeling schemes -but rather ask to provide a protocol for converting such labels into the more general binary format. Future work may also address the challenges of long inputs and personal statements in dialogue, which we point out in our analysis.",
+          "quote": [
+            {
+              "text": "Rashkin et al. (2021a)",
+              "target": "",
+              "type": "bibr",
+              "context": "ations of ",
+              "index": 117
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "8",
+        "name": "Conclusions"
+      },
+      "p": [
+        {
+          "text": "We presented TRUE, a survey and assessment of automatic factual consistency evaluation methods. We standardized various datasets from diverse tasks into a unified labeling scheme to perform a thorough comparison of automatic evaluation methods, showing that large scale NLI and QG-QA based approaches perform well across multiple tasks and datasets. We further show that these methods are highly complementary -hinting at additional headroom for improvement while pointing on current limitations. We hope our results and methodology will encourage a more unified perspective in future work to foster progress towards more factuallyconsistent NLP applications.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A Additional Data Statistics"
+      },
+      "p": [
+        {
+          "text": "Tables 6 and 7 presents statistics regarding the length of the grounding text and the generated text for TRUE's datasets, respectively. Table : Generated text length statistics for TRUE.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B Implementation Details"
+      },
+      "p": [
+        {
+          "text": "We train all models using the t5x library. 21",
+          "quote": []
+        },
+        {
+          "text": "QG-QA For our reimplementation of Q 2 (Honovich et al., 2021) we use T5-11B as the pretrained model for QG, QA and NLI, while Honovich et al.",
+          "quote": []
+        },
+        {
+          "text": "(2021) used T5-Base, ALBERT (Lan et al., 2019), and RoBERTa (Liu et al., 2019) for the QG, QA and NLI models, respectively. We use a maximum length of 2048 tokens for the input. We set the F1 token overlap threshold to 0.54 by tuning it on a held-out dataset. We use beam search with a beam size of 4 to generate multiple questions, and use the first question that passes the validation threshold.",
+          "quote": [
+            {
+              "text": "(Lan et al., 2019)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "e, ALBERT ",
+              "index": 28
+            },
+            {
+              "text": "(Liu et al., 2019)",
+              "target": "#b34",
+              "type": "bibr",
+              "context": "d RoBERTa ",
+              "index": 60
+            }
+          ]
+        },
+        {
+          "text": "NLI We fine-tune a T5-11B model on ANLI (Nie et al., 2020) for 25K steps with a learning rate of 10 −4 and a batch size of 32. During inference we use a maximum input length of 2048 tokens.",
+          "quote": [
+            {
+              "text": "(Nie et al., 2020)",
+              "target": "#b39",
+              "type": "bibr",
+              "context": "l on ANLI ",
+              "index": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C ROC Curves"
+      },
+      "p": [
+        {
+          "text": "Figure  presents the ROC curves for the different datasets studied in TRUE, using the bestperforming metrics. Table : Average overlap between the generated text and the grounding, measured using ROUGE-L and simple F1 token-overlap, taking the grounding to be the reference text. The \"Pos\" columns contain the statistics for the grounded text, while the \"Neg\" columns contain the statistics for the ungrounded text. ",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 1: ROC AUC when splitting TRUE's data according to the grounding length.",
+    "Figure 2: ROC curves for the best performing methods.",
+    "Table 2 :Statistics for the datasets incorporated in TRUE. Cons. is the ratio of consistent examples.",
+    "Table 10 in the appendix. ROC AUC results for the different metrics on the TRUE development set. We exclude VitaminC and FEVER from the average calculation as SC ZS was trained on VitaminC that includes examples from FEVER. The highest score in each row (excluding the Ensemble) is in bold and the aforementioned SC results are in strikethrough. Statistically significant results are indicated using * and ** for p < 0.05 and p < 0.01 respectively.",
+    "Table 5 :Examples for the error analysis. The first two rows show cases of challenging inconsistencies, while the last two show dialogue responses containing non-factual personal statements.",
+    "Table 6 :Grounding length statistics for TRUE."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "A large annotated corpus for learning natural language inference",
+      "author": [
+        {
+          "forename": "R.",
+          "surname": "Samuel",
+          "name": "R. Samuel",
+          "email": ""
+        },
+        {
+          "forename": "Gabor",
+          "surname": "Bowman",
+          "name": "Gabor Bowman",
+          "email": ""
+        },
+        {
+          "forename": "Christopher",
+          "surname": "Angeli",
+          "name": "Christopher Angeli",
+          "email": ""
+        },
+        {
+          "forename": "Christopher D.",
+          "surname": "Potts",
+          "name": "Christopher D. Potts",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/D15-1075",
+      "venue": "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2015"
+    },
+    {
+      "index": "b1",
+      "title": "Discourse Analysis",
+      "author": [
+        {
+          "forename": "Gillian",
+          "surname": "Brown",
+          "name": "Gillian Brown",
+          "email": ""
+        },
+        {
+          "forename": "George",
+          "surname": "Yule",
+          "name": "George Yule",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Discourse Analysis",
+      "date": "1983"
+    },
+    {
+      "index": "b2",
+      "title": "Are factuality checkers reliable? adversarial metaevaluation of factuality in summarization",
+      "author": [
+        {
+          "forename": "Yiran",
+          "surname": "Chen",
+          "name": "Yiran Chen",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Xipeng",
+          "surname": "Qiu",
+          "name": "Xipeng Qiu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2021",
+      "date": "2021"
+    },
+    {
+      "index": "b3",
+      "title": "The pascal recognising textual entailment challenge",
+      "author": [
+        {
+          "forename": "Oren",
+          "surname": "Ido Dagan",
+          "name": "Oren Ido Dagan",
+          "email": ""
+        },
+        {
+          "forename": "Bernardo",
+          "surname": "Glickman",
+          "name": "Bernardo Glickman",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Machine Learning Challenges. Evaluating Predictive Uncertainty, Visual Object Classification, and Recognising Tectual Entailment",
+      "date": "2006"
+    },
+    {
+      "index": "b4",
+      "title": "Compression, transduction, and creation: A unified framework for evaluating natural language generation",
+      "author": [
+        {
+          "forename": "Mingkai",
+          "surname": "Deng",
+          "name": "Mingkai Deng",
+          "email": ""
+        },
+        {
+          "forename": "Bowen",
+          "surname": "Tan",
+          "name": "Bowen Tan",
+          "email": ""
+        },
+        {
+          "forename": "Zhengzhong",
+          "surname": "Liu",
+          "name": "Zhengzhong Liu",
+          "email": ""
+        },
+        {
+          "forename": "Eric",
+          "surname": "Xing",
+          "name": "Eric Xing",
+          "email": ""
+        },
+        {
+          "forename": "Zhiting",
+          "surname": "Hu",
+          "name": "Zhiting Hu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b5",
+      "title": "Vinodkumar Prabhakaran, and Rachel Rosen. 2021. Whose ground truth? accounting for individual and collective identities underlying dataset annotation",
+      "author": [
+        {
+          "forename": "Emily",
+          "surname": "Denton",
+          "name": "Emily Denton",
+          "email": ""
+        },
+        {
+          "forename": "Mark",
+          "surname": "Díaz",
+          "name": "Mark Díaz",
+          "email": ""
+        },
+        {
+          "forename": "Ian",
+          "surname": "Kivlichan",
+          "name": "Ian Kivlichan",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2112.04554",
+      "venue": "Vinodkumar Prabhakaran, and Rachel Rosen. 2021. Whose ground truth? accounting for individual and collective identities underlying dataset annotation",
+      "date": ""
+    },
+    {
+      "index": "b6",
+      "title": "Towards question-answering as an automatic metric for evaluating the content quality of a summary",
+      "author": [
+        {
+          "forename": "Daniel",
+          "surname": "Deutsch",
+          "name": "Daniel Deutsch",
+          "email": ""
+        },
+        {
+          "forename": "Tania",
+          "surname": "Bedrax-Weiss",
+          "name": "Tania Bedrax-Weiss",
+          "email": ""
+        },
+        {
+          "forename": "Dan",
+          "surname": "Roth",
+          "name": "Dan Roth",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2021"
+    },
+    {
+      "index": "b7",
+      "title": "Reexamining system-level correlations of automatic summarization evaluation metrics",
+      "author": [
+        {
+          "forename": "Daniel",
+          "surname": "Deutsch",
+          "name": "Daniel Deutsch",
+          "email": ""
+        },
+        {
+          "forename": "Rotem",
+          "surname": "Dror",
+          "name": "Rotem Dror",
+          "email": ""
+        },
+        {
+          "forename": "Dan",
+          "surname": "Roth",
+          "name": "Dan Roth",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2204.10216",
+      "venue": "Reexamining system-level correlations of automatic summarization evaluation metrics",
+      "date": "2022"
+    },
+    {
+      "index": "b8",
+      "title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+      "author": [
+        {
+          "forename": "Jacob",
+          "surname": "Devlin",
+          "name": "Jacob Devlin",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        },
+        {
+          "forename": "Kenton",
+          "surname": "Lee",
+          "name": "Kenton Lee",
+          "email": ""
+        },
+        {
+          "forename": "Kristina",
+          "surname": "Toutanova",
+          "name": "Kristina Toutanova",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/N19-1423",
+      "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2019"
+    },
+    {
+      "index": "b9",
+      "title": "Wizard of Wikipedia: Knowledge-powered conversational agents",
+      "author": [
+        {
+          "forename": "Emily",
+          "surname": "Dinan",
+          "name": "Emily Dinan",
+          "email": ""
+        },
+        {
+          "forename": "Stephen",
+          "surname": "Roller",
+          "name": "Stephen Roller",
+          "email": ""
+        },
+        {
+          "forename": "Kurt",
+          "surname": "Shuster",
+          "name": "Kurt Shuster",
+          "email": ""
+        },
+        {
+          "forename": "Angela",
+          "surname": "Fan",
+          "name": "Angela Fan",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Auli",
+          "name": "Michael Auli",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the International Conference on Learning Representations",
+      "date": "2019"
+    },
+    {
+      "index": "b10",
+      "title": "FEQA: A question answering evaluation framework for faithfulness assessment in abstractive summarization",
+      "author": [
+        {
+          "forename": "Esin",
+          "surname": "Durmus",
+          "name": "Esin Durmus",
+          "email": ""
+        },
+        {
+          "forename": "He",
+          "surname": "He",
+          "name": "He He",
+          "email": ""
+        },
+        {
+          "forename": "Mona",
+          "surname": "Diab",
+          "name": "Mona Diab",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.454",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b11",
+      "title": "Evaluating groundedness in dialogue systems: The begin benchmark",
+      "author": [
+        {
+          "forename": "Nouha",
+          "surname": "Dziri",
+          "name": "Nouha Dziri",
+          "email": ""
+        },
+        {
+          "forename": "Hannah",
+          "surname": "Rashkin",
+          "name": "Hannah Rashkin",
+          "email": ""
+        },
+        {
+          "forename": "Tal",
+          "surname": "Linzen",
+          "name": "Tal Linzen",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Reitter",
+          "name": "David Reitter",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Evaluating groundedness in dialogue systems: The begin benchmark",
+      "date": "2021"
+    },
+    {
+      "index": "b12",
+      "title": "The jackknife, the bootstrap and other resampling plans",
+      "author": [],
+      "doi": "",
+      "venue": "The jackknife, the bootstrap and other resampling plans",
+      "date": "1982"
+    },
+    {
+      "index": "b13",
+      "title": "Summeval: Reevaluating summarization evaluation",
+      "author": [
+        {
+          "forename": "Wojciech",
+          "surname": "Alexander R Fabbri",
+          "name": "Wojciech Alexander R Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Kryściński",
+          "name": "Bryan Kryściński",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Mccann",
+          "name": "Caiming Mccann",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Xiong",
+          "name": "Richard Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir",
+          "surname": "Socher",
+          "name": "Dragomir Socher",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2007.12626",
+      "venue": "Summeval: Reevaluating summarization evaluation",
+      "date": "2020"
+    },
+    {
+      "index": "b14",
+      "title": "Summeval: Re-evaluating summarization evaluation",
+      "author": [
+        {
+          "forename": "Wojciech",
+          "surname": "Alexander R Fabbri",
+          "name": "Wojciech Alexander R Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Kryściński",
+          "name": "Bryan Kryściński",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Mccann",
+          "name": "Caiming Mccann",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Xiong",
+          "name": "Richard Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir",
+          "surname": "Socher",
+          "name": "Dragomir Socher",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2021"
+    },
+    {
+      "index": "b15",
+      "title": "Qafacteval: Improved qa-based factual consistency evaluation for summarization",
+      "author": [
+        {
+          "forename": "Alexander R.",
+          "surname": "Fabbri",
+          "name": "Alexander R. Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Wu",
+          "name": "Chien-Sheng Wu",
+          "email": ""
+        },
+        {
+          "forename": "Wenhao",
+          "surname": "Liu",
+          "name": "Wenhao Liu",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Qafacteval: Improved qa-based factual consistency evaluation for summarization",
+      "date": "2021"
+    },
+    {
+      "index": "b16",
+      "title": "Ranking generated summaries by correctness: An interesting but challenging application for natural language inference",
+      "author": [
+        {
+          "forename": "Tobias",
+          "surname": "Falke",
+          "name": "Tobias Falke",
+          "email": ""
+        },
+        {
+          "forename": "Leonardo F R ",
+          "surname": "Ribeiro",
+          "name": "Leonardo F R  Ribeiro",
+          "email": ""
+        },
+        {
+          "forename": "Ido",
+          "surname": "Prasetya Ajie Utama",
+          "name": "Ido Prasetya Ajie Utama",
+          "email": ""
+        },
+        {
+          "forename": "Iryna",
+          "surname": "Dagan",
+          "name": "Iryna Dagan",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/P19-1213",
+      "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2019"
+    },
+    {
+      "index": "b17",
+      "title": "Frame semantics and the nature of language *",
+      "author": [
+        {
+          "forename": "C.",
+          "surname": "Fillmore",
+          "name": "C. Fillmore",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Annals of the New York Academy of Sciences",
+      "date": "1976"
+    },
+    {
+      "index": "b18",
+      "title": "Viresh Ratnakar, Qijun Tan, and Wolfgang Macherey. 2021. Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+      "author": [
+        {
+          "forename": "Markus",
+          "surname": "Freitag",
+          "name": "Markus Freitag",
+          "email": ""
+        },
+        {
+          "forename": "George",
+          "surname": "Foster",
+          "name": "George Foster",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Grangier",
+          "name": "David Grangier",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2104.14478",
+      "venue": "Viresh Ratnakar, Qijun Tan, and Wolfgang Macherey. 2021. Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+      "date": ""
+    },
+    {
+      "index": "b19",
+      "title": "GO FIGURE: A meta evaluation of factuality in summarization",
+      "author": [
+        {
+          "forename": "Saadia",
+          "surname": "Gabriel",
+          "name": "Saadia Gabriel",
+          "email": ""
+        },
+        {
+          "forename": "Asli",
+          "surname": "Celikyilmaz",
+          "name": "Asli Celikyilmaz",
+          "email": ""
+        },
+        {
+          "forename": "Rahul",
+          "surname": "Jha",
+          "name": "Rahul Jha",
+          "email": ""
+        },
+        {
+          "forename": "Yejin",
+          "surname": "Choi",
+          "name": "Yejin Choi",
+          "email": ""
+        },
+        {
+          "forename": "Jianfeng",
+          "surname": "Gao",
+          "name": "Jianfeng Gao",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.findings-acl.42",
+      "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+      "date": "2021"
+    },
+    {
+      "index": "b20",
+      "title": "The GEM benchmark: Natural language generation, its evaluation and metrics",
+      "author": [
+        {
+          "forename": "Sebastian",
+          "surname": "Gehrmann",
+          "name": "Sebastian Gehrmann",
+          "email": ""
+        },
+        {
+          "forename": "Tosin",
+          "surname": "Adewumi",
+          "name": "Tosin Adewumi",
+          "email": ""
+        },
+        {
+          "forename": "Karmanya",
+          "surname": "Aggarwal",
+          "name": "Karmanya Aggarwal",
+          "email": ""
+        },
+        {
+          "forename": "Pawan",
+          "surname": "Sasanka Ammanamanchi",
+          "name": "Pawan Sasanka Ammanamanchi",
+          "email": ""
+        },
+        {
+          "forename": "Anuoluwapo",
+          "surname": "Aremu",
+          "name": "Anuoluwapo Aremu",
+          "email": ""
+        },
+        {
+          "forename": "Antoine",
+          "surname": "Bosselut",
+          "name": "Antoine Bosselut",
+          "email": ""
+        },
+        {
+          "forename": "Miruna-Adriana",
+          "surname": "Khyathi Raghavi Chandu",
+          "name": "Miruna-Adriana Khyathi Raghavi Chandu",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Clinciu",
+          "name": "Dipanjan Clinciu",
+          "email": ""
+        },
+        {
+          "forename": "Kaustubh",
+          "surname": "Das",
+          "name": "Kaustubh Das",
+          "email": ""
+        },
+        {
+          "forename": "Wanyu",
+          "surname": "Dhole",
+          "name": "Wanyu Dhole",
+          "email": ""
+        },
+        {
+          "forename": "Esin",
+          "surname": "Du",
+          "name": "Esin Du",
+          "email": ""
+        },
+        {
+          "forename": "Ondřej",
+          "surname": "Durmus",
+          "name": "Ondřej Durmus",
+          "email": ""
+        },
+        {
+          "forename": "Chris Chinenye ",
+          "surname": "Dušek",
+          "name": "Chris Chinenye  Dušek",
+          "email": ""
+        },
+        {
+          "forename": "Varun",
+          "surname": "Emezue",
+          "name": "Varun Emezue",
+          "email": ""
+        },
+        {
+          "forename": "Cristina",
+          "surname": "Gangal",
+          "name": "Cristina Gangal",
+          "email": ""
+        },
+        {
+          "forename": "Tatsunori",
+          "surname": "Garbacea",
+          "name": "Tatsunori Garbacea",
+          "email": ""
+        },
+        {
+          "forename": "Yufang",
+          "surname": "Hashimoto",
+          "name": "Yufang Hashimoto",
+          "email": ""
+        },
+        {
+          "forename": "Yacine",
+          "surname": "Hou",
+          "name": "Yacine Hou",
+          "email": ""
+        },
+        {
+          "forename": "Harsh",
+          "surname": "Jernite",
+          "name": "Harsh Jernite",
+          "email": ""
+        },
+        {
+          "forename": "Yangfeng",
+          "surname": "Jhamtani",
+          "name": "Yangfeng Jhamtani",
+          "email": ""
+        },
+        {
+          "forename": "Shailza",
+          "surname": "Ji",
+          "name": "Shailza Ji",
+          "email": ""
+        },
+        {
+          "forename": "Mihir",
+          "surname": "Jolly",
+          "name": "Mihir Jolly",
+          "email": ""
+        },
+        {
+          "forename": "Dhruv",
+          "surname": "Kale",
+          "name": "Dhruv Kale",
+          "email": ""
+        },
+        {
+          "forename": "Faisal",
+          "surname": "Kumar",
+          "name": "Faisal Kumar",
+          "email": ""
+        },
+        {
+          "forename": "Aman",
+          "surname": "Ladhak",
+          "name": "Aman Ladhak",
+          "email": ""
+        },
+        {
+          "forename": "Mounica",
+          "surname": "Madaan",
+          "name": "Mounica Madaan",
+          "email": ""
+        },
+        {
+          "forename": "Khyati",
+          "surname": "Maddela",
+          "name": "Khyati Maddela",
+          "email": ""
+        },
+        {
+          "forename": "Saad",
+          "surname": "Mahajan",
+          "name": "Saad Mahajan",
+          "email": ""
+        },
+        {
+          "forename": "Prasad",
+          "surname": "Bodhisattwa",
+          "name": "Prasad Bodhisattwa",
+          "email": ""
+        },
+        {
+          "forename": "Pedro Henrique ",
+          "surname": "Majumder",
+          "name": "Pedro Henrique  Majumder",
+          "email": ""
+        },
+        {
+          "forename": "Angelina",
+          "surname": "Martins",
+          "name": "Angelina Martins",
+          "email": ""
+        },
+        {
+          "forename": "Simon",
+          "surname": "Mcmillan-Major",
+          "name": "Simon Mcmillan-Major",
+          "email": ""
+        },
+        {
+          "forename": "Moin",
+          "surname": "Emiel Van Miltenburg",
+          "name": "Moin Emiel Van Miltenburg",
+          "email": ""
+        },
+        {
+          "forename": "Shashi",
+          "surname": "Nadeem",
+          "name": "Shashi Nadeem",
+          "email": ""
+        },
+        {
+          "forename": "Vitaly",
+          "surname": "Narayan",
+          "name": "Vitaly Narayan",
+          "email": ""
+        },
+        {
+          "forename": "Andre",
+          "surname": "Nikolaev",
+          "name": "Andre Nikolaev",
+          "email": ""
+        },
+        {
+          "forename": "Salomey",
+          "surname": "Niyongabo Rubungo",
+          "name": "Salomey Niyongabo Rubungo",
+          "email": ""
+        },
+        {
+          "forename": "Ankur",
+          "surname": "Osei",
+          "name": "Ankur Osei",
+          "email": ""
+        },
+        {
+          "forename": "Laura",
+          "surname": "Parikh",
+          "name": "Laura Parikh",
+          "email": ""
+        },
+        {
+          "forename": "Niranjan Ramesh ",
+          "surname": "Perez-Beltrachini",
+          "name": "Niranjan Ramesh  Perez-Beltrachini",
+          "email": ""
+        },
+        {
+          "forename": "Vikas",
+          "surname": "Rao",
+          "name": "Vikas Rao",
+          "email": ""
+        },
+        {
+          "forename": "Juan Diego ",
+          "surname": "Raunak",
+          "name": "Juan Diego  Raunak",
+          "email": ""
+        },
+        {
+          "forename": "Sashank",
+          "surname": "Rodriguez",
+          "name": "Sashank Rodriguez",
+          "email": ""
+        },
+        {
+          "forename": "João",
+          "surname": "Santhanam",
+          "name": "João Santhanam",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.gem-1.10",
+      "venue": "Proceedings of the 1st Workshop on Natural Language Generation",
+      "date": "2021"
+    },
+    {
+      "index": "b21",
+      "title": "Dialfact: A benchmark for fact-checking in dialogue",
+      "author": [
+        {
+          "forename": "Prakhar",
+          "surname": "Gupta",
+          "name": "Prakhar Gupta",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Wu",
+          "name": "Chien-Sheng Wu",
+          "email": ""
+        },
+        {
+          "forename": "Wenhao",
+          "surname": "Liu",
+          "name": "Wenhao Liu",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2110.08222",
+      "venue": "Dialfact: A benchmark for fact-checking in dialogue",
+      "date": "2021"
+    },
+    {
+      "index": "b22",
+      "title": "Deberta: Decoding-enhanced bert with disentangled attention",
+      "author": [
+        {
+          "forename": "Pengcheng",
+          "surname": "He",
+          "name": "Pengcheng He",
+          "email": ""
+        },
+        {
+          "forename": "Xiaodong",
+          "surname": "Liu",
+          "name": "Xiaodong Liu",
+          "email": ""
+        },
+        {
+          "forename": "Jianfeng",
+          "surname": "Gao",
+          "name": "Jianfeng Gao",
+          "email": ""
+        },
+        {
+          "forename": "Weizhu",
+          "surname": "Chen",
+          "name": "Weizhu Chen",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "International Conference on Learning Representations",
+      "date": "2021"
+    },
+    {
+      "index": "b23",
+      "title": "On the essence of truth. The Nature of Truth: Classic and Contemporary Perspectives",
+      "author": [
+        {
+          "forename": "Martin",
+          "surname": "Heidegger",
+          "name": "Martin Heidegger",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "On the essence of truth. The Nature of Truth: Classic and Contemporary Perspectives",
+      "date": "2001"
+    },
+    {
+      "index": "b24",
+      "title": "Teaching machines to read and comprehend",
+      "author": [
+        {
+          "forename": "Karl",
+          "surname": "Moritz Hermann",
+          "name": "Karl Moritz Hermann",
+          "email": ""
+        },
+        {
+          "forename": "Tomas",
+          "surname": "Kocisky",
+          "name": "Tomas Kocisky",
+          "email": ""
+        },
+        {
+          "forename": "Edward",
+          "surname": "Grefenstette",
+          "name": "Edward Grefenstette",
+          "email": ""
+        },
+        {
+          "forename": "Lasse",
+          "surname": "Espeholt",
+          "name": "Lasse Espeholt",
+          "email": ""
+        },
+        {
+          "forename": "Will",
+          "surname": "Kay",
+          "name": "Will Kay",
+          "email": ""
+        },
+        {
+          "forename": "Mustafa",
+          "surname": "Suleyman",
+          "name": "Mustafa Suleyman",
+          "email": ""
+        },
+        {
+          "forename": "Phil",
+          "surname": "Blunsom",
+          "name": "Phil Blunsom",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems",
+      "date": "2015"
+    },
+    {
+      "index": "b25",
+      "title": "2021. q 2 : Evaluating factual consistency in knowledgegrounded dialogues via question generation and question answering",
+      "author": [
+        {
+          "forename": "Or",
+          "surname": "Honovich",
+          "name": "Or Honovich",
+          "email": ""
+        },
+        {
+          "forename": "Leshem",
+          "surname": "Choshen",
+          "name": "Leshem Choshen",
+          "email": ""
+        },
+        {
+          "forename": "Roee",
+          "surname": "Aharoni",
+          "name": "Roee Aharoni",
+          "email": ""
+        },
+        {
+          "forename": "Ella",
+          "surname": "Neeman",
+          "name": "Ella Neeman",
+          "email": ""
+        },
+        {
+          "forename": "Idan",
+          "surname": "Szpektor",
+          "name": "Idan Szpektor",
+          "email": ""
+        },
+        {
+          "forename": "Omri",
+          "surname": "Abend",
+          "name": "Omri Abend",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": ""
+    },
+    {
+      "index": "b26",
+      "title": "Largescale, diverse, paraphrastic bitexts via sampling and clustering",
+      "author": [
+        {
+          "forename": "J. Edward ",
+          "surname": "Hu",
+          "name": "J. Edward  Hu",
+          "email": ""
+        },
+        {
+          "forename": "Abhinav",
+          "surname": "Singh",
+          "name": "Abhinav Singh",
+          "email": ""
+        },
+        {
+          "forename": "Nils",
+          "surname": "Holzenberger",
+          "name": "Nils Holzenberger",
+          "email": ""
+        },
+        {
+          "forename": "Matt",
+          "surname": "Post",
+          "name": "Matt Post",
+          "email": ""
+        },
+        {
+          "forename": "Benjamin",
+          "surname": "Van Durme",
+          "name": "Benjamin Van Durme",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/K19-1005",
+      "venue": "Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)",
+      "date": "2019"
+    },
+    {
+      "index": "b27",
+      "title": "The NarrativeQA reading comprehension challenge",
+      "author": [
+        {
+          "forename": "Tomáš",
+          "surname": "Kočiský",
+          "name": "Tomáš Kočiský",
+          "email": ""
+        },
+        {
+          "forename": "Jonathan",
+          "surname": "Schwarz",
+          "name": "Jonathan Schwarz",
+          "email": ""
+        },
+        {
+          "forename": "Phil",
+          "surname": "Blunsom",
+          "name": "Phil Blunsom",
+          "email": ""
+        },
+        {
+          "forename": "Chris",
+          "surname": "Dyer",
+          "name": "Chris Dyer",
+          "email": ""
+        },
+        {
+          "forename": "Karl Moritz ",
+          "surname": "Hermann",
+          "name": "Karl Moritz  Hermann",
+          "email": ""
+        },
+        {
+          "forename": "Gábor",
+          "surname": "Melis",
+          "name": "Gábor Melis",
+          "email": ""
+        },
+        {
+          "forename": "Edward",
+          "surname": "Grefenstette",
+          "name": "Edward Grefenstette",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00023",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2018"
+    },
+    {
+      "index": "b28",
+      "title": "Evaluating the factual consistency of abstractive text summarization",
+      "author": [
+        {
+          "forename": "Wojciech",
+          "surname": "Kryscinski",
+          "name": "Wojciech Kryscinski",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Mccann",
+          "name": "Bryan Mccann",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Socher",
+          "name": "Richard Socher",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.750",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b29",
+      "title": "Summac: Re-visiting nlibased models for inconsistency detection in summarization",
+      "author": [
+        {
+          "forename": "Philippe",
+          "surname": "Laban",
+          "name": "Philippe Laban",
+          "email": ""
+        },
+        {
+          "forename": "Tobias",
+          "surname": "Schnabel",
+          "name": "Tobias Schnabel",
+          "email": ""
+        },
+        {
+          "forename": "N.",
+          "surname": "Paul",
+          "name": "N. Paul",
+          "email": ""
+        },
+        {
+          "forename": "Marti A.",
+          "surname": "Bennett",
+          "name": "Marti A. Bennett",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2111.09525",
+      "venue": "Summac: Re-visiting nlibased models for inconsistency detection in summarization",
+      "date": "2021"
+    },
+    {
+      "index": "b30",
+      "title": "Albert: A lite bert for self-supervised learning of language representations",
+      "author": [
+        {
+          "forename": "Zhenzhong",
+          "surname": "Lan",
+          "name": "Zhenzhong Lan",
+          "email": ""
+        },
+        {
+          "forename": "Mingda",
+          "surname": "Chen",
+          "name": "Mingda Chen",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Goodman",
+          "name": "Sebastian Goodman",
+          "email": ""
+        },
+        {
+          "forename": "Kevin",
+          "surname": "Gimpel",
+          "name": "Kevin Gimpel",
+          "email": ""
+        },
+        {
+          "forename": "Piyush",
+          "surname": "Sharma",
+          "name": "Piyush Sharma",
+          "email": ""
+        },
+        {
+          "forename": "Radu",
+          "surname": "Soricut",
+          "name": "Radu Soricut",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:1909.11942",
+      "venue": "Albert: A lite bert for self-supervised learning of language representations",
+      "date": "2019"
+    },
+    {
+      "index": "b31",
+      "title": "Hallucinations in neural machine translation",
+      "author": [
+        {
+          "forename": "Katherine",
+          "surname": "Lee",
+          "name": "Katherine Lee",
+          "email": ""
+        },
+        {
+          "forename": "Orhan",
+          "surname": "Firat",
+          "name": "Orhan Firat",
+          "email": ""
+        },
+        {
+          "forename": "Ashish",
+          "surname": "Agarwal",
+          "name": "Ashish Agarwal",
+          "email": ""
+        },
+        {
+          "forename": "Clara",
+          "surname": "Fannjiang",
+          "name": "Clara Fannjiang",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Sussillo",
+          "name": "David Sussillo",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "NeurIPS 2018 Workshop on Interpretability and Robustness for Audio, Speech, and Language",
+      "date": "2018"
+    },
+    {
+      "index": "b32",
+      "title": "BART: Denoising sequence-to-sequence pretraining for natural language generation, translation, and comprehension",
+      "author": [
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Yinhan",
+          "surname": "Liu",
+          "name": "Yinhan Liu",
+          "email": ""
+        },
+        {
+          "forename": "Naman",
+          "surname": "Goyal ; Abdelrahman Mohamed",
+          "name": "Naman Goyal ; Abdelrahman Mohamed",
+          "email": ""
+        },
+        {
+          "forename": "Omer",
+          "surname": "Levy",
+          "name": "Omer Levy",
+          "email": ""
+        },
+        {
+          "forename": "Veselin",
+          "surname": "Stoyanov",
+          "name": "Veselin Stoyanov",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.703",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b33",
+      "title": "ROUGE: A package for automatic evaluation of summaries",
+      "author": [
+        {
+          "forename": "Chin-Yew",
+          "surname": "Lin",
+          "name": "Chin-Yew Lin",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Text Summarization Branches Out",
+      "date": "2004"
+    },
+    {
+      "index": "b34",
+      "title": "Roberta: A robustly optimized bert pretraining approach",
+      "author": [
+        {
+          "forename": "Yinhan",
+          "surname": "Liu",
+          "name": "Yinhan Liu",
+          "email": ""
+        },
+        {
+          "forename": "Myle",
+          "surname": "Ott",
+          "name": "Myle Ott",
+          "email": ""
+        },
+        {
+          "forename": "Naman",
+          "surname": "Goyal",
+          "name": "Naman Goyal",
+          "email": ""
+        },
+        {
+          "forename": "Jingfei",
+          "surname": "Du",
+          "name": "Jingfei Du",
+          "email": ""
+        },
+        {
+          "forename": "Mandar",
+          "surname": "Joshi",
+          "name": "Mandar Joshi",
+          "email": ""
+        },
+        {
+          "forename": "Danqi",
+          "surname": "Chen",
+          "name": "Danqi Chen",
+          "email": ""
+        },
+        {
+          "forename": "Omer",
+          "surname": "Levy",
+          "name": "Omer Levy",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        },
+        {
+          "forename": "Veselin",
+          "surname": "Stoyanov",
+          "name": "Veselin Stoyanov",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:1907.11692",
+      "venue": "Roberta: A robustly optimized bert pretraining approach",
+      "date": "2019"
+    },
+    {
+      "index": "b35",
+      "title": "On faithfulness and factuality in abstractive summarization",
+      "author": [
+        {
+          "forename": "Joshua",
+          "surname": "Maynez",
+          "name": "Joshua Maynez",
+          "email": ""
+        },
+        {
+          "forename": "Shashi",
+          "surname": "Narayan",
+          "name": "Shashi Narayan",
+          "email": ""
+        },
+        {
+          "forename": "Bernd",
+          "surname": "Bohnet",
+          "name": "Bernd Bohnet",
+          "email": ""
+        },
+        {
+          "forename": "Ryan",
+          "surname": "Mcdonald",
+          "name": "Ryan Mcdonald",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.173",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b36",
+      "title": "The RepEval 2017 shared task: Multi-genre natural language inference with sentence representations",
+      "author": [
+        {
+          "forename": "Nikita",
+          "surname": "Nangia",
+          "name": "Nikita Nangia",
+          "email": ""
+        },
+        {
+          "forename": "Adina",
+          "surname": "Williams",
+          "name": "Adina Williams",
+          "email": ""
+        },
+        {
+          "forename": "Angeliki",
+          "surname": "Lazaridou",
+          "name": "Angeliki Lazaridou",
+          "email": ""
+        },
+        {
+          "forename": "Samuel",
+          "surname": "Bowman",
+          "name": "Samuel Bowman",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/W17-5301",
+      "venue": "Proceedings of the 2nd Workshop on Evaluating Vector Space Representations for NLP",
+      "date": "2017"
+    },
+    {
+      "index": "b37",
+      "title": "Don't give me the details, just the summary! topic-aware convolutional neural networks for extreme summarization",
+      "author": [
+        {
+          "forename": "Shashi",
+          "surname": "Narayan",
+          "name": "Shashi Narayan",
+          "email": ""
+        },
+        {
+          "forename": "Shay B.",
+          "surname": "Cohen",
+          "name": "Shay B. Cohen",
+          "email": ""
+        },
+        {
+          "forename": "Mirella",
+          "surname": "Lapata",
+          "name": "Mirella Lapata",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/D18-1206",
+      "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2018"
+    },
+    {
+      "index": "b38",
+      "title": "Combining fact extraction and verification with neural semantic matching networks",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Nie",
+          "name": "Yixin Nie",
+          "email": ""
+        },
+        {
+          "forename": "Haonan",
+          "surname": "Chen",
+          "name": "Haonan Chen",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Bansal",
+          "name": "Mohit Bansal",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "date": "2019"
+    },
+    {
+      "index": "b39",
+      "title": "Adversarial NLI: A new benchmark for natural language understanding",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Nie",
+          "name": "Yixin Nie",
+          "email": ""
+        },
+        {
+          "forename": "Adina",
+          "surname": "Williams",
+          "name": "Adina Williams",
+          "email": ""
+        },
+        {
+          "forename": "Emily",
+          "surname": "Dinan",
+          "name": "Emily Dinan",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Bansal",
+          "name": "Mohit Bansal",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        },
+        {
+          "forename": "Douwe",
+          "surname": "Kiela",
+          "name": "Douwe Kiela",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.441",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b40",
+      "title": "2021. I like fish, especially dolphins: Addressing contradictions in dialogue modeling",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Nie",
+          "name": "Yixin Nie",
+          "email": ""
+        },
+        {
+          "forename": "Mary",
+          "surname": "Williamson",
+          "name": "Mary Williamson",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Bansal",
+          "name": "Mohit Bansal",
+          "email": ""
+        },
+        {
+          "forename": "Douwe",
+          "surname": "Kiela",
+          "name": "Douwe Kiela",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.acl-long.134",
+      "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing",
+      "date": ""
+    },
+    {
+      "index": "b41",
+      "title": "Understanding factuality in abstractive summarization with FRANK: A benchmark for factuality metrics",
+      "author": [
+        {
+          "forename": "Artidoro",
+          "surname": "Pagnoni",
+          "name": "Artidoro Pagnoni",
+          "email": ""
+        },
+        {
+          "forename": "Vidhisha",
+          "surname": "Balachandran",
+          "name": "Vidhisha Balachandran",
+          "email": ""
+        },
+        {
+          "forename": "Yulia",
+          "surname": "Tsvetkov",
+          "name": "Yulia Tsvetkov",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.naacl-main.383",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2021"
+    },
+    {
+      "index": "b42",
+      "title": "The Proposition Bank: An Annotated Corpus of Semantic Roles",
+      "author": [
+        {
+          "forename": "Martha",
+          "surname": "Palmer",
+          "name": "Martha Palmer",
+          "email": ""
+        },
+        {
+          "forename": "Daniel",
+          "surname": "Gildea",
+          "name": "Daniel Gildea",
+          "email": ""
+        },
+        {
+          "forename": "Paul",
+          "surname": "Kingsbury",
+          "name": "Paul Kingsbury",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/0891201053630264",
+      "venue": "Computational Linguistics",
+      "date": "2005"
+    },
+    {
+      "index": "b43",
+      "title": "He He, et al. 2021. Quality: Question answering with long input texts, yes! arXiv preprint",
+      "author": [
+        {
+          "forename": "Alicia",
+          "surname": "Richard Yuanzhe Pang",
+          "name": "Alicia Richard Yuanzhe Pang",
+          "email": ""
+        },
+        {
+          "forename": "Nitish",
+          "surname": "Parrish",
+          "name": "Nitish Parrish",
+          "email": ""
+        },
+        {
+          "forename": "Nikita",
+          "surname": "Joshi",
+          "name": "Nikita Joshi",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Nangia",
+          "name": "Jason Nangia",
+          "email": ""
+        },
+        {
+          "forename": "Angelica",
+          "surname": "Phang",
+          "name": "Angelica Phang",
+          "email": ""
+        },
+        {
+          "forename": "Vishakh",
+          "surname": "Chen",
+          "name": "Vishakh Chen",
+          "email": ""
+        },
+        {
+          "forename": "Johnny",
+          "surname": "Padmakumar",
+          "name": "Johnny Padmakumar",
+          "email": ""
+        },
+        {
+          "forename": "Jana",
+          "surname": "Ma",
+          "name": "Jana Ma",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2112.08608",
+      "venue": "He He, et al. 2021. Quality: Question answering with long input texts, yes! arXiv preprint",
+      "date": ""
+    },
+    {
+      "index": "b44",
+      "title": "Bleu: a method for automatic evaluation of machine translation",
+      "author": [
+        {
+          "forename": "Kishore",
+          "surname": "Papineni",
+          "name": "Kishore Papineni",
+          "email": ""
+        },
+        {
+          "forename": "Salim",
+          "surname": "Roukos",
+          "name": "Salim Roukos",
+          "email": ""
+        },
+        {
+          "forename": "Todd",
+          "surname": "Ward",
+          "name": "Todd Ward",
+          "email": ""
+        },
+        {
+          "forename": "Wei-Jing",
+          "surname": "Zhu",
+          "name": "Wei-Jing Zhu",
+          "email": ""
+        }
+      ],
+      "doi": "10.3115/1073083.1073135",
+      "venue": "Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2002"
+    },
+    {
+      "index": "b45",
+      "title": "ToTTo: A controlled table-totext generation dataset",
+      "author": [
+        {
+          "forename": "Ankur",
+          "surname": "Parikh",
+          "name": "Ankur Parikh",
+          "email": ""
+        },
+        {
+          "forename": "Xuezhi",
+          "surname": "Wang",
+          "name": "Xuezhi Wang",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Gehrmann",
+          "name": "Sebastian Gehrmann",
+          "email": ""
+        },
+        {
+          "forename": "Manaal",
+          "surname": "Faruqui",
+          "name": "Manaal Faruqui",
+          "email": ""
+        },
+        {
+          "forename": "Bhuwan",
+          "surname": "Dhingra",
+          "name": "Bhuwan Dhingra",
+          "email": ""
+        },
+        {
+          "forename": "Diyi",
+          "surname": "Yang",
+          "name": "Diyi Yang",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Das",
+          "name": "Dipanjan Das",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.89",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b46",
+      "title": "Learning compact metrics for MT",
+      "author": [
+        {
+          "forename": "Amy",
+          "surname": "Pu",
+          "name": "Amy Pu",
+          "email": ""
+        },
+        {
+          "forename": "Ankur",
+          "surname": "Chung",
+          "name": "Ankur Chung",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Parikh",
+          "name": "Sebastian Parikh",
+          "email": ""
+        },
+        {
+          "forename": "Thibault",
+          "surname": "Gehrmann",
+          "name": "Thibault Gehrmann",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b47",
+      "title": "Don't be contradicted with anything! CI-ToD: Towards benchmarking consistency for task-oriented dialogue system",
+      "author": [
+        {
+          "forename": "Libo",
+          "surname": "Qin",
+          "name": "Libo Qin",
+          "email": ""
+        },
+        {
+          "forename": "Tianbao",
+          "surname": "Xie",
+          "name": "Tianbao Xie",
+          "email": ""
+        },
+        {
+          "forename": "Shijue",
+          "surname": "Huang",
+          "name": "Shijue Huang",
+          "email": ""
+        },
+        {
+          "forename": "Qiguang",
+          "surname": "Chen",
+          "name": "Qiguang Chen",
+          "email": ""
+        },
+        {
+          "forename": "Xiao",
+          "surname": "Xu",
+          "name": "Xiao Xu",
+          "email": ""
+        },
+        {
+          "forename": "Wanxiang",
+          "surname": "Che",
+          "name": "Wanxiang Che",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b48",
+      "title": "Exploring the limits of transfer learning with a unified text-totext transformer",
+      "author": [
+        {
+          "forename": "Colin",
+          "surname": "Raffel",
+          "name": "Colin Raffel",
+          "email": ""
+        },
+        {
+          "forename": "Noam",
+          "surname": "Shazeer",
+          "name": "Noam Shazeer",
+          "email": ""
+        },
+        {
+          "forename": "Adam",
+          "surname": "Roberts",
+          "name": "Adam Roberts",
+          "email": ""
+        },
+        {
+          "forename": "Katherine",
+          "surname": "Lee",
+          "name": "Katherine Lee",
+          "email": ""
+        },
+        {
+          "forename": "Sharan",
+          "surname": "Narang",
+          "name": "Sharan Narang",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Matena",
+          "name": "Michael Matena",
+          "email": ""
+        },
+        {
+          "forename": "Yanqi",
+          "surname": "Zhou",
+          "name": "Yanqi Zhou",
+          "email": ""
+        },
+        {
+          "forename": "Wei",
+          "surname": "Li",
+          "name": "Wei Li",
+          "email": ""
+        },
+        {
+          "forename": "Peter J.",
+          "surname": "Liu",
+          "name": "Peter J. Liu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Journal of Machine Learning Research",
+      "date": "2020"
+    },
+    {
+      "index": "b49",
+      "title": "Iulia Turc, and David Reitter. 2021a. Measuring attribution in natural language generation models",
+      "author": [
+        {
+          "forename": "Vitaly",
+          "surname": "Hannah Rashkin",
+          "name": "Vitaly Hannah Rashkin",
+          "email": ""
+        },
+        {
+          "forename": "Matthew",
+          "surname": "Nikolaev",
+          "name": "Matthew Nikolaev",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Lamm",
+          "name": "Michael Lamm",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Collins",
+          "name": "Dipanjan Collins",
+          "email": ""
+        },
+        {
+          "forename": "Slav",
+          "surname": "Das",
+          "name": "Slav Das",
+          "email": ""
+        },
+        {
+          "forename": "Gaurav",
+          "surname": "Petrov",
+          "name": "Gaurav Petrov",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2112.12870",
+      "venue": "Iulia Turc, and David Reitter. 2021a. Measuring attribution in natural language generation models",
+      "date": ""
+    },
+    {
+      "index": "b50",
+      "title": "Increasing faithfulness in knowledge-grounded dialogue with controllable features",
+      "author": [
+        {
+          "forename": "Hannah",
+          "surname": "Rashkin",
+          "name": "Hannah Rashkin",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Reitter",
+          "name": "David Reitter",
+          "email": ""
+        },
+        {
+          "forename": "Gaurav",
+          "surname": "Singh Tomar",
+          "name": "Gaurav Singh Tomar",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Das",
+          "name": "Dipanjan Das",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.acl-long.58",
+      "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b51",
+      "title": "Shared task on evaluating accuracy",
+      "author": [
+        {
+          "forename": "Ehud",
+          "surname": "Reiter",
+          "name": "Ehud Reiter",
+          "email": ""
+        },
+        {
+          "forename": "Craig",
+          "surname": "Thomson",
+          "name": "Craig Thomson",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 13th International Conference on Natural Language Generation",
+      "date": "2020"
+    },
+    {
+      "index": "b52",
+      "title": "Object hallucination in image captioning",
+      "author": [
+        {
+          "forename": "Anna",
+          "surname": "Rohrbach",
+          "name": "Anna Rohrbach",
+          "email": ""
+        },
+        {
+          "forename": "Lisa Anne ",
+          "surname": "Hendricks",
+          "name": "Lisa Anne  Hendricks",
+          "email": ""
+        },
+        {
+          "forename": "Kaylee",
+          "surname": "Burns",
+          "name": "Kaylee Burns",
+          "email": ""
+        },
+        {
+          "forename": "Trevor",
+          "surname": "Darrell",
+          "name": "Trevor Darrell",
+          "email": ""
+        },
+        {
+          "forename": "Kate",
+          "surname": "Saenko",
+          "name": "Kate Saenko",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2018"
+    },
+    {
+      "index": "b53",
+      "title": "Get your vitamin C! robust fact verification with contrastive evidence",
+      "author": [
+        {
+          "forename": "Tal",
+          "surname": "Schuster",
+          "name": "Tal Schuster",
+          "email": ""
+        },
+        {
+          "forename": "Adam",
+          "surname": "Fisch",
+          "name": "Adam Fisch",
+          "email": ""
+        },
+        {
+          "forename": "Regina",
+          "surname": "Barzilay",
+          "name": "Regina Barzilay",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.naacl-main.52",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2021"
+    },
+    {
+      "index": "b54",
+      "title": "QuestEval: Summarization asks for fact-based evaluation",
+      "author": [
+        {
+          "forename": "Thomas",
+          "surname": "Scialom",
+          "name": "Thomas Scialom",
+          "email": ""
+        },
+        {
+          "forename": "Paul-Alexis",
+          "surname": "Dray",
+          "name": "Paul-Alexis Dray",
+          "email": ""
+        },
+        {
+          "forename": "Sylvain",
+          "surname": "Lamprier",
+          "name": "Sylvain Lamprier",
+          "email": ""
+        },
+        {
+          "forename": "Benjamin",
+          "surname": "Piwowarski",
+          "name": "Benjamin Piwowarski",
+          "email": ""
+        },
+        {
+          "forename": "Jacopo",
+          "surname": "Staiano",
+          "name": "Jacopo Staiano",
+          "email": ""
+        },
+        {
+          "forename": "Alex",
+          "surname": "Wang",
+          "name": "Alex Wang",
+          "email": ""
+        },
+        {
+          "forename": "Patrick",
+          "surname": "Gallinari",
+          "name": "Patrick Gallinari",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b55",
+      "title": "Beametrics: A benchmark for language generation evaluation evaluation",
+      "author": [
+        {
+          "forename": "Thomas",
+          "surname": "Scialom",
+          "name": "Thomas Scialom",
+          "email": ""
+        },
+        {
+          "forename": "Felix",
+          "surname": "Hill",
+          "name": "Felix Hill",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2110.09147",
+      "venue": "Beametrics: A benchmark for language generation evaluation evaluation",
+      "date": "2021"
+    },
+    {
+      "index": "b56",
+      "title": "BLEURT: Learning robust metrics for text generation",
+      "author": [
+        {
+          "forename": "Thibault",
+          "surname": "Sellam",
+          "name": "Thibault Sellam",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Das",
+          "name": "Dipanjan Das",
+          "email": ""
+        },
+        {
+          "forename": "Ankur",
+          "surname": "Parikh",
+          "name": "Ankur Parikh",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.704",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b57",
+      "title": "Learning to evaluate translation beyond English: BLEURT submissions to the WMT metrics 2020 shared task",
+      "author": [
+        {
+          "forename": "Thibault",
+          "surname": "Sellam",
+          "name": "Thibault Sellam",
+          "email": ""
+        },
+        {
+          "forename": "Amy",
+          "surname": "Pu",
+          "name": "Amy Pu",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Chung",
+          "name": "Sebastian Chung",
+          "email": ""
+        },
+        {
+          "forename": "Qijun",
+          "surname": "Gehrmann",
+          "name": "Qijun Gehrmann",
+          "email": ""
+        },
+        {
+          "forename": "Markus",
+          "surname": "Tan",
+          "name": "Markus Tan",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Freitag",
+          "name": "Dipanjan Freitag",
+          "email": ""
+        },
+        {
+          "forename": "Ankur",
+          "surname": "Das",
+          "name": "Ankur Das",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Fifth Conference on Machine Translation",
+      "date": "2020"
+    },
+    {
+      "index": "b59",
+      "title": "The fact extraction and VERification (FEVER) shared task",
+      "author": [
+        {
+          "forename": "James",
+          "surname": "Thorne",
+          "name": "James Thorne",
+          "email": ""
+        },
+        {
+          "forename": "Andreas",
+          "surname": "Vlachos",
+          "name": "Andreas Vlachos",
+          "email": ""
+        },
+        {
+          "forename": "Oana",
+          "surname": "Cocarascu",
+          "name": "Oana Cocarascu",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/W18-5501",
+      "venue": "Proceedings of the First Workshop on Fact Extraction and VERification (FEVER)",
+      "date": "2018"
+    },
+    {
+      "index": "b60",
+      "title": "Asking and answering questions to evaluate the factual consistency of summaries",
+      "author": [
+        {
+          "forename": "Alex",
+          "surname": "Wang",
+          "name": "Alex Wang",
+          "email": ""
+        },
+        {
+          "forename": "Kyunghyun",
+          "surname": "Cho",
+          "name": "Kyunghyun Cho",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.450",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b61",
+      "title": "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+      "author": [
+        {
+          "forename": "Alex",
+          "surname": "Wang",
+          "name": "Alex Wang",
+          "email": ""
+        },
+        {
+          "forename": "Amanpreet",
+          "surname": "Singh",
+          "name": "Amanpreet Singh",
+          "email": ""
+        },
+        {
+          "forename": "Julian",
+          "surname": "Michael",
+          "name": "Julian Michael",
+          "email": ""
+        },
+        {
+          "forename": "Felix",
+          "surname": "Hill",
+          "name": "Felix Hill",
+          "email": ""
+        },
+        {
+          "forename": "Omer",
+          "surname": "Levy",
+          "name": "Omer Levy",
+          "email": ""
+        },
+        {
+          "forename": "Samuel",
+          "surname": "Bowman",
+          "name": "Samuel Bowman",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/W18-5446",
+      "venue": "Proceedings of the 2018 EMNLP Workshop Black-boxNLP: Analyzing and Interpreting Neural Networks for NLP",
+      "date": "2018"
+    },
+    {
+      "index": "b62",
+      "title": "Dialogue natural language inference",
+      "author": [
+        {
+          "forename": "Sean",
+          "surname": "Welleck",
+          "name": "Sean Welleck",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        },
+        {
+          "forename": "Arthur",
+          "surname": "Szlam",
+          "name": "Arthur Szlam",
+          "email": ""
+        },
+        {
+          "forename": "Kyunghyun",
+          "surname": "Cho",
+          "name": "Kyunghyun Cho",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/P19-1363",
+      "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2019"
+    },
+    {
+      "index": "b63",
+      "title": "Factual consistency evaluation for text summarization via counterfactual estimation",
+      "author": [
+        {
+          "forename": "Yuexiang",
+          "surname": "Xie",
+          "name": "Yuexiang Xie",
+          "email": ""
+        },
+        {
+          "forename": "Fei",
+          "surname": "Sun",
+          "name": "Fei Sun",
+          "email": ""
+        },
+        {
+          "forename": "Yang",
+          "surname": "Deng",
+          "name": "Yang Deng",
+          "email": ""
+        },
+        {
+          "forename": "Yaliang",
+          "surname": "Li",
+          "name": "Yaliang Li",
+          "email": ""
+        },
+        {
+          "forename": "Bolin",
+          "surname": "Ding",
+          "name": "Bolin Ding",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2021",
+      "date": "2021"
+    },
+    {
+      "index": "b64",
+      "title": "A comprehensive assessment of dialog evaluation metrics",
+      "author": [
+        {
+          "forename": "Yi-Ting",
+          "surname": "Yeh",
+          "name": "Yi-Ting Yeh",
+          "email": ""
+        },
+        {
+          "forename": "Maxine",
+          "surname": "Eskenazi",
+          "name": "Maxine Eskenazi",
+          "email": ""
+        },
+        {
+          "forename": "Shikib",
+          "surname": "Mehri",
+          "name": "Shikib Mehri",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "The First Workshop on Evaluations and Assessments of Neural Conversation Systems",
+      "date": "2021"
+    },
+    {
+      "index": "b65",
+      "title": "DocNLI: A large-scale dataset for documentlevel natural language inference",
+      "author": [
+        {
+          "forename": "Wenpeng",
+          "surname": "Yin",
+          "name": "Wenpeng Yin",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir",
+          "surname": "Radev",
+          "name": "Dragomir Radev",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.findings-acl.435",
+      "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+      "date": "2021"
+    },
+    {
+      "index": "b66",
+      "title": "BARTScore: Evaluating generated text as text generation",
+      "author": [
+        {
+          "forename": "Weizhe",
+          "surname": "Yuan",
+          "name": "Weizhe Yuan",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems",
+      "date": "2021"
+    },
+    {
+      "index": "b67",
+      "title": "Bertscore: Evaluating text generation with bert",
+      "author": [
+        {
+          "forename": "Tianyi",
+          "surname": "Zhang",
+          "name": "Tianyi Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Varsha",
+          "surname": "Kishore",
+          "name": "Varsha Kishore",
+          "email": ""
+        },
+        {
+          "forename": "Felix",
+          "surname": "Wu",
+          "name": "Felix Wu",
+          "email": ""
+        },
+        {
+          "forename": "Kilian Q.",
+          "surname": "Weinberger",
+          "name": "Kilian Q. Weinberger",
+          "email": ""
+        },
+        {
+          "forename": "Yoav",
+          "surname": "Artzi",
+          "name": "Yoav Artzi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "International Conference on Learning Representations",
+      "date": "2020"
+    },
+    {
+      "index": "b68",
+      "title": "PAWS: Paraphrase adversaries from word scrambling",
+      "author": [
+        {
+          "forename": "Yuan",
+          "surname": "Zhang",
+          "name": "Yuan Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Baldridge",
+          "name": "Jason Baldridge",
+          "email": ""
+        },
+        {
+          "forename": "Luheng",
+          "surname": "He",
+          "name": "Luheng He",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/N19-1131",
+      "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2019"
+    },
+    {
+      "index": "b69",
+      "title": "Reducing quantity hallucinations in abstractive summarization",
+      "author": [
+        {
+          "forename": "Zheng",
+          "surname": "Zhao",
+          "name": "Zheng Zhao",
+          "email": ""
+        },
+        {
+          "forename": "B.",
+          "surname": "Shay",
+          "name": "B. Shay",
+          "email": ""
+        },
+        {
+          "forename": "Bonnie",
+          "surname": "Cohen",
+          "name": "Bonnie Cohen",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2009.13312",
+      "venue": "Reducing quantity hallucinations in abstractive summarization",
+      "date": "2020"
+    },
+    {
+      "index": "b70",
+      "title": "Detecting hallucinated content in conditional neural sequence generation",
+      "author": [
+        {
+          "forename": "Chunting",
+          "surname": "Zhou",
+          "name": "Chunting Zhou",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Jiatao",
+          "surname": "Gu",
+          "name": "Jiatao Gu",
+          "email": ""
+        },
+        {
+          "forename": "Mona",
+          "surname": "Diab",
+          "name": "Mona Diab",
+          "email": ""
+        },
+        {
+          "forename": "Francisco",
+          "surname": "Guzmán",
+          "name": "Francisco Guzmán",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        },
+        {
+          "forename": "Marjan",
+          "surname": "Ghazvininejad",
+          "name": "Marjan Ghazvininejad",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.findings-acl.120",
+      "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+      "date": "2021"
+    }
+  ]
+}

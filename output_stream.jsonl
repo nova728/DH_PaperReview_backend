@@ -1,0 +1,2052 @@
+data: {"type": "start", "message": "开始生成同行评审", "stats": {"input_length": 15466, "use_chunking": true, "max_length_limit": 32768}}
+
+data: {"type": "content", "content": "<think>"}
+
+data: {"type": "content", "content": "\n"}
+
+data: {"type": "content", "content": "Okay"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " need"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " evaluate"}
+
+data: {"type": "content", "content": " this"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " titled"}
+
+data: {"type": "content", "content": " \""}
+
+data: {"type": "content", "content": "Ham"}
+
+data: {"type": "content", "content": "mer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": ":"}
+
+data: {"type": "content", "content": " An"}
+
+data: {"type": "content", "content": " Intelligent"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " Reader"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " Scientific"}
+
+data: {"type": "content", "content": " Papers"}
+
+data: {"type": "content", "content": "\""}
+
+data: {"type": "content", "content": " as"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " peer"}
+
+data: {"type": "content", "content": " reviewer"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Let"}
+
+data: {"type": "content", "content": " me"}
+
+data: {"type": "content", "content": " start"}
+
+data: {"type": "content", "content": " by"}
+
+data: {"type": "content", "content": " going"}
+
+data: {"type": "content", "content": " through"}
+
+data: {"type": "content", "content": " each"}
+
+data: {"type": "content", "content": " section"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " review"}
+
+data: {"type": "content", "content": " focus"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " make"}
+
+data: {"type": "content", "content": " sure"}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " cover"}
+
+data: {"type": "content", "content": " all"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " aspects"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "First"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "Nov"}
+
+data: {"type": "content", "content": "el"}
+
+data: {"type": "content", "content": "ty"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Sign"}
+
+data: {"type": "content", "content": "ificance"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " introduces"}
+
+data: {"type": "content", "content": " Hammer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " an"}
+
+data: {"type": "content", "content": " intelligent"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " reader"}
+
+data: {"type": "content", "content": " that"}
+
+data: {"type": "content", "content": " addresses"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " limitations"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " existing"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " They"}
+
+data: {"type": "content", "content": " mention"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": " like"}
+
+data: {"type": "content", "content": " information"}
+
+data: {"type": "content", "content": " extraction"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " extension"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " built"}
+
+data: {"type": "content", "content": "-in"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " search"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": " bot"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " check"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " these"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " novel"}
+
+data: {"type": "content", "content": " compared"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " existing"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": " like"}
+
+data: {"type": "content", "content": " Scholar"}
+
+data: {"type": "content", "content": "Phi"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " Read"}
+
+data: {"type": "content", "content": "Paper"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " claims"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " do"}
+
+data: {"type": "content", "content": " multi"}
+
+data: {"type": "content", "content": "-gr"}
+
+data: {"type": "content", "content": "an"}
+
+data: {"type": "content", "content": "ularity"}
+
+data: {"type": "content", "content": " analysis"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " which"}
+
+data: {"type": "content", "content": " might"}
+
+data: {"type": "content", "content": " be"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " key"}
+
+data: {"type": "content", "content": " point"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Also"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " significance"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " about"}
+
+data: {"type": "content", "content": " improving"}
+
+data: {"type": "content", "content": " research"}
+
+data: {"type": "content", "content": " efficiency"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " which"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " important"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " researchers"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " need"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " assess"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " contributions"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " original"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " impactful"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "Next"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "Technical"}
+
+data: {"type": "content", "content": " Quality"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " methodology"}
+
+data: {"type": "content", "content": " involves"}
+
+data: {"type": "content", "content": " using"}
+
+data: {"type": "content", "content": " Gro"}
+
+data: {"type": "content", "content": "bid"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Sp"}
+
+data: {"type": "content", "content": "ERT"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " information"}
+
+data: {"type": "content", "content": " extraction"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " check"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " technical"}
+
+data: {"type": "content", "content": " approach"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " sound"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Are"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " any"}
+
+data: {"type": "content", "content": " gaps"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " methodology"}
+
+data: {"type": "content", "content": "?"}
+
+data: {"type": "content", "content": " For"}
+
+data: {"type": "content", "content": " example"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " how"}
+
+data: {"type": "content", "content": " do"}
+
+data: {"type": "content", "content": " they"}
+
+data: {"type": "content", "content": " handle"}
+
+data: {"type": "content", "content": " different"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " formats"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " languages"}
+
+data: {"type": "content", "content": "?"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " mentions"}
+
+data: {"type": "content", "content": " using"}
+
+data: {"type": "content", "content": " Sci"}
+
+data: {"type": "content", "content": "BERT"}
+
+data: {"type": "content", "content": " as"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " pre"}
+
+data: {"type": "content", "content": "-trained"}
+
+data: {"type": "content", "content": " model"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " which"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " good"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " maybe"}
+
+data: {"type": "content", "content": " they"}
+
+data: {"type": "content", "content": " didn"}
+
+data: {"type": "content", "content": "'t"}
+
+data: {"type": "content", "content": " test"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " model"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " performance"}
+
+data: {"type": "content", "content": " on"}
+
+data: {"type": "content", "content": " various"}
+
+data: {"type": "content", "content": " datasets"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Also"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": " bot"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " training"}
+
+data: {"type": "content", "content": " data"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " how"}
+
+data: {"type": "content", "content": " it"}
+
+data: {"type": "content", "content": " handles"}
+
+data: {"type": "content", "content": " complex"}
+
+data: {"type": "content", "content": " queries"}
+
+data: {"type": "content", "content": " could"}
+
+data: {"type": "content", "content": " be"}
+
+data: {"type": "content", "content": " areas"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " look"}
+
+data: {"type": "content", "content": " into"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Cl"}
+
+data: {"type": "content", "content": "arity"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Presentation"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " structure"}
+
+data: {"type": "content", "content": " seems"}
+
+data: {"type": "content", "content": " logical"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " sections"}
+
+data: {"type": "content", "content": " like"}
+
+data: {"type": "content", "content": " Introduction"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " Related"}
+
+data: {"type": "content", "content": " Work"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " Overview"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " etc"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " abstract"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " clear"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " check"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " writing"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " too"}
+
+data: {"type": "content", "content": " technical"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " parts"}
+
+data: {"type": "content", "content": " that"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " unclear"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " figures"}
+
+data: {"type": "content", "content": " mentioned"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "like"}
+
+data: {"type": "content", "content": " Figure"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "b"}
+
+data: {"type": "content", "content": "))"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " referenced"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " doesn"}
+
+data: {"type": "content", "content": "'t"}
+
+data: {"type": "content", "content": " provide"}
+
+data: {"type": "content", "content": " them"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " This"}
+
+data: {"type": "content", "content": " might"}
+
+data: {"type": "content", "content": " affect"}
+
+data: {"type": "content", "content": " clarity"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Also"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " use"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " ac"}
+
+data: {"type": "content", "content": "ron"}
+
+data: {"type": "content", "content": "yms"}
+
+data: {"type": "content", "content": " like"}
+
+data: {"type": "content", "content": " Sci"}
+
+data: {"type": "content", "content": "ERC"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " Sci"}
+
+data: {"type": "content", "content": "BERT"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " be"}
+
+data: {"type": "content", "content": " explained"}
+
+data: {"type": "content", "content": " properly"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Experimental"}
+
+data: {"type": "content", "content": " Validation"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " mentions"}
+
+data: {"type": "content", "content": " some"}
+
+data: {"type": "content", "content": " processing"}
+
+data: {"type": "content", "content": " time"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "9"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": "8"}
+
+data: {"type": "content", "content": " seconds"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " "}
+
+data: {"type": "content", "content": "8"}
+
+data: {"type": "content", "content": " pages"}
+
+data: {"type": "content", "content": "),"}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " no"}
+
+data: {"type": "content", "content": " detailed"}
+
+data: {"type": "content", "content": " experimental"}
+
+data: {"type": "content", "content": " setup"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Are"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " benchmarks"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " comparisons"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " existing"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": "?"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " claims"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " improve"}
+
+data: {"type": "content", "content": " efficiency"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " without"}
+
+data: {"type": "content", "content": " specific"}
+
+data: {"type": "content", "content": " metrics"}
+
+data: {"type": "content", "content": " like"}
+
+data: {"type": "content", "content": " time"}
+
+data: {"type": "content", "content": " saved"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " accuracy"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " information"}
+
+data: {"type": "content", "content": " extraction"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " it"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " hard"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " assess"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Also"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": " bot"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " performance"}
+
+data: {"type": "content", "content": " isn"}
+
+data: {"type": "content", "content": "'t"}
+
+data: {"type": "content", "content": " evaluated"}
+
+data: {"type": "content", "content": " here"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " absence"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " experiments"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " significant"}
+
+data: {"type": "content", "content": " issue"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Related"}
+
+data: {"type": "content", "content": " Work"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " compares"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " Scholar"}
+
+data: {"type": "content", "content": "Phi"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Read"}
+
+data: {"type": "content", "content": "Paper"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " maybe"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " other"}
+
+data: {"type": "content", "content": " relevant"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " related"}
+
+data: {"type": "content", "content": " work"}
+
+data: {"type": "content", "content": " section"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " brief"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " so"}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " check"}
+
+data: {"type": "content", "content": " if"}
+
+data: {"type": "content", "content": " they"}
+
+data: {"type": "content", "content": " cover"}
+
+data: {"type": "content", "content": " enough"}
+
+data: {"type": "content", "content": " literature"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " They"}
+
+data: {"type": "content", "content": " mention"}
+
+data: {"type": "content", "content": " that"}
+
+data: {"type": "content", "content": " Read"}
+
+data: {"type": "content", "content": "Paper"}
+
+data: {"type": "content", "content": " lacks"}
+
+data: {"type": "content", "content": " content"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " complex"}
+
+data: {"type": "content", "content": " demands"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " do"}
+
+data: {"type": "content", "content": " they"}
+
+data: {"type": "content", "content": " provide"}
+
+data: {"type": "content", "content": " specific"}
+
+data: {"type": "content", "content": " examples"}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " data"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " support"}
+
+data: {"type": "content", "content": " this"}
+
+data: {"type": "content", "content": " claim"}
+
+data: {"type": "content", "content": "?\n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Limit"}
+
+data: {"type": "content", "content": "ations"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Future"}
+
+data: {"type": "content", "content": " Work"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " doesn"}
+
+data: {"type": "content", "content": "'t"}
+
+data: {"type": "content", "content": " discuss"}
+
+data: {"type": "content", "content": " limitations"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " depth"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " For"}
+
+data: {"type": "content", "content": " example"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " how"}
+
+data: {"type": "content", "content": " does"}
+
+data: {"type": "content", "content": " Hammer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " handle"}
+
+data: {"type": "content", "content": " non"}
+
+data: {"type": "content", "content": "-"}
+
+data: {"type": "content", "content": "English"}
+
+data: {"type": "content", "content": " papers"}
+
+data: {"type": "content", "content": "?"}
+
+data: {"type": "content", "content": " Are"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " scalability"}
+
+data: {"type": "content", "content": " issues"}
+
+data: {"type": "content", "content": "?"}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": " bot"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " accuracy"}
+
+data: {"type": "content", "content": " might"}
+
+data: {"type": "content", "content": " be"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " problem"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Future"}
+
+data: {"type": "content", "content": " work"}
+
+data: {"type": "content", "content": " could"}
+
+data: {"type": "content", "content": " include"}
+
+data: {"type": "content", "content": " expanding"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " database"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " improving"}
+
+data: {"type": "content", "content": " mult"}
+
+data: {"type": "content", "content": "ilingual"}
+
+data: {"type": "content", "content": " support"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " or"}
+
+data: {"type": "content", "content": " integrating"}
+
+data: {"type": "content", "content": " more"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " address"}
+
+data: {"type": "content", "content": " these"}
+
+data: {"type": "content", "content": " points"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "I"}
+
+data: {"type": "content", "content": " also"}
+
+data: {"type": "content", "content": " need"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " make"}
+
+data: {"type": "content", "content": " sure"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " recommendations"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " constructive"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " For"}
+
+data: {"type": "content", "content": " instance"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " suggesting"}
+
+data: {"type": "content", "content": " more"}
+
+data: {"type": "content", "content": " experiments"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " detailed"}
+
+data: {"type": "content", "content": " methodology"}
+
+data: {"type": "content", "content": " explanations"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " addressing"}
+
+data: {"type": "content", "content": " limitations"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": "'s"}
+
+data: {"type": "content", "content": " website"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " GitHub"}
+
+data: {"type": "content", "content": " link"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " be"}
+
+data: {"type": "content", "content": " checked"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " accessibility"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " since"}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": " can"}
+
+data: {"type": "content", "content": "'t"}
+
+data: {"type": "content", "content": " access"}
+
+data: {"type": "content", "content": " them"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " I"}
+
+data: {"type": "content", "content": "'ll"}
+
+data: {"type": "content", "content": " note"}
+
+data: {"type": "content", "content": " that"}
+
+data: {"type": "content", "content": " as"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " recommendation"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "Overall"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " presents"}
+
+data: {"type": "content", "content": " an"}
+
+data: {"type": "content", "content": " interesting"}
+
+data: {"type": "content", "content": " tool"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " potential"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " but"}
+
+data: {"type": "content", "content": " there"}
+
+data: {"type": "content", "content": " are"}
+
+data: {"type": "content", "content": " areas"}
+
+data: {"type": "content", "content": " needing"}
+
+data: {"type": "content", "content": " more"}
+
+data: {"type": "content", "content": " detail"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " validation"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " review"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " highlight"}
+
+data: {"type": "content", "content": " these"}
+
+data: {"type": "content", "content": " points"}
+
+data: {"type": "content", "content": " while"}
+
+data: {"type": "content", "content": " acknowledging"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " positive"}
+
+data: {"type": "content", "content": " aspects"}
+
+data: {"type": "content", "content": ".\n"}
+
+data: {"type": "content", "content": "</think>"}
+
+data: {"type": "content", "content": "\n\n"}
+
+data: {"type": "content", "content": "###"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "Peer"}
+
+data: {"type": "content", "content": " Review"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " \""}
+
+data: {"type": "content", "content": "Ham"}
+
+data: {"type": "content", "content": "mer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": ":"}
+
+data: {"type": "content", "content": " An"}
+
+data: {"type": "content", "content": " Intelligent"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " Reader"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " Scientific"}
+
+data: {"type": "content", "content": " Papers"}
+
+data: {"type": "content", "content": "\""}
+
+data: {"type": "content", "content": "**\n\n"}
+
+data: {"type": "content", "content": "---\n\n"}
+
+data: {"type": "content", "content": "####"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "1"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Novel"}
+
+data: {"type": "content", "content": "ty"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " Sign"}
+
+data: {"type": "content", "content": "ificance"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "  \n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Evaluation"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": "  \n"}
+
+data: {"type": "content", "content": "The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " presents"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " compelling"}
+
+data: {"type": "content", "content": " case"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " novelty"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " significance"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " its"}
+
+data: {"type": "content", "content": " contribution"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " proposed"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "Ham"}
+
+data: {"type": "content", "content": "mer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " introduces"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " multi"}
+
+data: {"type": "content", "content": "-platform"}
+
+data: {"type": "content", "content": " intelligent"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " reader"}
+
+data: {"type": "content", "content": " that"}
+
+data: {"type": "content", "content": " addresses"}
+
+data: {"type": "content", "content": " critical"}
+
+data: {"type": "content", "content": " limitations"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " existing"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "e"}
+
+data: {"type": "content", "content": ".g"}
+
+data: {"type": "content", "content": ".,"}
+
+data: {"type": "content", "content": " Adobe"}
+
+data: {"type": "content", "content": " Acrobat"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " Fox"}
+
+data: {"type": "content", "content": "it"}
+
+data: {"type": "content", "content": ")."}
+
+data: {"type": "content", "content": " Its"}
+
+data: {"type": "content", "content": " four"}
+
+data: {"type": "content", "content": " key"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": "—"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "information"}
+
+data: {"type": "content", "content": " extraction"}
+
+data: {"type": "content", "content": "**,"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "information"}
+
+data: {"type": "content", "content": " extension"}
+
+data: {"type": "content", "content": "**,"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "built"}
+
+data: {"type": "content", "content": "-in"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " search"}
+
+data: {"type": "content", "content": "**,"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": " bot"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "—"}
+
+data: {"type": "content", "content": "are"}
+
+data: {"type": "content", "content": " designed"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " streamline"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " research"}
+
+data: {"type": "content", "content": " workflow"}
+
+data: {"type": "content", "content": " by"}
+
+data: {"type": "content", "content": " integrating"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " search"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " semantic"}
+
+data: {"type": "content", "content": " understanding"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " interactive"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " novelty"}
+
+data: {"type": "content", "content": " lies"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " combining"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "multi"}
+
+data: {"type": "content", "content": "-gr"}
+
+data: {"type": "content", "content": "an"}
+
+data: {"type": "content", "content": "ularity"}
+
+data: {"type": "content", "content": " analysis"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "e"}
+
+data: {"type": "content", "content": ".g"}
+
+data: {"type": "content", "content": ".,"}
+
+data: {"type": "content", "content": " entity"}
+
+data: {"type": "content", "content": " recognition"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " citation"}
+
+data: {"type": "content", "content": " linking"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " conference"}
+
+data: {"type": "content", "content": " Q"}
+
+data: {"type": "content", "content": "&A"}
+
+data: {"type": "content", "content": ")"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "un"}
+
+data: {"type": "content", "content": "ified"}
+
+data: {"type": "content", "content": " interface"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " resources"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " which"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " significant"}
+
+data: {"type": "content", "content": " step"}
+
+data: {"type": "content", "content": " forward"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " field"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " scientific"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " reading"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": "  \n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Sign"}
+
+data: {"type": "content", "content": "ificance"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": "  \n"}
+
+data: {"type": "content", "content": "The"}
+
+data: {"type": "content", "content": " significance"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " work"}
+
+data: {"type": "content", "content": " is"}
+
+data: {"type": "content", "content": " clear"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " particularly"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " researchers"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " computer"}
+
+data: {"type": "content", "content": " science"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " other"}
+
+data: {"type": "content", "content": " disciplines"}
+
+data: {"type": "content", "content": " requiring"}
+
+data: {"type": "content", "content": " intensive"}
+
+data: {"type": "content", "content": " literature"}
+
+data: {"type": "content", "content": " review"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " By"}
+
+data: {"type": "content", "content": " reducing"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " need"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " switch"}
+
+data: {"type": "content", "content": " between"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " translation"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " search"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " reference"}
+
+data: {"type": "content", "content": " lookup"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " Hammer"}
+
+data: {"type": "content", "content": " PDF"}
+
+data: {"type": "content", "content": " could"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "enh"}
+
+data: {"type": "content", "content": "ance"}
+
+data: {"type": "content", "content": " research"}
+
+data: {"type": "content", "content": " efficiency"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "reduce"}
+
+data: {"type": "content", "content": " cognitive"}
+
+data: {"type": "content", "content": " load"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " also"}
+
+data: {"type": "content", "content": " highlights"}
+
+data: {"type": "content", "content": " practical"}
+
+data: {"type": "content", "content": " benefits"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " such"}
+
+data: {"type": "content", "content": " as"}
+
+data: {"type": "content", "content": " direct"}
+
+data: {"type": "content", "content": " access"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " codes"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " videos"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " extended"}
+
+data: {"type": "content", "content": " content"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " which"}
+
+data: {"type": "content", "content": " align"}
+
+data: {"type": "content", "content": "s"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " growing"}
+
+data: {"type": "content", "content": " demand"}
+
+data: {"type": "content", "content": " for"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "int"}
+
+data: {"type": "content", "content": "egrated"}
+
+data: {"type": "content", "content": " academic"}
+
+data: {"type": "content", "content": " platforms"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": "  \n\n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Recommend"}
+
+data: {"type": "content", "content": "ation"}
+
+data: {"type": "content", "content": "**:"}
+
+data: {"type": "content", "content": "  \n"}
+
+data: {"type": "content", "content": "The"}
+
+data: {"type": "content", "content": " paper"}
+
+data: {"type": "content", "content": " should"}
+
+data: {"type": "content", "content": " explicitly"}
+
+data: {"type": "content", "content": " quantify"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "impact"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " these"}
+
+data: {"type": "content", "content": " features"}
+
+data: {"type": "content", "content": " on"}
+
+data: {"type": "content", "content": " research"}
+
+data: {"type": "content", "content": " efficiency"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "e"}
+
+data: {"type": "content", "content": ".g"}
+
+data: {"type": "content", "content": ".,"}
+
+data: {"type": "content", "content": " time"}
+
+data: {"type": "content", "content": " saved"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " error"}
+
+data: {"type": "content", "content": " reduction"}
+
+data: {"type": "content", "content": ")"}
+
+data: {"type": "content", "content": " to"}
+
+data: {"type": "content", "content": " strengthen"}
+
+data: {"type": "content", "content": " its"}
+
+data: {"type": "content", "content": " significance"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Additionally"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " a"}
+
+data: {"type": "content", "content": " comparison"}
+
+data: {"type": "content", "content": " with"}
+
+data: {"type": "content", "content": " existing"}
+
+data: {"type": "content", "content": " tools"}
+
+data: {"type": "content", "content": " ("}
+
+data: {"type": "content", "content": "e"}
+
+data: {"type": "content", "content": ".g"}
+
+data: {"type": "content", "content": ".,"}
+
+data: {"type": "content", "content": " Scholar"}
+
+data: {"type": "content", "content": "Phi"}
+
+data: {"type": "content", "content": ","}
+
+data: {"type": "content", "content": " Read"}
+
+data: {"type": "content", "content": "Paper"}
+
+data: {"type": "content", "content": ")"}
+
+data: {"type": "content", "content": " in"}
+
+data: {"type": "content", "content": " terms"}
+
+data: {"type": "content", "content": " of"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "user"}
+
+data: {"type": "content", "content": " experience"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " and"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "feature"}
+
+data: {"type": "content", "content": " completeness"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": " would"}
+
+data: {"type": "content", "content": " further"}
+
+data: {"type": "content", "content": " solid"}
+
+data: {"type": "content", "content": "ify"}
+
+data: {"type": "content", "content": " the"}
+
+data: {"type": "content", "content": " novelty"}
+
+data: {"type": "content", "content": ".\n\n"}
+
+data: {"type": "content", "content": "---\n\n"}
+
+data: {"type": "content", "content": "####"}
+
+data: {"type": "content", "content": " **"}
+
+data: {"type": "content", "content": "2"}
+
+data: {"type": "content", "content": "."}
+
+data: {"type": "content", "content": " Technical"}
+
+data: {"type": "content", "content": " Quality"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "  \n"}
+
+data: {"type": "content", "content": "**"}
+
+data: {"type": "content", "content": "Evaluation"}
+
+data: {"type": "end", "success": true, "message": "同行评审生成完成", "stats": {"input_length": 15466, "output_length": 5307, "processing_time": 37.915449380874634, "processing_method": "normal_processing_stream", "max_length_limit": 32768, "chunk_size": null, "used_chunking": true, "review_type": "peer_review"}}
+

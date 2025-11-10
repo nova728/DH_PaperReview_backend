@@ -1,0 +1,3852 @@
+{
+  "title": "A Critical Evaluation of Evaluations for Long-form Question Answering",
+  "publication": {
+    "publisher": {},
+    "date": ""
+  },
+  "author": [
+    {
+      "forename": "Fangyuan",
+      "surname": "Xu",
+      "name": "Fangyuan Xu",
+      "email": "fangyuan@utexas.edu"
+    },
+    {
+      "forename": "Yixiao",
+      "surname": "Song",
+      "name": "Yixiao Song",
+      "email": "yixiaosong@umass.edu"
+    },
+    {
+      "forename": "Mohit",
+      "surname": "Iyyer",
+      "name": "Mohit Iyyer",
+      "email": "miyyer@cs.umass.edu"
+    },
+    {
+      "forename": "Eunsol",
+      "surname": "Choi",
+      "name": "Eunsol Choi",
+      "email": "eunsol@utexas.edu"
+    },
+    {
+      "forename": "Tom B.",
+      "surname": "Brown",
+      "name": "Tom B. Brown",
+      "email": ""
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Mann",
+      "name": "Benjamin Mann",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Ryder",
+      "name": "Nick Ryder",
+      "email": ""
+    },
+    {
+      "forename": "Melanie",
+      "surname": "Subbiah",
+      "name": "Melanie Subbiah",
+      "email": ""
+    },
+    {
+      "forename": "Jared D.",
+      "surname": "Kaplan",
+      "name": "Jared D. Kaplan",
+      "email": ""
+    },
+    {
+      "forename": "Prafulla",
+      "surname": "Dhariwal",
+      "name": "Prafulla Dhariwal",
+      "email": ""
+    },
+    {
+      "forename": "Arvind",
+      "surname": "Neelakantan",
+      "name": "Arvind Neelakantan",
+      "email": ""
+    },
+    {
+      "forename": "Pranav",
+      "surname": "Shyam",
+      "name": "Pranav Shyam",
+      "email": ""
+    },
+    {
+      "forename": "Girish",
+      "surname": "Sastry",
+      "name": "Girish Sastry",
+      "email": ""
+    },
+    {
+      "forename": "Amanda",
+      "surname": "Askell",
+      "name": "Amanda Askell",
+      "email": ""
+    },
+    {
+      "forename": "Sandhini",
+      "surname": "Agarwal",
+      "name": "Sandhini Agarwal",
+      "email": ""
+    },
+    {
+      "forename": "Ariel",
+      "surname": "Herbert-Voss",
+      "name": "Ariel Herbert-Voss",
+      "email": ""
+    },
+    {
+      "forename": "Gretchen",
+      "surname": "Krueger",
+      "name": "Gretchen Krueger",
+      "email": ""
+    },
+    {
+      "forename": "T.J.",
+      "surname": "Henighan",
+      "name": "T.J. Henighan",
+      "email": ""
+    },
+    {
+      "forename": "Rewon",
+      "surname": "Child",
+      "name": "Rewon Child",
+      "email": ""
+    },
+    {
+      "forename": "Aditya",
+      "surname": "Ramesh",
+      "name": "Aditya Ramesh",
+      "email": ""
+    },
+    {
+      "forename": "Daniel M.",
+      "surname": "Ziegler",
+      "name": "Daniel M. Ziegler",
+      "email": ""
+    },
+    {
+      "forename": "Jeff",
+      "surname": "Wu",
+      "name": "Jeff Wu",
+      "email": ""
+    },
+    {
+      "forename": "Clemens",
+      "surname": "Winter",
+      "name": "Clemens Winter",
+      "email": ""
+    },
+    {
+      "forename": "Christopher",
+      "surname": "Hesse",
+      "name": "Christopher Hesse",
+      "email": ""
+    },
+    {
+      "forename": "Mark",
+      "surname": "Chen",
+      "name": "Mark Chen",
+      "email": ""
+    },
+    {
+      "forename": "Eric",
+      "surname": "Sigler",
+      "name": "Eric Sigler",
+      "email": ""
+    },
+    {
+      "forename": "Mateusz",
+      "surname": "Litwin",
+      "name": "Mateusz Litwin",
+      "email": ""
+    },
+    {
+      "forename": "Scott",
+      "surname": "Gray",
+      "name": "Scott Gray",
+      "email": ""
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Chess",
+      "name": "Benjamin Chess",
+      "email": ""
+    },
+    {
+      "forename": "Jack",
+      "surname": "Clark",
+      "name": "Jack Clark",
+      "email": ""
+    },
+    {
+      "forename": "Christopher",
+      "surname": "Berner",
+      "name": "Christopher Berner",
+      "email": ""
+    },
+    {
+      "forename": "Sam",
+      "surname": "Mccandlish",
+      "name": "Sam Mccandlish",
+      "email": ""
+    },
+    {
+      "forename": "Alec",
+      "surname": "Radford",
+      "name": "Alec Radford",
+      "email": ""
+    },
+    {
+      "forename": "Ilya",
+      "surname": "Sutskever",
+      "name": "Ilya Sutskever",
+      "email": ""
+    },
+    {
+      "forename": "Dario 2020b ",
+      "surname": "Amodei",
+      "name": "Dario 2020b  Amodei",
+      "email": ""
+    },
+    {
+      "forename": "Anthony",
+      "surname": "Chen",
+      "name": "Anthony Chen",
+      "email": ""
+    },
+    {
+      "forename": "Gabriel",
+      "surname": "Stanovsky",
+      "name": "Gabriel Stanovsky",
+      "email": ""
+    },
+    {
+      "forename": "Sameer",
+      "surname": "Singh",
+      "name": "Sameer Singh",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Long-form question answering (LFQA) enables answering a wide range of questions, but its flexibility poses enormous challenges for evaluation. We perform the first targeted study of the evaluation of long-form answers, covering both human and automatic evaluation practices. We hire domain experts in seven areas to provide preference judgments over pairs of answers, along with free-form justifications for their choices. We present a careful analysis of experts' evaluation, which focuses on new aspects such as the comprehensiveness of the answer. Next, we examine automatic text generation metrics, finding that no existing metrics are predictive of human preference judgments. However, some metrics correlate with fine-grained aspects of answers (e.g., coherence). We encourage future work to move away from a single \"overall score\" of the answer and adopt a multi-faceted evaluation, targeting aspects such as factuality and completeness. We publicly release all of our annotations and code to spur future work into LFQA evaluation. 1 * * Equal contribution."
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Long-form question answering (Fan et al., 2019; Krishna et al., 2021; Nakano et al., 2021; Su et al., 2022, henceforth LFQA), an emerging research area within QA, requires systems to generate long and complex answers to questions by leveraging large language models and evidence document retrievers. While remarkable strides have been made in LFQA model development, the current state of LFQA evaluation is dire: most prior papers use a combination of crowdsourced human annotations and simple string-matching metrics (e.g., ROUGE). We present the first study of the evaluation of longform answers, exploring both human and automatic evaluation protocols to better understand how we should evaluate LFQA moving forward.",
+          "quote": [
+            {
+              "text": "Krishna et al., 2021;",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "l., 2019; ",
+              "index": 48
+            },
+            {
+              "text": "Su et al., 2022, henceforth LFQA)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 91
+            },
+            {
+              "text": "[(Fanetal.,2019]",
+              "type": "bibr",
+              "index": 29,
+              "context": "answering ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 29,
+              "context": "answering ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Nakanoetal.,2021]",
+              "type": "bibr",
+              "index": 70,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 70,
+              "context": "l., 2021; ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Human evaluation: In most prior human LFQA evaluations (Krishna et al., 2021; Nakano et al., 2021), crowd annotators are given a question, two candidate answers, and (optionally) evidence documents, and they are asked to identify the better answer. However, crowdworkers do not necessarily have the expertise or background knowledge to reliably judge properties such as factuality (Gillick and Liu, 2010; Iskender et al., 2020). Thus, we hire domain experts in seven different fields (e.g., biology, economics) to perform the same answer preference task and additionally provide detailed justifications as to why they chose a particular answer. Analyzing their justifications reveals that experts consider properties such as completeness and factuality to be more decisive than surface-level aspects (e.g., conciseness and level of detail) on which crowdworkers tend to fixate. Additionally, even experts often disagree with each other about which answer is better; this disagreement stems from valuing finegrained answer properties differently.",
+          "quote": [
+            {
+              "text": "Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 78
+            },
+            {
+              "text": "Iskender et al., 2020)",
+              "target": "#b13",
+              "type": "bibr",
+              "context": "iu, 2010; ",
+              "index": 405
+            },
+            {
+              "text": "[(Krishnaetal.,2021]",
+              "type": "bibr",
+              "index": 55,
+              "context": "aluations ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 55,
+              "context": "aluations ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(GillickandLiu,2010]",
+              "type": "bibr",
+              "index": 381,
+              "context": "actuality ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 381,
+              "context": "actuality ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Automatic evaluation: As human evaluation is slow and expensive, developing a reliable automatic LFQA evaluation metric is crucial for speeding up model development. While ROUGE (Lin, 2004) has been shown to be misleading for LFQA (Krishna et al., 2021; Wang et al., 2022), do any other existing text generation metrics correlate to human judgments of answer quality? Can we train a metric to mimic human preference judgments? To answer these questions, we curate a suite of 12 automatic metrics and measure how they correlate to human judgments of both \"overall quality\" and two fine-grained aspects (coherence and faithfulness). None of these metrics reliably matches human judgments of overall answer quality. However, automatic metrics such as QAFactEval (Fabbri et al., 2022) and RankGen (Krishna et al., 2022) show potential at modeling fine-grained aspects of LFQA answers, which can spur research on a new generation of automatic LFQA metrics. ",
+          "quote": [
+            {
+              "text": "(Lin, 2004)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "ile ROUGE ",
+              "index": 178
+            },
+            {
+              "text": "Wang et al., 2022)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 254
+            },
+            {
+              "text": "(Fabbri et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "AFactEval ",
+              "index": 759
+            },
+            {
+              "text": "(Krishna et al., 2022)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": "d RankGen ",
+              "index": 793
+            },
+            {
+              "text": "[(Krishnaetal.,2021]",
+              "type": "bibr",
+              "index": 231,
+              "context": " for LFQA ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 231,
+              "context": " for LFQA ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Completeness"
+      },
+      "p": [
+        {
+          "text": "Why do people go bald on the top of their head and still have some on the sides and not viceversa?",
+          "quote": []
+        },
+        {
+          "text": "(model) One reason is that the hair follicles on the top of the head are more sensitive to a hormone called dihydrotestosterone (DHT). DHT is [...] found in both men and women. [...] Another reason is that the hair on the sides and back of the head is not as exposed to the sun and other environmental factors, [...]",
+          "quote": [
+            {
+              "text": "[...]",
+              "target": "",
+              "type": "bibr",
+              "context": "). DHT is ",
+              "index": 142
+            },
+            {
+              "text": "[...]",
+              "target": "",
+              "type": "bibr",
+              "context": "nd women. ",
+              "index": 177
+            }
+          ]
+        },
+        {
+          "text": "(human) Seems unsettled but here's a theory: The most recent hypothesis suggests that the hair loss process begins during puberty, when growth of the skull and the muscles in the forehead and neck increases the tension in a tight band of tissue stretching over the top of the head. The more DHT (a type of testosterone) there is...",
+          "quote": []
+        },
+        {
+          "text": "(expert) Answer A is the better choice as it describes both the hormonal and environmental causes and Answer B only focuses on one theory which might not be 100 percent accurate. [...] According to research, baldness is due to genes. In 95 percent cases, balding is due to androgenetic alopecia [...] Table : Examples of two fine-grained aspects, factuality (top) and completeness (bottom), that were decisive factors in our expert annotators' preference of one answer over another. The human answers are from the r/explainlikeimfive subreddit and the model answers are generated zero-shot by text-davinci-002. See Table  for more examples.",
+          "quote": [
+            {
+              "text": "[...]",
+              "target": "",
+              "type": "bibr",
+              "context": "accurate. ",
+              "index": 179
+            },
+            {
+              "text": "[...]",
+              "target": "",
+              "type": "bibr",
+              "context": " alopecia ",
+              "index": 295
+            }
+          ]
+        },
+        {
+          "text": "Overall, we provide the first thorough study of LFQA evaluation and shed light on the components of good long-form answers. As part of our exploration, we collected and will release a small-scale dataset of expert evaluation of long-form answers (260 ratings and justifications over 140 answer pairs). We conclude by providing recommendations for the future of human and automatic LFQA evaluation, encouraging the community to hire expert evaluators and move from poorly-defined judgments of \"overall preference\" to a multi-faceted evaluation modeling attributes such as answer completeness, factuality, and ease of understanding.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "Background and related work"
+      },
+      "p": [
+        {
+          "text": "We begin by reviewing the evaluation protocols used by prior work in LFQA, which has centered around a dataset scraped from the \"Explain Like I'm Five\" subreddit (Fan et al., 2019, ELI5). 2 We include brief review of evaluation in other text generation tasks in Appendix A.1.",
+          "quote": [
+            {
+              "text": "(Fan et al., 2019, ELI5)",
+              "target": "",
+              "type": "bibr",
+              "context": "subreddit ",
+              "index": 162
+            }
+          ]
+        },
+        {
+          "text": "Prior automatic evaluations: Early work on LFQA (Fan et al., 2019) uses ROUGE (Lin, 2004) to measure the similarity of human reference answers to model-generated answers. Krishna et al. (2021) find that ROUGE is not a meaningful metric due to the open-ended nature of long-form answers, but they do not examine other automatic metrics. Given the difficulty of evaluation, recent works re-scoped the task to allow more reliable evaluation: Wang et al. (2022) focus on exemplification in long-form answers by treating this sub-task as a retrieval problem, while Stelmakh et al. (2022) aim to evaluate long form answers limited to ambiguous factoid questions that cover the different disambiguated questions and their corresponding answers. However, these evaluation protocols cannot be easily adapted to the general LFQA task: the metric in Stelmakh et al. (2022), for example, requires a list of disambiguated questions and their answers, which is not available for many questions. Prior human evaluations: We summarize the human evaluation studies conducted by two previous studies, HURDLES (Krishna et al., 2021) and WEBGPT (Nakano et al., 2021). Both works evaluate via A/B testing (i.e., choose which of two candidate answers is better), and they collected judgments of overall answer quality, factuality, and coherence. While both works recruited non-expert annotators and collect only one-way annotations, WEBGPT's evaluation allows annotators to look at a set of evidence documents when judging the answer, and they also collect optional free-form justifications from the annotators to justify their choice. While fine-grained aspects such as coherence (Goyal et al., 2022; Jiang et al., 2022) and factuality (Goyal and Durrett, 2020; Laban et al., 2022) have been studied before for other tasks such as summarization, ours is among the first works to study LFQA-centric properties such as completeness or ease of understanding.  answers, either with no access to external information (Krishna et al., 2021) or access to only modelretrieved evidence documents (Nakano et al., 2021). Both settings are problematic: non-experts cannot be relied on to judge the correctness of answers in isolation, and they also cannot be expected to thoroughly comprehend evidence documents and judge their validity or relevance to the answer (Gao et al., 2022). While Nakano et al. (2021) solicit optional free-form justifications from their workers to explain their preference judgments, it remains unclear how well these workers can judge correctness in fields that are not their expertise. Our first contribution is to hire domain experts in seven fields (see Table ) and have them evaluate both human-written and model-generated answers via A/B judgments as well as paragraph-length free-form justifications. An analysis of the expert annotations reveals a complex and subjective interplay between many different fine-grained aspects of LFQA answers (e.g., completeness, factuality) that pose challenges for future LFQA evaluation.",
+          "quote": [
+            {
+              "text": "(Fan et al., 2019)",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "k on LFQA ",
+              "index": 48
+            },
+            {
+              "text": "(Lin, 2004)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "ses ROUGE ",
+              "index": 78
+            },
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": " answers. ",
+              "index": 171
+            },
+            {
+              "text": "Wang et al. (2022)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "aluation: ",
+              "index": 439
+            },
+            {
+              "text": "Stelmakh et al. (2022)",
+              "target": "#b38",
+              "type": "bibr",
+              "context": "em, while ",
+              "index": 560
+            },
+            {
+              "text": "Stelmakh et al. (2022)",
+              "target": "#b38",
+              "type": "bibr",
+              "context": "metric in ",
+              "index": 839
+            },
+            {
+              "text": "(Krishna et al., 2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": ", HURDLES ",
+              "index": 1091
+            },
+            {
+              "text": "(Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "nd WEBGPT ",
+              "index": 1125
+            },
+            {
+              "text": "Jiang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 1680
+            },
+            {
+              "text": "Laban et al., 2022)",
+              "target": "#b20",
+              "type": "bibr",
+              "context": "tt, 2020; ",
+              "index": 1741
+            },
+            {
+              "text": "(Krishna et al., 2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "formation ",
+              "index": 1991
+            },
+            {
+              "text": "(Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "documents ",
+              "index": 2066
+            },
+            {
+              "text": "(Gao et al., 2022)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "he answer ",
+              "index": 2331
+            },
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "2). While ",
+              "index": 2357
+            },
+            {
+              "text": "[(Goyaletal.,2022]",
+              "type": "bibr",
+              "index": 1659,
+              "context": "coherence ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1659,
+              "context": "coherence ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(GoyalandDurrett,2020]",
+              "type": "bibr",
+              "index": 1715,
+              "context": "actuality ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1715,
+              "context": "actuality ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "Collecting expert judgments"
+      },
+      "p": [
+        {
+          "text": "Hiring experts: We recruit domain experts on the freelancing platform Upwork for seven domains shown in Table . Each expert has earned at least a bachelor's degree in the target domain and has expertise performing tasks in that domain (e.g., summarizing scientific articles or being a teacher of the domain). As shown in Table , we hire 1-3 experts per domain. Given a question and two candidate answers, the experts were asked to choose which of the answers is better (overall preference), indicate whether the decision was difficult to make (e.g., because both answers were of similar quality), and lastly to justify their choice in a free-form para-graph. The evaluation tasks are hosted on Label Studio. 3 The experts reported that they spent 15 to 30 minutes per question, which shows the demanding nature of the annotation task. We accordingly paid $3.25 per question, which resulted in a total cost of $845 to collect 260 expert judgements. 4",
+          "quote": []
+        },
+        {
+          "text": "Setting up the A/B task: Following prior work, we conduct A/B preference testing on two answers to the same question. We include two settings: (1) H/M: comparing a model-generated answer with a highly-upvoted human-written answer, and (2) H/H: comparing a highly-upvoted human-written answer to an answer with fewer upvotes (where upvotes are a noisy proxy to answer quality). 5 The first setting is intended to identify common classes of errors made by state-of-the-art LFQA systems, while the second setting is more of a sanity check exploring whether low-effort human answers make similar errors to models. We chose GPT-3 text-davinci-002 model (175B) (Brown et al., 2020b) as the LFQA model to evaluate. A small-scale qualitative analysis found that zero-shot GPT-3 possesses more advanced LFQA capabilities than fine-tuned LFQA systems built on smaller language models. Since this model may have already seen the entire ELI5 dataset released by Fan et al. (2019) during its pretraining, we scrape more recent questions from the r/explainlikeimfive and r/AskHistorians subreddits posted between July to December 2021. 6 Question askers on the ELI5 subreddit often categorize their questions into domains via the flair label, which enables us to perform a domain-specific analysis. 7  We randomly sample 20 questions per domain except for the history domain, which has 15 questions in the H/M setting and 5 in H/H. This discrepancy is due to the difficulty of finding history questions with a moderate answer length. As shown in Figure  and Table , human-written answers to history questions are much longer than the answers in the other domains, even after careful screening.",
+          "quote": [
+            {
+              "text": "(Brown et al., 2020b)",
+              "target": "",
+              "type": "bibr",
+              "context": "el (175B) ",
+              "index": 655
+            },
+            {
+              "text": "Fan et al. (2019)",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "leased by ",
+              "index": 950
+            }
+          ]
+        },
+        {
+          "text": "To obtain model-generated answers, we prompt the model in a zero-shot manner with the following prompt: \"Generate a long answer to the follow- ing question with examples and references when necessary.\" For decoding, we used the default decoding setup in the API (i.e., top p = 1 and temperature= 0.7).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Quantitative results"
+      },
+      "p": [
+        {
+          "text": "As shown in Table Liu et al. (2022), experts surprisingly display a slight preference (61.8%) for model-generated answers from GPT-3 compared to human answers; as a sanity check, they exhibit preference (62.4%) for highly-upvoted human answers over those with fewer upvotes. The preference of our annotators for model-generated answers is corroborated by similar findings for summarization by , who show that GPT-3 generated summaries score higher than reference summaries.",
+          "quote": [
+            {
+              "text": "Liu et al. (2022)",
+              "target": "",
+              "type": "bibr",
+              "context": " in Table ",
+              "index": 18
+            }
+          ]
+        },
+        {
+          "text": "Comparing different domains, we observe that model-generated answers are strongly preferred in economics (90%) and law (also 90%), while human answers are preferred in the history domain (75.6%). To understand the divergence in preferences for different domains, we report the answer length distribution of both answer types in the H/M setting in our expert-annotated dataset in Figure . The model's struggles in history domain are likely because this domain contains the longest and most complex questions as well as human answers (averaging 356 words long in the H/M setting) out of all domains. Table  in the appendix report the length of questions, model-generated, and human-written answers of the whole expert-annotated dataset.",
+          "quote": []
+        },
+        {
+          "text": "Expert (dis)agreement: We report Fleiss' κ (Fleiss, 1971; Landis and Koch, 1977; Fleiss et al., 2013) as a measure of agreement in Table . Our expert A/B testers achieved fair agreement in economics, moderate agreement in biology and physics, and a substantial agreement in history. We observe that agreement increases when comparing a high and low-upvoted human answer together, as opposed to comparing model-generated answers with human answers. We emphasize that disagreement is not a failure of one of the experts to properly evaluate the answers. In fact, disagreement within experts highlights the challenges (and futility) of judging \"overall answer quality\" in this way. There are many salient properties of long-form answers, which we discuss next, and deciding how to value each property when coming up with an overall preference is highly subjective (see Appendix Table  for several examples).",
+          "quote": [
+            {
+              "text": "Landis and Koch, 1977;",
+              "target": "#b21",
+              "type": "bibr",
+              "context": "ss, 1971; ",
+              "index": 58
+            },
+            {
+              "text": "Fleiss et al., 2013)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "ch, 1977; ",
+              "index": 81
+            },
+            {
+              "text": "[Fleiss'κ(Fleiss,1971]",
+              "type": "bibr",
+              "index": 33,
+              "context": "We report ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 33,
+              "context": "We report ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3",
+        "name": "What makes one answer better than another?"
+      },
+      "p": [
+        {
+          "text": "To better understand the various components of a good long-form answer, we perform an analysis on the free-form justifications collected from both our expert annotators as well as WEBGPT crowd annotators from Nakano et al. (2021). WEBGPT allowed optional justifications, and many of them are not very long or detailed. Our justification is about three times longer on average (statistics can be found in Table  in the Appendix). Our analysis focuses on the model-generated vs. human-written answer setting, where the model is either zero-shot GPT-3 (our work) or the 175B WEBGPT model. Concretely, we analyze 50 randomly sampled justifications from each population. Our analysis is limited in that these two comparisons do not consider the same set of questions. We identify and code nine fine-grained aspects that are mentioned in them, and mark whether these aspects are decisive factors for making the preference judgment.",
+          "quote": [
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "tors from ",
+              "index": 209
+            }
+          ]
+        },
+        {
+          "text": "The results are summarized in Figure , and we highlight takeaways below.",
+          "quote": []
+        },
+        {
+          "text": "Experts are better judges of factuality: Perhaps unsurprisingly, our experts mention factuality in their justifications almost twice as frequently as crowdworkers (36 to 20), and it is the most common aspect referenced by experts. As an example, in the first row of Table , the expert accurately points out incorrect information in Answer A about We manually analyzed 50 justifications each from both experts and WEBGPT crowd annotators. We report nine frequently-mentioned fine-grained aspects here. The plot shows that experts and crowdworkers disagree on which aspects are more decisive, and that experts are more sensitive to factuality and completeness.",
+          "quote": []
+        },
+        {
+          "text": "blood thinners breaking up clots. Since WEBGPT annotators lack domain expertise, they generally judge factuality by checking if a statement is supported in evidence documents, which gives them only limited coverage over the full answer.",
+          "quote": []
+        },
+        {
+          "text": "Experts value answer completeness: We observe that experts mention completeness as a decisive criteria twice as often than WEBGPT annotators (12 vs. 6). Completeness refers to whether the answer adequately addresses all aspects of the question or provides all necessary information to clarify the question. Judging completeness requires deeper domain expertise than a handful of retrieved articles offer. As an example, in the second row of Table , the expert states that Answer B mentions only one reason why people go bald (hormonal), while Answer A mentions hormonal and environmental factors and is thus superior. 8",
+          "quote": []
+        },
+        {
+          "text": "All annotators value ease of understanding.",
+          "quote": []
+        },
+        {
+          "text": "Both experts and crowdworkers mention easiness to follow as a decisive criterion at the same frequency; in fact, this is the most decisive aspect for both populations. One of the main goals of LFQA is to convey the answer of a question to a nonexpert; as such, it makes sense that this property is so critical. We emphasize that this has never been evaluated in prior LFQA research and encourage future work to embrace it as a major component.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Non-experts focus on surface-level properties:"
+      },
+      "p": [
+        {
+          "text": "WEBGPT annotators are far more likely to mark conciseness and specificity as decisive factors for their preferences than experts. They prefer shorter to-the-point answers, despite the fact that such answers might be incomplete, and they also prefer answers that include specific details instead of generalities. We note that these properties are much more feasible to judge for crowdworkers than fac-tuality and completeness, which is likely a reason why they are mentioned so frequently (Table  in the appendix for examples).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3.1",
+        "name": "Do models understand justifications of human preferences?"
+      },
+      "p": [
+        {
+          "text": "Our manual analysis of the justifications shows that experts consider a wide range of aspects when forming their decision. Detailed justifications of generated answers are useful in understanding why an answer was preferred, but they are costly to obtain. Generating these justifications automatically and evaluating them is outside the scope of this paper. Instead, we perform a simpler evaluation via a proxy task: given a justification with masked references to both candidate answers, can a model disambiguate the missing references? An example of the task is below:",
+          "quote": []
+        },
+        {
+          "text": "Input: Question: q Answer A: a1 Answer B: a2 Comment: Both answers are coherent, but Answer <extra_id_0> is completely irrelevant to the question since it is about a bionic ear instead of a person learning speech when they get a hearing implant. Answer <extra_id_1> is relevant and a complete, concise answer.",
+          "quote": []
+        },
+        {
+          "text": "Expected Output: <extra_id_0> B <extra_id_1> A",
+          "quote": []
+        },
+        {
+          "text": "We experiment with pretrained T5 checkpoints (Raffel et al., 2020) of different sizes (220M, 770M, 3B, and 11B parameters) on our task zero-shot. 9  For each (question q, answer pairs (a 1 , a 2 ), justification j), we construct three types of inputs: Original: The original justification j with (q, a 1 , a 2 ), Flipped: The original justification j with flipped answer identity (q, a 2 , a 1 ), Random: j with randomly paired q ′ , a ′ 1 , a ′ 2 , as a baseline. We evaluate using token-level exact match, which gives the model credit only when its output exactly matches that of the target. We expect better than random performance on Original and worse than random performance on Flipped if the model comprehends the justifications.",
+          "quote": [
+            {
+              "text": "(Raffel et al., 2020)",
+              "target": "#b33",
+              "type": "bibr",
+              "context": "eckpoints ",
+              "index": 45
+            }
+          ]
+        },
+        {
+          "text": "Results are shown in Table . We see that T5-3B an T5-11B are able to comprehend the justifications, as they show different results for original and perturbed comments. This suggests adapting LMs for multi-faceted automatic evaluations of longform answers is promising. Preprocessing details on this study are described in Appendix A.2.1 4 Do automatic metrics correlate with human judgments?",
+          "quote": []
+        },
+        {
+          "text": "The experiments in the previous section establish that LFQA is very difficult for humans to converge on in terms of an \"overall\" score, as even domain experts disagree with each other when choosing a \"better\" LFQA answer. Furthermore, several properties of these answers are important to evaluate, including factuality, relevance, and coherence, among others. Do existing automatic text generation metrics correlate with human judgments of these fine-grained aspects, or \"overall\" answer preference? We now explore this question with a wide range of text generation evaluation metrics.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Text generation metrics"
+      },
+      "p": [
+        {
+          "text": "We experiment with existing text generation metrics and metrics that we train directly on the human preference judgments.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1.1",
+        "name": "General-purpose generation metrics"
+      },
+      "p": [
+        {
+          "text": "Prior work used existing text generation metrics (e.g., ROUGE) to evaluate LFQA. The metrics were initially designed for other text generation tasks (e.g., translation or summarization), and their usage has not been validated for LFQA.",
+          "quote": []
+        },
+        {
+          "text": "Reference-based metrics: Many generation metrics assume access to human-written references (in our case, gold answers), which are used to compute similarity scores to model-generated text. Of these, we evaluate ROUGE (Lin, 2004), which is the only reference-based evaluation metrics employed by prior work for LFQA, as well as BERTScore (Zhang et al., 2019) and BLEURT (Sellam et al., 2020), which leverage pretrained language models and have shown to be effective in evaluating many generation tasks (Kasai et al., 2022). A major limitation of referencebased metrics for LFQA is the huge space of valid output answers for any given question, which has been noted in prior work (Wang et al., 2022).",
+          "quote": [
+            {
+              "text": "(Lin, 2004)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "ate ROUGE ",
+              "index": 217
+            },
+            {
+              "text": "(Zhang et al., 2019)",
+              "target": "#b46",
+              "type": "bibr",
+              "context": "BERTScore ",
+              "index": 337
+            },
+            {
+              "text": "(Sellam et al., 2020)",
+              "target": "#b37",
+              "type": "bibr",
+              "context": "nd BLEURT ",
+              "index": 369
+            },
+            {
+              "text": "(Kasai et al., 2022)",
+              "target": "#b16",
+              "type": "bibr",
+              "context": "ion tasks ",
+              "index": 501
+            },
+            {
+              "text": "(Wang et al., 2022)",
+              "target": "#b41",
+              "type": "bibr",
+              "context": "rior work ",
+              "index": 678
+            }
+          ]
+        },
+        {
+          "text": "Answer-only metrics: Some aspects, such as fluency and coherence, can be determined by looking at just the answers alone. Thus, we also examine a set of answer-only automatic metrics: (1) Self-BLEU (Zhu et al., 2018), which measures the diversity of generated text (higher scores mean lower diversity) and has been previously used in open-ended generation (Holtzman et al., 2019); and",
+          "quote": [
+            {
+              "text": "(Zhu et al., 2018)",
+              "target": "#b48",
+              "type": "bibr",
+              "context": "Self-BLEU ",
+              "index": 198
+            },
+            {
+              "text": "(Holtzman et al., 2019)",
+              "target": "#b12",
+              "type": "bibr",
+              "context": "eneration ",
+              "index": 356
+            }
+          ]
+        },
+        {
+          "text": "(2) GPT-2 perplexity, which prior work on constrained generation (Zhang et al., 2020; Qin et al., 2022) has used to evaluate fluency.",
+          "quote": [
+            {
+              "text": "Qin et al., 2022)",
+              "target": "#b32",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 86
+            },
+            {
+              "text": "[(Zhangetal.,2020]",
+              "type": "bibr",
+              "index": 65,
+              "context": "eneration ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 65,
+              "context": "eneration ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "(Question, answer) metrics: Good answers should be relevant to the question asked, so we can model p(q|a) to rank answers using the following methods: (1) Zero-shot question likelihood, which uses the instruction-tuned T0 model (Sanh et al., 2022) to calculate the likelihood of the question given the long-form answer;",
+          "quote": [
+            {
+              "text": "(Sanh et al., 2022)",
+              "target": "#b36",
+              "type": "bibr",
+              "context": " T0 model ",
+              "index": 228
+            }
+          ]
+        },
+        {
+          "text": "(2) BARTScore (Yuan et al., 2021), which is an encoder-decoder model fine-tuned on text summarization; and (3) RankGen (Krishna et al., 2022), which is an encoder model trained contrastively to score model-generated sequences (in our case, answers) given a prefix (the question).",
+          "quote": [
+            {
+              "text": "(Yuan et al., 2021)",
+              "target": "#b43",
+              "type": "bibr",
+              "context": "BARTScore ",
+              "index": 14
+            },
+            {
+              "text": "(Krishna et al., 2022)",
+              "target": "#b17",
+              "type": "bibr",
+              "context": ") RankGen ",
+              "index": 119
+            }
+          ]
+        },
+        {
+          "text": "(Answer, evidence) metrics: Arguably the most challenging aspect of LFQA evaluation is to measure the correctness of the answer. While there are no existing factuality metrics for LFQA, the task is related to faithfulness in summarization. Metrics for faithfulness assume access to a set of evidence documents and evaluate whether a text is supported by the evidence (Kryscinski et al., 2020; Goyal and Durrett, 2020; Barrantes et al., 2020; Laban et al., 2022). We experiment with the QAFactEval metric (Fabbri et al., 2022), which evaluates faithfulness by comparing answers from the summary (in our case, the answer) and the evidence document (retrievals from the WEBGPT LFQA system).",
+          "quote": [
+            {
+              "text": "Goyal and Durrett, 2020;",
+              "target": "#b9",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 393
+            },
+            {
+              "text": "Laban et al., 2022)",
+              "target": "#b20",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 442
+            },
+            {
+              "text": "(Fabbri et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "al metric ",
+              "index": 504
+            },
+            {
+              "text": "[(Kryscinskietal.,2020]",
+              "type": "bibr",
+              "index": 367,
+              "context": " evidence ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 367,
+              "context": " evidence ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Barrantesetal.,2020]",
+              "type": "bibr",
+              "index": 418,
+              "context": "tt, 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 418,
+              "context": "tt, 2020; ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1.2",
+        "name": "Trained LFQA metrics"
+      },
+      "p": [
+        {
+          "text": "The metrics discussed so far are not trained on longform answers. We now shift to training an LFQA evaluation metric directly on human-annotated preference judgments of pairs of long-form answers.",
+          "quote": []
+        },
+        {
+          "text": "Prior work from OpenAI (Nakano et al., 2021)  Fine-tuning Longformer Our learned metric f takes in question q, answer a, and optionally evidence documents d to produce a scalar score. We encode [q, a] and [a, d] separately with an encoder model and concatenate respective [CLS] representation then pass it to a linear layer to obtain a scalar score s. As our input text is relatively long, we finetune a Longformer encoder (Beltagy et al., 2020). Following Nakano et al. (2021), we train the model with cross-entropy loss such that the scores produced by f rank a pair of answers (a 1 ,a 2 ) in the same order as the human preference. We estimate the likelihood that a 1 is preferred over a 2 as exp(s 1 ) exp(s 1 )+exp(s 2 ) where s 1 = f (q, a 1 ), s 2 = f (q, a 2 ). Given a set of answer pairs with gold preference p, the loss is,",
+          "quote": [
+            {
+              "text": "(Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "om OpenAI ",
+              "index": 23
+            },
+            {
+              "text": "[a, d]",
+              "target": "",
+              "type": "bibr",
+              "context": "q, a] and ",
+              "index": 205
+            },
+            {
+              "text": "(Beltagy et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "r encoder ",
+              "index": 423
+            },
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "Following ",
+              "index": 457
+            }
+          ]
+        },
+        {
+          "text": "where 1 is the indicator function. We consider two inference settings, longformer(D), which considers evidence documents, and longformer which takes the concatenation of [q, a] and [a], as evidence documents are not always available.",
+          "quote": []
+        },
+        {
+          "text": "Fine-tuning GPT-3 To leverage the advanced capabilities of larger-scale language models, we use OpenAI API to finetune GPT-3 text-curie-001 with the same comparison data split we used for the Longformer. Given a prompt consisting of question q, answer a 1 and answer a 2 , the model is fine-tuned to output the label Answer1 or Answer2. This metric takes a pair of answers as input and outputs a preference, unlike the Longformer model which produces a score given a single answer.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Evaluating automatic metrics"
+      },
+      "p": [
+        {
+          "text": "Task Each evaluation example consists of {(q, a 1 , a 2 , p)}, where q is question, a pair of longform answers a 1 and a 2 , and p ∈ {a 1 , a 2 } denotes the human preference of choosing answer a 1 or a 2 . We report the accuracy of the metric preference p i against the gold human preference pi . We omit the evidence documents d 1 , d 2 here for simplicity, but QAFactEval and longformer (D) metric take the evidence documents as additional input.",
+          "quote": []
+        },
+        {
+          "text": "Human preference data We compile human evaluations from previous studies (Krishna et al., 2021; Nakano et al., 2021) and our expert annotations from Section 3. See appendix A.3 for descriptions of the models evaluated in these datasets as well as data statistics on the answers. Both prior studies present large-scale preference judgments of overall answer quality and smaller-scale judgments for two targeted aspects, coherence and factuality. In total, we look at 3,478 comparisons on overall answer quality, 854 comparisons on coherence, and 469 comparisons on factuality. As shown by our analysis of expert annotations (Section 3), annotators can frequently disagree with each other.",
+          "quote": [
+            {
+              "text": "Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 96
+            },
+            {
+              "text": "[(Krishnaetal.,2021]",
+              "type": "bibr",
+              "index": 73,
+              "context": "s studies ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 73,
+              "context": "s studies ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3",
+        "name": "Results"
+      },
+      "p": [
+        {
+          "text": "Table  reports the accuracy of each metric at imitating human preference data. We report three baselines: Random, which randomly chooses one of the answers; Always Human, which prefers the human-written answer when available; and Length, which prefers the longer answer. 11 All metrics exhibit relatively low accuracies, falling substantially below estimated human agreement. None of the metrics are robust across different types of input answer pairs. For instance, pretrained reference-based metrics such as ",
+          "quote": []
+        },
+        {
+          "text": "Table (Nakano et al., 2021): Accuracy of automatic metrics for imitating human judgments of overall answer preference, coherence, and factuality. h/m denotes comparisons between human-written answers and model-generated answers, while m/m denotes comparisons between pairs of model-generated answers. † These metrics are calculated on 109 pairs of comparisons, where comparisons of History are removed because there are only one answer available on the subreddit and hence no reference answer to compare. ♢ We estimate the human performance with a pairwise agreement for two-way and three-way expert annotations. ♠ This pairwise agreement is reported by WEBGPT , estimated on a subset of the data.",
+          "quote": [
+            {
+              "text": "(Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "ble ",
+              "index": 6
+            }
+          ]
+        },
+        {
+          "text": "BERTScore and BLEURT have low accuracy on HURDLES human vs. model data, which adds further evidence to the issues with ROUGE noted by Krishna et al. (2021). Supervised metrics (Longformer and GPT-3) also struggle in this setting, despite outperforming all other metrics on overall rating in the other three data settings. While trained to imitate only overall rating, they achieve relatively strong accuracies on fine-grained ratings too, suggesting that they are correlated.",
+          "quote": [
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": " noted by ",
+              "index": 134
+            }
+          ]
+        },
+        {
+          "text": "We observe spurious correlations with length for long-form answer evaluation. Choosing the longer answer achieves higher accuracy than all unsupervised metrics for the WEBGPT model vs. model comparison; the best performance on factuality for HURDLES human vs. model answer; and the second-highest accuracy on our expert data. On the other hand, when comparing WEBGPT human vs. model answers, choosing a shorter answer would have been more beneficial for coherence evalua-tion (62% of the time).The \"strong\" performance of the length baseline displays the brittleness of all existing automatic metrics for LFQA.",
+          "quote": []
+        },
+        {
+          "text": "It is more feasible to model fine-grained answer aspects than overall answer quality. The QAFactEval metric, designed for factuality, does indeed outperform all other metrics on factuality. However, the metric is limited in that it requires a set of input evidence documents, which may not always be available or reliable. For coherence, simpler metrics such as self-BLEU perform competitively, and we also find that our upper bound of always choosing the human answer performs strongly on coherence, suggesting that models struggle to generate coherent long-form answers.",
+          "quote": []
+        },
+        {
+          "text": "Correlation of Automatic Metrics Given pairs of long-form answers of the comparison data, we measure how frequently two automatic metrics prefer the same answer (Figure ). We see a positive correlation among reference-based metrics (e.g., rouge and bertscore gives the same ranking for 63% of the pairs), as well as the (question, answer) metrics (e.g. qg likelihood and bartscore).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5",
+        "name": "Conclusion & Future Work"
+      },
+      "p": [
+        {
+          "text": "Our study provides a unified evaluation benchmark for long-form answers, including new annotations from domain experts. We present a new set of expert LFQA evaluations along with detailed justifications, and we also compile existing human annotations across different properties (overall preference, factuality, coherence) to facilitate future development of automatic LFQA metrics. Evaluation of long-form answers is a multifaceted problem and thus should be more targeted. Our expert justifications suggest that many aspects are considered when deciding which answer is better, some of which may be at odds with others (e.g. completeness vs. conciseness). This suggests that computing an \"overall\" score for answer quality is not meaningful, which is further supported by the limitations of metrics trained directly from overall preference judgments. Future work should look deeper into modelling frequent aspects mentioned by expert annotators, such as completeness and ease of understanding, perhaps by taking inspiration from evaluation methods that explicitly localize and categorize errors (Freitag et al., 2021; Goyal et al., 2022).",
+          "quote": [
+            {
+              "text": "Goyal et al., 2022)",
+              "target": "#b10",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 1120
+            },
+            {
+              "text": "[(Freitagetal.,2021]",
+              "type": "bibr",
+              "index": 1097,
+              "context": "ze errors ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1097,
+              "context": "ze errors ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations"
+      },
+      "p": [
+        {
+          "text": "We study a limited scope of long-form answers.",
+          "quote": []
+        },
+        {
+          "text": "The questions are either drawn from search queries or from community forums. In the real world, we will encounter many more diverse forms of long form question answering, such as answering questions in education or commercial settings. We only cover the English language, and thus our questions are topically limited to English-speaking culture.",
+          "quote": []
+        },
+        {
+          "text": "Our evaluation of long-form answers is stationary. Annotators are provided a pre-generated output from the model without being able to interact with the model over multiple rounds. A more interactive evaluation (Lee et al., 2022) of models is a great direction for future work.",
+          "quote": [
+            {
+              "text": "(Lee et al., 2022)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "valuation ",
+              "index": 211
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Ethics Statement"
+      },
+      "p": [
+        {
+          "text": "The expert annotation data collection protocol has been determined to be exempt from review by an IRB board. All data collected will be made publicly available under the MIT license.",
+          "quote": []
+        },
+        {
+          "text": "The data collection process did not require any information that can be used to uniquely identify individual workers. We examined the annotation data to make sure no such information or offensive content is present in questions or answers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A Appendix"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.1 Related work on text generation evaluation"
+      },
+      "p": [
+        {
+          "text": "Human and automatic evaluation for text generation is an active research area. We provide a brief overview here and direct the readers to recent surveys for more discussion (Celikyilmaz et al., 2020; Gehrmann et al., 2022). Many tasks such as machine translation and summarization primarily rely on reference-based evaluation, with metrics such as BLEU (Papineni et al., 2002), ROUGE (Lin, 2004) and BERTScore (Zhang et al., 2019). These metrics aim to measure similarities between generated text and reference text. For open-ended generation problems such as story generation, comparing the generated text with a single reference is not meaningful. Reference-based metrics which instead measure the distributional similarity of model-generated and human-written texts have been proposed (Pillutla et al., 2021). There has also been work on reference-less metrics, which mostly measure a specific aspect of text. For instance, factuality metrics for summarization (Goyal and Durrett, 2020; Kryscinski et al., 2020; Barrantes et al., 2020; Laban et al., 2022) capture the relationship between source document and summary, without the need of a reference summary. Another line of work proposes automatic metrics which learn to emulate human judgements of generated text, using either gold human preference or synthetically generated data (Sellam et al., 2020; Zhong et al., 2022; Zhang et al., 2022).",
+          "quote": [
+            {
+              "text": "Gehrmann et al., 2022)",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 200
+            },
+            {
+              "text": "(Papineni et al., 2002)",
+              "target": "#b28",
+              "type": "bibr",
+              "context": "h as BLEU ",
+              "index": 353
+            },
+            {
+              "text": "(Lin, 2004)",
+              "target": "#b24",
+              "type": "bibr",
+              "context": "2), ROUGE ",
+              "index": 384
+            },
+            {
+              "text": "(Zhang et al., 2019)",
+              "target": "#b46",
+              "type": "bibr",
+              "context": "BERTScore ",
+              "index": 410
+            },
+            {
+              "text": "(Pillutla et al., 2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": " proposed ",
+              "index": 788
+            },
+            {
+              "text": "Kryscinski et al., 2020;",
+              "target": "#b19",
+              "type": "bibr",
+              "context": "tt, 2020; ",
+              "index": 990
+            },
+            {
+              "text": "Laban et al., 2022)",
+              "target": "#b20",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 1039
+            },
+            {
+              "text": "Zhong et al., 2022;",
+              "target": "#b47",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 1358
+            },
+            {
+              "text": "Zhang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 1378
+            },
+            {
+              "text": "[(Celikyilmazetal.,2020]",
+              "type": "bibr",
+              "index": 173,
+              "context": "iscussion ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 173,
+              "context": "iscussion ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(GoyalandDurrett,2020]",
+              "type": "bibr",
+              "index": 964,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 964,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[Barrantesetal.,2020]",
+              "type": "bibr",
+              "index": 1015,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1015,
+              "context": "l., 2020; ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Sellametal.,2020]",
+              "type": "bibr",
+              "index": 1336,
+              "context": "ated data ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 1336,
+              "context": "ated data ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.2 Expert Annotation"
+      },
+      "p": [
+        {
+          "text": "Question clustering Four domains (biology, physics, chemistry, and economics) are marked in the ELI5 posts (i.e., flairs), and two (tech/cs and law) are identified by using a dense passage retrieval (Karpukhin et al., 2020) and KMeans from scikit-learn (Pedregosa et al., 2011). Specifically, we use DPR to encode question of all posts whose flair is marked as others. Then, we run KMeans to find two big groups of questions whose domains can be reliably marked as tech/cs and law.",
+          "quote": [
+            {
+              "text": "(Karpukhin et al., 2020)",
+              "target": "#b15",
+              "type": "bibr",
+              "context": "retrieval ",
+              "index": 199
+            },
+            {
+              "text": "(Pedregosa et al., 2011)",
+              "target": "#b29",
+              "type": "bibr",
+              "context": "kit-learn ",
+              "index": 253
+            }
+          ]
+        },
+        {
+          "text": "Annotators Experts are hired based on their academic background and English proficiency. No other demographic and geographic restrictions were applied. For each question domain, we aimed to hire three domain experts who have at least a bachelor's degree in the domain through a paid pi-lot study. Thirty-five potential experts participated in a paid pilot study with 5 question-answer pairs. We paid $3 per question-answer set. At the end, only 13 experts met the qualification requirements and were willing to continue because the task required substantive expertise as well as time and attention commitment.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.2.1 Justification Analysis"
+      },
+      "p": [
+        {
+          "text": "Data statistics of explanations collected are in Table . Examples of explanation and extracted aspects in our manual analysis can be found in Table .",
+          "quote": []
+        },
+        {
+          "text": "Preprocessing To construct the masked comments, we first preprocess the justifications such that all mentions of the answer entity is prepended with the word \"Answer\" (i.e. replacing \"Option A\", \"A\" with \"Answer A\"). We then mask out any mentions of \"A\" and \"B\" in the comment. We remove comments that do not contain answer entities after preprocessing, resulting in 259 (out of 260) expert comments and 292 (out of 305) WEBGPT comments.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3 Previously Collected Human Evaluation Data"
+      },
+      "p": [
+        {
+          "text": "Dataset statistics is shown in Table . We group the comparisons by whether they are (model-generated answers v.s. human-written answers) or (modelgenerated answers v.s. model-generated answers), and present overall statistics. The model-generated answers include four different set-ups from HUR-DLES (combination of nucleus sampling p={0.6, 0.9}, and generation conditioning on {predicted, random} passages) and three different set-ups from WEBGPT. The human-written answers are gold answers from the ELI5 subreddit for comparison with HURDLES answers, and human demonstrations for WEBGPT answers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3.1 LFQA systems"
+      },
+      "p": [
+        {
+          "text": "We describe the different LFQA systems developed by prior works, which are included in comparisons used for evaluating automatic metrics in Section 4.",
+          "quote": []
+        },
+        {
+          "text": "HURDLES Krishna et al. (2021) presented a stateof-the-art LFQA system which includes a passage retriever (Guu et al., 2020 ) and an answer generation model (Roy et al., 2021).",
+          "quote": [
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "S ",
+              "index": 8
+            },
+            {
+              "text": "(Guu et al., 2020",
+              "target": "#b11",
+              "type": "bibr",
+              "context": "retriever ",
+              "index": 105
+            },
+            {
+              "text": "(Roy et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2020 ",
+              "index": 123
+            }
+          ]
+        },
+        {
+          "text": "WEBGPT Nakano et al. (2021) proposed to finetune GPT-3 (Brown et al., 2020a) to interact with a search engine and compose long-form answers based on the information found. The generated answers also contain a set of reference documents found online.",
+          "quote": [
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "PT ",
+              "index": 7
+            },
+            {
+              "text": "GPT-3 (Brown et al., 2020a)",
+              "target": "",
+              "type": "bibr",
+              "context": " finetune ",
+              "index": 49
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3.2 Evaluation aspects"
+      },
+      "p": [
+        {
+          "text": "We describe the different evaluation aspects conducted by prior human evaluation.",
+          "quote": []
+        },
+        {
+          "text": "Overall Krishna et al. (2021) phrased the question as \"Which generation answered the question better / was more relevant to the question?\" while Nakano et al. (2021) developed detailed instructions with intermediate steps for comparing two answers, and dedicated an overall rating, phrased as \"how useful the answer would be to the person asking the question, all things considered\".",
+          "quote": [
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "l ",
+              "index": 8
+            },
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "n?\" while ",
+              "index": 145
+            }
+          ]
+        },
+        {
+          "text": "Coherence Krishna et al. (2021) asked the human evaluators to choose the more coherent answer and listed repetition as a trait of incoherence. 12 In Nakano et al. (2021), the instruction for coherence evaluation focuses on whether the answer makes sense, is easy to follow and is in a logical order.",
+          "quote": [
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "Coherence ",
+              "index": 10
+            },
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "ce. 12 In ",
+              "index": 149
+            }
+          ]
+        },
+        {
+          "text": "Factuality Krishna et al. (2021) instructed human evaluators to judge factual correctness of answers, with no accompanying evidence documents but permission to use search engine over Wikipedia articles. In Nakano et al. (2021), the evaluation of factuality is focused on whether the generated answer could be entailed by the evidence documents and that it doesn't hallucinate unsupported fact.",
+          "quote": [
+            {
+              "text": "Krishna et al. (2021)",
+              "target": "#b30",
+              "type": "bibr",
+              "context": "actuality ",
+              "index": 11
+            },
+            {
+              "text": "Nakano et al. (2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "icles. In ",
+              "index": 206
+            }
+          ]
+        },
+        {
+          "text": "Note that \"faithfulness\" to the evidence articles is a different notion from the \"correctness\" of the answer, as the evidence articles might not always be correct or up-to-date (Gao et al., 2022).",
+          "quote": [
+            {
+              "text": "(Gao et al., 2022)",
+              "target": "#b6",
+              "type": "bibr",
+              "context": "p-to-date ",
+              "index": 177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3.3 Example of comments mentioning different aspects for Section 3.3"
+      },
+      "p": [
+        {
+          "text": "See Table .",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.4 Automatic Metric Implementation Details"
+      },
+      "p": [
+        {
+          "text": "Length statistics of the answers evaluated in 4.1 are reported in Table . We truncate the input if it exceeds the context window for the model. Less than 5% of the comparison data are truncated.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "ROUGE-L"
+      },
+      "p": [
+        {
+          "text": "For each answer, we calculate ROUGE-L against the set of reference answers from ELI5 and use the maximal ROUGE-L.",
+          "quote": []
+        },
+        {
+          "text": "BERTScore We use the default roberta-large model for English 13 and report the maximal F1 BERT score against the set of reference answers.  BLEURT We use the BLEURT-20 checkpoint as recommended and report the maximal BLEURT score against the set of reference answers.",
+          "quote": []
+        },
+        {
+          "text": "Self-BLEU We calculate Self-BLEU by regarding one sentence as hypothesis and all others in the same answer paragraph as reference. We report self-BLEU-5 as a measure of coherence.",
+          "quote": []
+        },
+        {
+          "text": "Length We use the Stanza toolkit (Qi et al., 2020) for word tokenization.",
+          "quote": [
+            {
+              "text": "(Qi et al., 2020)",
+              "target": "#b31",
+              "type": "bibr",
+              "context": "a toolkit ",
+              "index": 33
+            }
+          ]
+        },
+        {
+          "text": "QG Likelihood Given a question q and an answer paragraph a, we estimate p(q|a) by computing the average log-likelihood of the question tokens conditioned on the passage using T0. Following previous work (Sachan et al., 2022), we append a natural language instruction \"Which question does this passage answer?\" to the answer, denoted as a ′ .",
+          "quote": [
+            {
+              "text": "(Sachan et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "ious work ",
+              "index": 203
+            }
+          ]
+        },
+        {
+          "text": "where Θ denotes the parameter of the language model and |q| denotes the number of tokens in the question.",
+          "quote": []
+        },
+        {
+          "text": "BARTScore We use the BART model finetuned on the CNN/DM dataset (facebook/bart-large-cnn).",
+          "quote": []
+        },
+        {
+          "text": "RankGen Given a question q and an answer paragraph a, we first encode them through the RankGen encoder, which projects them to fixed-size vectors (q, a). We then determine their relevance by calculating the dot product between the two vectors q • a. We use the T5-XXL (11B) encoder trained on both in-book negative and generative negatives.",
+          "quote": []
+        },
+        {
+          "text": "QAFactEval QAFactEval (Fabbri et al., 2022) is a recently proposed QA-based metric that has shown superior performane on several summarization factuality benchmark (Laban et al., 2022; Maynez et al., 2020). The pipeline is carefully chosen from extensive experiments on various combinations of components in the QA-based metrics. The final pipeline consists of (1) NP from S as Ans(S) (2) BART-large (Lewis et al., 2020) as Q G (3) Electra-large (Clark et al., 2020) as Q A and (4) learned metrics LERC (Chen et al., 2020) as Sim(p i , s i ). They further include an answerability classification module to determine if the question is answerable given the document D. We report the LERC, which uses the learned metrics to compare Ans S and Ans D (a) and shows better performance compared to other metrics in our initial experiments.",
+          "quote": [
+            {
+              "text": "(Fabbri et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "AFactEval ",
+              "index": 22
+            },
+            {
+              "text": "Maynez et al., 2020)",
+              "target": "#b26",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 185
+            },
+            {
+              "text": "(Lewis et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "ART-large ",
+              "index": 400
+            },
+            {
+              "text": "(Clark et al., 2020)",
+              "target": "#b0",
+              "type": "bibr",
+              "context": "tra-large ",
+              "index": 446
+            },
+            {
+              "text": "[(Labanetal.,2022]",
+              "type": "bibr",
+              "index": 164,
+              "context": "benchmark ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 164,
+              "context": "benchmark ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.4.1 Learned Metrics"
+      },
+      "p": [
+        {
+          "text": "We use pytorch-transformers Wolf et al. (2019) to implement our models. We use Quadro RTX 8000 GPUs to train our model.  ",
+          "quote": [
+            {
+              "text": "Wolf et al. (2019)",
+              "target": "#b42",
+              "type": "bibr",
+              "context": "nsformers ",
+              "index": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.4.2 GPT-3 Two-shot"
+      },
+      "p": [
+        {
+          "text": "We conduct a pilot study on prompting GPT3 text-davinci-003 for the pair-wise answer evaluation task on a subset of our expert annotation data.",
+          "quote": []
+        },
+        {
+          "text": "For each domain that has multiple experts (i.e., biology, physics, economics, and history), we evaluate on the questions for which all experts agreed on the label of the preferred answer. We randomly choose two question-answer sets as the in-context example and prompt the model on the rest of the question-answer sets. The prompt has the following format: For each question-answer set, we sample three times with top p = 1 and temperature = 0.7 to evaluate model's consistency. The results are reported in Table .",
+          "quote": []
+        },
+        {
+          "text": "Results are report in Table . The model is mostly self-consistent.Model also aligns with human on this small set of data where human have perfect agreement with each other, model aligns with human performance, despite variance across different domains. We leave further investigation on utilizing large language model for automatic evaluation on long-form question answering to future work. Not going too much into the scientificy details, mainly because I don't remember them from high school 2 decades ago, but basically the cell division that occurs to form the reproductive cells (sperm/eggs) in humans is not the same as the cell division for none reproductive cells. When the \"normal\" cells split, they create complete copies of each chromosome pair (your DNA is made of pairs of each chromosome. One comes from the father, one from the mother), so the child cells end up with a complete set of DNA. Reproductive cells split the chromosome pairs. The child cells only receive one chromosome from each pair. In the case of the sex chromosome pair, a male has an XY pair and a female has an XX pair. So when a male creates reproductive cells (sperm), one sperm will receive the X chromosome and the other will have the Y chromosome.",
+          "quote": []
+        },
+        {
+          "text": "When most cells divide, they copy themselves once then split once, so both copied cells have X *and* Y. Sperm basically come from 1 copy but 2 splits, so you get one X sperm and one Y sperm from the second split.",
+          "quote": []
+        },
+        {
+          "text": "Comments (machine) The solar system is not actually a perfect plane, but it is well on its way to an ideal stage. Pluto actually lies at an awkward incline, due to its low gravity and isolated orbit. The asteroid belt, in its most oblique locations, also inclines at about 20 degrees from the main plane. Aside from these few exceptions though, the power of angular momentum has left the planets of our solar system in a tidy, predictable plane.",
+          "quote": []
+        },
+        {
+          "text": "The reason for this is that [...]",
+          "quote": []
+        },
+        {
+          "text": "(human) The solar system is flat due to the law of conservation of total angular momentum. This law states that the total amount of spinning in any isolated system will always remain constant. This is what caused the solar system to flatten as time went on and becoming a flat disc.",
+          "quote": []
+        },
+        {
+          "text": "(WebGPT) B is overly brief and simplistic, not explaining its concepts well enough for them to be understandable. A is longer, but it is very useful, interesting, and detailed. It answers the question about the solar system being flat thoroughly and coherently.    WebGPT, justifications are only on a subset of comparison data. WebGPT and expert annotation data take both the title and the description of the reddit post as question following (Nakano et al., 2021), whereas Hurdles data only considers the title as question (hence shorter |q|).",
+          "quote": [
+            {
+              "text": "(Nakano et al., 2021)",
+              "target": "#b27",
+              "type": "bibr",
+              "context": "following ",
+              "index": 444
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 3: Pairwise automatic metric correlation.",
+    "Figure 4: Screenshot of annotation interface for collecting expert evaluation.",
+    "Table 2 :Results of our expert annotation of seven domains, where the two candidate answers are either both human-written (H/H) or human-written vs. modelgenerated (H/M). We report how often the highlyupvoted answer was preferred in H/H, and how often the model-generated answers are preferred in H/M.",
+    "Table 3 :Results on masked justification reference prediction: Original comments, Flipped comments and Random comments. The larger LMs can identify references in justifications better.",
+    "Table 5 :Statistics of the text length in our expert-annotated dataset. For each category, there are 20 questions. Each question has either a pair of human-written answers (H/H) or a pair of human-written and model-generated answers (H/M). The domain of history has 15 questions in the H/M setting and 5 in H/H. The other six domains have 10 questions in each setting. There are 140 questions, 205 human-written answers, and 75 model-generated answers.",
+    "Table 6 :Data statistics for computational analysis of free-form justifications. The span refers to the masked reference of candidate answer in the justifications.",
+    "Table 7 :Free-form justifications written by experts and their corresponding aspects.",
+    "Table 8 :Example annotations by domain experts comparing long-form answers, either generated from GPT3 or human written, showing their preferences, free-form justifications and aspects. The first two examples illustrate that experts disagree with each other because they value different aspects.",
+    "Table 9 :Data Statistics for human comparison evaluation data for each aspect. In all studies, overall score was mandatory but coherence / factuality scores were optional and hence the number of evaluation data available varies among different aspects. All human evaluation data is one-way annotated.There are a few reasons why people go bald on the top of their head and still have some hair on the sides. One reason is that the hair follicles on the top of the head are more sensitive to a hormone called dihydrotestosterone (DHT). DHT is [...] found in both men and women. [...] Another reason is that the hair on the sides and back of the head is not as exposed to the sun and other environmental factors, [...] (human) Seems unsettled but here's a theory: \"The most recent hypothesis suggests that the hair loss process begins during puberty, when growth of the skull and the muscles in the forehead and neck increases the tension in a tight band of tissue stretching over the top of the head. The more DHT (a type of testosterone) there is, the more these muscles contract, which causes inflammation and brings in more DHT. [...] (expert) It is difficult to decide but I believe answer A is better choice as it describes both the harmonal and environmental causes behind the baldness of top. And Answer B only focuses on one theory which might not be 100 percent accurate. [...] According to research, baldness is due to genes. In 95 percent cases, balding is due to androgenetic alopecia, more commonly known as male pattern baldness, which is hereditary condition. [...]",
+    "Table 10 :It is a much better answer than B.There is no clear consensus on whether or not people under anesthesia get the sleep they need for the day. Some studies suggest that people under anesthesia do get some sleep, but it is not clear how deep or restful this sleep is. Other studies suggest that people under anesthesia do not get any meaningful sleep at all. Therefore, it is difficult to say definitively whether or not people under anesthesia get the sleep they need for the day.(expert) For this question, answer A is better option because it has proper explanation of relevant information which is being asked in the question.[...]  In answer A, relevant detail of the answer is explained using the example of equating sleep to charging the phone and anesthesia to turning it off but not charging which clear the idea about this concept.[...]    Examples of some of the aspects that occur in the manual analysis described in Section 3.3.",
+    "Table 11 :Performance of 2 shot question answer evaluation using GPT3 text-davinci-003. Consistency reports the percentage of the model generate the same preferred answer across three API calls. Accuracy compares the majority votes among the three API calls against the human preference.",
+    "Table 12 :Data statistics for human preference data used to train and evaluate the learned metric (Section 4.1.2). We collapse human rating such that the answer preferred is assigned score 1 and the other 0., included tie data and assign them 50% soft labels, and excluded them from evaluation. However, we didn't find them beneficial for model training and hence removed them from both training and valuation.",
+    "Data statistics of answers compared in the human evaluation data. The number of comparison data can be found in Table 4. |q|, |a| ,|d| and |j| represent the average number of words for question, answer paragraph, retrieved documents and justification. For"
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "ELECTRA: Pretraining text encoders as discriminators rather than generators",
+      "author": [
+        {
+          "forename": "Kevin",
+          "surname": "Clark",
+          "name": "Kevin Clark",
+          "email": ""
+        },
+        {
+          "forename": "Minh-Thang",
+          "surname": "Luong",
+          "name": "Minh-Thang Luong",
+          "email": ""
+        },
+        {
+          "forename": "Quoc V.",
+          "surname": "Le",
+          "name": "Quoc V. Le",
+          "email": ""
+        },
+        {
+          "forename": "Christopher D.",
+          "surname": "Manning",
+          "name": "Christopher D. Manning",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "ICLR",
+      "date": "2020"
+    },
+    {
+      "index": "b1",
+      "title": "QAFactEval: Improved QAbased factual consistency evaluation for summarization",
+      "author": [
+        {
+          "forename": "Alexander",
+          "surname": "Fabbri",
+          "name": "Alexander Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Wu",
+          "name": "Chien-Sheng Wu",
+          "email": ""
+        },
+        {
+          "forename": "Wenhao",
+          "surname": "Liu",
+          "name": "Wenhao Liu",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2022.naacl-main.187",
+      "venue": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2022"
+    },
+    {
+      "index": "b2",
+      "title": "ELI5: Long form question answering",
+      "author": [
+        {
+          "forename": "Angela",
+          "surname": "Fan",
+          "name": "Angela Fan",
+          "email": ""
+        },
+        {
+          "forename": "Yacine",
+          "surname": "Jernite",
+          "name": "Yacine Jernite",
+          "email": ""
+        },
+        {
+          "forename": "Ethan",
+          "surname": "Perez",
+          "name": "Ethan Perez",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Grangier",
+          "name": "David Grangier",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Weston",
+          "name": "Jason Weston",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Auli",
+          "name": "Michael Auli",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/P19-1346",
+      "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2019"
+    },
+    {
+      "index": "b3",
+      "title": "Measuring nominal scale agreement among many raters",
+      "author": [
+        {
+          "forename": "L.",
+          "surname": "Joseph",
+          "name": "L. Joseph",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Psychological bulletin",
+      "date": "1971"
+    },
+    {
+      "index": "b4",
+      "title": "Statistical methods for rates and proportions",
+      "author": [
+        {
+          "forename": "L.",
+          "surname": "Joseph",
+          "name": "L. Joseph",
+          "email": ""
+        },
+        {
+          "forename": "Bruce",
+          "surname": "Fleiss",
+          "name": "Bruce Fleiss",
+          "email": ""
+        },
+        {
+          "forename": "Myunghee Cho",
+          "surname": "Levin",
+          "name": "Myunghee Cho Levin",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Statistical methods for rates and proportions",
+      "date": "2013"
+    },
+    {
+      "index": "b5",
+      "title": "Qijun Tan, and Wolfgang Macherey. 2021. Experts, errors, and context: A large-scale study of human evaluation for machine translation",
+      "author": [
+        {
+          "forename": "Markus",
+          "surname": "Freitag",
+          "name": "Markus Freitag",
+          "email": ""
+        },
+        {
+          "forename": "George",
+          "surname": "Foster",
+          "name": "George Foster",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Grangier",
+          "name": "David Grangier",
+          "email": ""
+        },
+        {
+          "forename": "Viresh",
+          "surname": "Ratnakar",
+          "name": "Viresh Ratnakar",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00437",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": ""
+    },
+    {
+      "index": "b6",
+      "title": "Attributed text generation via post-hoc research and revision",
+      "author": [
+        {
+          "forename": "Luyu",
+          "surname": "Gao",
+          "name": "Luyu Gao",
+          "email": ""
+        },
+        {
+          "forename": "Zhuyun",
+          "surname": "Dai",
+          "name": "Zhuyun Dai",
+          "email": ""
+        },
+        {
+          "forename": "Panupong",
+          "surname": "Pasupat",
+          "name": "Panupong Pasupat",
+          "email": ""
+        },
+        {
+          "forename": "Anthony",
+          "surname": "Chen",
+          "name": "Anthony Chen",
+          "email": ""
+        },
+        {
+          "forename": "Arun",
+          "surname": "Tejasvi Chaganty",
+          "name": "Arun Tejasvi Chaganty",
+          "email": ""
+        },
+        {
+          "forename": "Yicheng",
+          "surname": "Fan",
+          "name": "Yicheng Fan",
+          "email": ""
+        },
+        {
+          "forename": "Vincent",
+          "surname": "Zhao",
+          "name": "Vincent Zhao",
+          "email": ""
+        },
+        {
+          "forename": "N.",
+          "surname": "Lao",
+          "name": "N. Lao",
+          "email": ""
+        },
+        {
+          "forename": "Hongrae",
+          "surname": "Lee",
+          "name": "Hongrae Lee",
+          "email": ""
+        },
+        {
+          "forename": "Da-Cheng",
+          "surname": "Juan",
+          "name": "Da-Cheng Juan",
+          "email": ""
+        },
+        {
+          "forename": "Kelvin",
+          "surname": "Guu",
+          "name": "Kelvin Guu",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2210.08726",
+      "venue": "ArXiv",
+      "date": "2022"
+    },
+    {
+      "index": "b7",
+      "title": "Repairing the cracked foundation: A survey of obstacles in evaluation practices for generated text",
+      "author": [
+        {
+          "forename": "Sebastian",
+          "surname": "Gehrmann",
+          "name": "Sebastian Gehrmann",
+          "email": ""
+        },
+        {
+          "forename": "Elizabeth",
+          "surname": "Clark",
+          "name": "Elizabeth Clark",
+          "email": ""
+        },
+        {
+          "forename": "Thibault",
+          "surname": "Sellam",
+          "name": "Thibault Sellam",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2202.06935",
+      "venue": "Repairing the cracked foundation: A survey of obstacles in evaluation practices for generated text",
+      "date": "2022"
+    },
+    {
+      "index": "b8",
+      "title": "Non-expert evaluation of summarization systems is risky",
+      "author": [
+        {
+          "forename": "Dan",
+          "surname": "Gillick",
+          "name": "Dan Gillick",
+          "email": ""
+        },
+        {
+          "forename": "Yang",
+          "surname": "Liu",
+          "name": "Yang Liu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "",
+      "date": "2010"
+    },
+    {
+      "index": "b9",
+      "title": "Evaluating factuality in generation with dependency-level entailment",
+      "author": [
+        {
+          "forename": "Tanya",
+          "surname": "Goyal",
+          "name": "Tanya Goyal",
+          "email": ""
+        },
+        {
+          "forename": "Greg",
+          "surname": "Durrett",
+          "name": "Greg Durrett",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.findings-emnlp.322",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2020",
+      "date": "2020"
+    },
+    {
+      "index": "b10",
+      "title": "Snac -coherence error detection for narrative summarization",
+      "author": [
+        {
+          "forename": "Tanya",
+          "surname": "Goyal",
+          "name": "Tanya Goyal",
+          "email": ""
+        },
+        {
+          "forename": "Junyi Jessy ",
+          "surname": "Li",
+          "name": "Junyi Jessy  Li",
+          "email": ""
+        },
+        {
+          "forename": "Greg",
+          "surname": "Durrett",
+          "name": "Greg Durrett",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of EMNLP",
+      "date": "2022"
+    },
+    {
+      "index": "b11",
+      "title": "Realm: Retrievalaugmented language model pre-training",
+      "author": [
+        {
+          "forename": "Kelvin",
+          "surname": "Guu",
+          "name": "Kelvin Guu",
+          "email": ""
+        },
+        {
+          "forename": "Kenton",
+          "surname": "Lee",
+          "name": "Kenton Lee",
+          "email": ""
+        },
+        {
+          "forename": "Zora",
+          "surname": "Tung",
+          "name": "Zora Tung",
+          "email": ""
+        },
+        {
+          "forename": "Panupong",
+          "surname": "Pasupat",
+          "name": "Panupong Pasupat",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Realm: Retrievalaugmented language model pre-training",
+      "date": "2020"
+    },
+    {
+      "index": "b12",
+      "title": "The curious case of neural text degeneration",
+      "author": [
+        {
+          "forename": "Ari",
+          "surname": "Holtzman",
+          "name": "Ari Holtzman",
+          "email": ""
+        },
+        {
+          "forename": "Jan",
+          "surname": "Buys",
+          "name": "Jan Buys",
+          "email": ""
+        },
+        {
+          "forename": "Li",
+          "surname": "Du",
+          "name": "Li Du",
+          "email": ""
+        },
+        {
+          "forename": "Maxwell",
+          "surname": "Forbes",
+          "name": "Maxwell Forbes",
+          "email": ""
+        },
+        {
+          "forename": "Yejin",
+          "surname": "Choi",
+          "name": "Yejin Choi",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "International Conference on Learning Representations",
+      "date": "2019"
+    },
+    {
+      "index": "b13",
+      "title": "Best practices for crowd-based evaluation of German summarization: Comparing crowd, expert and automatic evaluation",
+      "author": [
+        {
+          "forename": "Neslihan",
+          "surname": "Iskender",
+          "name": "Neslihan Iskender",
+          "email": ""
+        },
+        {
+          "forename": "Tim",
+          "surname": "Polzehl",
+          "name": "Tim Polzehl",
+          "email": ""
+        },
+        {
+          "forename": "Sebastian",
+          "surname": "Möller",
+          "name": "Sebastian Möller",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.eval4nlp-1.16",
+      "venue": "Proceedings of the First Workshop on Evaluation and Comparison of NLP Systems",
+      "date": "2020"
+    },
+    {
+      "index": "b14",
+      "title": "Blonde: An automatic evaluation metric for document-level machine translation",
+      "author": [
+        {
+          "forename": "Yuchen Eleanor ",
+          "surname": "Jiang",
+          "name": "Yuchen Eleanor  Jiang",
+          "email": ""
+        },
+        {
+          "forename": "Tianyu",
+          "surname": "Liu",
+          "name": "Tianyu Liu",
+          "email": ""
+        },
+        {
+          "forename": "Shuming",
+          "surname": "Ma",
+          "name": "Shuming Ma",
+          "email": ""
+        },
+        {
+          "forename": "Dongdong",
+          "surname": "Zhang",
+          "name": "Dongdong Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Jian",
+          "surname": "Yang",
+          "name": "Jian Yang",
+          "email": ""
+        },
+        {
+          "forename": "Haoyang",
+          "surname": "Huang",
+          "name": "Haoyang Huang",
+          "email": ""
+        },
+        {
+          "forename": "Rico",
+          "surname": "Sennrich",
+          "name": "Rico Sennrich",
+          "email": ""
+        },
+        {
+          "forename": "Ryan",
+          "surname": "Cotterell",
+          "name": "Ryan Cotterell",
+          "email": ""
+        },
+        {
+          "forename": "Mrinmaya",
+          "surname": "Sachan",
+          "name": "Mrinmaya Sachan",
+          "email": ""
+        },
+        {
+          "forename": "Ming",
+          "surname": "Zhou",
+          "name": "Ming Zhou",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b15",
+      "title": "Dense passage retrieval for opendomain question answering",
+      "author": [
+        {
+          "forename": "Vladimir",
+          "surname": "Karpukhin",
+          "name": "Vladimir Karpukhin",
+          "email": ""
+        },
+        {
+          "forename": "Barlas",
+          "surname": "Oguz",
+          "name": "Barlas Oguz",
+          "email": ""
+        },
+        {
+          "forename": "Sewon",
+          "surname": "Min",
+          "name": "Sewon Min",
+          "email": ""
+        },
+        {
+          "forename": "Patrick",
+          "surname": "Lewis",
+          "name": "Patrick Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Ledell",
+          "surname": "Wu",
+          "name": "Ledell Wu",
+          "email": ""
+        },
+        {
+          "forename": "Sergey",
+          "surname": "Edunov",
+          "name": "Sergey Edunov",
+          "email": ""
+        },
+        {
+          "forename": "Danqi",
+          "surname": "Chen",
+          "name": "Danqi Chen",
+          "email": ""
+        },
+        {
+          "forename": "Wen-Tau",
+          "surname": "Yih",
+          "name": "Wen-Tau Yih",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.550",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b16",
+      "title": "Bidimensional leaderboards: Generate and evaluate language hand in hand",
+      "author": [
+        {
+          "forename": "Jungo",
+          "surname": "Kasai",
+          "name": "Jungo Kasai",
+          "email": ""
+        },
+        {
+          "forename": "Keisuke",
+          "surname": "Sakaguchi",
+          "name": "Keisuke Sakaguchi",
+          "email": ""
+        },
+        {
+          "forename": "Lavinia",
+          "surname": "Ronan Le Bras",
+          "name": "Lavinia Ronan Le Bras",
+          "email": ""
+        },
+        {
+          "forename": "Jacob",
+          "surname": "Dunagan",
+          "name": "Jacob Dunagan",
+          "email": ""
+        },
+        {
+          "forename": "Alexander",
+          "surname": "Morrison",
+          "name": "Alexander Morrison",
+          "email": ""
+        },
+        {
+          "forename": "Yejin",
+          "surname": "Fabbri",
+          "name": "Yejin Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Noah A.",
+          "surname": "Choi",
+          "name": "Noah A. Choi",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2022.naacl-main.259",
+      "venue": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2022"
+    },
+    {
+      "index": "b17",
+      "title": "Rankgen: Improving text generation with large ranking models",
+      "author": [
+        {
+          "forename": "Kalpesh",
+          "surname": "Krishna",
+          "name": "Kalpesh Krishna",
+          "email": ""
+        },
+        {
+          "forename": "Yapei",
+          "surname": "Chang",
+          "name": "Yapei Chang",
+          "email": ""
+        },
+        {
+          "forename": "John",
+          "surname": "Wieting",
+          "name": "John Wieting",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2205.09726",
+      "venue": "Rankgen: Improving text generation with large ranking models",
+      "date": "2022"
+    },
+    {
+      "index": "b18",
+      "title": "Hurdles to progress in long-form question answering",
+      "author": [
+        {
+          "forename": "Kalpesh",
+          "surname": "Krishna",
+          "name": "Kalpesh Krishna",
+          "email": ""
+        },
+        {
+          "forename": "Aurko",
+          "surname": "Roy",
+          "name": "Aurko Roy",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.naacl-main.393",
+      "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "date": "2021"
+    },
+    {
+      "index": "b19",
+      "title": "Evaluating the factual consistency of abstractive text summarization",
+      "author": [
+        {
+          "forename": "Wojciech",
+          "surname": "Kryscinski",
+          "name": "Wojciech Kryscinski",
+          "email": ""
+        },
+        {
+          "forename": "Bryan",
+          "surname": "Mccann",
+          "name": "Bryan Mccann",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Xiong",
+          "name": "Caiming Xiong",
+          "email": ""
+        },
+        {
+          "forename": "Richard",
+          "surname": "Socher",
+          "name": "Richard Socher",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.emnlp-main.750",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      "date": "2020"
+    },
+    {
+      "index": "b20",
+      "title": "Summac: Re-visiting nlibased models for inconsistency detection in summarization",
+      "author": [
+        {
+          "forename": "Philippe",
+          "surname": "Laban",
+          "name": "Philippe Laban",
+          "email": ""
+        },
+        {
+          "forename": "Tobias",
+          "surname": "Schnabel",
+          "name": "Tobias Schnabel",
+          "email": ""
+        },
+        {
+          "forename": "Paul N.",
+          "surname": "Bennett",
+          "name": "Paul N. Bennett",
+          "email": ""
+        },
+        {
+          "forename": "Marti A.",
+          "surname": "Hearst",
+          "name": "Marti A. Hearst",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b21",
+      "title": "The measurement of observer agreement for categorical data",
+      "author": [
+        {
+          "forename": "Richard",
+          "surname": "Landis",
+          "name": "Richard Landis",
+          "email": ""
+        },
+        {
+          "forename": "Gary G",
+          "surname": "Koch",
+          "name": "Gary G Koch",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "biometrics",
+      "date": "1977"
+    },
+    {
+      "index": "b22",
+      "title": "Evaluating human-language model interaction",
+      "author": [
+        {
+          "forename": "Mina",
+          "surname": "Lee",
+          "name": "Mina Lee",
+          "email": ""
+        },
+        {
+          "forename": "Megha",
+          "surname": "Srivastava",
+          "name": "Megha Srivastava",
+          "email": ""
+        },
+        {
+          "forename": "Amelia",
+          "surname": "Hardy",
+          "name": "Amelia Hardy",
+          "email": ""
+        },
+        {
+          "forename": "John",
+          "surname": "Thickstun",
+          "name": "John Thickstun",
+          "email": ""
+        },
+        {
+          "forename": "Esin",
+          "surname": "Durmus",
+          "name": "Esin Durmus",
+          "email": ""
+        },
+        {
+          "forename": "Ashwin",
+          "surname": "Paranjape",
+          "name": "Ashwin Paranjape",
+          "email": ""
+        },
+        {
+          "forename": "Ines",
+          "surname": "Gerard-Ursin",
+          "name": "Ines Gerard-Ursin",
+          "email": ""
+        },
+        {
+          "forename": "Xiang Lisa ",
+          "surname": "Li",
+          "name": "Xiang Lisa  Li",
+          "email": ""
+        },
+        {
+          "forename": "Faisal",
+          "surname": "Ladhak",
+          "name": "Faisal Ladhak",
+          "email": ""
+        },
+        {
+          "forename": "Frieda",
+          "surname": "Rong",
+          "name": "Frieda Rong",
+          "email": ""
+        },
+        {
+          "forename": "Rose E.",
+          "surname": "Wang",
+          "name": "Rose E. Wang",
+          "email": ""
+        },
+        {
+          "forename": "Minae",
+          "surname": "Kwon",
+          "name": "Minae Kwon",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2212.09746",
+      "venue": "ArXiv",
+      "date": ""
+    },
+    {
+      "index": "b23",
+      "title": "BART: Denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension",
+      "author": [
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Yinhan",
+          "surname": "Liu",
+          "name": "Yinhan Liu",
+          "email": ""
+        },
+        {
+          "forename": "Naman",
+          "surname": "Goyal",
+          "name": "Naman Goyal",
+          "email": ""
+        },
+        {
+          "forename": "Marjan",
+          "surname": "Ghazvininejad",
+          "name": "Marjan Ghazvininejad",
+          "email": ""
+        },
+        {
+          "forename": "Abdelrahman",
+          "surname": "Mohamed",
+          "name": "Abdelrahman Mohamed",
+          "email": ""
+        },
+        {
+          "forename": "Omer",
+          "surname": "Levy",
+          "name": "Omer Levy",
+          "email": ""
+        },
+        {
+          "forename": "Veselin",
+          "surname": "Stoyanov",
+          "name": "Veselin Stoyanov",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.703",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b24",
+      "title": "ROUGE: A package for automatic evaluation of summaries",
+      "author": [
+        {
+          "forename": "Chin-Yew",
+          "surname": "Lin",
+          "name": "Chin-Yew Lin",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Text Summarization Branches Out",
+      "date": "2004"
+    },
+    {
+      "index": "b25",
+      "title": "Revisiting the gold standard: Grounding summarization evaluation with robust human evaluation",
+      "author": [
+        {
+          "forename": "Yixin",
+          "surname": "Liu",
+          "name": "Yixin Liu",
+          "email": ""
+        },
+        {
+          "forename": "Alexander R.",
+          "surname": "Fabbri",
+          "name": "Alexander R. Fabbri",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Yilun",
+          "surname": "Zhao",
+          "name": "Yilun Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Linyong",
+          "surname": "Nan",
+          "name": "Linyong Nan",
+          "email": ""
+        },
+        {
+          "forename": "Ruilin",
+          "surname": "Han",
+          "name": "Ruilin Han",
+          "email": ""
+        },
+        {
+          "forename": "Simeng",
+          "surname": "Han",
+          "name": "Simeng Han",
+          "email": ""
+        },
+        {
+          "forename": "R.",
+          "surname": "Shafiq",
+          "name": "R. Shafiq",
+          "email": ""
+        },
+        {
+          "forename": "Chien-Sheng",
+          "surname": "Joty",
+          "name": "Chien-Sheng Joty",
+          "email": ""
+        },
+        {
+          "forename": "Caiming",
+          "surname": "Wu",
+          "name": "Caiming Wu",
+          "email": ""
+        },
+        {
+          "forename": "Dragomir R.",
+          "surname": "Xiong",
+          "name": "Dragomir R. Xiong",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2212.07981",
+      "venue": "ArXiv",
+      "date": "2022"
+    },
+    {
+      "index": "b26",
+      "title": "On faithfulness and factuality in abstractive summarization",
+      "author": [
+        {
+          "forename": "Joshua",
+          "surname": "Maynez",
+          "name": "Joshua Maynez",
+          "email": ""
+        },
+        {
+          "forename": "Shashi",
+          "surname": "Narayan",
+          "name": "Shashi Narayan",
+          "email": ""
+        },
+        {
+          "forename": "Bernd",
+          "surname": "Bohnet",
+          "name": "Bernd Bohnet",
+          "email": ""
+        },
+        {
+          "forename": "Ryan",
+          "surname": "Mcdonald",
+          "name": "Ryan Mcdonald",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-main.173",
+      "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2020"
+    },
+    {
+      "index": "b27",
+      "title": "Webgpt: Browser-assisted questionanswering with human feedback",
+      "author": [
+        {
+          "forename": "Reiichiro",
+          "surname": "Nakano",
+          "name": "Reiichiro Nakano",
+          "email": ""
+        },
+        {
+          "forename": "Jacob",
+          "surname": "Hilton",
+          "name": "Jacob Hilton",
+          "email": ""
+        },
+        {
+          "forename": "Suchir",
+          "surname": "Balaji",
+          "name": "Suchir Balaji",
+          "email": ""
+        },
+        {
+          "forename": "Jeff",
+          "surname": "Wu",
+          "name": "Jeff Wu",
+          "email": ""
+        },
+        {
+          "forename": "Long",
+          "surname": "Ouyang",
+          "name": "Long Ouyang",
+          "email": ""
+        },
+        {
+          "forename": "Christina",
+          "surname": "Kim",
+          "name": "Christina Kim",
+          "email": ""
+        },
+        {
+          "forename": "Christopher",
+          "surname": "Hesse",
+          "name": "Christopher Hesse",
+          "email": ""
+        },
+        {
+          "forename": "Shantanu",
+          "surname": "Jain",
+          "name": "Shantanu Jain",
+          "email": ""
+        },
+        {
+          "forename": "Vineet",
+          "surname": "Kosaraju",
+          "name": "Vineet Kosaraju",
+          "email": ""
+        },
+        {
+          "forename": "William",
+          "surname": "Saunders",
+          "name": "William Saunders",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2112.09332",
+      "venue": "Webgpt: Browser-assisted questionanswering with human feedback",
+      "date": "2021"
+    },
+    {
+      "index": "b28",
+      "title": "Bleu: a method for automatic evaluation of machine translation",
+      "author": [
+        {
+          "forename": "Kishore",
+          "surname": "Papineni",
+          "name": "Kishore Papineni",
+          "email": ""
+        },
+        {
+          "forename": "Salim",
+          "surname": "Roukos",
+          "name": "Salim Roukos",
+          "email": ""
+        },
+        {
+          "forename": "Todd",
+          "surname": "Ward",
+          "name": "Todd Ward",
+          "email": ""
+        },
+        {
+          "forename": "Wei-Jing",
+          "surname": "Zhu",
+          "name": "Wei-Jing Zhu",
+          "email": ""
+        }
+      ],
+      "doi": "10.3115/1073083.1073135",
+      "venue": "Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2002"
+    },
+    {
+      "index": "b29",
+      "title": "Scikit-learn: Machine learning in Python",
+      "author": [
+        {
+          "forename": "F.",
+          "surname": "Pedregosa",
+          "name": "F. Pedregosa",
+          "email": ""
+        },
+        {
+          "forename": "G.",
+          "surname": "Varoquaux",
+          "name": "G. Varoquaux",
+          "email": ""
+        },
+        {
+          "forename": "A.",
+          "surname": "Gramfort",
+          "name": "A. Gramfort",
+          "email": ""
+        },
+        {
+          "forename": "V.",
+          "surname": "Michel",
+          "name": "V. Michel",
+          "email": ""
+        },
+        {
+          "forename": "B.",
+          "surname": "Thirion",
+          "name": "B. Thirion",
+          "email": ""
+        },
+        {
+          "forename": "O.",
+          "surname": "Grisel",
+          "name": "O. Grisel",
+          "email": ""
+        },
+        {
+          "forename": "M.",
+          "surname": "Blondel",
+          "name": "M. Blondel",
+          "email": ""
+        },
+        {
+          "forename": "P.",
+          "surname": "Prettenhofer",
+          "name": "P. Prettenhofer",
+          "email": ""
+        },
+        {
+          "forename": "R.",
+          "surname": "Weiss",
+          "name": "R. Weiss",
+          "email": ""
+        },
+        {
+          "forename": "V.",
+          "surname": "Dubourg",
+          "name": "V. Dubourg",
+          "email": ""
+        },
+        {
+          "forename": "J.",
+          "surname": "Vanderplas",
+          "name": "J. Vanderplas",
+          "email": ""
+        },
+        {
+          "forename": "A.",
+          "surname": "Passos",
+          "name": "A. Passos",
+          "email": ""
+        },
+        {
+          "forename": "D.",
+          "surname": "Cournapeau",
+          "name": "D. Cournapeau",
+          "email": ""
+        },
+        {
+          "forename": "M.",
+          "surname": "Brucher",
+          "name": "M. Brucher",
+          "email": ""
+        },
+        {
+          "forename": "M.",
+          "surname": "Perrot",
+          "name": "M. Perrot",
+          "email": ""
+        },
+        {
+          "forename": "E.",
+          "surname": "Duchesnay",
+          "name": "E. Duchesnay",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Journal of Machine Learning Research",
+      "date": "2011"
+    },
+    {
+      "index": "b30",
+      "title": "Mauve: Measuring the gap between neural text and human text using divergence frontiers",
+      "author": [
+        {
+          "forename": "Krishna",
+          "surname": "Pillutla",
+          "name": "Krishna Pillutla",
+          "email": ""
+        },
+        {
+          "forename": "Swabha",
+          "surname": "Swayamdipta",
+          "name": "Swabha Swayamdipta",
+          "email": ""
+        },
+        {
+          "forename": "Rowan",
+          "surname": "Zellers",
+          "name": "Rowan Zellers",
+          "email": ""
+        },
+        {
+          "forename": "John",
+          "surname": "Thickstun",
+          "name": "John Thickstun",
+          "email": ""
+        },
+        {
+          "forename": "Sean",
+          "surname": "Welleck",
+          "name": "Sean Welleck",
+          "email": ""
+        },
+        {
+          "forename": "Yejin",
+          "surname": "Choi",
+          "name": "Yejin Choi",
+          "email": ""
+        },
+        {
+          "forename": "Zaïd",
+          "surname": "Harchaoui",
+          "name": "Zaïd Harchaoui",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Neural Information Processing Systems",
+      "date": "2021"
+    },
+    {
+      "index": "b31",
+      "title": "Stanza: A python natural language processing toolkit for many human languages",
+      "author": [
+        {
+          "forename": "Peng",
+          "surname": "Qi",
+          "name": "Peng Qi",
+          "email": ""
+        },
+        {
+          "forename": "Yuhao",
+          "surname": "Zhang",
+          "name": "Yuhao Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Yuhui",
+          "surname": "Zhang",
+          "name": "Yuhui Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Jason",
+          "surname": "Bolton",
+          "name": "Jason Bolton",
+          "email": ""
+        },
+        {
+          "forename": "Christopher D.",
+          "surname": "Manning",
+          "name": "Christopher D. Manning",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.acl-demos.14",
+      "venue": "",
+      "date": "2020"
+    },
+    {
+      "index": "b32",
+      "title": "Cold decoding: Energy-based constrained text generation with langevin dynamics",
+      "author": [
+        {
+          "forename": "Lianhui",
+          "surname": "Qin",
+          "name": "Lianhui Qin",
+          "email": ""
+        },
+        {
+          "forename": "Sean",
+          "surname": "Welleck",
+          "name": "Sean Welleck",
+          "email": ""
+        },
+        {
+          "forename": "Daniel",
+          "surname": "Khashabi",
+          "name": "Daniel Khashabi",
+          "email": ""
+        },
+        {
+          "forename": "Yejin",
+          "surname": "Choi",
+          "name": "Yejin Choi",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2202.11705",
+      "venue": "Cold decoding: Energy-based constrained text generation with langevin dynamics",
+      "date": "2022"
+    },
+    {
+      "index": "b33",
+      "title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+      "author": [
+        {
+          "forename": "Colin",
+          "surname": "Raffel",
+          "name": "Colin Raffel",
+          "email": ""
+        },
+        {
+          "forename": "Noam",
+          "surname": "Shazeer",
+          "name": "Noam Shazeer",
+          "email": ""
+        },
+        {
+          "forename": "Adam",
+          "surname": "Roberts",
+          "name": "Adam Roberts",
+          "email": ""
+        },
+        {
+          "forename": "Katherine",
+          "surname": "Lee",
+          "name": "Katherine Lee",
+          "email": ""
+        },
+        {
+          "forename": "Sharan",
+          "surname": "Narang",
+          "name": "Sharan Narang",
+          "email": ""
+        },
+        {
+          "forename": "Michael",
+          "surname": "Matena",
+          "name": "Michael Matena",
+          "email": ""
+        },
+        {
+          "forename": "Yanqi",
+          "surname": "Zhou",
+          "name": "Yanqi Zhou",
+          "email": ""
+        },
+        {
+          "forename": "Wei",
+          "surname": "Li",
+          "name": "Wei Li",
+          "email": ""
+        },
+        {
+          "forename": "Peter J.",
+          "surname": "Liu",
+          "name": "Peter J. Liu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Journal of Machine Learning Research",
+      "date": "2020"
+    },
+    {
+      "index": "b34",
+      "title": "Efficient content-based sparse attention with routing transformers",
+      "author": [
+        {
+          "forename": "Aurko",
+          "surname": "Roy",
+          "name": "Aurko Roy",
+          "email": ""
+        },
+        {
+          "forename": "Mohammad",
+          "surname": "Saffar",
+          "name": "Mohammad Saffar",
+          "email": ""
+        },
+        {
+          "forename": "Ashish",
+          "surname": "Vaswani",
+          "name": "Ashish Vaswani",
+          "email": ""
+        },
+        {
+          "forename": "David",
+          "surname": "Grangier",
+          "name": "David Grangier",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00353",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2021"
+    },
+    {
+      "index": "b35",
+      "title": "Improving passage retrieval with zero-shot question generation",
+      "author": [
+        {
+          "forename": "Devendra",
+          "surname": "Singh Sachan",
+          "name": "Devendra Singh Sachan",
+          "email": ""
+        },
+        {
+          "forename": "Mike",
+          "surname": "Lewis",
+          "name": "Mike Lewis",
+          "email": ""
+        },
+        {
+          "forename": "Mandar",
+          "surname": "Joshi",
+          "name": "Mandar Joshi",
+          "email": ""
+        },
+        {
+          "forename": "Armen",
+          "surname": "Aghajanyan",
+          "name": "Armen Aghajanyan",
+          "email": ""
+        },
+        {
+          "forename": "Wen-Tau",
+          "surname": "Yih",
+          "name": "Wen-Tau Yih",
+          "email": ""
+        },
+        {
+          "forename": "Joelle",
+          "surname": "Pineau",
+          "name": "Joelle Pineau",
+          "email": ""
+        },
+        {
+          "forename": "Luke",
+          "surname": "Zettlemoyer",
+          "name": "Luke Zettlemoyer",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2204.07496",
+      "venue": "Improving passage retrieval with zero-shot question generation",
+      "date": "2022"
+    },
+    {
+      "index": "b36",
+      "title": "Multitask prompted training enables zeroshot task generalization",
+      "author": [
+        {
+          "forename": "Victor",
+          "surname": "Sanh",
+          "name": "Victor Sanh",
+          "email": ""
+        },
+        {
+          "forename": "Albert",
+          "surname": "Webson",
+          "name": "Albert Webson",
+          "email": ""
+        },
+        {
+          "forename": "Colin",
+          "surname": "Raffel",
+          "name": "Colin Raffel",
+          "email": ""
+        },
+        {
+          "forename": "Stephen",
+          "surname": "Bach",
+          "name": "Stephen Bach",
+          "email": ""
+        },
+        {
+          "forename": "Lintang",
+          "surname": "Sutawika",
+          "name": "Lintang Sutawika",
+          "email": ""
+        },
+        {
+          "forename": "Zaid",
+          "surname": "Alyafeai",
+          "name": "Zaid Alyafeai",
+          "email": ""
+        },
+        {
+          "forename": "Antoine",
+          "surname": "Chaffin",
+          "name": "Antoine Chaffin",
+          "email": ""
+        },
+        {
+          "forename": "Arnaud",
+          "surname": "Stiegler",
+          "name": "Arnaud Stiegler",
+          "email": ""
+        },
+        {
+          "forename": "Teven Le ",
+          "surname": "Scao",
+          "name": "Teven Le  Scao",
+          "email": ""
+        },
+        {
+          "forename": "Arun",
+          "surname": "Raja",
+          "name": "Arun Raja",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "The Tenth International Conference on Learning Representations",
+      "date": "2022"
+    },
+    {
+      "index": "b37",
+      "title": "Bleurt: Learning robust metrics for text generation",
+      "author": [
+        {
+          "forename": "Thibault",
+          "surname": "Sellam",
+          "name": "Thibault Sellam",
+          "email": ""
+        },
+        {
+          "forename": "Dipanjan",
+          "surname": "Das",
+          "name": "Dipanjan Das",
+          "email": ""
+        },
+        {
+          "forename": "Ankur P",
+          "surname": "Parikh",
+          "name": "Ankur P Parikh",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of ACL",
+      "date": "2020"
+    },
+    {
+      "index": "b38",
+      "title": "Asqa: Factoid questions meet long-form answers",
+      "author": [
+        {
+          "forename": "Ivan",
+          "surname": "Stelmakh",
+          "name": "Ivan Stelmakh",
+          "email": ""
+        },
+        {
+          "forename": "Yi",
+          "surname": "Luan",
+          "name": "Yi Luan",
+          "email": ""
+        },
+        {
+          "forename": "Bhuwan",
+          "surname": "Dhingra",
+          "name": "Bhuwan Dhingra",
+          "email": ""
+        },
+        {
+          "forename": "Ming-Wei",
+          "surname": "Chang",
+          "name": "Ming-Wei Chang",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2204.06092",
+      "venue": "Asqa: Factoid questions meet long-form answers",
+      "date": "2022"
+    },
+    {
+      "index": "b39",
+      "title": "Read before generate! faithful long form question answering with machine reading",
+      "author": [
+        {
+          "forename": "Dan",
+          "surname": "Su",
+          "name": "Dan Su",
+          "email": ""
+        },
+        {
+          "forename": "Xiaoguang",
+          "surname": "Li",
+          "name": "Xiaoguang Li",
+          "email": ""
+        },
+        {
+          "forename": "Jindi",
+          "surname": "Zhang",
+          "name": "Jindi Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Lifeng",
+          "surname": "Shang",
+          "name": "Lifeng Shang",
+          "email": ""
+        },
+        {
+          "forename": "Xin",
+          "surname": "Jiang",
+          "name": "Xin Jiang",
+          "email": ""
+        },
+        {
+          "forename": "Qun",
+          "surname": "Liu",
+          "name": "Qun Liu",
+          "email": ""
+        },
+        {
+          "forename": "Pascale",
+          "surname": "Fung",
+          "name": "Pascale Fung",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2022.findings-acl.61",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2022",
+      "date": "2022"
+    },
+    {
+      "index": "b40",
+      "title": "How to compare summarizers without target length? pitfalls, solutions and re-examination of the neural summarization literature",
+      "author": [
+        {
+          "forename": "Simeng",
+          "surname": "Sun",
+          "name": "Simeng Sun",
+          "email": ""
+        },
+        {
+          "forename": "Ori",
+          "surname": "Shapira",
+          "name": "Ori Shapira",
+          "email": ""
+        },
+        {
+          "forename": "Ido",
+          "surname": "Dagan",
+          "name": "Ido Dagan",
+          "email": ""
+        },
+        {
+          "forename": "Ani",
+          "surname": "Nenkova",
+          "name": "Ani Nenkova",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation",
+      "date": "2019"
+    },
+    {
+      "index": "b41",
+      "title": "Modeling exemplification in long-form question answering via retrieval",
+      "author": [
+        {
+          "forename": "Shufan",
+          "surname": "Wang",
+          "name": "Shufan Wang",
+          "email": ""
+        },
+        {
+          "forename": "Fangyuan",
+          "surname": "Xu",
+          "name": "Fangyuan Xu",
+          "email": ""
+        },
+        {
+          "forename": "Laure",
+          "surname": "Thompson",
+          "name": "Laure Thompson",
+          "email": ""
+        },
+        {
+          "forename": "Eunsol",
+          "surname": "Choi",
+          "name": "Eunsol Choi",
+          "email": ""
+        },
+        {
+          "forename": "Mohit",
+          "surname": "Iyyer",
+          "name": "Mohit Iyyer",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "North American Chapter",
+      "date": "2022"
+    },
+    {
+      "index": "b42",
+      "title": "Huggingface's transformers: State-of-the-art natural language processing",
+      "author": [
+        {
+          "forename": "Thomas",
+          "surname": "Wolf",
+          "name": "Thomas Wolf",
+          "email": ""
+        },
+        {
+          "forename": "Lysandre",
+          "surname": "Debut",
+          "name": "Lysandre Debut",
+          "email": ""
+        },
+        {
+          "forename": "Victor",
+          "surname": "Sanh",
+          "name": "Victor Sanh",
+          "email": ""
+        },
+        {
+          "forename": "Julien",
+          "surname": "Chaumond",
+          "name": "Julien Chaumond",
+          "email": ""
+        },
+        {
+          "forename": "Clement",
+          "surname": "Delangue",
+          "name": "Clement Delangue",
+          "email": ""
+        },
+        {
+          "forename": "Anthony",
+          "surname": "Moi",
+          "name": "Anthony Moi",
+          "email": ""
+        },
+        {
+          "forename": "Pierric",
+          "surname": "Cistac",
+          "name": "Pierric Cistac",
+          "email": ""
+        },
+        {
+          "forename": "Tim",
+          "surname": "Rault",
+          "name": "Tim Rault",
+          "email": ""
+        },
+        {
+          "forename": "Rémi",
+          "surname": "Louf",
+          "name": "Rémi Louf",
+          "email": ""
+        },
+        {
+          "forename": "Morgan",
+          "surname": "Funtowicz",
+          "name": "Morgan Funtowicz",
+          "email": ""
+        },
+        {
+          "forename": "Jamie",
+          "surname": "Brew",
+          "name": "Jamie Brew",
+          "email": ""
+        }
+      ],
+      "doi": "abs/1910.03771",
+      "venue": "ArXiv",
+      "date": "2019"
+    },
+    {
+      "index": "b43",
+      "title": "Bartscore: Evaluating generated text as text generation",
+      "author": [
+        {
+          "forename": "Weizhe",
+          "surname": "Yuan",
+          "name": "Weizhe Yuan",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Advances in Neural Information Processing Systems",
+      "date": "2021"
+    },
+    {
+      "index": "b44",
+      "title": "Fined-eval: Finegrained automatic dialogue-level evaluation",
+      "author": [
+        {
+          "forename": "Chen",
+          "surname": "Zhang",
+          "name": "Chen Zhang",
+          "email": ""
+        },
+        {
+          "forename": "L.F.",
+          "surname": "D'haro",
+          "name": "L.F. D'haro",
+          "email": ""
+        },
+        {
+          "forename": "Qiquan",
+          "surname": "Zhang",
+          "name": "Qiquan Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Thomas",
+          "surname": "Friedrichs",
+          "name": "Thomas Friedrichs",
+          "email": ""
+        },
+        {
+          "forename": "Haizhou",
+          "surname": "Li",
+          "name": "Haizhou Li",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2210.13832",
+      "venue": "ArXiv",
+      "date": "2022"
+    },
+    {
+      "index": "b45",
+      "title": "Language generation via combinatorial constraint satisfaction: A tree search enhanced Monte-Carlo approach",
+      "author": [
+        {
+          "forename": "Maosen",
+          "surname": "Zhang",
+          "name": "Maosen Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Nan",
+          "surname": "Jiang",
+          "name": "Nan Jiang",
+          "email": ""
+        },
+        {
+          "forename": "Lei",
+          "surname": "Li",
+          "name": "Lei Li",
+          "email": ""
+        },
+        {
+          "forename": "Yexiang",
+          "surname": "Xue",
+          "name": "Yexiang Xue",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2020.findings-emnlp.115",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2020",
+      "date": "2020"
+    },
+    {
+      "index": "b46",
+      "title": "Bertscore: Evaluating text generation with bert",
+      "author": [
+        {
+          "forename": "Tianyi",
+          "surname": "Zhang",
+          "name": "Tianyi Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Varsha",
+          "surname": "Kishore",
+          "name": "Varsha Kishore",
+          "email": ""
+        },
+        {
+          "forename": "Felix",
+          "surname": "Wu",
+          "name": "Felix Wu",
+          "email": ""
+        },
+        {
+          "forename": "Q.",
+          "surname": "Kilian",
+          "name": "Q. Kilian",
+          "email": ""
+        },
+        {
+          "forename": "Yoav",
+          "surname": "Weinberger",
+          "name": "Yoav Weinberger",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "International Conference on Learning Representations",
+      "date": "2019"
+    },
+    {
+      "index": "b47",
+      "title": "Towards a unified multi-dimensional evaluator for text generation",
+      "author": [
+        {
+          "forename": "Ming",
+          "surname": "Zhong",
+          "name": "Ming Zhong",
+          "email": ""
+        },
+        {
+          "forename": "Yang",
+          "surname": "Liu",
+          "name": "Yang Liu",
+          "email": ""
+        },
+        {
+          "forename": "Da",
+          "surname": "Yin",
+          "name": "Da Yin",
+          "email": ""
+        },
+        {
+          "forename": "Yuning",
+          "surname": "Mao",
+          "name": "Yuning Mao",
+          "email": ""
+        },
+        {
+          "forename": "Yizhu",
+          "surname": "Jiao",
+          "name": "Yizhu Jiao",
+          "email": ""
+        },
+        {
+          "forename": "Peng",
+          "surname": "Liu",
+          "name": "Peng Liu",
+          "email": ""
+        },
+        {
+          "forename": "Chenguang",
+          "surname": "Zhu",
+          "name": "Chenguang Zhu",
+          "email": ""
+        },
+        {
+          "forename": "Ji",
+          "surname": "Heng",
+          "name": "Ji Heng",
+          "email": ""
+        },
+        {
+          "forename": "Jiawei",
+          "surname": "Han",
+          "name": "Jiawei Han",
+          "email": ""
+        }
+      ],
+      "doi": "abs/2210.07197",
+      "venue": "ArXiv",
+      "date": "2022"
+    },
+    {
+      "index": "b48",
+      "title": "Texygen: A benchmarking platform for text generation models",
+      "author": [
+        {
+          "forename": "Yaoming",
+          "surname": "Zhu",
+          "name": "Yaoming Zhu",
+          "email": ""
+        },
+        {
+          "forename": "Sidi",
+          "surname": "Lu",
+          "name": "Sidi Lu",
+          "email": ""
+        },
+        {
+          "forename": "Lei",
+          "surname": "Zheng",
+          "name": "Lei Zheng",
+          "email": ""
+        },
+        {
+          "forename": "Jiaxian",
+          "surname": "Guo",
+          "name": "Jiaxian Guo",
+          "email": ""
+        },
+        {
+          "forename": "Weinan",
+          "surname": "Zhang",
+          "name": "Weinan Zhang",
+          "email": ""
+        },
+        {
+          "forename": "Jun",
+          "surname": "Wang",
+          "name": "Jun Wang",
+          "email": ""
+        },
+        {
+          "forename": "Yong",
+          "surname": "Yu",
+          "name": "Yong Yu",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval",
+      "date": "2018"
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 {
-  "paper_json": {
   "title": "Beyond Factual Accuracy: Evaluating Coverage of Diverse Factual Information in Long-form Text Generation",
   "publication": {
     "publisher": {},
@@ -2184,8 +2183,4 @@
       "date": "2018"
     }
   ]
-},
-  "stream": false,
-  "temperature": 0.9,
-  "max_tokens": 2024
 }

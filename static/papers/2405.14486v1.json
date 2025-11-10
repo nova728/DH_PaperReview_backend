@@ -1,0 +1,3918 @@
+{
+  "title": "REFCHECKER: Reference-based Fine-grained Hallucination Checker and Benchmark for Large Language Models",
+  "publication": {
+    "publisher": {},
+    "date": "2024-05-23"
+  },
+  "author": [
+    {
+      "forename": "Xiangkun",
+      "surname": "Hu",
+      "name": "Xiangkun Hu",
+      "email": "xiangkhu@amazon.com"
+    },
+    {
+      "forename": "Dongyu",
+      "surname": "Ru",
+      "name": "Dongyu Ru",
+      "email": "rudongyu@amazon.com"
+    },
+    {
+      "forename": "Lin",
+      "surname": "Qiu",
+      "name": "Lin Qiu",
+      "email": ""
+    },
+    {
+      "forename": "Qipeng",
+      "surname": "Guo",
+      "name": "Qipeng Guo",
+      "email": "guoqipeng@pjlab.org.cn"
+    },
+    {
+      "forename": "Tianhang",
+      "surname": "Zhang",
+      "name": "Tianhang Zhang",
+      "email": "zzthang@amazon.com"
+    },
+    {
+      "forename": "Yang",
+      "surname": "Xu",
+      "name": "Yang Xu",
+      "email": ""
+    },
+    {
+      "forename": "Yun",
+      "surname": "Luo",
+      "name": "Yun Luo",
+      "email": ""
+    },
+    {
+      "forename": "Pengfei",
+      "surname": "Liu",
+      "name": "Pengfei Liu",
+      "email": "pengfei@sjtu.edu.cn"
+    },
+    {
+      "forename": "Yue",
+      "surname": "Zhang",
+      "name": "Yue Zhang",
+      "email": "yue.zhang@wias.org.cn"
+    },
+    {
+      "forename": "Zheng",
+      "surname": "Zhang",
+      "name": "Zheng Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Jake",
+      "surname": "Berdine",
+      "name": "Jake Berdine",
+      "email": ""
+    },
+    {
+      "forename": "Gabriel",
+      "surname": "Bernadett-Shapiro",
+      "name": "Gabriel Bernadett-Shapiro",
+      "email": ""
+    },
+    {
+      "forename": "Christo- Pher",
+      "surname": "Berner",
+      "name": "Christo- Pher Berner",
+      "email": ""
+    },
+    {
+      "forename": "Lenny",
+      "surname": "Bogdonoff",
+      "name": "Lenny Bogdonoff",
+      "email": ""
+    },
+    {
+      "forename": "Oleg",
+      "surname": "Boiko",
+      "name": "Oleg Boiko",
+      "email": ""
+    },
+    {
+      "forename": "Made- Laine",
+      "surname": "Boyd",
+      "name": "Made- Laine Boyd",
+      "email": ""
+    },
+    {
+      "forename": "Anna-Luisa",
+      "surname": "Brakman",
+      "name": "Anna-Luisa Brakman",
+      "email": ""
+    },
+    {
+      "forename": "Greg",
+      "surname": "Brockman",
+      "name": "Greg Brockman",
+      "email": ""
+    },
+    {
+      "forename": "Tim",
+      "surname": "Brooks",
+      "name": "Tim Brooks",
+      "email": ""
+    },
+    {
+      "forename": "Miles",
+      "surname": "Brundage",
+      "name": "Miles Brundage",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Button",
+      "name": "Kevin Button",
+      "email": ""
+    },
+    {
+      "forename": "Trevor",
+      "surname": "Cai",
+      "name": "Trevor Cai",
+      "email": ""
+    },
+    {
+      "forename": "Rosie",
+      "surname": "Campbell",
+      "name": "Rosie Campbell",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Cann",
+      "name": "Andrew Cann",
+      "email": ""
+    },
+    {
+      "forename": "Brittany",
+      "surname": "Carey",
+      "name": "Brittany Carey",
+      "email": ""
+    },
+    {
+      "forename": "Chelsea",
+      "surname": "Carlson",
+      "name": "Chelsea Carlson",
+      "email": ""
+    },
+    {
+      "forename": "Rory",
+      "surname": "Carmichael",
+      "name": "Rory Carmichael",
+      "email": ""
+    },
+    {
+      "forename": "Brooke",
+      "surname": "Chan",
+      "name": "Brooke Chan",
+      "email": ""
+    },
+    {
+      "forename": "Che",
+      "surname": "Chang",
+      "name": "Che Chang",
+      "email": ""
+    },
+    {
+      "forename": "Fotis",
+      "surname": "Chantzis",
+      "name": "Fotis Chantzis",
+      "email": ""
+    },
+    {
+      "forename": "Derek",
+      "surname": "Chen",
+      "name": "Derek Chen",
+      "email": ""
+    },
+    {
+      "forename": "Sully",
+      "surname": "Chen",
+      "name": "Sully Chen",
+      "email": ""
+    },
+    {
+      "forename": "Ruby",
+      "surname": "Chen",
+      "name": "Ruby Chen",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Chen",
+      "name": "Jason Chen",
+      "email": ""
+    },
+    {
+      "forename": "Mark",
+      "surname": "Chen",
+      "name": "Mark Chen",
+      "email": ""
+    },
+    {
+      "forename": "Ben",
+      "surname": "Chess",
+      "name": "Ben Chess",
+      "email": ""
+    },
+    {
+      "forename": "Chester",
+      "surname": "Cho",
+      "name": "Chester Cho",
+      "email": ""
+    },
+    {
+      "forename": "Casey",
+      "surname": "Chu",
+      "name": "Casey Chu",
+      "email": ""
+    },
+    {
+      "forename": "Won",
+      "surname": "Chung",
+      "name": "Won Chung",
+      "email": ""
+    },
+    {
+      "forename": "Dave",
+      "surname": "Cummings",
+      "name": "Dave Cummings",
+      "email": ""
+    },
+    {
+      "forename": "Jeremiah",
+      "surname": "Currier",
+      "name": "Jeremiah Currier",
+      "email": ""
+    },
+    {
+      "forename": "Yunxing",
+      "surname": "Dai",
+      "name": "Yunxing Dai",
+      "email": ""
+    },
+    {
+      "forename": "Cory",
+      "surname": "Decareaux",
+      "name": "Cory Decareaux",
+      "email": ""
+    },
+    {
+      "forename": "Thomas",
+      "surname": "Degry",
+      "name": "Thomas Degry",
+      "email": ""
+    },
+    {
+      "forename": "Noah",
+      "surname": "Deutsch",
+      "name": "Noah Deutsch",
+      "email": ""
+    },
+    {
+      "forename": "Damien",
+      "surname": "Deville",
+      "name": "Damien Deville",
+      "email": ""
+    },
+    {
+      "forename": "Arka",
+      "surname": "Dhar",
+      "name": "Arka Dhar",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Dohan",
+      "name": "David Dohan",
+      "email": ""
+    },
+    {
+      "forename": "Steve",
+      "surname": "Dowl- Ing",
+      "name": "Steve Dowl- Ing",
+      "email": ""
+    },
+    {
+      "forename": "Sheila",
+      "surname": "Dunning",
+      "name": "Sheila Dunning",
+      "email": ""
+    },
+    {
+      "forename": "Adrien",
+      "surname": "Ecoffet",
+      "name": "Adrien Ecoffet",
+      "email": ""
+    },
+    {
+      "forename": "Atty",
+      "surname": "Eleti",
+      "name": "Atty Eleti",
+      "email": ""
+    },
+    {
+      "forename": "Tyna",
+      "surname": "Eloundou",
+      "name": "Tyna Eloundou",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Farhi",
+      "name": "David Farhi",
+      "email": ""
+    },
+    {
+      "forename": "Liam",
+      "surname": "Fedus",
+      "name": "Liam Fedus",
+      "email": ""
+    },
+    {
+      "forename": "Niko",
+      "surname": "Felix",
+      "name": "Niko Felix",
+      "email": ""
+    },
+    {
+      "forename": "Posada",
+      "surname": "Fishman",
+      "name": "Posada Fishman",
+      "email": ""
+    },
+    {
+      "forename": "Juston",
+      "surname": "Forte",
+      "name": "Juston Forte",
+      "email": ""
+    },
+    {
+      "forename": "Is- Abella",
+      "surname": "Fulford",
+      "name": "Is- Abella Fulford",
+      "email": ""
+    },
+    {
+      "forename": "Leo",
+      "surname": "Gao",
+      "name": "Leo Gao",
+      "email": ""
+    },
+    {
+      "forename": "Elie",
+      "surname": "Georges",
+      "name": "Elie Georges",
+      "email": ""
+    },
+    {
+      "forename": "Christian",
+      "surname": "Gibson",
+      "name": "Christian Gibson",
+      "email": ""
+    },
+    {
+      "forename": "Vik",
+      "surname": "Goel",
+      "name": "Vik Goel",
+      "email": ""
+    },
+    {
+      "forename": "Tarun",
+      "surname": "Gogineni",
+      "name": "Tarun Gogineni",
+      "email": ""
+    },
+    {
+      "forename": "Gabriel",
+      "surname": "Goh",
+      "name": "Gabriel Goh",
+      "email": ""
+    },
+    {
+      "forename": "Rapha",
+      "surname": "Gontijo-Lopes",
+      "name": "Rapha Gontijo-Lopes",
+      "email": ""
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Gordon",
+      "name": "Jonathan Gordon",
+      "email": ""
+    },
+    {
+      "forename": "Morgan",
+      "surname": "Grafstein",
+      "name": "Morgan Grafstein",
+      "email": ""
+    },
+    {
+      "forename": "Scott",
+      "surname": "Gray",
+      "name": "Scott Gray",
+      "email": ""
+    },
+    {
+      "forename": "Ryan",
+      "surname": "Greene",
+      "name": "Ryan Greene",
+      "email": ""
+    },
+    {
+      "forename": "Joshua",
+      "surname": "Gross",
+      "name": "Joshua Gross",
+      "email": ""
+    },
+    {
+      "forename": "Shane",
+      "surname": "Gu",
+      "name": "Shane Gu",
+      "email": ""
+    },
+    {
+      "forename": "Yufei",
+      "surname": "Guo",
+      "name": "Yufei Guo",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Hallacy",
+      "name": "Chris Hallacy",
+      "email": ""
+    },
+    {
+      "forename": "Jesse",
+      "surname": "Han",
+      "name": "Jesse Han",
+      "email": ""
+    },
+    {
+      "forename": "Jeff",
+      "surname": "Harris",
+      "name": "Jeff Harris",
+      "email": ""
+    },
+    {
+      "forename": "Yuchen",
+      "surname": "He",
+      "name": "Yuchen He",
+      "email": ""
+    },
+    {
+      "forename": "Mike",
+      "surname": "Heaton",
+      "name": "Mike Heaton",
+      "email": ""
+    },
+    {
+      "forename": "Jo- Hannes",
+      "surname": "Heidecke",
+      "name": "Jo- Hannes Heidecke",
+      "email": ""
+    },
+    {
+      "forename": "Chris",
+      "surname": "Hesse",
+      "name": "Chris Hesse",
+      "email": ""
+    },
+    {
+      "forename": "Alan",
+      "surname": "Hickey",
+      "name": "Alan Hickey",
+      "email": ""
+    },
+    {
+      "forename": "Wade",
+      "surname": "Hickey",
+      "name": "Wade Hickey",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Hoeschele",
+      "name": "Peter Hoeschele",
+      "email": ""
+    },
+    {
+      "forename": "Brandon",
+      "surname": "Houghton",
+      "name": "Brandon Houghton",
+      "email": ""
+    },
+    {
+      "forename": "Kenny",
+      "surname": "Hsu",
+      "name": "Kenny Hsu",
+      "email": ""
+    },
+    {
+      "forename": "Shengli",
+      "surname": "Hu",
+      "name": "Shengli Hu",
+      "email": ""
+    },
+    {
+      "forename": "Xin",
+      "surname": "Hu",
+      "name": "Xin Hu",
+      "email": ""
+    },
+    {
+      "forename": "Joost",
+      "surname": "Huizinga",
+      "name": "Joost Huizinga",
+      "email": ""
+    },
+    {
+      "forename": "Shantanu",
+      "surname": "Jain",
+      "name": "Shantanu Jain",
+      "email": ""
+    },
+    {
+      "forename": "Shawn",
+      "surname": "Jain",
+      "name": "Shawn Jain",
+      "email": ""
+    },
+    {
+      "forename": "Joanne",
+      "surname": "Jang",
+      "name": "Joanne Jang",
+      "email": ""
+    },
+    {
+      "forename": "Angela",
+      "surname": "Jiang",
+      "name": "Angela Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Roger",
+      "surname": "Jiang",
+      "name": "Roger Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Haozhun",
+      "surname": "Jin",
+      "name": "Haozhun Jin",
+      "email": ""
+    },
+    {
+      "forename": "Denny",
+      "surname": "Jin",
+      "name": "Denny Jin",
+      "email": ""
+    },
+    {
+      "forename": "Shino",
+      "surname": "Jomoto",
+      "name": "Shino Jomoto",
+      "email": ""
+    },
+    {
+      "forename": "Billie",
+      "surname": "Jonn",
+      "name": "Billie Jonn",
+      "email": ""
+    },
+    {
+      "forename": "Heewoo",
+      "surname": "Jun",
+      "name": "Heewoo Jun",
+      "email": ""
+    },
+    {
+      "forename": "Tomer",
+      "surname": "Kaftan",
+      "name": "Tomer Kaftan",
+      "email": ""
+    },
+    {
+      "forename": "Łukasz",
+      "surname": "Kaiser",
+      "name": "Łukasz Kaiser",
+      "email": ""
+    },
+    {
+      "forename": "Ali",
+      "surname": "Kamali",
+      "name": "Ali Kamali",
+      "email": ""
+    },
+    {
+      "forename": "Ingmar",
+      "surname": "Kanitscheider",
+      "name": "Ingmar Kanitscheider",
+      "email": ""
+    },
+    {
+      "forename": "Shirish",
+      "surname": "Nitish",
+      "name": "Shirish Nitish",
+      "email": ""
+    },
+    {
+      "forename": "Tabarak",
+      "surname": "Keskar",
+      "name": "Tabarak Keskar",
+      "email": ""
+    },
+    {
+      "forename": "Logan",
+      "surname": "Khan",
+      "name": "Logan Khan",
+      "email": ""
+    },
+    {
+      "forename": "Jong Wook ",
+      "surname": "Kilpatrick",
+      "name": "Jong Wook  Kilpatrick",
+      "email": ""
+    },
+    {
+      "forename": "Christina",
+      "surname": "Kim",
+      "name": "Christina Kim",
+      "email": ""
+    },
+    {
+      "forename": "Yongjik",
+      "surname": "Kim",
+      "name": "Yongjik Kim",
+      "email": ""
+    },
+    {
+      "forename": "Hendrik",
+      "surname": "Kim",
+      "name": "Hendrik Kim",
+      "email": ""
+    },
+    {
+      "forename": "Jamie",
+      "surname": "Kirch- Ner",
+      "name": "Jamie Kirch- Ner",
+      "email": ""
+    },
+    {
+      "forename": "Matt",
+      "surname": "Kiros",
+      "name": "Matt Kiros",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Knight",
+      "name": "Daniel Knight",
+      "email": ""
+    },
+    {
+      "forename": "Łukasz",
+      "surname": "Kokotajlo",
+      "name": "Łukasz Kokotajlo",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Kondraciuk",
+      "name": "Andrew Kondraciuk",
+      "email": ""
+    },
+    {
+      "forename": "Aris",
+      "surname": "Kondrich",
+      "name": "Aris Kondrich",
+      "email": ""
+    },
+    {
+      "forename": "Kyle",
+      "surname": "Kon- Stantinidis",
+      "name": "Kyle Kon- Stantinidis",
+      "email": ""
+    },
+    {
+      "forename": "Gretchen",
+      "surname": "Kosic",
+      "name": "Gretchen Kosic",
+      "email": ""
+    },
+    {
+      "forename": "Vishal",
+      "surname": "Krueger",
+      "name": "Vishal Krueger",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Kuo",
+      "name": "Michael Kuo",
+      "email": ""
+    },
+    {
+      "forename": "Ikai",
+      "surname": "Lampe",
+      "name": "Ikai Lampe",
+      "email": ""
+    },
+    {
+      "forename": "Teddy",
+      "surname": "Lan",
+      "name": "Teddy Lan",
+      "email": ""
+    },
+    {
+      "forename": "Jan",
+      "surname": "Lee",
+      "name": "Jan Lee",
+      "email": ""
+    },
+    {
+      "forename": "Jade",
+      "surname": "Leike",
+      "name": "Jade Leike",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Leung",
+      "name": "Daniel Leung",
+      "email": ""
+    },
+    {
+      "forename": "Ming",
+      "surname": "Levy",
+      "name": "Ming Levy",
+      "email": ""
+    },
+    {
+      "forename": "Rachel",
+      "surname": "Li",
+      "name": "Rachel Li",
+      "email": ""
+    },
+    {
+      "forename": "Molly",
+      "surname": "Lim",
+      "name": "Molly Lim",
+      "email": ""
+    },
+    {
+      "forename": "Stephanie",
+      "surname": "Lin",
+      "name": "Stephanie Lin",
+      "email": ""
+    },
+    {
+      "forename": "Mateusz",
+      "surname": "Lin",
+      "name": "Mateusz Lin",
+      "email": ""
+    },
+    {
+      "forename": "Theresa",
+      "surname": "Litwin",
+      "name": "Theresa Litwin",
+      "email": ""
+    },
+    {
+      "forename": "Ryan",
+      "surname": "Lopez",
+      "name": "Ryan Lopez",
+      "email": ""
+    },
+    {
+      "forename": "Patricia",
+      "surname": "Lowe",
+      "name": "Patricia Lowe",
+      "email": ""
+    },
+    {
+      "forename": "Anna",
+      "surname": "Lue",
+      "name": "Anna Lue",
+      "email": ""
+    },
+    {
+      "forename": "Kim",
+      "surname": "Makanju",
+      "name": "Kim Makanju",
+      "email": ""
+    },
+    {
+      "forename": "Sam",
+      "surname": "Malfacini",
+      "name": "Sam Malfacini",
+      "email": ""
+    },
+    {
+      "forename": "Todor",
+      "surname": "Manning",
+      "name": "Todor Manning",
+      "email": ""
+    },
+    {
+      "forename": "Yaniv",
+      "surname": "Markov",
+      "name": "Yaniv Markov",
+      "email": ""
+    },
+    {
+      "forename": "Bianca",
+      "surname": "Markovski",
+      "name": "Bianca Markovski",
+      "email": ""
+    },
+    {
+      "forename": "Katie",
+      "surname": "Martin",
+      "name": "Katie Martin",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Mayer",
+      "name": "Andrew Mayer",
+      "email": ""
+    },
+    {
+      "forename": "Bob",
+      "surname": "Mayne",
+      "name": "Bob Mayne",
+      "email": ""
+    },
+    {
+      "forename": "Scott Mayer ",
+      "surname": "Mcgrew",
+      "name": "Scott Mayer  Mcgrew",
+      "email": ""
+    },
+    {
+      "forename": "Christine",
+      "surname": "Mckinney",
+      "name": "Christine Mckinney",
+      "email": ""
+    },
+    {
+      "forename": "Paul",
+      "surname": "Mcleavey",
+      "name": "Paul Mcleavey",
+      "email": ""
+    },
+    {
+      "forename": "Jake",
+      "surname": "Mcmillan",
+      "name": "Jake Mcmillan",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Mcneil",
+      "name": "David Mcneil",
+      "email": ""
+    },
+    {
+      "forename": "Aalok",
+      "surname": "Medina",
+      "name": "Aalok Medina",
+      "email": ""
+    },
+    {
+      "forename": "Jacob",
+      "surname": "Mehta",
+      "name": "Jacob Mehta",
+      "email": ""
+    },
+    {
+      "forename": "Luke",
+      "surname": "Menick",
+      "name": "Luke Menick",
+      "email": ""
+    },
+    {
+      "forename": "Andrey",
+      "surname": "Metz",
+      "name": "Andrey Metz",
+      "email": ""
+    },
+    {
+      "forename": "Pamela",
+      "surname": "Mishchenko",
+      "name": "Pamela Mishchenko",
+      "email": ""
+    },
+    {
+      "forename": "Vinnie",
+      "surname": "Mishkin",
+      "name": "Vinnie Mishkin",
+      "email": ""
+    },
+    {
+      "forename": "Evan",
+      "surname": "Monaco",
+      "name": "Evan Monaco",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Morikawa",
+      "name": "Daniel Morikawa",
+      "email": ""
+    },
+    {
+      "forename": "Tong",
+      "surname": "Mossing",
+      "name": "Tong Mossing",
+      "email": ""
+    },
+    {
+      "forename": "Mira",
+      "surname": "Mu",
+      "name": "Mira Mu",
+      "email": ""
+    },
+    {
+      "forename": "Oleg",
+      "surname": "Murati",
+      "name": "Oleg Murati",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Murk",
+      "name": "David Murk",
+      "email": ""
+    },
+    {
+      "forename": "Ashvin",
+      "surname": "Mély",
+      "name": "Ashvin Mély",
+      "email": ""
+    },
+    {
+      "forename": "Reiichiro",
+      "surname": "Nair",
+      "name": "Reiichiro Nair",
+      "email": ""
+    },
+    {
+      "forename": "Rajeev",
+      "surname": "Nakano",
+      "name": "Rajeev Nakano",
+      "email": ""
+    },
+    {
+      "forename": "Arvind",
+      "surname": "Nayak",
+      "name": "Arvind Nayak",
+      "email": ""
+    },
+    {
+      "forename": "Richard",
+      "surname": "Neelakantan",
+      "name": "Richard Neelakantan",
+      "email": ""
+    },
+    {
+      "forename": "Hyeonwoo",
+      "surname": "Ngo",
+      "name": "Hyeonwoo Ngo",
+      "email": ""
+    },
+    {
+      "forename": "Long",
+      "surname": "Noh",
+      "name": "Long Noh",
+      "email": ""
+    },
+    {
+      "forename": "Cullen",
+      "surname": "Ouyang",
+      "name": "Cullen Ouyang",
+      "email": ""
+    },
+    {
+      "forename": "Jakub",
+      "surname": "O'keefe",
+      "name": "Jakub O'keefe",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Pachocki",
+      "name": "Alex Pachocki",
+      "email": ""
+    },
+    {
+      "forename": "Joe",
+      "surname": "Paino",
+      "name": "Joe Paino",
+      "email": ""
+    },
+    {
+      "forename": "Ashley",
+      "surname": "Palermo",
+      "name": "Ashley Palermo",
+      "email": ""
+    },
+    {
+      "forename": "Giambat- Tista",
+      "surname": "Pantuliano",
+      "name": "Giambat- Tista Pantuliano",
+      "email": ""
+    },
+    {
+      "forename": "Joel",
+      "surname": "Parascandolo",
+      "name": "Joel Parascandolo",
+      "email": ""
+    },
+    {
+      "forename": "Emy",
+      "surname": "Parish",
+      "name": "Emy Parish",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Parparita",
+      "name": "Alex Parparita",
+      "email": ""
+    },
+    {
+      "forename": "Mikhail",
+      "surname": "Passos",
+      "name": "Mikhail Passos",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Pavlov",
+      "name": "Andrew Pavlov",
+      "email": ""
+    },
+    {
+      "forename": "Adam",
+      "surname": "Peng",
+      "name": "Adam Peng",
+      "email": ""
+    },
+    {
+      "forename": "Filipe",
+      "surname": "Perel- Man",
+      "name": "Filipe Perel- Man",
+      "email": ""
+    },
+    {
+      "forename": "Belbute",
+      "surname": "De Avila",
+      "name": "Belbute De Avila",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Peres",
+      "name": "Michael Peres",
+      "email": ""
+    },
+    {
+      "forename": "Henrique",
+      "surname": "Petrov",
+      "name": "Henrique Petrov",
+      "email": ""
+    },
+    {
+      "forename": "Oliveira",
+      "surname": "Pinto",
+      "name": "Oliveira Pinto",
+      "email": ""
+    },
+    {
+      "forename": "Michelle",
+      "surname": "Pokrass",
+      "name": "Michelle Pokrass",
+      "email": ""
+    },
+    {
+      "forename": "Vitchyr",
+      "surname": "Pong",
+      "name": "Vitchyr Pong",
+      "email": ""
+    },
+    {
+      "forename": "Tolly",
+      "surname": "Pow- Ell",
+      "name": "Tolly Pow- Ell",
+      "email": ""
+    },
+    {
+      "forename": "Alethea",
+      "surname": "Power",
+      "name": "Alethea Power",
+      "email": ""
+    },
+    {
+      "forename": "Boris",
+      "surname": "Power",
+      "name": "Boris Power",
+      "email": ""
+    },
+    {
+      "forename": "Elizabeth",
+      "surname": "Proehl",
+      "name": "Elizabeth Proehl",
+      "email": ""
+    },
+    {
+      "forename": "Raul",
+      "surname": "Puri",
+      "name": "Raul Puri",
+      "email": ""
+    },
+    {
+      "forename": "Alec",
+      "surname": "Radford",
+      "name": "Alec Radford",
+      "email": ""
+    },
+    {
+      "forename": "Jack",
+      "surname": "Rae",
+      "name": "Jack Rae",
+      "email": ""
+    },
+    {
+      "forename": "Aditya",
+      "surname": "Ramesh",
+      "name": "Aditya Ramesh",
+      "email": ""
+    },
+    {
+      "forename": "Cameron",
+      "surname": "Raymond",
+      "name": "Cameron Raymond",
+      "email": ""
+    },
+    {
+      "forename": "Francis",
+      "surname": "Real",
+      "name": "Francis Real",
+      "email": ""
+    },
+    {
+      "forename": "Kendra",
+      "surname": "Rimbach",
+      "name": "Kendra Rimbach",
+      "email": ""
+    },
+    {
+      "forename": "Carl",
+      "surname": "Ross",
+      "name": "Carl Ross",
+      "email": ""
+    },
+    {
+      "forename": "Bob",
+      "surname": "Rotsted",
+      "name": "Bob Rotsted",
+      "email": ""
+    },
+    {
+      "forename": "Henri",
+      "surname": "Roussez",
+      "name": "Henri Roussez",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Ry- Der",
+      "name": "Nick Ry- Der",
+      "email": ""
+    },
+    {
+      "forename": "Mario",
+      "surname": "Saltarelli",
+      "name": "Mario Saltarelli",
+      "email": ""
+    },
+    {
+      "forename": "Ted",
+      "surname": "Sanders",
+      "name": "Ted Sanders",
+      "email": ""
+    },
+    {
+      "forename": "Shibani",
+      "surname": "Santurkar",
+      "name": "Shibani Santurkar",
+      "email": ""
+    },
+    {
+      "forename": "Girish",
+      "surname": "Sastry",
+      "name": "Girish Sastry",
+      "email": ""
+    },
+    {
+      "forename": "Heather",
+      "surname": "Schmidt",
+      "name": "Heather Schmidt",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Schnurr",
+      "name": "David Schnurr",
+      "email": ""
+    },
+    {
+      "forename": "John",
+      "surname": "Schulman",
+      "name": "John Schulman",
+      "email": ""
+    },
+    {
+      "forename": "Daniel",
+      "surname": "Selsam",
+      "name": "Daniel Selsam",
+      "email": ""
+    },
+    {
+      "forename": "Kyla",
+      "surname": "Sheppard",
+      "name": "Kyla Sheppard",
+      "email": ""
+    },
+    {
+      "forename": "Toki",
+      "surname": "Sherbakov",
+      "name": "Toki Sherbakov",
+      "email": ""
+    },
+    {
+      "forename": "Jessica",
+      "surname": "Shieh",
+      "name": "Jessica Shieh",
+      "email": ""
+    },
+    {
+      "forename": "Sarah",
+      "surname": "Shoker",
+      "name": "Sarah Shoker",
+      "email": ""
+    },
+    {
+      "forename": "Pranav",
+      "surname": "Shyam",
+      "name": "Pranav Shyam",
+      "email": ""
+    },
+    {
+      "forename": "Szymon",
+      "surname": "Sidor",
+      "name": "Szymon Sidor",
+      "email": ""
+    },
+    {
+      "forename": "Eric",
+      "surname": "Sigler",
+      "name": "Eric Sigler",
+      "email": ""
+    },
+    {
+      "forename": "Maddie",
+      "surname": "Simens",
+      "name": "Maddie Simens",
+      "email": ""
+    },
+    {
+      "forename": "Jordan",
+      "surname": "Sitkin",
+      "name": "Jordan Sitkin",
+      "email": ""
+    },
+    {
+      "forename": "Katarina",
+      "surname": "Slama",
+      "name": "Katarina Slama",
+      "email": ""
+    },
+    {
+      "forename": "Ian",
+      "surname": "Sohl",
+      "name": "Ian Sohl",
+      "email": ""
+    },
+    {
+      "forename": "Benjamin",
+      "surname": "Sokolowsky",
+      "name": "Benjamin Sokolowsky",
+      "email": ""
+    },
+    {
+      "forename": "Yang",
+      "surname": "Song",
+      "name": "Yang Song",
+      "email": ""
+    },
+    {
+      "forename": "Natalie",
+      "surname": "Staudacher",
+      "name": "Natalie Staudacher",
+      "email": ""
+    },
+    {
+      "forename": "Fe- Lipe Petroski ",
+      "surname": "Such",
+      "name": "Fe- Lipe Petroski  Such",
+      "email": ""
+    },
+    {
+      "forename": "Natalie",
+      "surname": "Summers",
+      "name": "Natalie Summers",
+      "email": ""
+    },
+    {
+      "forename": "Ilya",
+      "surname": "Sutskever",
+      "name": "Ilya Sutskever",
+      "email": ""
+    },
+    {
+      "forename": "Jie",
+      "surname": "Tang",
+      "name": "Jie Tang",
+      "email": ""
+    },
+    {
+      "forename": "Nikolas",
+      "surname": "Tezak",
+      "name": "Nikolas Tezak",
+      "email": ""
+    },
+    {
+      "forename": "Madeleine",
+      "surname": "Thompson",
+      "name": "Madeleine Thompson",
+      "email": ""
+    },
+    {
+      "forename": "Phil",
+      "surname": "Tillet",
+      "name": "Phil Tillet",
+      "email": ""
+    },
+    {
+      "forename": "Amin",
+      "surname": "Tootoonchian",
+      "name": "Amin Tootoonchian",
+      "email": ""
+    },
+    {
+      "forename": "Elizabeth",
+      "surname": "Tseng",
+      "name": "Elizabeth Tseng",
+      "email": ""
+    },
+    {
+      "forename": "Pre- Ston",
+      "surname": "Tuggle",
+      "name": "Pre- Ston Tuggle",
+      "email": ""
+    },
+    {
+      "forename": "Nick",
+      "surname": "Turley",
+      "name": "Nick Turley",
+      "email": ""
+    },
+    {
+      "forename": "Jerry",
+      "surname": "Tworek",
+      "name": "Jerry Tworek",
+      "email": ""
+    },
+    {
+      "forename": "Juan",
+      "surname": "Fe- Lipe",
+      "name": "Juan Fe- Lipe",
+      "email": ""
+    },
+    {
+      "forename": "Cerón",
+      "surname": "Uribe",
+      "name": "Cerón Uribe",
+      "email": ""
+    },
+    {
+      "forename": "Andrea",
+      "surname": "Vallone",
+      "name": "Andrea Vallone",
+      "email": ""
+    },
+    {
+      "forename": "Arun",
+      "surname": "Vijayvergiya",
+      "name": "Arun Vijayvergiya",
+      "email": ""
+    },
+    {
+      "forename": "Chelsea",
+      "surname": "Voss",
+      "name": "Chelsea Voss",
+      "email": ""
+    },
+    {
+      "forename": "Carroll",
+      "surname": "Wainwright",
+      "name": "Carroll Wainwright",
+      "email": ""
+    },
+    {
+      "forename": "Justin Jay ",
+      "surname": "Wang",
+      "name": "Justin Jay  Wang",
+      "email": ""
+    },
+    {
+      "forename": "Alvin",
+      "surname": "Wang",
+      "name": "Alvin Wang",
+      "email": ""
+    },
+    {
+      "forename": "Ben",
+      "surname": "Wang",
+      "name": "Ben Wang",
+      "email": ""
+    },
+    {
+      "forename": "Jonathan",
+      "surname": "Ward",
+      "name": "Jonathan Ward",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Wei",
+      "name": "Jason Wei",
+      "email": ""
+    },
+    {
+      "forename": "C.J.",
+      "surname": "Weinmann",
+      "name": "C.J. Weinmann",
+      "email": ""
+    },
+    {
+      "forename": "Akila",
+      "surname": "Welihinda",
+      "name": "Akila Welihinda",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Welinder",
+      "name": "Peter Welinder",
+      "email": ""
+    },
+    {
+      "forename": "Ji- Ayi",
+      "surname": "Weng",
+      "name": "Ji- Ayi Weng",
+      "email": ""
+    },
+    {
+      "forename": "Lilian",
+      "surname": "Weng",
+      "name": "Lilian Weng",
+      "email": ""
+    },
+    {
+      "forename": "Matt",
+      "surname": "Wiethoff",
+      "name": "Matt Wiethoff",
+      "email": ""
+    },
+    {
+      "forename": "Dave",
+      "surname": "Willner",
+      "name": "Dave Willner",
+      "email": ""
+    },
+    {
+      "forename": "Clemens",
+      "surname": "Winter",
+      "name": "Clemens Winter",
+      "email": ""
+    },
+    {
+      "forename": "Samuel",
+      "surname": "Wolrich",
+      "name": "Samuel Wolrich",
+      "email": ""
+    },
+    {
+      "forename": "Hannah",
+      "surname": "Wong",
+      "name": "Hannah Wong",
+      "email": ""
+    },
+    {
+      "forename": "Lauren",
+      "surname": "Workman",
+      "name": "Lauren Workman",
+      "email": ""
+    },
+    {
+      "forename": "Sherwin",
+      "surname": "Wu",
+      "name": "Sherwin Wu",
+      "email": ""
+    },
+    {
+      "forename": "Jeff",
+      "surname": "Wu",
+      "name": "Jeff Wu",
+      "email": ""
+    },
+    {
+      "forename": "Michael",
+      "surname": "Wu",
+      "name": "Michael Wu",
+      "email": ""
+    },
+    {
+      "forename": "Kai",
+      "surname": "Xiao",
+      "name": "Kai Xiao",
+      "email": ""
+    },
+    {
+      "forename": "Tao",
+      "surname": "Xu",
+      "name": "Tao Xu",
+      "email": ""
+    },
+    {
+      "forename": "Sarah",
+      "surname": "Yoo",
+      "name": "Sarah Yoo",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Yu",
+      "name": "Kevin Yu",
+      "email": ""
+    },
+    {
+      "forename": "Qim- Ing",
+      "surname": "Yuan",
+      "name": "Qim- Ing Yuan",
+      "email": ""
+    },
+    {
+      "forename": "Wojciech",
+      "surname": "Zaremba",
+      "name": "Wojciech Zaremba",
+      "email": ""
+    },
+    {
+      "forename": "Rowan",
+      "surname": "Zellers",
+      "name": "Rowan Zellers",
+      "email": ""
+    },
+    {
+      "forename": "Chong",
+      "surname": "Zhang",
+      "name": "Chong Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Marvin",
+      "surname": "Zhang",
+      "name": "Marvin Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Shengjia",
+      "surname": "Zhao",
+      "name": "Shengjia Zhao",
+      "email": "zhaz@amazon.com"
+    },
+    {
+      "forename": "Tianhao",
+      "surname": "Zheng",
+      "name": "Tianhao Zheng",
+      "email": ""
+    },
+    {
+      "forename": "Juntang",
+      "surname": "Zhuang",
+      "name": "Juntang Zhuang",
+      "email": ""
+    },
+    {
+      "forename": "William",
+      "surname": "Zhuk",
+      "name": "William Zhuk",
+      "email": ""
+    },
+    {
+      "forename": "Barret 2023 ",
+      "surname": "Zoph",
+      "name": "Barret 2023  Zoph",
+      "email": ""
+    },
+    {
+      "forename": "Long",
+      "surname": "Ouyang",
+      "name": "Long Ouyang",
+      "email": ""
+    },
+    {
+      "forename": "Xu",
+      "surname": "Jiang",
+      "name": "Xu Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Diogo",
+      "surname": "Almeida",
+      "name": "Diogo Almeida",
+      "email": ""
+    },
+    {
+      "forename": "Car- Roll L.",
+      "surname": "Wainwright",
+      "name": "Car- Roll L. Wainwright",
+      "email": ""
+    },
+    {
+      "forename": "Pamela",
+      "surname": "Mishkin",
+      "name": "Pamela Mishkin",
+      "email": ""
+    },
+    {
+      "forename": "Sandhini",
+      "surname": "Agarwal",
+      "name": "Sandhini Agarwal",
+      "email": ""
+    },
+    {
+      "forename": "Alex",
+      "surname": "Ray",
+      "name": "Alex Ray",
+      "email": ""
+    },
+    {
+      "forename": "Jacob",
+      "surname": "Hilton",
+      "name": "Jacob Hilton",
+      "email": ""
+    },
+    {
+      "forename": "Fraser",
+      "surname": "Kelton",
+      "name": "Fraser Kelton",
+      "email": ""
+    },
+    {
+      "forename": "Luke",
+      "surname": "Miller",
+      "name": "Luke Miller",
+      "email": ""
+    },
+    {
+      "forename": "Amanda",
+      "surname": "Askell",
+      "name": "Amanda Askell",
+      "email": ""
+    },
+    {
+      "forename": "Paul",
+      "surname": "Christiano",
+      "name": "Paul Christiano",
+      "email": ""
+    },
+    {
+      "forename": "Jan",
+      "surname": "Leike",
+      "name": "Jan Leike",
+      "email": ""
+    },
+    {
+      "forename": "Ryan 2022 ",
+      "surname": "Lowe",
+      "name": "Ryan 2022  Lowe",
+      "email": ""
+    },
+    {
+      "forename": "Kurt",
+      "surname": "Shuster",
+      "name": "Kurt Shuster",
+      "email": ""
+    },
+    {
+      "forename": "Spencer",
+      "surname": "Poff",
+      "name": "Spencer Poff",
+      "email": ""
+    },
+    {
+      "forename": "Moya",
+      "surname": "Chen",
+      "name": "Moya Chen",
+      "email": ""
+    },
+    {
+      "forename": "Douwe",
+      "surname": "Kiela",
+      "name": "Douwe Kiela",
+      "email": ""
+    },
+    {
+      "forename": "Jason",
+      "surname": "Weston",
+      "name": "Jason Weston",
+      "email": ""
+    },
+    {
+      "forename": "Rohan",
+      "surname": "Taori",
+      "name": "Rohan Taori",
+      "email": ""
+    },
+    {
+      "forename": "Ishaan",
+      "surname": "Gulrajani",
+      "name": "Ishaan Gulrajani",
+      "email": ""
+    },
+    {
+      "forename": "Tianyi",
+      "surname": "Zhang",
+      "name": "Tianyi Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Yann",
+      "surname": "Dubois",
+      "name": "Yann Dubois",
+      "email": ""
+    },
+    {
+      "forename": "Xuechen",
+      "surname": "Li",
+      "name": "Xuechen Li",
+      "email": ""
+    },
+    {
+      "forename": "Carlos",
+      "surname": "Guestrin",
+      "name": "Carlos Guestrin",
+      "email": ""
+    },
+    {
+      "forename": "Percy",
+      "surname": "Liang",
+      "name": "Percy Liang",
+      "email": ""
+    },
+    {
+      "forename": "Tatsunori B.",
+      "surname": "Hashimoto",
+      "name": "Tatsunori B. Hashimoto",
+      "email": ""
+    },
+    {
+      "forename": "Hugo",
+      "surname": "Touvron",
+      "name": "Hugo Touvron",
+      "email": ""
+    },
+    {
+      "forename": "Louis",
+      "surname": "Martin",
+      "name": "Louis Martin",
+      "email": ""
+    },
+    {
+      "forename": "Kevin",
+      "surname": "Stone",
+      "name": "Kevin Stone",
+      "email": ""
+    },
+    {
+      "forename": "Peter",
+      "surname": "Al- Bert",
+      "name": "Peter Al- Bert",
+      "email": ""
+    },
+    {
+      "forename": "Amjad",
+      "surname": "Almahairi",
+      "name": "Amjad Almahairi",
+      "email": ""
+    },
+    {
+      "forename": "Yasmine",
+      "surname": "Babaei",
+      "name": "Yasmine Babaei",
+      "email": ""
+    },
+    {
+      "forename": "Nikolay",
+      "surname": "Bashlykov",
+      "name": "Nikolay Bashlykov",
+      "email": ""
+    },
+    {
+      "forename": "Soumya",
+      "surname": "Batra",
+      "name": "Soumya Batra",
+      "email": ""
+    },
+    {
+      "forename": "Prajjwal",
+      "surname": "Bhargava",
+      "name": "Prajjwal Bhargava",
+      "email": ""
+    },
+    {
+      "forename": "Shruti",
+      "surname": "Bhosale",
+      "name": "Shruti Bhosale",
+      "email": ""
+    },
+    {
+      "forename": "Dan",
+      "surname": "Bikel",
+      "name": "Dan Bikel",
+      "email": ""
+    },
+    {
+      "forename": "Lukas",
+      "surname": "Blecher",
+      "name": "Lukas Blecher",
+      "email": ""
+    },
+    {
+      "forename": "Cristian Canton ",
+      "surname": "Ferrer",
+      "name": "Cristian Canton  Ferrer",
+      "email": ""
+    },
+    {
+      "forename": "Moya",
+      "surname": "Chen",
+      "name": "Moya Chen",
+      "email": ""
+    },
+    {
+      "forename": "Guillem",
+      "surname": "Cucurull",
+      "name": "Guillem Cucurull",
+      "email": ""
+    },
+    {
+      "forename": "David",
+      "surname": "Esiobu",
+      "name": "David Esiobu",
+      "email": ""
+    },
+    {
+      "forename": "Jude",
+      "surname": "Fernandes",
+      "name": "Jude Fernandes",
+      "email": ""
+    },
+    {
+      "forename": "Jeremy",
+      "surname": "Fu",
+      "name": "Jeremy Fu",
+      "email": ""
+    },
+    {
+      "forename": "Wenyin",
+      "surname": "Fu",
+      "name": "Wenyin Fu",
+      "email": ""
+    },
+    {
+      "forename": "Brian",
+      "surname": "Fuller",
+      "name": "Brian Fuller",
+      "email": ""
+    },
+    {
+      "forename": "Cynthia",
+      "surname": "Gao",
+      "name": "Cynthia Gao",
+      "email": ""
+    },
+    {
+      "forename": "Vedanuj",
+      "surname": "Goswami",
+      "name": "Vedanuj Goswami",
+      "email": ""
+    },
+    {
+      "forename": "Naman",
+      "surname": "Goyal",
+      "name": "Naman Goyal",
+      "email": ""
+    },
+    {
+      "forename": "An- Thony",
+      "surname": "Hartshorn",
+      "name": "An- Thony Hartshorn",
+      "email": ""
+    },
+    {
+      "forename": "Saghar",
+      "surname": "Hosseini",
+      "name": "Saghar Hosseini",
+      "email": ""
+    },
+    {
+      "forename": "Rui",
+      "surname": "Hou",
+      "name": "Rui Hou",
+      "email": ""
+    },
+    {
+      "forename": "Hakan",
+      "surname": "Inan",
+      "name": "Hakan Inan",
+      "email": ""
+    },
+    {
+      "forename": "Marcin",
+      "surname": "Kardas",
+      "name": "Marcin Kardas",
+      "email": ""
+    },
+    {
+      "forename": "Viktor",
+      "surname": "Kerkez",
+      "name": "Viktor Kerkez",
+      "email": ""
+    },
+    {
+      "forename": "Madian",
+      "surname": "Khabsa",
+      "name": "Madian Khabsa",
+      "email": ""
+    },
+    {
+      "forename": "Isabel",
+      "surname": "Kloumann",
+      "name": "Isabel Kloumann",
+      "email": ""
+    },
+    {
+      "forename": "Artem",
+      "surname": "Korenev",
+      "name": "Artem Korenev",
+      "email": ""
+    },
+    {
+      "forename": "Singh",
+      "surname": "Koura",
+      "name": "Singh Koura",
+      "email": ""
+    },
+    {
+      "forename": "Marie-Anne",
+      "surname": "Lachaux",
+      "name": "Marie-Anne Lachaux",
+      "email": ""
+    },
+    {
+      "forename": "Thibaut",
+      "surname": "Lavril",
+      "name": "Thibaut Lavril",
+      "email": ""
+    },
+    {
+      "forename": "Jenya",
+      "surname": "Lee",
+      "name": "Jenya Lee",
+      "email": ""
+    },
+    {
+      "forename": "Di- Ana",
+      "surname": "Liskovich",
+      "name": "Di- Ana Liskovich",
+      "email": ""
+    },
+    {
+      "forename": "Yinghai",
+      "surname": "Lu",
+      "name": "Yinghai Lu",
+      "email": ""
+    },
+    {
+      "forename": "Yuning",
+      "surname": "Mao",
+      "name": "Yuning Mao",
+      "email": ""
+    },
+    {
+      "forename": "Xavier",
+      "surname": "Mar- Tinet",
+      "name": "Xavier Mar- Tinet",
+      "email": ""
+    },
+    {
+      "forename": "Todor",
+      "surname": "Mihaylov",
+      "name": "Todor Mihaylov",
+      "email": ""
+    },
+    {
+      "forename": "Pushkar",
+      "surname": "Mishra",
+      "name": "Pushkar Mishra",
+      "email": ""
+    },
+    {
+      "forename": "Igor",
+      "surname": "Moly- Bog",
+      "name": "Igor Moly- Bog",
+      "email": ""
+    },
+    {
+      "forename": "Yixin",
+      "surname": "Nie",
+      "name": "Yixin Nie",
+      "email": ""
+    },
+    {
+      "forename": "Andrew",
+      "surname": "Poulton",
+      "name": "Andrew Poulton",
+      "email": ""
+    },
+    {
+      "forename": "Jeremy",
+      "surname": "Reizen- Stein",
+      "name": "Jeremy Reizen- Stein",
+      "email": ""
+    },
+    {
+      "forename": "Rashi",
+      "surname": "Rungta",
+      "name": "Rashi Rungta",
+      "email": ""
+    },
+    {
+      "forename": "Kalyan",
+      "surname": "Saladi",
+      "name": "Kalyan Saladi",
+      "email": ""
+    },
+    {
+      "forename": "Alan",
+      "surname": "Schelten",
+      "name": "Alan Schelten",
+      "email": ""
+    },
+    {
+      "forename": "Ruan",
+      "surname": "Silva",
+      "name": "Ruan Silva",
+      "email": ""
+    },
+    {
+      "forename": "Eric Michael ",
+      "surname": "Smith",
+      "name": "Eric Michael  Smith",
+      "email": ""
+    },
+    {
+      "forename": "Ranjan",
+      "surname": "Subrama- Nian",
+      "name": "Ranjan Subrama- Nian",
+      "email": ""
+    },
+    {
+      "forename": "Ellen",
+      "surname": "Tan",
+      "name": "Ellen Tan",
+      "email": ""
+    },
+    {
+      "forename": "Binh",
+      "surname": "Tang",
+      "name": "Binh Tang",
+      "email": ""
+    },
+    {
+      "forename": "Ross",
+      "surname": "Tay- Lor",
+      "name": "Ross Tay- Lor",
+      "email": ""
+    },
+    {
+      "forename": "Adina",
+      "surname": "Williams",
+      "name": "Adina Williams",
+      "email": ""
+    },
+    {
+      "forename": "Jian Xiang ",
+      "surname": "Kuan",
+      "name": "Jian Xiang  Kuan",
+      "email": ""
+    },
+    {
+      "forename": "Puxin",
+      "surname": "Xu",
+      "name": "Puxin Xu",
+      "email": ""
+    },
+    {
+      "forename": "Zheng",
+      "surname": "Yan",
+      "name": "Zheng Yan",
+      "email": ""
+    },
+    {
+      "forename": "Iliyan",
+      "surname": "Zarov",
+      "name": "Iliyan Zarov",
+      "email": ""
+    },
+    {
+      "forename": "Yuchen",
+      "surname": "Zhang",
+      "name": "Yuchen Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Angela",
+      "surname": "Fan",
+      "name": "Angela Fan",
+      "email": ""
+    },
+    {
+      "forename": "Melanie",
+      "surname": "Kambadur",
+      "name": "Melanie Kambadur",
+      "email": ""
+    },
+    {
+      "forename": "Sharan",
+      "surname": "Narang",
+      "name": "Sharan Narang",
+      "email": ""
+    },
+    {
+      "forename": "Aurelien",
+      "surname": "Ro- Driguez",
+      "name": "Aurelien Ro- Driguez",
+      "email": ""
+    },
+    {
+      "forename": "Robert",
+      "surname": "Stojnic",
+      "name": "Robert Stojnic",
+      "email": ""
+    },
+    {
+      "forename": "Sergey",
+      "surname": "Edunov",
+      "name": "Sergey Edunov",
+      "email": ""
+    },
+    {
+      "forename": "Yuxia",
+      "surname": "Wang",
+      "name": "Yuxia Wang",
+      "email": ""
+    },
+    {
+      "forename": "Gangi",
+      "surname": "Reddy",
+      "name": "Gangi Reddy",
+      "email": ""
+    },
+    {
+      "forename": "Zain Muhammad ",
+      "surname": "Mujahid",
+      "name": "Zain Muhammad  Mujahid",
+      "email": ""
+    },
+    {
+      "forename": "Arnav",
+      "surname": "Arora",
+      "name": "Arnav Arora",
+      "email": ""
+    },
+    {
+      "forename": "Aleksandr",
+      "surname": "Rubashevskii",
+      "name": "Aleksandr Rubashevskii",
+      "email": ""
+    },
+    {
+      "forename": "Ji- Ahui",
+      "surname": "Geng",
+      "name": "Ji- Ahui Geng",
+      "email": ""
+    },
+    {
+      "forename": "Osama Mohammed ",
+      "surname": "Afzal",
+      "name": "Osama Mohammed  Afzal",
+      "email": ""
+    },
+    {
+      "forename": "Liangming",
+      "surname": "Pan",
+      "name": "Liangming Pan",
+      "email": ""
+    },
+    {
+      "forename": "Nadav",
+      "surname": "Borenstein",
+      "name": "Nadav Borenstein",
+      "email": ""
+    },
+    {
+      "forename": "Aditya",
+      "surname": "Pillai",
+      "name": "Aditya Pillai",
+      "email": ""
+    },
+    {
+      "forename": "Isabelle",
+      "surname": "Au- Genstein",
+      "name": "Isabelle Au- Genstein",
+      "email": ""
+    },
+    {
+      "forename": "Iryna",
+      "surname": "Gurevych",
+      "name": "Iryna Gurevych",
+      "email": ""
+    },
+    {
+      "forename": "Preslav 2023 ",
+      "surname": "Nakov",
+      "name": "Preslav 2023  Nakov",
+      "email": ""
+    },
+    {
+      "forename": "Jiaxin",
+      "surname": "Zhang",
+      "name": "Jiaxin Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Zhuohang",
+      "surname": "Li",
+      "name": "Zhuohang Li",
+      "email": ""
+    },
+    {
+      "forename": "Kamalika",
+      "surname": "Das",
+      "name": "Kamalika Das",
+      "email": ""
+    },
+    {
+      "forename": "Sricharan",
+      "surname": "Kumar",
+      "name": "Sricharan Kumar",
+      "email": ""
+    },
+    {
+      "forename": "Tianhang",
+      "surname": "Zhang",
+      "name": "Tianhang Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Cheng",
+      "surname": "Deng",
+      "name": "Cheng Deng",
+      "email": ""
+    },
+    {
+      "forename": "Yue",
+      "surname": "Zhang",
+      "name": "Yue Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Chenghu",
+      "surname": "Zhou",
+      "name": "Chenghu Zhou",
+      "email": ""
+    },
+    {
+      "forename": "Xinbing",
+      "surname": "Wang",
+      "name": "Xinbing Wang",
+      "email": ""
+    },
+    {
+      "forename": "Luoyi",
+      "surname": "Fu",
+      "name": "Luoyi Fu",
+      "email": ""
+    },
+    {
+      "forename": "Wayne Xin ",
+      "surname": "Zhao",
+      "name": "Wayne Xin  Zhao",
+      "email": ""
+    },
+    {
+      "forename": "Kun",
+      "surname": "Zhou",
+      "name": "Kun Zhou",
+      "email": ""
+    },
+    {
+      "forename": "Junyi",
+      "surname": "Li",
+      "name": "Junyi Li",
+      "email": ""
+    },
+    {
+      "forename": "Tianyi",
+      "surname": "Tang",
+      "name": "Tianyi Tang",
+      "email": ""
+    },
+    {
+      "forename": "Xiaolei",
+      "surname": "Wang",
+      "name": "Xiaolei Wang",
+      "email": ""
+    },
+    {
+      "forename": "Yupeng",
+      "surname": "Hou",
+      "name": "Yupeng Hou",
+      "email": ""
+    },
+    {
+      "forename": "Yingqian",
+      "surname": "Min",
+      "name": "Yingqian Min",
+      "email": ""
+    },
+    {
+      "forename": "Beichen",
+      "surname": "Zhang",
+      "name": "Beichen Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Junjie",
+      "surname": "Zhang",
+      "name": "Junjie Zhang",
+      "email": ""
+    },
+    {
+      "forename": "Zican",
+      "surname": "Dong",
+      "name": "Zican Dong",
+      "email": ""
+    },
+    {
+      "forename": "Yifan",
+      "surname": "Du",
+      "name": "Yifan Du",
+      "email": ""
+    },
+    {
+      "forename": "Chen",
+      "surname": "Yang",
+      "name": "Chen Yang",
+      "email": ""
+    },
+    {
+      "forename": "Yushuo",
+      "surname": "Chen",
+      "name": "Yushuo Chen",
+      "email": ""
+    },
+    {
+      "forename": "Zhipeng",
+      "surname": "Chen",
+      "name": "Zhipeng Chen",
+      "email": ""
+    },
+    {
+      "forename": "Jinhao",
+      "surname": "Jiang",
+      "name": "Jinhao Jiang",
+      "email": ""
+    },
+    {
+      "forename": "Ruiyang",
+      "surname": "Ren",
+      "name": "Ruiyang Ren",
+      "email": ""
+    },
+    {
+      "forename": "Yifan",
+      "surname": "Li",
+      "name": "Yifan Li",
+      "email": ""
+    },
+    {
+      "forename": "Xinyu",
+      "surname": "Tang",
+      "name": "Xinyu Tang",
+      "email": ""
+    },
+    {
+      "forename": "Zikang",
+      "surname": "Liu",
+      "name": "Zikang Liu",
+      "email": ""
+    },
+    {
+      "forename": "Peiyu",
+      "surname": "Liu",
+      "name": "Peiyu Liu",
+      "email": ""
+    },
+    {
+      "forename": "Jian-Yun",
+      "surname": "Nie",
+      "name": "Jian-Yun Nie",
+      "email": ""
+    },
+    {
+      "forename": "Ji-Rong",
+      "surname": "Wen",
+      "name": "Ji-Rong Wen",
+      "email": ""
+    }
+  ],
+  "abstract": [
+    [
+      "Large Language Models (LLMs) have shown impressive capabilities but also a concerning tendency to hallucinate. This paper presents REFCHECKER, a framework that introduces claim-triplets to represent claims in LLM responses, aiming to detect fine-grained hallucinations. In REFCHECKER, an extractor generates claim-triplets from a response, which are then evaluated by a checker against a reference. We delineate three task settings: Zero, Noisy and Accurate Context, to reflect various real-world use cases. We curated a benchmark spanning various NLP tasks and annotated 11k claim-triplets from 2.1k responses by seven LLMs. REFCHECKER supports both proprietary and open-source models as the extractor and checker. Experiments demonstrate that claim-triplets enable superior hallucination detection, compared to other granularities such as response, sentence and sub-sentence level claims. REFCHECKER outperforms prior methods by 6.8 to 26.1 points on our benchmark and the checking results of REFCHECKER are strongly aligned with human judgments 1 ."
+    ]
+  ],
+  "body": [
+    {
+      "section": {
+        "index": "1",
+        "name": "Introduction"
+      },
+      "p": [
+        {
+          "text": "Large Language Models (LLMs) have sparked a revolution in Natural Language Processing (NLP), covering diverse tasks with a unified architecture (Zhao et al., 2023). However, LLMs exhibit a tendency to generate hallucinated contents that can be difficult to discern, posing a potential risk of misleading users. (Huang et al., 2023). Hallucination detection is therefore an important task (Manakul et al., 2023; Min et al., 2023; Chern et al., 2023).",
+          "quote": [
+            {
+              "text": "(Zhao et al., 2023)",
+              "target": "#b4",
+              "type": "bibr",
+              "context": "hitecture ",
+              "index": 144
+            },
+            {
+              "text": "(Huang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "ng users. ",
+              "index": 311
+            },
+            {
+              "text": "Min et al., 2023;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 411
+            },
+            {
+              "text": "Chern et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 429
+            },
+            {
+              "text": "[(Manakuletal.,2023]",
+              "type": "bibr",
+              "index": 388,
+              "context": "tant task ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 388,
+              "context": "tant task ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "Detecting hallucination is essentially a job of comparing a response against a reference. However, several challenges remain: determining the appropriate unit of analysis for comparison, building a comprehensive benchmark reflecting real-  world LLM applications, developing a unified, automated framework that scales detection across diverse tasks. In this work, we introduce RE-FCHECKER to tackle these challenges.",
+          "quote": []
+        },
+        {
+          "text": "In terms of checking granularity, response level checking (Lin et al., 2022; Li et al., 2023) suffices if the query and response is about a simple fact. However, when responses are complex and long, response-level checking is not only uninformative but can also cause false-negative when hallucination is local. This is common in realworld use cases, for example, the response from Llama 2 (Touvron et al., 2023) in our benchmark (described later) contains 150 tokens on average. For fine-grained detection, Manakul et al. (2023) takes the sentences in a response as the checking units. Min et al. (2023) and Chern et al. (2023) further extracts short phrases (we term them as subsentences) as the claims, as one sentence may contain multiple hallucinations, or one hallucination may span across sentence boundaries. However, sub-sentences are structurally difficult to define, making it challenging to form high-quality demonstrations to be used by LLMs with in-context learning. To this end, we propose to extract knowledge triplets as checking units. We show an example with different granularity in Figure . Triplets exhibit fine-grained and clearly separated semantics. These triplets are called claim-triplets. Experi-Figure : The REFCHECKER framework comprises two main components: an extractor denoted as E and a checker denoted as C. Given a text to be checked, typically a response generated by an LLM, the extractor takes it as input and generates a set of knowledge triplets, referred to as claim-triplets. Subsequently, the checker assesses each claim-triplet by comparing it against a reference, assigning a hallucination label based on the evaluation. ments show that checking with claim-triplets gains 4 to 9 points of improvement over other granularity on our benchmark (cf. Sec. 5.1).",
+          "quote": [
+            {
+              "text": "Li et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 77
+            },
+            {
+              "text": "(Touvron et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "m Llama 2 ",
+              "index": 390
+            },
+            {
+              "text": "Manakul et al. (2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "etection, ",
+              "index": 508
+            },
+            {
+              "text": "Min et al. (2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "ng units. ",
+              "index": 587
+            },
+            {
+              "text": "Chern et al. (2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "2023) and ",
+              "index": 609
+            },
+            {
+              "text": "[(Linetal.,2022]",
+              "type": "bibr",
+              "index": 58,
+              "context": " checking ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 58,
+              "context": " checking ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "For better evaluation, we curate a comprehensive dataset on which we can benchmark hallucination under different context quality and availability. Using this benchmark, we conducted human evaluation on 2,100 responses from 7 LLMs. We annotated 11k claim-triplets with 95% Inter-Annotator Agreement on 23% of the annotations. Compared with recent proposed benchmarks (Manakul et al., 2023; Min et al., 2023; Chern et al., 2023), it covers a more diverse range of domains and tasks, with more LLMs and responses evaluated (see Table (Shuster et al., 2021)). As expected, we found by human evaluation that hallucination is the most pronounced (cf. Appendix A.4) when LLMs are asked to generate responses solely from its memory (Zero Context), followed by responding to noisy references in RAG (retrieval augmented generation) setting (Noisy Context) and finally when references are more or less noisy free (Accurate Context).",
+          "quote": [
+            {
+              "text": "Min et al., 2023;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 389
+            },
+            {
+              "text": "Chern et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 407
+            },
+            {
+              "text": "(Shuster et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "see Table ",
+              "index": 531
+            },
+            {
+              "text": "(Noisy Context)",
+              "target": "",
+              "type": "bibr",
+              "context": ") setting ",
+              "index": 831
+            },
+            {
+              "text": "[(Manakuletal.,2023]",
+              "type": "bibr",
+              "index": 366,
+              "context": "enchmarks ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 366,
+              "context": "enchmarks ",
+              "target": "bNaN"
+            }
+          ]
+        },
+        {
+          "text": "REFCHECKER (Figure GPT-4 (OpenAI et al., 2023)) is a fully automated framework that scales hallucination detection across different tasks. The extractor generates claim-triplets from the response and the checker evaluates each of the claim-triplets by comparing them with the reference. In contrast to recent work that only differentiates factual and non-factual claims, the checker in REFCHECKER also considers unverifiable claims when the reference is insufficient for checking. Both the extractor and checker supports proprietary (e.g. (Anthropic, 2023) or Claude 2 Mistral (Jiang et al., 2023)) and opensource models (e.g. (Liu et al., 2019) and RoBERTa  based models). We made careful study to select and recommend configurations that give results consistent with human annotation, and show 6.8 to 26.1 points of improvement over the best alternative (Sec. 5.2).",
+          "quote": [
+            {
+              "text": "GPT-4 (OpenAI et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "R (Figure ",
+              "index": 19
+            },
+            {
+              "text": "(Anthropic, 2023)",
+              "target": "#b1",
+              "type": "bibr",
+              "context": "ary (e.g. ",
+              "index": 539
+            },
+            {
+              "text": "Mistral (Jiang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": " Claude 2 ",
+              "index": 569
+            },
+            {
+              "text": "(Liu et al., 2019)",
+              "target": "",
+              "type": "bibr",
+              "context": "els (e.g. ",
+              "index": 627
+            }
+          ]
+        },
+        {
+          "text": "Our key contributions include:",
+          "quote": []
+        },
+        {
+          "text": "• Claim-triplet formulation: Our novel \"claim-triplet\" analysis outperforms existing methods by up to 9 points, pinpointing factual inconsistencies within responses.",
+          "quote": []
+        },
+        {
+          "text": "• Comprehensive benchmark: We developed a robust benchmark covering three classes of real-world LLM tasks with 11,000 manually annotated claim-triplets across 7 LLMs.",
+          "quote": []
+        },
+        {
+          "text": "• Automatic checking framework: Our RE-FCHECKER framework extracts and verifies claim-triplets, boosting consistency by 19-26 points over prior methods and works with both proprietary and open-source models.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "2",
+        "name": "Related Work"
+      },
+      "p": [
+        {
+          "text": "We undertake a review of prior work relevant to our study and compare them with REFCHECKER. The comparative analysis with three representative methods is encapsulated in Table .",
+          "quote": []
+        },
+        {
+          "text": "Hallucinations in LLMs Hallucinations frequently occur in NLP tasks like summarization (Maynez et al., 2020; Cao et al., 2022), machine translation (Guerreiro et al., 2023a,b), dialog systems (Honovich et al., 2021; Dziri et al., 2022) and RAG (Shuster et al., 2021  2023) and FacTool (Chern et al., 2023). We address both factuality and faithfulness hallucinations and further categorizing them into three contextual settings to align with real-world use cases. Hallucination Detection Benchmarks The existing benchmarks for hallucination detection primarily focus on response-level detection (Lin et al., 2022; Yang et al., 2023), or limited to specific domains and tasks (Manakul et al., 2023; Min et al., 2023), or solely address factuality hallucinations (Chen et al., 2023; Chern et al., 2023; Wang et al., 2023). In contrast, our proposed benchmark offers a broader scope, encompassing a diverse range of tasks and domains. Moreover, our human evaluation process involves a more extensive examination of various LLMs with more responses.",
+          "quote": [
+            {
+              "text": "Cao et al., 2022)",
+              "target": "#b2",
+              "type": "bibr",
+              "context": "l., 2020; ",
+              "index": 109
+            },
+            {
+              "text": "(Guerreiro et al., 2023a,b)",
+              "target": "",
+              "type": "bibr",
+              "context": "anslation ",
+              "index": 148
+            },
+            {
+              "text": "Dziri et al., 2022)",
+              "target": "#b7",
+              "type": "bibr",
+              "context": "l., 2021; ",
+              "index": 216
+            },
+            {
+              "text": "(Shuster et al., 2021",
+              "target": "",
+              "type": "bibr",
+              "context": ") and RAG ",
+              "index": 244
+            },
+            {
+              "text": "(Chern et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2021 ",
+              "index": 266
+            },
+            {
+              "text": "Yang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2022; ",
+              "index": 613
+            },
+            {
+              "text": "Min et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 697
+            },
+            {
+              "text": "Chern et al., 2023;",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 780
+            },
+            {
+              "text": "Wang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "l., 2023; ",
+              "index": 800
+            },
+            {
+              "text": "[(Maynezetal.,2020]",
+              "type": "bibr",
+              "index": 87,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 87,
+              "context": "arization ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Honovichetal.,2021]",
+              "type": "bibr",
+              "index": 192,
+              "context": "g systems ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 192,
+              "context": "g systems ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Linetal.,2022]",
+              "type": "bibr",
+              "index": 594,
+              "context": "detection ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 594,
+              "context": "detection ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Manakuletal.,2023]",
+              "type": "bibr",
+              "index": 674,
+              "context": "and tasks ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 674,
+              "context": "and tasks ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[(Chenetal.,2023]",
+              "type": "bibr",
+              "index": 760,
+              "context": "cinations ",
+              "target": "bNaN"
+            },
+            {
+              "text": "[]",
+              "type": "bibr",
+              "index": 760,
+              "context": "cinations ",
+              "target": "bNaN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Granularity of Claims"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": "3",
+        "name": "REFCHECKER: Definition and Benchmark"
+      },
+      "p": [
+        {
+          "text": "Hallucinations are claims made by LLMs not supported by factual knowledge, which we refer to as references; detecting hallucinations involves comparing the claims against the references. This process depends on context settings, granularity of checking and how we categorize the hallucinations. We will discuss them in turn.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.1",
+        "name": "Context Settings and Benchmarks"
+      },
+      "p": [
+        {
+          "text": "We differentiate three context settings covering various tasks and employ different benchmarks for each setting.   et al., 2023), making them a suitable proxy for the internal knowledge of these LLMs.",
+          "quote": [
+            {
+              "text": "et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "etting.   ",
+              "index": 115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Zero Context (ZC)"
+      },
+      "p": [
+        {
+          "text": "Noisy Context (NC) In this setup, the LLM receives additional context retrieved from some external knowledge source, which may contain noisy or irrelevant information. NC is also known as RAG, a crucial use case frequently encountered in realworld applications. We utilize questions sourced from MS MARCO (Nguyen et al., 2016). Each question in this dataset is accompanied by a list of documents retrieved from the internet, serving as the input context.",
+          "quote": [
+            {
+              "text": "MARCO (Nguyen et al., 2016)",
+              "target": "",
+              "type": "bibr",
+              "context": "d from MS ",
+              "index": 299
+            }
+          ]
+        },
+        {
+          "text": "Accurate Context (AC) This setting is similar to NC but the reference is typically noise-free. Examples include text summarization, closed-QA and information extraction tasks. We employ a subset from the databricks-dolly-15k (Conover et al., 2023) instruction tuning dataset which covers the 3 tasks mentioned before.",
+          "quote": [
+            {
+              "text": "(Conover et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "dolly-15k ",
+              "index": 225
+            }
+          ]
+        },
+        {
+          "text": "For both Noisy and Accurate Context settings, the prompt is the reference followed by the query, whereas for Zero Context, the prompt is just the query (Figure ). The benchmark contains 300 examples in total, 100 for each setting, and we summarize it in Table . The details of the benchmark curation process are described in Appendix A.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.2",
+        "name": "Claim-Triplets and Definition of Hallucination"
+      },
+      "p": [
+        {
+          "text": "Informally, claims are the units for the checking. This work explores the approach of representing claims with knowledge triplets. This concept is inspired by the field of knowledge graph studies, where triplets are employed to encapsulate factual knowledge units. Knowledge triplets adopt a (head_entity, relation, tail_entity) structure to capture fine-grained information within the response. We call the triplet-format claims as claimtriplets, examples of which are shown in Figure .",
+          "quote": []
+        },
+        {
+          "text": "Subsequently, the claim-triplets are compared with a reference to determine the type of hallucinations, as illustrated in Figure . If a claim-triplet can be directly inferred from the reference, we classify it as Entailment. Conversely, if it contradicts the information in the reference, it is labeled as Contradiction. However, in cases where the reference is insufficient to verify the claim-triplets, we classify it as Neutral. In this study, we focus on verifying hallucinations in the response and do not consider unmentioned aspects in the reference, which may also be important for certain tasks.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "3.3",
+        "name": "Human Evaluation"
+      },
+      "p": [
+        {
+          "text": "We performed a human evaluation of responses generated by seven LLMs on this benchmark dataset, including GPT-4, GPT-3.5-Turbo (OpenAI, 2022), InstructGPT (text-davinci-001) (Ouyang et al., 2022), Claude 2, Llama 2 70B Chat, Falcon 40B Instruct (Almazrouei et al., 2023) and Alpaca 7B (Taori et al., 2023). The process involves three steps: gathering responses, extracting claim-triplets with an extractor, and asking human annotators to evaluate these claim-triplets. We annotated a total of 11k claim-triplets for 2.1k responses. 23% of the claim-triplets were double annotated, with 95.0% Inter-Annotator Agreement. See Appendix A.3 for the details of the annotation process.",
+          "quote": [
+            {
+              "text": "GPT-3.5-Turbo (OpenAI, 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "ng GPT-4, ",
+              "index": 113
+            },
+            {
+              "text": "(Ouyang et al., 2022)",
+              "target": "",
+              "type": "bibr",
+              "context": "inci-001) ",
+              "index": 174
+            },
+            {
+              "text": "(Almazrouei et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": " Instruct ",
+              "index": 245
+            },
+            {
+              "text": "(Taori et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "Alpaca 7B ",
+              "index": 285
+            }
+          ]
+        },
+        {
+          "text": "A significant finding from the human evaluation is the crucial role of contextual information for factual responses. On average, the rate of Contradiction decreased from 25% in the absence of contextual cues (ZC) to 13% with NC, and further reduced to 6% with AC, which reflects the necessity of distinguishing the three context settings for separate study (cf. Appendix A.4).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4",
+        "name": "REFCHECKER Framework"
+      },
+      "p": [
+        {
+          "text": "As illustrated in Figure , the REFCHECKER framework is designed as a 2-stage pipeline: an Extractor E decomposes the LLM response into a set of triplets, with each of them verified by the Checker C. The categorization of the triplets can be optionally aggregated according to specified rules. We explain them in the subsequent subsections.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.1",
+        "name": "Extractor"
+      },
+      "p": [
+        {
+          "text": "Our checking framework hinges on a key assumption: the decomposition of the original text into triplets facilitates finer-grained detection and more accurate evaluation. The extraction of these triplets plays a pivotal role in achieving this objective. We apply LLMs to extract knowledge triplets from the given text. We began with GPT-4 and Claude 2 and, for both cost and efficiency concern, Mixtral 8x7B and Mistral. More specifically, we performed knowledge distillation to train a 7B Mistral-based extractor with Mixtral 8x7B as the teacher. We conducted supervised fine-tuning on 10k responses. Evaluation in Sec. ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.2",
+        "name": "Checker"
+      },
+      "p": [
+        {
+          "text": "We experimented with two families of checkers, the first is off-the-shelf LLMs including GPT-4 and Claude 2 (see Appendix B.2 for prompts), and the second is smaller NLI models including Align-Score (Zha et al., 2023) and RoBERTa-NLI. 2 Long references in AC/NC setting are split to fit into small context windows of these small models (e.g. 200 tokens), and the results are aggregated later.",
+          "quote": [
+            {
+              "text": "(Zha et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "ign-Score ",
+              "index": 199
+            }
+          ]
+        },
+        {
+          "text": "Mistral 7B (Jiang et al., 2023), unlike GPT-4/Claude 2, performs poorly as a zero-shot checker, its performance improves with demonstrations but is still not satisfactory. However, the fact that the model weight is open gives us the opportunity to improve it by fine-tuning with NLI data. There are many options we have experimented: 1) fine-tune by adding small amount of new parameters using LoRA (LoRA-sft) (Hu et al., 2021), 2) attach a shallow classifier, eg. SVM, 2-layer MLP, KNN after NCA projection (Goldberger et al., 2004), on top of the internal states of the model. We call such checker RepC (for Representation-based Classifier). Such states can be selected from one layer (layer selection, LS) or an ensemble of all layers (layer ensemble, LE). As we will report in Sec. 6.2, RepC checkers are competitive in general.",
+          "quote": [
+            {
+              "text": "(Jiang et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "istral 7B ",
+              "index": 11
+            },
+            {
+              "text": "(Hu et al., 2021)",
+              "target": "",
+              "type": "bibr",
+              "context": "LoRA-sft) ",
+              "index": 410
+            },
+            {
+              "text": "(Goldberger et al., 2004)",
+              "target": "",
+              "type": "bibr",
+              "context": "rojection ",
+              "index": 508
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "4.3",
+        "name": "Aggregation"
+      },
+      "p": [
+        {
+          "text": "Triplet results can be aggregated to obtain the ratio of each category, therefore gives an overall measure of hallucination distribution in a response. To derive the performance of a particular LLM, we take a macro average on Entailment/Neutral/Contradiction ratios of all responses. If a scalar is preferred, we can assign certain numeric values to the catogories, for instance −1, 0, 1 for contradictory, neutral and entail, respectively.",
+          "quote": []
+        },
+        {
+          "text": "The aggregation can be customized and this is one of the benefits of the fine-grained hallucination design in REFCHECKER. For instance, to compare against other response-level approaches (cf. Sec. 5.1), we adopt a rule where the response is flagged as contradictory if any one of the claim triplet is contradictory.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5",
+        "name": "Experiments"
+      },
+      "p": [
+        {
+          "text": "The major difference between REFCHECKER and other related work lies in the claim granularity. So we conduct experiments to differentiate granularity first, then evaluate the whole framework.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.1",
+        "name": "Comparing with Other Granularity"
+      },
+      "p": [
+        {
+          "text": "Previous works use different granularity for hallucination detection, including response, sentence and sub-sentence levels (cf. Sec. 2 and 3.2). We compare with them to verify the effectiveness of checking on facts with the triplet format.",
+          "quote": []
+        },
+        {
+          "text": "To make the results with different granularities comparable to each other, we first breakdown the 2.1k annotated responses into different granularities, then collect corresponding checker predictions respectively, and finally aggregate finer-level results all into the response-level. We utilize a strict aggregation rule with zero-tolerance on hallucinations, which means we apply max-pooling (Entailment < Neutral < Contradiction) over claim predictions within a response. We compare the results of 7 checkers, including 4 baseline checkers (RoBERTa-NLI, AlignScore, GPT-4 and Claude 2) and 3 RepC-LE checkers with KNN, SVM and 2layer MLP classifiers respectively. The evaluation metric is macro-f1 on three categories.",
+          "quote": []
+        },
+        {
+          "text": "As shown in Figure , checking at triplet-level claims is superior over other granularities, with a significant lead against response-level (10 pts macro-f1 score on average). Checking at sentencelevel improves over response-level by 5 pts. However, we see a 3.5 pts drop moving to sub-sentence, one of the reasons being sub-sentence claims can overlap. Apparently, the flexibility of subsentences leads to poor quality of claim extraction, which subsequently affects checking.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.2",
+        "name": "Comparing with Other Approaches"
+      },
+      "p": [
+        {
+          "text": "To contrast with other hallucination detection methodologies, we compare REFCHECKER with three popular approaches on our benchmark, Self-CheckGPT (Manakul et al., 2023 ), FActScore (Min et al., 2023) and FacTool (Chern et al., 2023). We convert metrics in these approaches to \"hallucination rates\" as follows:",
+          "quote": [
+            {
+              "text": "(Manakul et al., 2023",
+              "target": "",
+              "type": "bibr",
+              "context": "-CheckGPT ",
+              "index": 146
+            },
+            {
+              "text": "), FActScore (Min et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "al., 2023 ",
+              "index": 168
+            },
+            {
+              "text": "(Chern et al., 2023)",
+              "target": "",
+              "type": "bibr",
+              "context": "d FacTool ",
+              "index": 212
+            }
+          ]
+        },
+        {
+          "text": "• SelfCheckGPT: the average score of the sentences within a response. The score is 0, 0.5 and 1 for an accurate, minor_inaccurate, and major_inaccurate, respectively.",
+          "quote": []
+        },
+        {
+          "text": "• FactScore/FacTool: the proportion of claims not supported (FactScore) or non-factual (FacTool) by the reference.",
+          "quote": []
+        },
+        {
+          "text": "• REFCHECKER: the proportion of Neutral and Contradiction claims. Table  presents the Pearson and Spearman correlations between the hallucinations rates as evaluated by human and the model results. It reveals that REFCHECKER significantly outperforms previous methods across all three context settings with both proprietary and open-source models. Specifically, the combination of Claude 2 + GPT-4 outperforms the best alternative, FacTool, by 6.8 to 26.1 points. We additionally apply REFCHECKER to SelfCheck-GPT's dataset, and observe that in 11 out of the 15 combinations (73%) of REFCHECKER outperform SelfCheckGPT (cf. Table  in Appendix C).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "5.3",
+        "name": "Evaluation on REFCHECKER Framework"
+      },
+      "p": [
+        {
+          "text": "To validate the robustness and reliability of RE-FCHECKER, we checked 7 LLMs' responses on our benchmark and compared rankings (ratios macro-averaged on responses of each LLM) by REFCHECKER and humans with Spearman's rank correlation coefficient. The configuration space consists of different combinations of extractor + checker, and also the 3 task settings as well as their averages. The results are reported in Figure .",
+          "quote": []
+        },
+        {
+          "text": "We observe that the combination of Claude 2 + GPT-4 is the most competitive option with very strong correlations across all settings, benefiting from more powerful LLMs. Replacing the extractor with our Mistral alternative yields a marginal decline of performance, yet still maintains very strong correlations in most settings. The best nonproprietary combination is Mistral + NLI/Align-Score checker (356M), which achieve consistently strong correlations in all settings. The Mistral-RepC checker is robust against different extractors, owing to its stronger reasoning capability than small NLI-based checker. This result serves as a guide for choosing a configuration tailored to the user's preferences. These preferences may include factors such as budget, deployment simplicity, specific settings, types of hallucination, privacy and requirements for open-source models.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6",
+        "name": "Analysis and Discussion"
+      },
+      "p": [
+        {
+          "text": "We evaluate each component in REFCHECKER separately and discuss its limitations and corresponding future work in this part.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6.1",
+        "name": "Evaluation on Extractors"
+      },
+      "p": [
+        {
+          "text": "To ensure precise hallucination detection, it requires precise claims that faithfully represent the facts in the original response. Yet, evaluating claim extraction is complex due to varied expressions of the same fact. To address this, we employ an automatic evaluation pipeline utilizing GPT-4 Turbo (gpt-4-1106-preview) to lessen the need for posthoc human evaluation for each extractor. We employed GPT-4 Turbo to label each extracted claim as True/False, indicating faithfulness to the original semantics. Additionally, we tasked it with completing missing claims, enabling automatic calculation of precision, recall, and F1 score. To validate results, we conducted a human evaluation on 30 random samples, ensuring agreement between human annotators and the model. The comparison in Table  demonstrates strong alignment between human and automatic evaluations, achieving 93.7% agreement on precision and 91.9% on recall.",
+          "quote": []
+        },
+        {
+          "text": "Leveraging the reliability of our automatic evaluation pipeline, we evaluated the performance of four extractors (see Table ). Our open-source Mistral extractor achieves performance comparable to Claude 2 extractor with faster inference speed and no need for API tokens.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6.2",
+        "name": "Evaluation on Checkers"
+      },
+      "p": [
+        {
+          "text": "As described in Sec. 4.2, the baseline checkers we include in the evaluation are RoBERTa-NLI, AlignScore, GPT-4 and Claude 2. The Mistralbased checkers we include are zero-shot prompted, one-shot prompted, LoRA fine-tuned and RepC-LE variants. The training and development data  of these variants are 4k samples from the ANLI dataset (Nie et al., 2020). We evaluate their performance using the 11k manually annotated claim triplets. The evaluation metric is accuracy and macro-f1 score over 3-way classification.",
+          "quote": [
+            {
+              "text": "(Nie et al., 2020)",
+              "target": "",
+              "type": "bibr",
+              "context": "I dataset ",
+              "index": 334
+            }
+          ]
+        },
+        {
+          "text": "Table  shows the evaluation results. Among the baseline checkers, AlignScore is a strong competitor to GPT-4, and Claude 2 has a significant gap. We found Claude 2's neutral F1 score is very low (less than 20%) (cf. Table  in Appendix B.2), with a tendency to flag neutral claims as contradiction, as a result of biasing towards its own internal knowledge when asked to perform checking (cf. Appendix D).",
+          "quote": []
+        },
+        {
+          "text": "Besides, the Mistral-based checkers can often gives the best performance, though there does not yet exist a single winner across the board. The weakness of Mistral-based checkers lies in the NC setting. A possible reason is the mis-match of data distribution between training and testing. The training data of Mistral-based checkers are short paragraphs (less than 100 tokens) while in NC the reference can be very long (thousands of tokens). So we have to split the reference to fit the training data distribution and aggregate the predictions later.",
+          "quote": []
+        },
+        {
+          "text": "However, there are clear gaps between the performance of the checkers on NC and AC in contrast to their performance on ZC, which suggests ample room of improvement for the checkers.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "6.3",
+        "name": "Future Work"
+      },
+      "p": [
+        {
+          "text": "There remain several limitations of REFCHECKER that require addressing: a) The triplet format of claims, while effectively breaking down LLM responses into finer granularity, can be overly restric-tive and may not have the flexibility to cover important semantics (consider (Trump, president of, US), which is factual in 2018, but non-factual in 2022). b) While extraction is relatively simple with the outstanding comprehension capability of LLMs, there exists a large improvement space for more powerful checkers. c) REFCHECKER has a rudimentary support for source attribution (cf. Appendix B.3). Better source attribution is critical to lend explainable and provide training signal to mitigate hallucination. d) We found that modelbased checkers may exhibit bias towards internal knowledge, declaring a neutral claim to be entailment or contradiction (cf. Table  and Appendix D). This requires we inject some forms of \"source control\" in LLMs. e) In actual deployment cases, we found users ask for stronger customizability (e.g. they would like to use REFCHECKER with their own database for reference retrieval) and speed improvement.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": "7",
+        "name": "Conclusion"
+      },
+      "p": [
+        {
+          "text": "We introduce REFCHECKER, a unified framework for detecting hallucination in LLM responses . REFCHECKER operates at the level of knowledge triplets, termed claim-triplets, extracted from LLM responses, allowing for fine-grained detection. These claim-triplets are then evaluated against references to determine their hallucination categories. An automated pipeline pairs an extractor and a checker to identify potential hallucinations, calibrated to match human annotations, yielding superior performance compared to prior methods.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Limitations a)"
+      },
+      "p": [
+        {
+          "text": "We have anecdote evidence that sometimes hallucination is due to reasoning and limited contextwindow. These advanced form of hallucination is difficult to be dealt with using triplet which bias towards local contexts. b) At its current form, RE-FCHECKER primarily focuses on plain text in general domains. Exploring extensions to include various data formats (table, code, math, etc.) and specific domains (business, medical, legal, etc.) is worthy of consideration.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "Ethics Statement"
+      },
+      "p": [
+        {
+          "text": "We contend that REFCHECKER poses no negative ethical implications for the public; rather, it holds the potential for positive impact by enabling the identification of non-factual content within the responses generated by large language models (LLMs). This capability contributes to the cultivation of responsible AI practices for the benefit of society.",
+          "quote": []
+        },
+        {
+          "text": "In this study, we utilized a variety of scientific resources to conduct our research and aim to contribute additional artifacts to the community. Specifically, to curate the benchmark dataset, we sample 100 examples from each of the following datasets:",
+          "quote": []
+        },
+        {
+          "text": "• The development set of NaturalQuestions dataset, which is under Creative Commons Share-Alike 3.0 License.",
+          "quote": []
+        },
+        {
+          "text": "• The validation set of MS MARCO dataset, which is under Creative Commons Attribution 4.0 International License.",
+          "quote": []
+        },
+        {
+          "text": "• The databricks-dolly-15k dataset, which is under Creative Commons Share-Alike 3.0 License.",
+          "quote": []
+        },
+        {
+          "text": "These datasets are publicly accessible and utilize English language corpora. We conduct human annotations with 6 NLP experts, the annotations will be made available to the public under the Creative Commons Attribution 4.0 International License. The fine-tuned Mistral 7B extractor, Mistral-SFT, is based on 10k questions sampled from the three datasets evenly. The responses are generated by Mistral 7B and the claim-triplets are extracted by Mixtral 8x7B which are both under Apache-2.0 License. The RepC checker is also based on Mistral 7B and is trained with the ANLI dataset which is under Creative Commons-Non Commercial 4.0 License. The fine-tuned models will be released to the public under Apache-2.0 License. The basic information of the benchmark dataset are summarized in Table . For Zero Context, we sample examples from the development set of the NQ dataset for the benchmark. However, our initial experiments found that some questions in NQ may cause the LLMs refuse to answer or have low quality reference to check with, and we categorize these questions as: 1) time-sensitive questions; 2) potentially harmful questions; 3) ambiguous or vague questions, and 4) low quality long answer. We will talk about the data filtering later.",
+          "quote": []
+        },
+        {
+          "text": "For Noisy Context, we utilize questions sourced from the validation set of MS MARCO dataset. 3 (Nguyen et al., 2016) To prevent LLMs from declining to provide answers, we choose examples where a golden passage containing the answer to the question has been annotated.",
+          "quote": []
+        },
+        {
+          "text": "For Accurate Context, we employ the databricksdolly-15k 4 instruction tuning dataset for the benchmark. Each example in this dataset contains a field named category which indicates the task type, and we sample examples from a subset with categories of closed_qa, information_extraction and summarization.",
+          "quote": []
+        },
+        {
+          "text": "During the response collection for benchmarking, we use fixed prompt templates in each task setting for collecting responses from LLMs for fair comparisons. For Zero Context setting, the prompt for response collection is the question itself. For Noisy and Accurate Context settings, we use prompt templates shown in Figure .",
+          "quote": []
+        },
+        {
+          "text": "We also conducted a hard case selection in order to create a rigorous benchmark. We talk about the details in the following part of this section.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.1 Data Filtering for the NQ Dataset"
+      },
+      "p": [
+        {
+          "text": "We employ ChatGPT (GPT-3.5-Turbo) to screen inappropriate examples from the development set of NQ. The specific prompts utilized are illustrated in Figure .  Note that we utilize a conversational approach for prompting to identify examples with lowquality references given as annotated long answers in the dataset. In the first turn, we eliminate instances with table-formed references, as tables can introduce ambiguities during the human annotation process. If the reference is not in a tabular format, we proceed to the second turn, where we filter out references that lack context information for the question. This decision is based on the fact that the reference is a paragraph from a Wikipedia article, which may omit some information from the preceding context. Lastly, we filter out references that lack essential information needed for answering the question.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.2 Details of Hard Case Selection"
+      },
+      "p": [
+        {
+          "text": "For each task setting, we sort a set of 1,000 randomly sampled examples based on the extent of hallucination they demonstrate. This assessment is conducted using a response-level hallucination checker derived from Falcon-40B-Instruct. Specifically, responses were gathered from four different LLMs , GPT-3.5-Turbo, InstructGPT, Alpaca-7B, and Falcon-40B-Instruct, for these 1,000 examples. Falcon-40B-Instruct is subsequently employed to evaluate whether these responses contain hallucinations according to the prompt template depicted in Figure . In this prompt, the \"claim\" refers to the response generated by an LLM.",
+          "quote": []
+        },
+        {
+          "text": "Utilizing the outcome of the hallucination checking process, we calculate a hardness metric for each example. This metric is defined as the ratio of judgement as hallucination among the four LLMs.   Analyze if the claim corresponding to the question is fair according to the context. If the claim is unfactual or biased, the answer is no; if the claim is factual and respectful, the answer is yes.",
+          "quote": []
+        },
+        {
+          "text": "Context: {context} Question: {question} Claim: {claim} Yes/no question: Is it fair to say that? then selected as the hard cases for each setting.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.3 Human Annotation"
+      },
+      "p": [
+        {
+          "text": "We developed a web-based annotation tool to facilitate the human evaluation. A screenshot of the annotation tool is presented in Figure . To ensure the reliability of the annotation process, six NLP experts underwent training for the task. The claim-triplets for human evaluation are extracted by a Claude 2 extractor as described in Section 4.1.",
+          "quote": []
+        },
+        {
+          "text": "The annotators were tasked with assigning a hallucination label to each triplet or identifying it as a low-quality triplet (referred to as a \"bad triplet\") for subsequent filtering. A \"bad triplet\" is defined as one that fails to accurately convey the intended meaning in the response.",
+          "quote": []
+        },
+        {
+          "text": "In the Noisy Context setting, if a triplet is supported by at least one passage, it is categorized as an Entailment. Conversely, if the triplet is neither entailed nor contradicted by any of the passages, it is considered a Neutral.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "A.4 Observations from Human Evaluation"
+      },
+      "p": [
+        {
+          "text": "We analyze the results of human evaluation to gain a deeper understanding the patterns of hallucinations. We establish our evaluation metric as follows. Given a set of N responses from a specific LLM within the dataset, the i-th response comprises C i claims. Among these, C y i claims are annotated with the specific hallucination type labeled as y ∈ {Entailment, Neutral, Contradiction}. We define the hallucination rate for type y that the LLM exhibits in the i-th response as r y i , which is calculated as r y i = C y i C i . We can see that r y i has definition when C i > 0, however, the LLMs may refuse to answer some certain questions, and the claim extractor will not extract any claim-triplets from such response, i.e., C i = 0. To cover these cases in the metric, we define a new metric of Abstain Rate r abstain as did in FActScore, and the rate of abstain is the ratio of abstained responses, which is",
+          "quote": []
+        },
+        {
+          "text": "where 1(x) is an indicator function which is 1 if x holds and 0 otherwise. Furthermore, we define the overall occurrence rate of hallucination type y within this dataset for the given LLM as r y , which is calculated as:",
+          "quote": []
+        },
+        {
+          "text": "We organize the conclusions drawn from the data analysis into several findings:",
+          "quote": []
+        },
+        {
+          "text": "Context Information is Critical Figure  displays hallucination label distributions and abstain rates across the three context settings, averaged from the seven LLMs. In Zero Context, LLMs exhibit higher contradiction rates and generate more unverifiable claims, suggesting potential conflicts and struggles in finding relevant information. When context is present (Noisy and Accurate), LLMs reduce hallucinations but struggle with noise, potentially leading to incorrect responses. In conclusion, the reliability of LLMs' internal knowledge is questionable, highlighting the need for clean and precise contextual information for generating factual responses.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "GPT Family Steadily Improved Factuality"
+      },
+      "p": [
+        {
+          "text": "We present the detailed results and rankings of the seven evaluated LLMs in Figure . We rank the LLMs based on the contradiction rates, where a lower contradiction rate is considered better. Across all three settings within our benchmark, a consistent enhancement in factuality is evident, progressing from InstructGPT to ChatGPT and to GPT-4.",
+          "quote": []
+        },
+        {
+          "text": "Open Source LLM is Catching Up The analysis presented in Figure     Copy from Context is Safer Replicating content in the context enhances the factuality, as illustrated in Figure . In order to quantitatively assess the relationship between copying and hallucination in both Noisy and Accurate Context settings, we introduce the concept of Copy Rate. This metric is defined as the ratio of N-grams covered by the context, where an N-gram refers to a phrase comprising N consecutive words. Specifically, we compute the average copy rates for 1 to 4 grams of a claim-triplet to determine its overall copy rate. The findings presented in Figure  reveal a discernible trend: a higher copy rate corresponds to an increased likelihood of entailment. We collected 10,000 questions without claim ex- traction results and annotation, following the same process as described in Appendix A. The collected questions cover the three context settings evenly. We collected responses to those questions by Mistral and queried Mixtral 8x7B to get corresponding claims. After that, we performed supervised finetuning on a Mistral 7B model to distill the output of the larger Mixtral model. We trained the model for 1 epoch with a initial learning rate 1e-5.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B Details of RefChecker"
+      },
+      "p": []
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B.2 Checker"
+      },
+      "p": [
+        {
+          "text": "The prompts used for the GPT-4 and Claude 2 based checkers are shown in Figure . As a supplement of Figure , Table  shows the detailed checker performance under different claim granularities. As a supplement of Table , Table  shows the full results of checker evaluation.",
+          "quote": []
+        },
+        {
+          "text": "In the analysis of Table , we claim that Claude 2 checker tends to flag a neutral claim as contradiction. We can observe such tendency in Table , especially for MS MARCO and Dolly datasets.",
+          "quote": []
+        },
+        {
+          "text": "We also study the performance tendency of RepC-LS and RepC-LE in Figure . The findings indicate that in RepC-LS, the best performed layer is typically around the middle rather than the last layer. Despite RepC-LS trailing behind RepC-LE, it maintains its advantages in model size and data efficiency. Besides, in Figure , we evaluate the RepC checker performance with respect to different number of training data. We can see that RepC-LS-svm outperforms RepC-LS-nn with fewer training data.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "B.3 Source Attribution"
+      },
+      "p": [
+        {
+          "text": "In many cases, users of hallucination detection systems care not only the verdicts of the checker, but also where the hallucination happens in the original response, as well as which evidence in the reference supports such verdicts. We provided a rudimentory support of such demand. Specifically, we apply a sentence embedding model (SimCSE (Gao et al., 2021)) to encode spans in responses and references, compare them to the encoding of elements in claimtriplets, then use a threshold to filter matched spans as source attribution results. This naive approach suffers from issues on computational efficiency, unclear boundaries, and matching by shallow semantics. The topic on source attribution has a significant impact on applications of hallucination detection and we leave the exploration on non-trivial solutions to the future.   • Correlations of response-level hallucination rate. Following SelfCheckGPT, we also compare the hallucination rate of a response with human evaluation by Pearson and Spearman correlations. For SelfCheckGPT, we compute the hallucination rate of a response by averaging the scores of the sentences following the definition in their paper. For FActScore and FacTool, the hallucination rate is the ratio of non-factual claims in a response. And for Re-fChecker, we take the ratio of Contradiction and Neutral claims as the hallucination rate.",
+          "quote": [
+            {
+              "text": "(Gao et al., 2021)",
+              "target": "#b8",
+              "type": "bibr",
+              "context": "l (SimCSE ",
+              "index": 341
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C Comparisons with"
+      },
+      "p": [
+        {
+          "text": "The results are shown in Table  for Zero Context setting, Table  for Noisy Context setting and Table  for Accurate Context setting. Following their configurations in their papers, we apply InstructGPT(text-davinci-003) and GPT-4 as the extractors for FActScore and FacTool, respectively, apply ChatGPT(gpt-3.5-turbo) as the checker for SelfCheckGPT and FActScore and GPT-4 for FacTool. The combinations of extractor and checker of RefChecker are displayed as \"{Extractor} + {Checker}\".",
+          "quote": []
+        },
+        {
+          "text": "We conclude these results with the following observations:",
+          "quote": []
+        },
+        {
+          "text": "• RefChecker is effective. Most combinations of RefChecker outperform the baselines with large margins across all the five metrics.",
+          "quote": []
+        },
+        {
+          "text": "• RefChecker is more effective with a GPT-4 checker. The best results are achieved with a GPT-4 checker indicating that the main bottleneck lies in the checking module. In spite of that, RefChecker can still outperforms the baselines with a smaller checker AlignScore.",
+          "quote": []
+        },
+        {
+          "text": "• Purely open-sourced combinations can also outperform the baselines which are using proprietary LLMs for both extractor and checker.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "C.2 Comparison on the SelfCheckGPT Dataset"
+      },
+      "p": [
+        {
+          "text": "We also ran REFCHECKER on the SelfCheckGPT dataset which contains 237 examples on WikiBio domain. The results are shown in Table . We can observe that 11 out of the 15 combinations (73%) of REFCHECKER outperform SelfCheckGPT.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "D Analysis of Internal Knowledge Bias"
+      },
+      "p": [
+        {
+          "text": "In this section, we further analyze the emergence of the hallucination from the perspective of the LLMs' bias to the internal knowledge. We analyze whether the evaluated model and the checker generate response based on their internal knowledge in Section D.1 and D.2, respectively. In general, we observe that LLMs/Checkers may incorporate internal knowledge even when provided with contextual information, contributing to the occurrence of hallucination.    ",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "D.1 Internal Knowledge Bias of Evaluated Model"
+      },
+      "p": [
+        {
+          "text": "In order to analyze whether the evaluated LLMs generate responses based on their own knowledge or the provided context in Noisy and Accurate Context settings, we convert each claim-triplet extracted from the response into a simple interrogative query for knowledge checking. For simplicity, we design a prompt template and ask GPT-4-Turbo to generate these queries (Figure ). Then we feed the query into the evaluated LLM to check whether it has such knowledge. The answer from the evaluated LLMs could be one of the following:",
+          "quote": []
+        },
+        {
+          "text": "1. Yes, means the evaluated LLM has this knowledge in its internal memory.",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "2."
+      },
+      "p": [
+        {
+          "text": "No, means the evaluated LLM contains knowledge that is contradicted with the triplet.",
+          "quote": []
+        },
+        {
+          "text": "3. Unsure, means the evaluated LLM does not have this knowledge or it has confusion on the knowledge.",
+          "quote": []
+        },
+        {
+          "text": "The label pairs (Yes, Contradiction) and (Yes, Neutral) indicate that the model is utilizing internal information to generate this claim-triplet. On the other hand, (No, Entailment) and (Unsure, Entailment) signify that the model is relying on contextual information for generation. Pairs like (No, Contradiction) suggest that the evaluated model may be less proficient in processing context information, I have a claim that made by a language model to a question, please help me for checking whether the claim can be entailed according to the provided reference which is related to the question. The reference is a list of passages, and the claim is represented as a triplet formatted with (\"subject\", \"predicate\", \"object\").  leading to the production of less reliable claimtriplets.",
+          "quote": []
+        },
+        {
+          "text": "The outcomes of the Accurate Context are illustrated in Figure . Upon examination, it is evident that GPT-4-Turbo demonstrates the most notable performance, primarily generating responses aligned with the reference context. Conversely, GPT-3.5-Turbo tends to generate responses by relying on its internal knowledge to some extent, leading to contradictions or neutrality to the reference context. Claude 2 sometimes generate unsure information but neutral to the reference context. In the case of InstructGPT, the model further generates unsure information, which also contradicts the reference context. This behavior may stem from contradictions within the model's internal knowledge or difficulties in comprehending the amalgamated content of internal and reference information. Regarding LLaMA-2-70B, and Falcon-40B-Instruct, our observations indicate that these models exhibit inferior performance. They generate information that contradicts internal knowledge and is irrele- vant to the reference context. Alpaca 7B performs similarly to GPT-3.5-Turbo, but seldom generates information contradicting to its internal knowledge, Different from the accurate context setting, all the models tend to generate more Neutral labels in the noisy context setting (Figure ).",
+          "quote": []
+        }
+      ]
+    },
+    {
+      "section": {
+        "index": -1,
+        "name": "D.2 Internal Knowledge Bias of Checker"
+      },
+      "p": [
+        {
+          "text": "We also conduct an analysis to determine whether the checker provides predictions based on its internal knowledge. In this analysis, a triplet extracted   from the response is taken, and we mask the subjective or objective information in the context with '####'. The modified context, along with the triplet, is then inputted into the checker to obtain the label. In theory, the prediction label should be neutral because the relevant information in the context is masked. If the label is not neutral, it implies that the model is making inferences based on its internal knowledge. For the implementation of this analysis, we query GPT-4-Turbo with a specifically designed prompt to mask the triplet information, as illustrated in Figure . Specifically, in the noisycontext setting, we implement the query for each reference document and keep the document unchanged if there is no relevant information to the extracted triplet.",
+          "quote": []
+        },
+        {
+          "text": "The results of the accurate context setting are shown in Table . As we observe, RoBERTa-NLI achieves the most significant Neutral labels, 62.64% and 53.70% for evaluated model GPT-3.5-Turbo and GPT-4-Turbo, respectively. The checker GPT-4-Turbo achieves the second performance. But Claude 2 predicts a large number of Entailment and Contradiction, which implies that the checker Claude 2 highly relies on the internal knowledge for checking. The results of the zero context setting are in a similar pattern with those of accuratecontext setting (Table ). But in the noisy context setting (Table ), RoBERTa-NLI outperforms GPT-4-Turbo and Claude 2 with a large margin in the ratio of Neutral labels. The results may results from the strong bias to internal knowledge of GPT-4-Turbo and Claude 2 when the context is extremely long, or the RoBERTa-NLI model has less associative ability to the memorized knowledge.  ",
+          "quote": []
+        }
+      ]
+    }
+  ],
+  "chart": [
+    "Figure 1: An example response split into sentence, subsentence (Min et al., 2023), triplets, and the hallucination 1983. Triplets define the boundary of claims more clearly, are fine-grained and covers non-overlapping facts (unlike sub-sentences).",
+    [
+      "Figure 3: Illustration of three settings of context, tasks and references. Zero Context is about seeking factual knowledge from the internal memory of the LLMs. Noisy Context has context information retrieved from a knowledge source, which is a RAG use case. Accurate Context has context provided in the input prompt. For Noisy and Accurate Context, we take the input context as the reference.serve as prompts to perform the closed-book question answering task, and the annotated long answer as the reference for a fair evaluation of LLMs and comparison between different approaches. These references are paragraphs from Wikipedia articles, which are widely used for pre-training LLMs",
+      ", making them a suitable proxy for the internal knowledge of these LLMs."
+    ],
+    "Figure 4: Definition of fine-grained hallucinations in an LLM-generated response compared with references. The intersections of the response and the references are the claims either supported (Entailment) or refuted (Contradiction) by the references. The remaining parts in the response are claims not verifiable by the references (Neutral). The other parts of the references are the content not mentioned in the response.",
+    "Figure 6: Spearman's rank correlation coefficients between REFCHECKER and human evaluation. Results are grouped regarding extractors and checkers used. Results for each extractor (column) and checker (row) are arranged into a sub-matrix in the figure, with values for 4 context settings (one additional for average) and 3 ranking metrics.",
+    "Figure 7: Prompt templates for response collection from LLMs on our benchmark. For Zero Context setting, we just use the question itself as the prompt.",
+    "the quality of reference by chat Hello, I have a question and a paragraph of reference text according to the question, please answer my question one by one in the following turnstext a table? Give your answer with the following format: Answer: <Yes or No> If No Does the reference text miss any information in the question? Give your answer with the following format: Answer: <Yes or No> If No Does the reference text provide all the necessary information for answering the question accurately and unambiguously? Give your answer with the following format: Answer: <Yes or No>",
+    "Figure 8: Prompts for filtering out inappropriate examples from the development set of NQ.",
+    "Figure 9: The prompt used in hard case selection during the benchmark curation process.",
+    "Figure 10: The screenshot of the annotation tool for human evaluation.",
+    "Figure 11: Results of different task settings by averaging the results of the seven LLMs.",
+    "Figure12: Detailed results of the human evaluation with the rates of Contradiction, Neutral, Entailment and also Abstain across the three settings, and ranked by the contradiction rates. The last ranking is the results averaged over the three settings.",
+    "Figure 15: The prompt used for the GPT-4 and Claude 2 extractors. It requires a question and response from the LLM, and is provided with two in-context examples.",
+    "Figure 16: Prompt for the GPT-4 Checker and Claude 2 Checker.",
+    "Figure 17: Performance tendency of different layers in RepC-LS checkers. The corresponding RepC-LE checkers are included as dashed lines.",
+    "Figure 19: Designed prompt for converting triplets to simple interrogative sentences.",
+    "Figure 20: Designed prompt for masking triplet information in the reference context.",
+    "Figure 21: The results of knowledge checking for evaluated models in the accurate-context setting. The labels Yes, No and Unsure are the responses to the interrogative sentences generated from knowledge triplets. Each value refers to the percentage of each checking pairs in the total number of triplets.",
+    "Figure 22: The results of knowledge checking for evaluated models in the noisy-context setting. The label Yes, No and Unsure are the respones to the interrogative sentences generated from knowledge triplets. Each value refers to the percentage of each checking pairs in the total number of triplets.",
+    "Table 1 :A comparison of REFCHECKER with previous approaches for hallucination detection. The \"*\" symbols alongside the extractors and checkers indicate that these models are open-sourced. REFCHECKER uses triplets as the claims instead of sentences or sub-sentences. The REFCHECKER benchmark covers more context settings and more diverse tasks. The human evaluation covers more LLMs and responses. REFCHECKER pipeline supports both proprietary and open-source models, facilitating broader adoption across various applications.",
+    "Table 2 :Automated checking results of REFCHECKER and previous approaches. The results of REFCHECKER are from the best performing combinations (extractor + checker) of purely proprietary (blue) and purely open-source models (orange).",
+    "Table 3 :Claim extraction evaluation by GPT-4 Turbo and human on 30 samples.",
+    "Table 4 :Automatic evaluation results of extractors.",
+    "Checker evaluation results on 11k human annotated claim triplets. In Mistral-based checkers, the model names start with the variant types, eg. LoRA-sft indicates the LoRA fine-tuned variant and RepC-LE-nn indicates the representation based classification variant using layer ensemble with 2-layer MLP as the classifier. Here \"nxxx\" and \"exxx\" indicates the number of training samples and ensemble learning samples. Due to the space limitation, we do not include all variant results here, please refer to Table8of Appendix B.2 for full results.",
+    "Table 6 :The top 100 examples with the highest ratios are A summary of the RefChecker hallucination detection benchmark. The examples of the benchmark are curated from three different data sources and cover diverse tasks.",
+    "Table 7 :Detailed performance of 7 checkers under different claim granularities on 2.1k manual annotated responses. The checkers' predictions under different granularities are all merged into response-level and then evaluated.",
+    "Table 8 :Checker evaluation results on 11k human annotated claim triplets. In Mistral-based checkers, the model names start with the variant types, eg. LoRA-sft indicates the LoRA fine-tuned variant and RepC-LE-nn indicates the representation based classification variant using layer ensemble with 2-layer MLP as the classifier. Here \"nxxx\" and \"exxx\" indicates the number of training samples and ensemble learning samples.",
+    "Table 9 :Detailed statistics of the Claude 2 checker's neutral F1 score. We show its prediction results of all neutral labels.",
+    "Table 10 :A comparison of RefChecker with previous works on our benchmark under Zero Context setting. We highlight the best results using proprietary LLMs with blue colors and best results results using pure open-source models with orange colors.",
+    "Table 11 :A comparison of RefChecker with previous works on our benchmark under Noisy Context setting. We highlight the best results using proprietary LLMs with blue colors and best results results using pure open-source models with orange colors.",
+    "Table 12 :A comparison of RefChecker with previous works on our benchmark under Accurate Context setting. We highlight the best results using proprietary LLMs with blue colors and best results results using pure open-source models with orange colors.",
+    "Table 13 :REFCHECKER results on the SelfCheckGPT dataset. The results of SelfCheckGPT are from their paper. We highlight the best results using proprietary LLMs with blue colors and best results results using pure open-source models with orange colors.",
+    "Table 14 :Results for the information masking scenario in accurate-context setting.",
+    "Table 15 :GPT-4 43.33 13.67 43.00 Claude 2 61.00 28.00 11.00 RoBERTa-NLI 34.67 23.00 42.33 Results for the information masking scenario in zero-context setting.",
+    "Table 16 :Results for the information masking scenario in noisy-context setting."
+  ],
+  "reference": [
+    {
+      "index": "b0",
+      "title": "Badreddine Noune, Baptiste Pannier, and Guilherme Penedo. 2023. Falcon-40B: an open large language model with state-of-the-art performance",
+      "author": [
+        {
+          "forename": "Ebtesam",
+          "surname": "Almazrouei",
+          "name": "Ebtesam Almazrouei",
+          "email": ""
+        },
+        {
+          "forename": "Hamza",
+          "surname": "Alobeidli",
+          "name": "Hamza Alobeidli",
+          "email": ""
+        },
+        {
+          "forename": "Abdulaziz",
+          "surname": "Alshamsi",
+          "name": "Abdulaziz Alshamsi",
+          "email": ""
+        },
+        {
+          "forename": "Alessandro",
+          "surname": "Cappelli",
+          "name": "Alessandro Cappelli",
+          "email": ""
+        },
+        {
+          "forename": "Ruxandra",
+          "surname": "Cojocaru",
+          "name": "Ruxandra Cojocaru",
+          "email": ""
+        },
+        {
+          "forename": "Merouane",
+          "surname": "Debbah",
+          "name": "Merouane Debbah",
+          "email": ""
+        },
+        {
+          "forename": "Etienne",
+          "surname": "Goffinet",
+          "name": "Etienne Goffinet",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Badreddine Noune, Baptiste Pannier, and Guilherme Penedo. 2023. Falcon-40B: an open large language model with state-of-the-art performance",
+      "date": ""
+    },
+    {
+      "index": "b1",
+      "title": "Introducing claude",
+      "author": [],
+      "doi": "",
+      "venue": "Introducing claude",
+      "date": "2023"
+    },
+    {
+      "index": "b2",
+      "title": "Hallucinated but factual! inspecting the factuality of hallucinations in abstractive summarization",
+      "author": [
+        {
+          "forename": "Meng",
+          "surname": "Cao",
+          "name": "Meng Cao",
+          "email": ""
+        },
+        {
+          "forename": "Yue",
+          "surname": "Dong",
+          "name": "Yue Dong",
+          "email": ""
+        },
+        {
+          "forename": "Jackie",
+          "surname": "Cheung",
+          "name": "Jackie Cheung",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2022.acl-long.236",
+      "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b3",
+      "title": "Quantifying uncertainty in answers from any language model via intrinsic and extrinsic confidence assessment",
+      "author": [
+        {
+          "forename": "Jiuhai",
+          "surname": "Chen",
+          "name": "Jiuhai Chen",
+          "email": ""
+        },
+        {
+          "forename": "Jonas",
+          "surname": "Mueller",
+          "name": "Jonas Mueller",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2308.16175",
+      "venue": "Quantifying uncertainty in answers from any language model via intrinsic and extrinsic confidence assessment",
+      "date": "2023"
+    },
+    {
+      "index": "b4",
+      "title": "Felm: Benchmarking factuality evaluation of large language models",
+      "author": [
+        {
+          "forename": "Shiqi",
+          "surname": "Chen",
+          "name": "Shiqi Chen",
+          "email": ""
+        },
+        {
+          "forename": "Yiran",
+          "surname": "Zhao",
+          "name": "Yiran Zhao",
+          "email": ""
+        },
+        {
+          "forename": "Jinghan",
+          "surname": "Zhang",
+          "name": "Jinghan Zhang",
+          "email": ""
+        },
+        {
+          "forename": "I-Chun",
+          "surname": "Chern",
+          "name": "I-Chun Chern",
+          "email": ""
+        },
+        {
+          "forename": "Siyang",
+          "surname": "Gao",
+          "name": "Siyang Gao",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        },
+        {
+          "forename": "Junxian",
+          "surname": "He",
+          "name": "Junxian He",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track",
+      "date": "2023"
+    },
+    {
+      "index": "b5",
+      "title": "Factool: Factuality detection in generative ai-a tool augmented framework for multi-task and multi-domain scenarios",
+      "author": [
+        {
+          "forename": "I-Chun",
+          "surname": "Chern",
+          "name": "I-Chun Chern",
+          "email": ""
+        },
+        {
+          "forename": "Steffi",
+          "surname": "Chern",
+          "name": "Steffi Chern",
+          "email": ""
+        },
+        {
+          "forename": "Shiqi",
+          "surname": "Chen",
+          "name": "Shiqi Chen",
+          "email": ""
+        },
+        {
+          "forename": "Weizhe",
+          "surname": "Yuan",
+          "name": "Weizhe Yuan",
+          "email": ""
+        },
+        {
+          "forename": "Kehua",
+          "surname": "Feng",
+          "name": "Kehua Feng",
+          "email": ""
+        },
+        {
+          "forename": "Chunting",
+          "surname": "Zhou",
+          "name": "Chunting Zhou",
+          "email": ""
+        },
+        {
+          "forename": "Junxian",
+          "surname": "He",
+          "name": "Junxian He",
+          "email": ""
+        },
+        {
+          "forename": "Graham",
+          "surname": "Neubig",
+          "name": "Graham Neubig",
+          "email": ""
+        },
+        {
+          "forename": "Pengfei",
+          "surname": "Liu",
+          "name": "Pengfei Liu",
+          "email": ""
+        }
+      ],
+      "doi": "arXiv:2307.13528",
+      "venue": "Factool: Factuality detection in generative ai-a tool augmented framework for multi-task and multi-domain scenarios",
+      "date": "2023"
+    },
+    {
+      "index": "b7",
+      "title": "FaithDial: A Faithful Benchmark for Information-Seeking Dialogue",
+      "author": [
+        {
+          "forename": "Nouha",
+          "surname": "Dziri",
+          "name": "Nouha Dziri",
+          "email": ""
+        },
+        {
+          "forename": "Ehsan",
+          "surname": "Kamalloo",
+          "name": "Ehsan Kamalloo",
+          "email": ""
+        },
+        {
+          "forename": "Sivan",
+          "surname": "Milton",
+          "name": "Sivan Milton",
+          "email": ""
+        },
+        {
+          "forename": "Osmar",
+          "surname": "Zaiane",
+          "name": "Osmar Zaiane",
+          "email": ""
+        },
+        {
+          "forename": "Mo",
+          "surname": "Yu",
+          "name": "Mo Yu",
+          "email": ""
+        },
+        {
+          "forename": "M.",
+          "surname": "Edoardo",
+          "name": "M. Edoardo",
+          "email": ""
+        },
+        {
+          "forename": "Siva",
+          "surname": "Ponti",
+          "name": "Siva Ponti",
+          "email": ""
+        }
+      ],
+      "doi": "10.1162/tacl_a_00529",
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "date": "2022"
+    },
+    {
+      "index": "b8",
+      "title": "SimCSE: Simple contrastive learning of sentence embeddings",
+      "author": [
+        {
+          "forename": "Tianyu",
+          "surname": "Gao",
+          "name": "Tianyu Gao",
+          "email": ""
+        },
+        {
+          "forename": "Xingcheng",
+          "surname": "Yao",
+          "name": "Xingcheng Yao",
+          "email": ""
+        },
+        {
+          "forename": "Danqi",
+          "surname": "Chen",
+          "name": "Danqi Chen",
+          "email": ""
+        }
+      ],
+      "doi": "10.18653/v1/2021.emnlp-main.552",
+      "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+      "date": "2021"
+    },
+    {
+      "index": "b11",
+      "title": "Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial Intelligence (AI) Day event on",
+      "author": [
+        {
+          "forename": "### Candidate",
+          "surname": "Answer",
+          "name": "### Candidate Answer",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "Optimus (or Tesla Bot) is a robotic humanoid under development by Tesla, Inc. It was announced at the company's Artificial Intelligence (AI) Day event on",
+      "date": "2021-08-19"
+    },
+    {
+      "index": "b12",
+      "title": "Artificial Intelligence (AI) Day event\") (\"Artificial Intelligence (AI) Day event",
+      "author": [
+        {
+          "forename": "###",
+          "surname": "Kg",
+          "name": "### Kg",
+          "email": ""
+        }
+      ],
+      "doi": "",
+      "venue": "robotic humanoid\") (\"Optimus\", \"under development by",
+      "date": "2021-08-19"
+    }
+  ]
+}

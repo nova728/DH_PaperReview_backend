@@ -1,0 +1,18 @@
+[
+  {
+    "content": "This paper introduces ICAT, a novel evaluation framework designed to assess the factual accuracy and diversity of factual information in long-form text generation. The framework breaks down long-form text into atomic claims, verifies their factuality using a knowledge source, and aligns them with predefined aspects to evaluate coverage. ICAT proposes three implementations—ICAT-M, ICAT-S, and ICAT-A—that vary in their assumptions regarding the availability of aspects and alignment methods. The framework demonstrates strong correlation with human judgments and provides interpretable, fine-grained analyses. While the framework aims to address a significant gap in current evaluation methods, it faces challenges in terms of technical novelty, scalability, and practical applicability across diverse domains and languages. Overall, the paper addresses an important problem with a well-structured framework but requires further refinements to fully realize its potential impact on the field of long-form text evaluation.",
+    "name": "Summary"
+  },
+  {
+    "content": "ICAT is a well-motivated and thoughtfully designed framework that tackles the critical issue of evaluating the factual accuracy and coverage of diverse factual information in long-form text generation. Its modular structure allows for flexibility, making it adaptable to different evaluation scenarios and capable of providing interpretable and fine-grained analyses. The authors conducted thorough experiments and demonstrated strong correlation with human judgments, lending credibility to the framework's reliability. Furthermore, ICAT's potential for practical applications is underscored by its ability to evaluate large language models (LLMs) in real-world settings. The paper itself is well-written, presenting its concepts clearly and cohesively, and the framework’s modular design holds promise for future extensions and adaptations. ICAT’s emphasis on addressing the gap in traditional evaluation methods by incorporating coverage and diversity metrics adds significant value to the field of natural language processing.",
+    "name": "Strengths"
+  },
+  {
+    "content": "Despite its merits, ICAT exhibits several weaknesses that limit its overall impact. The technical novelty of the framework is somewhat constrained, as many components, such as claim generation and alignment, draw heavily from prior work, and the overall methodology lacks groundbreaking innovation. The reliance on predefined aspects introduces a potential bias, and the framework's performance hinges critically on the quality of these aspects. Generating accurate aspects, particularly for less common topics, remains challenging, and the manual effort involved in creating ground-truth aspects is substantial. Moreover, the scalability of ICAT is questionable due to the resource-intensive nature of its operations, such as retrieving large datasets and employing multiple LLMs for evaluation. The paper lacks sufficient analysis of the computational costs and fails to address potential scalability solutions. Another major limitation is the absence of evaluations across diverse domains and languages, which restricts the generalizability of the framework. Finally, the lack of ablation studies and missing details in experimental settings, such as the choice of LLMs and their prompts, undermines the reproducibility and clarity of the results. Addressing these concerns is essential to make ICAT a more robust and widely applicable tool for long-form text evaluation.",
+    "name": "Weaknesses"
+  },
+  {
+    "content": "Reject",
+    "name": "Decision"
+  }
+]
