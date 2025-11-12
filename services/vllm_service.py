@@ -13,15 +13,19 @@ class VllmService:
         self.base_url = config.vllm.base_url.rstrip('/')
         self._warmup_model()
     
-    def generate_text(self, prompt: str, temperature: float = 0.0, max_tokens: int = 8192) -> str:
+    def generate_text(self, prompt: str, temperature: float = 0.0, max_tokens: int = 8192, model_name: str = None) -> str:
         """通用文本生成方法，直接接收完整的prompt"""
         logger.info("Calling vLLM to generate text")
         logger.info(f"温度设置: {temperature}, 最大生成token: {max_tokens}")
         
+        # 使用指定的模型名称或默认模型名称
+        model = model_name if model_name else self.config.vllm.model_name
+        logger.info(f"使用模型: {model}")
+        
         try:
             # 创建请求
             vllm_request = VllmRequest(
-                model=self.config.vllm.model_name,
+                model=model,
                 messages=[
                     VllmMessage(role="user", content=prompt)
                 ],
@@ -30,7 +34,7 @@ class VllmService:
             )
             
             # 调用API
-            logger.info(f"调用 API: {self.base_url}/v1/chat/completions, 模型: {self.config.vllm.model_name}")
+            logger.info(f"调用 API: {self.base_url}/v1/chat/completions, 模型: {model}")
             response = self._call_vllm_api(vllm_request)
             content = response.get_content()
             
