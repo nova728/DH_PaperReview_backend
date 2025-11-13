@@ -29,11 +29,35 @@ DB_CONFIG = {
     'database': os.getenv('DB_NAME', 'DH_Review')
 }
 
+def clean_section_content(content):
+    if not content:
+        return ""
+    cleaned = content.strip()
+    if cleaned.endswith('}') and cleaned.count('}') == 1 and '{' not in cleaned:
+        cleaned = cleaned[:-1].rstrip()
+    return cleaned
+
 def filter_missing_sections(sections):
-    return [
-        section for section in sections
-        if '信息未找到' not in (section.get('content') or '')
-    ]
+    filtered = []
+    for section in sections:
+        content = section.get('content')
+        if '信息未找到' in (content or ''):
+            continue
+        sanitized = dict(section)
+        sanitized['content'] = clean_section_content(content)
+        filtered.append(sanitized)
+    return filtered
+
+def prepare_deep_review_sections(sections):
+    desired_order = ["Summary", "Strengths", "Weaknesses", "Decision"]
+    prepared = {}
+    for section in sections:
+        name = (section.get('name') or '').strip()
+        if name in desired_order:
+            content = section.get('content', '')
+            if content:
+                prepared[name] = content
+    return [{"name": name, "content": prepared[name]} for name in desired_order if name in prepared]
 
 @contextmanager
 def get_db():
@@ -67,6 +91,17 @@ def init_db():
                     selected_model VARCHAR(255),
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY (session_id) REFERENCES blind_review_sessions(session_id)
+                )
+            ''')
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS test_review_sessions (
+                    session_id VARCHAR(36) PRIMARY KEY,
+                    timestamp DATETIME,
+                    review_a_model VARCHAR(255),
+                    review_b_model VARCHAR(255),
+                    review_a_raw_output TEXT,
+                    review_b_raw_output TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             ''')
             conn.commit()
@@ -240,6 +275,7 @@ def create_app():
                 }
                 deep_reviews = automatic_review_service.format_deep_review_to_frontend(full_deep_review)
                 deep_reviews = filter_missing_sections(deep_reviews)
+                deep_reviews = prepare_deep_review_sections(deep_reviews)
             else:
                 deep_reviews = [{
                     "name": "Error",
@@ -408,6 +444,134 @@ def create_app():
             logger.error(f"获取统计信息失败: {str(e)}")
             return jsonify({"error": f"获取统计失败: {str(e)}"}), 500
 
+    @app.route('/api/papers/test-blind-review', methods=['POST'])
+    def test_blind_review():
+        """测试盲评接口 - 存储原始模型输出"""
+        try:
+            data = request.get_json()
+            paper_request = PaperRequest.from_dict(data)
+            
+            logger.info("收到测试盲评请求")
+            
+            start_time = time.time()
+            
+            text_processor = TextProcessorService(include_authors=paper_request.include_authors)
+            paper_content = text_processor.process_paper_json(paper_request.paper_json, auto_truncate=False)
+            
+            logger.info(f"论文内容长度: {len(paper_content):,} 字符")
+            logger.info("开始生成两个模型的评审...")
+            
+            # 1. 生成 Automatic_Review 评审
+            logger.info("正在调用 Automatic_Review 模型...")
+            automatic_review_result = automatic_review_service.generate_review(
+                paper_content=paper_content, 
+                temperature=paper_request.temperature,
+                max_tokens=paper_request.max_tokens
+            )
+            automatic_raw_output = automatic_review_result.get("content", "")
+            
+            # 2. 生成 Deep Review 评审
+            logger.info("正在调用 Deep Review 模型...")
+            deep_review_result = automatic_review_service.generate_deep_review(
+                paper_content=paper_content,
+                temperature=paper_request.temperature,
+                max_tokens=paper_request.max_tokens
+            )
+            deep_raw_output = deep_review_result.get("content", "")
+            
+            # 格式化评审结果
+            if "error" not in automatic_review_result:
+                full_automatic_review = {
+                    "result": {
+                        "content": automatic_review_result.get("content", ""),
+                        "type": automatic_review_result.get("type", "automatic_review"),
+                        "source": automatic_review_result.get("source", "Automatic_Review")
+                    }
+                }
+                automatic_reviews = automatic_review_service.format_automatic_review_to_frontend(full_automatic_review)
+                automatic_reviews = filter_missing_sections(automatic_reviews)
+            else:
+                automatic_reviews = [{
+                    "name": "Error",
+                    "content": f"Automatic_Review 评审失败: {automatic_review_result.get('error', '未知错误')}"
+                }]
+            
+            if "error" not in deep_review_result:
+                full_deep_review = {
+                    "result": {
+                        "content": deep_review_result.get("content", ""),
+                        "type": deep_review_result.get("type", "deep_review"),
+                        "source": deep_review_result.get("source", "deep-review-7b")
+                    }
+                }
+                deep_reviews = automatic_review_service.format_deep_review_to_frontend(full_deep_review)
+                deep_reviews = filter_missing_sections(deep_reviews)
+                deep_reviews = prepare_deep_review_sections(deep_reviews)
+            else:
+                deep_reviews = [{
+                    "name": "Error",
+                    "content": f"Deep Review 评审失败: {deep_review_result.get('error', '未知错误')}"
+                }]
+            
+            session_id = str(uuid.uuid4())
+            
+            reviews_list = [
+                {
+                    "model": "automatic_review",
+                    "reviews": automatic_reviews,
+                    "raw_output": automatic_raw_output
+                },
+                {
+                    "model": "deep_review",
+                    "reviews": deep_reviews,
+                    "raw_output": deep_raw_output
+                }
+            ]
+            
+            random.shuffle(reviews_list)
+            
+            # 存储会话信息和原始输出到数据库
+            with get_db() as conn:
+                cursor = conn.cursor()
+                cursor.execute('''
+                    INSERT INTO test_review_sessions 
+                    (session_id, timestamp, review_a_model, review_b_model, 
+                     review_a_raw_output, review_b_raw_output)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                ''', (session_id, datetime.now(), 
+                      reviews_list[0]["model"], reviews_list[1]["model"],
+                      reviews_list[0]["raw_output"], reviews_list[1]["raw_output"]))
+                conn.commit()
+                cursor.close()
+            
+            logger.info(f"测试盲评会话 {session_id} 创建成功")
+            logger.info(f"Review A: {reviews_list[0]['model']}, Review B: {reviews_list[1]['model']}")
+            
+            result = {
+                "session_id": session_id,
+                "reviews": [
+                    {
+                        "review_id": "review_a",
+                        "sections": reviews_list[0]["reviews"],
+                        "raw_output": reviews_list[0]["raw_output"]
+                    },
+                    {
+                        "review_id": "review_b",
+                        "sections": reviews_list[1]["reviews"],
+                        "raw_output": reviews_list[1]["raw_output"]
+                    }
+                ],
+                "processing_time": time.time() - start_time
+            }
+            
+            return jsonify(result), 200
+            
+        except Exception as e:
+            logger.error(f"测试盲评失败: {str(e)}")
+            return jsonify({
+                "error": f"测试盲评生成失败: {str(e)}"
+            }), 500
+    
     def test_vllm():
         """测试vLLM连接"""
         try:

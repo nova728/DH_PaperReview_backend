@@ -263,13 +263,27 @@ class AutomaticReviewService:
         """
         try:
             # Deep review prompt
-            deep_review_prompt = """You are an expert academic reviewer tasked with providing a thorough and balanced evaluation of research papers. Your thinking mode is Fast Mode. In this mode, you should quickly provide the review results.
-Content of the paper to be reviewed:
-<paper>
-""" + paper_content + "\n</paper>"
-            
+            deep_review_prompt = (
+                "You are an expert academic reviewer tasked with providing a thorough and balanced evaluation of research papers. Your thinking mode is Fast Mode.\n\n"
+                "Strictly follow the instructions below:\n"
+                "1. Read the paper content between <paper>...</paper>.\n"
+                "2. Return your answer using EXACTLY the following four sections in this order.\n"
+                "3. Use plain text only. Do not add extra sections, headers, bullets, JSON, or braces.\n\n"
+                "Summary:\n"
+                "<Provide a concise paragraph summarizing the work.>\n\n"
+                "Strengths:\n"
+                "<Provide one concise paragraph describing the main strengths.>\n\n"
+                "Weaknesses:\n"
+                "<Provide one concise paragraph describing the main weaknesses or concerns.>\n\n"
+                "Decision:\n"
+                "<Provide a single-word recommendation such as Accept, Weak Accept, Borderline, Weak Reject, or Reject.>\n\n"
+                "Content of the paper to be reviewed:\n"
+                "<paper>\n"
+                f"{paper_content}\n"
+                "</paper>"
+            )
             review_content = self._call_llm_for_review_with_model(
-                prompt=deep_review_prompt, 
+                prompt=deep_review_prompt,
                 temperature=temperature,
                 max_tokens=max_tokens,
                 model_name="deep-review-7b"
