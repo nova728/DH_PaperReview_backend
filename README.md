@@ -41,6 +41,8 @@ Hammer_review_backend/
 VLLM_BASE_URL=http://localhost:8000
 VLLM_MODEL_NAME=your-model-name
 VLLM_TIMEOUT=300
+VLLM_COMPARISON_MODEL_NAME=deep-review-7b
+VLLM_COMPARISON_SYSTEM_PROMPT="You are an expert academic reviewer tasked with providing a thorough and balanced evaluation of research papers. Your thinking mode is Fast Mode. In this mode, you should quickly provide the review results."
 
 # 应用配置
 FLASK_ENV=development
@@ -201,4 +203,75 @@ class TextProcessorService:
 - 文本生成（同步/流式）
 - 模型预热
 - 错误处理
+
+#### 对比模型
+- `comparison_model_name`：用于对比评审的本地模型（默认 `deep-review-7b`）。
+- `comparison_system_prompt`：Deep Review 交互所需的系统提示词，默认已内置上述英文说明。
+
+### 4. 对比评审
+
+**接口**: `POST /api/papers/comparison-review`
+
+**请求体**:
+```json
+{
+  "paper_json": {
+    "title": "论文标题",
+    "author": [
+      {"name": "作者1"},
+      {"name": "作者2"}
+    ],
+    "abstract": ["摘要内容"],
+    "body": [
+      {
+        "section": {"index": "1", "name": "Introduction"},
+        "p": [{"text": "段落内容"}]
+      }
+    ],
+    "reference": []
+  },
+  "temperature": 0.0,
+  "max_tokens": 8192
+}
+```
+
+**参数说明**:
+- `paper_json`: 论文的 JSON 格式数据（必填）
+- `temperature`: 生成温度，范围 0.0-1.0，默认 0.0（确定性输出）
+- `max_tokens`: 最大生成 token 数，默认 8192
+
+**响应**:
+```json
+{
+  "reviews": [
+    {
+      "model": "deep-review-7b",
+      "sections": [
+        {
+          "title": "Summary",
+          "content": "论文概述内容..."
+        },
+        {
+          "title": "Soundness",
+          "content": "论文的合理性分析..."
+        },
+        {
+          "title": "Strengths",
+          "content": "论文优势分析..."
+        },
+        {
+          "title": "Weaknesses",
+          "content": "论文不足之处..."
+        },
+        {
+          "title": "Decision",
+          "content": "评审决策建议..."
+        }
+      ]
+    }
+  ]
+}
+```
+
+`reviews` 中的 `sections` 会按照模型输出的 Markdown 标题顺序返回（例如 Summary、Soundness、Strengths 等），前端可直接以名称展示。
 

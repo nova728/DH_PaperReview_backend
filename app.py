@@ -11,14 +11,73 @@ import json
 import random
 import uuid
 from datetime import datetime
+import mysql.connector
+from mysql.connector import Error
+from contextlib import contextmanager
+import os
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 存储盲评会话信息（内存存储，生产环境应使用数据库）
+# MySQL 数据库配置
+DB_CONFIG = {
+    'host': os.getenv('DB_HOST', '39.105.31.73'),
+    'port': int(os.getenv('DB_PORT', '3306')),
+    'user': os.getenv('DB_USER', 'root'),
+    'password': os.getenv('DB_PASSWORD', 'Cbers123123'),
+    'database': os.getenv('DB_NAME', 'DH_Review')
+}
+
+def filter_missing_sections(sections):
+    return [
+        section for section in sections
+        if '信息未找到' not in (section.get('content') or '')
+    ]
+
+@contextmanager
+def get_db():
+    """获取数据库连接"""
+    conn = mysql.connector.connect(**DB_CONFIG)
+    try:
+        yield conn
+    finally:
+        conn.close()
+
+def init_db():
+    """初始化数据库表"""
+    try:
+        with get_db() as conn:
+            cursor = conn.cursor()
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS blind_review_sessions (
+                    session_id VARCHAR(36) PRIMARY KEY,
+                    timestamp DATETIME,
+                    review_a_model VARCHAR(255),
+                    review_b_model VARCHAR(255),
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS user_selections (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    session_id VARCHAR(36),
+                    timestamp DATETIME,
+                    selected_review_id VARCHAR(50),
+                    selected_model VARCHAR(255),
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY (session_id) REFERENCES blind_review_sessions(session_id)
+                )
+            ''')
+            conn.commit()
+            cursor.close()
+            logger.info("数据库表初始化成功")
+    except Error as e:
+        logger.error(f"数据库初始化失败: {str(e)}")
+        raise
+
+# 存储盲评会话信息（内存缓存，用于快速查询当前会话）
 blind_review_sessions = {}
-user_selections = []
 
 def create_app():
     app = Flask(__name__)
@@ -34,6 +93,9 @@ def create_app():
     config = AppConfig()
     vllm_service = VllmService(config)
     automatic_review_service = AutomaticReviewService(config, vllm_service)
+    
+    # 初始化数据库
+    init_db()
     
     @app.route('/api/papers/health', methods=['GET'])
     def health():
@@ -94,7 +156,8 @@ def create_app():
                 
                 # 格式化
                 reviews = automatic_review_service.format_automatic_review_to_frontend(full_review_result)
-                
+                reviews = filter_missing_sections(reviews)
+
                 return jsonify(reviews), 200
             else:
                 return jsonify([{
@@ -159,6 +222,8 @@ def create_app():
                     }
                 }
                 automatic_reviews = automatic_review_service.format_automatic_review_to_frontend(full_automatic_review)
+                automatic_reviews = filter_missing_sections(automatic_reviews)
+
             else:
                 automatic_reviews = [{
                     "name": "Error",
@@ -174,6 +239,7 @@ def create_app():
                     }
                 }
                 deep_reviews = automatic_review_service.format_deep_review_to_frontend(full_deep_review)
+                deep_reviews = filter_missing_sections(deep_reviews)
             else:
                 deep_reviews = [{
                     "name": "Error",
@@ -197,7 +263,19 @@ def create_app():
             
             random.shuffle(reviews_list)
             
-            # 存储会话信息（记录哪个是哪个模型）
+            # 存储会话信息到 MySQL 数据库
+            with get_db() as conn:
+                cursor = conn.cursor()
+                cursor.execute('''
+                    INSERT INTO blind_review_sessions 
+                    (session_id, timestamp, review_a_model, review_b_model)
+                    VALUES (%s, %s, %s, %s)
+                ''', (session_id, datetime.now(), 
+                      reviews_list[0]["model"], reviews_list[1]["model"]))
+                conn.commit()
+                cursor.close()
+            
+            # 同时保持内存缓存
             blind_review_sessions[session_id] = {
                 "timestamp": datetime.now().isoformat(),
                 "review_a": {
@@ -243,7 +321,7 @@ def create_app():
         try:
             data = request.get_json()
             session_id = data.get('session_id')
-            selected_review_id = data.get('selected_review_id')  # 'review_a' 或 'review_b'
+            selected_review_id = data.get('selected_review_id')
             
             if not session_id or not selected_review_id:
                 return jsonify({"error": "缺少必要参数"}), 400
@@ -261,16 +339,17 @@ def create_app():
             else:
                 return jsonify({"error": "无效的评审ID"}), 400
             
-            # 记录选择
-            selection_record = {
-                "session_id": session_id,
-                "timestamp": datetime.now().isoformat(),
-                "selected_review_id": selected_review_id,
-                "selected_model": selected_model,
-                "session_info": session
-            }
-            
-            user_selections.append(selection_record)
+            # 记录选择到 MySQL 数据库
+            with get_db() as conn:
+                cursor = conn.cursor()
+                cursor.execute('''
+                    INSERT INTO user_selections 
+                    (session_id, timestamp, selected_review_id, selected_model)
+                    VALUES (%s, %s, %s, %s)
+                ''', (session_id, datetime.now(), 
+                      selected_review_id, selected_model))
+                conn.commit()
+                cursor.close()
             
             logger.info(f"用户选择记录成功: 会话 {session_id}, 选择 {selected_review_id} ({selected_model})")
             
@@ -287,34 +366,45 @@ def create_app():
     def get_statistics():
         """获取盲评统计信息"""
         try:
-            total_selections = len(user_selections)
-            
-            if total_selections == 0:
+            with get_db() as conn:
+                cursor = conn.cursor(dictionary=True)
+                
+                # 获取总选择数
+                cursor.execute('SELECT COUNT(*) as count FROM user_selections')
+                total_result = cursor.fetchone()
+                total_selections = total_result['count']
+                
+                if total_selections == 0:
+                    cursor.close()
+                    return jsonify({
+                        "total_selections": 0,
+                        "statistics": {}
+                    }), 200
+                
+                # 统计每个模型被选择的次数
+                cursor.execute('''
+                    SELECT selected_model, COUNT(*) as count 
+                    FROM user_selections 
+                    GROUP BY selected_model
+                ''')
+                model_results = cursor.fetchall()
+                
+                statistics = {}
+                for row in model_results:
+                    model = row['selected_model']
+                    count = row['count']
+                    statistics[model] = {
+                        "count": count,
+                        "percentage": (count / total_selections) * 100
+                    }
+                
+                cursor.close()
                 return jsonify({
-                    "total_selections": 0,
-                    "statistics": {}
+                    "total_selections": total_selections,
+                    "statistics": statistics
                 }), 200
             
-            # 统计每个模型被选择的次数
-            model_counts = {}
-            for selection in user_selections:
-                model = selection["selected_model"]
-                model_counts[model] = model_counts.get(model, 0) + 1
-            
-            # 计算百分比
-            statistics = {}
-            for model, count in model_counts.items():
-                statistics[model] = {
-                    "count": count,
-                    "percentage": (count / total_selections) * 100
-                }
-            
-            return jsonify({
-                "total_selections": total_selections,
-                "statistics": statistics
-            }), 200
-            
-        except Exception as e:
+        except Error as e:
             logger.error(f"获取统计信息失败: {str(e)}")
             return jsonify({"error": f"获取统计失败: {str(e)}"}), 500
 

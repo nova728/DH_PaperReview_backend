@@ -10,39 +10,24 @@ logger = logging.getLogger(__name__)
 class VllmService:
     def __init__(self, config: AppConfig):
         self.config = config
+        self.automatic_review_url = config.vllm.automatic_review_url.rstrip('/')
+        self.deep_review_url = config.vllm.deep_review_url.rstrip('/')
+        self.automatic_review_model = config.vllm.automatic_review_model
+        self.deep_review_model = config.vllm.deep_review_model
         
-        # 支持两种配置方式
-        # 方案1：单个端点多模型
-        if hasattr(config.vllm, 'base_url'):
-            self.base_url = config.vllm.base_url.rstrip('/')
-            self.model_name = config.vllm.model_name
-            self.single_endpoint = True
-            logger.info(f"使用单端点模式: {self.base_url}")
-        # 方案2：多个端点
-        else:
-            self.automatic_review_url = config.vllm.automatic_review_url.rstrip('/')
-            self.deep_review_url = config.vllm.deep_review_url.rstrip('/')
-            self.automatic_review_model = config.vllm.automatic_review_model
-            self.deep_review_model = config.vllm.deep_review_model
-            self.single_endpoint = False
-            logger.info(f"使用多端点模式: Automatic={self.automatic_review_url}, Deep={self.deep_review_url}")
+        logger.info(f"自动评审端点: {self.automatic_review_url}, 模型: {self.automatic_review_model}")
+        logger.info(f"深度评审端点: {self.deep_review_url}, 模型: {self.deep_review_model}")
         
         self._warmup_model()
     
     def _get_endpoint_and_model(self, model_name: str = None):
         """根据模型名称获取对应的端点和模型名"""
-        if self.single_endpoint:
-            # 单端点模式：使用同一个 URL，不同的 model_name
-            url = self.base_url
-            model = model_name if model_name else self.model_name
+        if model_name == "deep-review-7b":
+            url = self.deep_review_url
+            model = self.deep_review_model
         else:
-            # 多端点模式：根据模型名称选择不同的 URL
-            if model_name == "deep-review-7b":
-                url = self.deep_review_url
-                model = self.deep_review_model
-            else:
-                url = self.automatic_review_url
-                model = self.automatic_review_model
+            url = self.automatic_review_url
+            model = self.automatic_review_model
         
         return url, model
     
@@ -113,7 +98,7 @@ class VllmService:
     def _call_vllm_api(self, vllm_request: VllmRequest, url: str = None) -> VllmResponse:
         """调用API"""
         if url is None:
-            url = self.base_url if self.single_endpoint else self.automatic_review_url
+            url = self.automatic_review_url
         
         api_url = f"{url}/v1/chat/completions"
         
@@ -135,7 +120,7 @@ class VllmService:
     def _call_vllm_stream_api(self, vllm_request: VllmRequest, url: str = None) -> Generator[str, None, None]:
         """调用流式API"""
         if url is None:
-            url = self.base_url if self.single_endpoint else self.automatic_review_url
+            url = self.automatic_review_url
             
         api_url = f"{url}/v1/chat/completions"
         
@@ -179,15 +164,8 @@ class VllmService:
         try:
             logger.info("正在预热vLLM模型...")
             
-            if self.single_endpoint:
-                url = self.base_url
-                model = self.model_name
-            else:
-                url = self.automatic_review_url
-                model = self.automatic_review_model
-            
             dummy_request = VllmRequest(
-                model=model,
+                model=self.automatic_review_model,
                 messages=[
                     VllmMessage(role="system", content="You are an AI assistant."),
                     VllmMessage(role="user", content="test")
@@ -195,7 +173,7 @@ class VllmService:
                 max_tokens=10,
                 temperature=0.1
             )
-            self._call_vllm_api(dummy_request, url)
+            self._call_vllm_api(dummy_request, self.automatic_review_url)
             logger.info("vLLM模型预热完成")
         except Exception as e:
             logger.warning(f"模型预热失败，但服务仍可正常运行: {str(e)}")
